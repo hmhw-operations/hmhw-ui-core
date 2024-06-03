@@ -1,6 +1,6 @@
 {
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "name": "@hmhw-operations/hmhw-ui-core",
   "version": "1.0.0",
