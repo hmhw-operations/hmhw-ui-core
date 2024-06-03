@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Increment version number
+        run: npm version patch -m "Increment version number for release"
+
       - name: Publish to npm
         run: npm publish --access public
         env:
