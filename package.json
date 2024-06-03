@@ -2,7 +2,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "name": "@hmhw-operations/hmhw-ui-core",
+  "name": "hmhw-ui-core",
   "version": "1.0.0",
   "description": "",
   "type": "module",
