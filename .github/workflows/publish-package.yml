@@ -18,6 +18,11 @@ jobs:
       - run: npm install
       - run: npm run test
       - run: npm run build
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am "Commit changes before version bump"
       - name: Increment version number
         run: npm version patch -m "Increment version number for release"
       - run: npm publish
