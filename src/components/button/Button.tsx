@@ -1,6 +1,7 @@
 // components/button/button.tsx
 import React, { MouseEventHandler } from "react";
-// import style from "./button.module.css";
+import style from "./button.module.css";
+import "../../styles/globals.css";
 
 export type ButtonProps = {
   text?: string;
@@ -10,7 +11,7 @@ export type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({ text, onClick, ...props }) => {
   return (
-    <button type="button" onClick={onClick} {...props}>
+    <button className={`${style.button} ${style.primary}`} type="button" onClick={onClick} {...props}>
       {text}
     </button>
   );

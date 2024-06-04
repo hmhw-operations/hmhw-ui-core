@@ -1,5 +1,8 @@
-@import "../../styles/globals.css";
-
 .button {
-  border: 1px dashed tomato;
+  border: 1px dashed tomato !important;
+}
+
+.primary {
+  background-color: seagreen;
+  color: white;
 }
