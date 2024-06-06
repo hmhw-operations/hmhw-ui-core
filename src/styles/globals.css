@@ -42,10 +42,7 @@ a {
   color: inherit;
 }
 
-
-
 /* Utilities */
-
 
 :focus-visible {
   outline: 2px solid canvasText;
@@ -69,8 +66,6 @@ a {
   width: 1px !important;
   white-space: nowrap !important;
 }
-
-
 
 /* Palette */
 
@@ -229,7 +224,6 @@ a {
   --p-red-1500: hsl(var(--hue-red) 100% 20%);
 }
 
-
 /* Token base */
 
 :root {
@@ -267,46 +261,39 @@ a {
   --space-800: calc(var(--space-base) * 10); /*  48px */
 }
 
-
-
-
 /* Fonts */
 
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Regular.woff2");
+  /* src: url("../fonts/Lato-Regular.woff2"); */
+  src: url("../static/fonts/Lato-Regular.woff2");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Medium.woff2");
+  src: url("../static/fonts/Lato-Medium.woff2");
   font-style: normal;
   font-weight: 500;
 }
 
-
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Semibold.woff2");
+  src: url("../static/fonts/Lato-Semibold.woff2");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Bold.woff2");
+  src: url("../static/fonts/Lato-Bold.woff2");
   font-style: normal;
   font-weight: 700;
 }
 
-
-
 body {
-  color-scheme: dark light ;
+  color-scheme: dark light;
   font-family: var(--type-family);
   line-height: 1;
 }
-
-
