@@ -6,20 +6,21 @@ const meta: Meta<typeof Example> = {
   component: Example,
 };
 
+
 export default meta;
 type Story = StoryObj<typeof Example>;
 
 export const Primary: Story = {
   args: {
     text: "Button",
-    size: "small",
+    size: "medium",
     onClick: () => console.log("Button"),
   },
 };
 export const Secondary: Story = {
   args: {
     text: "Button",
-    size: "small",
+    size: "medium",
     onClick: () => console.log("Button"),
   },
 };

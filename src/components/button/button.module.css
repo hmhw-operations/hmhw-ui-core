@@ -1,20 +1,46 @@
 .button {
-  border: 1px dashed tomato !important;
+  --c-button-background: var(--color-surface-accent);
+  --c-button-background-hover: var(--color-surface-accent-hover);
+  --c-button-corner: var(--space-025);
+  --c-button-color: var(--color-text-on-accent);
 }
 
-.primary {
-  background-color: seagreen;
-  color: white;
+.button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-inline: 0.75em;
+  border-radius: var(--c-button-corner);
+  text-transform: uppercase;
+  font-size: var(--type-400);
+  height: var(--space-450);
+
+  border: 1px solid transparent;
+  color: var(--c-button-color);
+  background-color: var(--c-button-background);
+
+  
+  
+}
+
+
+
+.button:hover {
+  background-color: var(--c-button-background-hover);
+  cursor: pointer;
+}
+
+
+.large {
+  font-size: var(--type-500);
+  height: var(--space-600);
 }
 
 .small {
-  padding: 0.5rem 1rem;
+  font-size: var(--type-300);
+
+  height: var(--space-300);
+
+
 }
 
-.medium {
-  padding: 1rem 2rem;
-}
-
-.giga {
-  padding: 2rem 4rem;
-}

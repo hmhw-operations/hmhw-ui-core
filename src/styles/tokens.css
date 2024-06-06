@@ -1,0 +1,8 @@
+:root {
+
+    --color-text-on-accent: var(--p-neutral-100);
+    --color-surface-accent: var(--p-blue-ocean-1000); 
+    --color-surface-accent-hover: var(--p-blue-ocean-1100); 
+
+    --color-focus-ring: var(--p-orange-800);
+}
