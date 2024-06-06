@@ -1,8 +1,21 @@
 .button {
-  border: 1px dashed tomato !important;
+  --c-button-background: var(--color-surface-accent);
+  --c-button-corner: var(--space-050);
+  --c-button-color: var(--color-on-accent);
 }
 
-.primary {
-  background-color: seagreen;
-  color: white;
+.button {
+  border: 1px solid transparent;
+  color: var(--c-button-color);
+  background-color: var(--c-button-background);
+  padding-inline: var(--space-200);
+  border-radius: var(--c-button-corner);
+}
+
+.large {
+  font-size: var(--type-700);
+}
+
+.small {
+  font-size: var(--type-300);
 }

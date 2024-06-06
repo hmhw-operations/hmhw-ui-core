@@ -1,0 +1,4 @@
+:root {
+    --color-surface-accent: var(--p-blue-ocean-900);
+    --color-on-accent: var(--p-neutral-100);
+}

@@ -16,6 +16,7 @@ export const Primary: Story = {
     onClick: () => console.log("Button"),
   },
 };
+
 export const Secondary: Story = {
   args: {
     text: "Button",

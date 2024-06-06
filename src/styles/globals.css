@@ -224,7 +224,7 @@ a {
 /* Token base */
 
 :root {
-
+  --type-base: 1rem;
   --type-100: calc(var(--type-base) * 0.5);
   --type-200: calc(var(--type-base) * 0.625);
   --type-200: calc(var(--type-base) * 0.75);
