@@ -9,10 +9,10 @@ export type ButtonProps = {
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
-const Button: React.FC<ButtonProps> = ({ text, onClick, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ text, size = "small", onClick, ...props }) => {
   return (
-    <button className={`${style.button} ${style.primary}`} type="button" onClick={onClick} {...props}>
-      {text}
+    <button className={`${style.button} ${style.primary} ${style[size]}`} type="button" onClick={onClick} {...props}>
+      {text} - {size}
     </button>
   );
 };

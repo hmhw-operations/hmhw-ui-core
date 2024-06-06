@@ -6,3 +6,15 @@
   background-color: seagreen;
   color: white;
 }
+
+.small {
+  padding: 0.5rem 1rem;
+}
+
+.medium {
+  padding: 1rem 2rem;
+}
+
+.giga {
+  padding: 2rem 4rem;
+}
