@@ -1,6 +1,9 @@
 .button {
-  --c-button-background: var(--color-surface-accent);
-  --c-button-background-hover: var(--color-surface-accent-hover);
+  --c-button-background: var(--p-blue-ocean-900);
+  --c-button-background-hover: var(--p-blue-ocean-1000);
+  --c-button-secondary-background: var(--p-blue-ocean-1100);
+  --c-button-secondary-background-hover: var(--p-blue-ocean-1200);
+  --c-button-tertiary-background-hover: var(--p-blue-ocean-900);
   --c-button-corner: var(--space-025);
   --c-button-color: var(--color-text-on-accent);
 }
@@ -18,12 +21,14 @@
   border: 1px solid transparent;
   color: var(--c-button-color);
   background-color: var(--c-button-background);
+
+  &:hover {
+    background-color: var(--c-button-background-hover);
+    cursor: pointer;
+  }
 }
 
-.button:hover {
-  background-color: var(--c-button-background-hover);
-  cursor: pointer;
-}
+
 
 .large {
   font-size: var(--type-500);
@@ -36,10 +41,23 @@
   height: var(--space-300);
 }
 
-.primary {
-  color: tomato;
-}
+
 
 .secondary {
-  color: darkmagenta;
+  background-color: var(--c-button-secondary-background);
+
+  &:hover {
+    background-color: var(--c-button-secondary-background-hover);
+  }
+}
+
+.tertiary {
+  background-color: transparent;
+  border-color: inherit;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--c-button-tertiary-background-hover);
+  }
+
 }
