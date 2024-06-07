@@ -40,3 +40,18 @@ export const Secondary: Story = {
   //   },
   // },
 };
+
+
+export const Tertiary: Story = {
+  args: {
+    text: "Button",
+    size: "medium",
+    variant: "tertiary",
+    onClick: () => console.log("Button"),
+  },
+  // argTypes: {
+  //   variant: {
+  //     control: false,
+  //   },
+  // },
+};
