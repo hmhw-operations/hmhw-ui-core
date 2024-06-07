@@ -1,12 +1,7 @@
 import React, { FC } from "react";
 import Button, { ButtonProps } from "../Button";
 
-const Example: FC<ButtonProps> = ({
-  onClick = () => {},
-
-  size = "small",
-  text = "Button",
-}) => {
+const Example: FC<ButtonProps> = ({ onClick = () => {}, size = "small", text = "Button", variant }) => {
   return (
     <div
       style={{
@@ -16,7 +11,7 @@ const Example: FC<ButtonProps> = ({
         height: "100%",
       }}
     >
-      <Button size={size} text={text} onClick={onClick} />
+      <Button size={size} text={text} onClick={onClick} variant={variant} />
     </div>
   );
 };

@@ -18,18 +18,12 @@
   border: 1px solid transparent;
   color: var(--c-button-color);
   background-color: var(--c-button-background);
-
-  
-  
 }
-
-
 
 .button:hover {
   background-color: var(--c-button-background-hover);
   cursor: pointer;
 }
-
 
 .large {
   font-size: var(--type-500);
@@ -40,7 +34,12 @@
   font-size: var(--type-300);
 
   height: var(--space-300);
-
-
 }
 
+.primary {
+  color: tomato;
+}
+
+.secondary {
+  color: darkmagenta;
+}

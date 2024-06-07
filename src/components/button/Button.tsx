@@ -7,13 +7,14 @@ import "../../styles/tokens.css";
 export type ButtonProps = {
   text?: string;
   size?: "small" | "medium" | "large";
+  variant?: "primary" | "secondary";
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
-const Button: React.FC<ButtonProps> = ({ text, size = "small", onClick, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ text, size = "small", variant = "primary", onClick, ...props }) => {
   return (
-    <button className={`${style.button} ${style.primary} ${style[size]}`} type="button" onClick={onClick} {...props}>
-      {text} - {size}
+    <button className={`${style.button} ${style[variant]} ${style[size]}`} type="button" onClick={onClick} {...props}>
+      {text}
     </button>
   );
 };
