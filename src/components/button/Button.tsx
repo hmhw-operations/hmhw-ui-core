@@ -8,7 +8,7 @@ import "../../styles/globals.css";
 export type ButtonProps = {
   text?: string;
   size?: "small" | "medium" | "large";
-  variant?: "primary" | "secondary" | "tertiary";
+  variant?: "primary" | "secondary" | "tertiary" | "destructive";
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
