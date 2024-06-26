@@ -11,9 +11,8 @@ export default meta;
 type Story = StoryObj<typeof Example>;
 
 export const Default: Story = {
+  name: "Taco",
   args: {
-    label: "Al Pastor",
-    id: "alPastor",
-    disabled: false,
+    disabled: true,
   },
 };
