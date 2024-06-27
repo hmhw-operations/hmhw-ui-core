@@ -1,24 +1,25 @@
 import React from "react";
-import style from "./radiogroup.module.css";
+import style from "./segmentedbutton.module.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/globals.css";
 import { RadioButton } from "../radiobutton";
 
-export type RadioGroupItem = {
+export type SegmentedItem = {
   value: string;
   label: string;
+  disabled?: boolean;
 };
 
-export type RadioGroupProps = {
+export type SegmentedButtonProps = {
   name: string;
-  items: RadioGroupItem[];
+  items: SegmentedItem[];
   value: string | null;
   onChange: (value: string) => void;
   disabled?: boolean;
 };
 
-const RadioGroup: React.FC<RadioGroupProps> = ({ name, items, value, onChange, disabled }) => {
+const SegmentedButton: React.FC<SegmentedButtonProps> = ({ name, items, value, onChange, disabled }) => {
   const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.currentTarget.value);
 
   return (
@@ -32,10 +33,11 @@ const RadioGroup: React.FC<RadioGroupProps> = ({ name, items, value, onChange, d
           checked={value === i.value}
           onChange={handleSelect}
           label={i.label}
+          disabled={i.disabled}
         />
       ))}
     </fieldset>
   );
 };
 
-export default RadioGroup;
+export default SegmentedButton;
