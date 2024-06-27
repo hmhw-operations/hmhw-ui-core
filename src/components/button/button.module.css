@@ -1,62 +1,68 @@
 .button {
-  --c-button-background: var(--p-blue-ocean-900);
-  --c-button-background-hover: var(--p-blue-ocean-1000);
-  --c-button-secondary-background: var(--p-blue-ocean-1100);
-  --c-button-secondary-background-hover: var(--p-blue-ocean-1200);
-  --c-button-tertiary-background-hover: var(--p-blue-ocean-900);
-  --c-button-corner: var(--space-025);
-  --c-button-color: var(--color-text-on-accent);
-}
-
-.button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 1em;
-  padding-inline: 0.75em;
-  border-radius: var(--c-button-corner);
+  gap: 0.5em;
+  padding-inline: 0.5em;
+  border-radius: var(--radius-default);
   text-transform: uppercase;
-  font-size: var(--type-400);
-  height: var(--space-450);
+  font-size: var(--type-button-label);
+  height: var(--height-medium);
 
   border: 1px solid transparent;
-  color: var(--c-button-color);
-  background-color: var(--c-button-background);
+  color: var(--color-on-interactive);
+  background-color: var(--color-surface-interactive);
 
   &:hover {
-    background-color: var(--c-button-background-hover);
+    background-color: var(--color-surface-interactive-hover);
     cursor: pointer;
   }
 }
 
+.trailing-icon {
+  flex-direction: row-reverse;
+}
+
+svg {
+  color: inherit;
+  width: 1.125em;
+  height: auto;
+}
+
 .large {
-  font-size: var(--type-500);
-  height: var(--space-600);
+  font-size: var(--type-button-label-large);
+  height: var(--height-large);
 }
 
 .small {
-  font-size: var(--type-300);
-
-  height: var(--space-300);
+  font-size: var(--type-button-label-small);
+  height: var(--height-small);
 }
 
 .secondary {
-  background-color: var(--c-button-secondary-background);
+  background-color: var(--color-surface-interactive-secondary);
 
   &:hover {
-    background-color: var(--c-button-secondary-background-hover);
+    background-color: var(--color-surface-interactive-secondary-hover);
   }
 }
 
 .tertiary {
   background-color: transparent;
-  border-color: inherit;
+  color: var(--color-surface-interactive-tertiary);
 
   &:hover {
     background-color: transparent;
-    color: var(--c-button-tertiary-background-hover);
+    color: var(--color-surface-interactive-tertiary-hover);
   }
 }
 
 .destructive {
-  background-color: tomato;
+  background-color: var(--color-alert-danger);
+  &:hover {
+    background-color: var(--color-alert-danger-hover);
+  }
+
+  &:disabled {
+    color: yellow;
+  }
 }

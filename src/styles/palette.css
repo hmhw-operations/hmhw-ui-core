@@ -138,20 +138,20 @@
   --p-purple-1400: hsl(var(--hue-purple) 100% 25%);
   --p-purple-1500: hsl(var(--hue-purple) 100% 20%);
 
-  --hue-purple: 0;
-  --p-purple-100: hsl(var(--hue-purple) 100% 95%);
-  --p-purple-200: hsl(var(--hue-purple) 100% 90%);
-  --p-purple-300: hsl(var(--hue-purple) 100% 85%);
-  --p-purple-400: hsl(var(--hue-purple) 100% 77%);
-  --p-purple-500: hsl(var(--hue-purple) 100% 70%);
-  --p-purple-600: hsl(var(--hue-purple) 100% 65%);
-  --p-purple-700: hsl(var(--hue-purple) 100% 60%);
-  --p-purple-800: hsl(var(--hue-purple) 100% 55%);
-  --p-purple-900: hsl(var(--hue-purple) 100% 50%);
-  --p-purple-1000: hsl(var(--hue-purple) 100% 45%);
-  --p-purple-1100: hsl(var(--hue-purple) 100% 40%);
-  --p-purple-1200: hsl(var(--hue-purple) 100% 35%);
-  --p-purple-1300: hsl(var(--hue-purple) 100% 30%);
-  --p-purple-1400: hsl(var(--hue-purple) 100% 25%);
-  --p-purple-1500: hsl(var(--hue-purple) 100% 20%);
+  --hue-red: 0;
+  --p-red-100: hsl(var(--hue-red) 100% 95%);
+  --p-red-200: hsl(var(--hue-red) 100% 90%);
+  --p-red-300: hsl(var(--hue-red) 100% 85%);
+  --p-red-400: hsl(var(--hue-red) 100% 77%);
+  --p-red-500: hsl(var(--hue-red) 100% 70%);
+  --p-red-600: hsl(var(--hue-red) 100% 65%);
+  --p-red-700: hsl(var(--hue-red) 100% 60%);
+  --p-red-800: hsl(var(--hue-red) 100% 55%);
+  --p-red-900: hsl(var(--hue-red) 100% 50%);
+  --p-red-1000: hsl(var(--hue-red) 100% 45%);
+  --p-red-1100: hsl(var(--hue-red) 100% 40%);
+  --p-red-1200: hsl(var(--hue-red) 100% 35%);
+  --p-red-1300: hsl(var(--hue-red) 100% 30%);
+  --p-red-1400: hsl(var(--hue-red) 100% 25%);
+  --p-red-1500: hsl(var(--hue-red) 100% 20%);
 }
