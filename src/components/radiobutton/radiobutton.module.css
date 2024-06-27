@@ -36,7 +36,7 @@ label {
 }
 
 input:checked + label:before {
-  border-color: var(--color-text-accent);
+  border-color: var(--color-accent);
 }
 
 input:checked + label:after {
@@ -47,7 +47,7 @@ input:checked + label:after {
   width: var(--size-150);
   height: var(--size-150);
   border-radius: var(--radius-full);
-  background-color: var(--color-text-accent);
+  background-color: var(--color-accent);
 }
 
 .input_item:has(input:focus-visible) {
@@ -57,4 +57,18 @@ input:checked + label:after {
 
 input:focus {
   outline: none;
+}
+
+.input_item:has(input:disabled) {
+  label {
+    color: var(--color-disabled);
+
+    cursor: not-allowed;
+    &:before {
+      border-color: var(--color-disabled);
+    }
+    &:after {
+      background-color: var(--color-disabled);
+    }
+  }
 }

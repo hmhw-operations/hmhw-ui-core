@@ -1,17 +1,17 @@
 :root {
   /* COLOR TOKENS -------------------------------------- */
   /* Text and shapes */
-  --color-text: var(--p-neutral-100);
-  --color-text-secondary: var(--p-neutral-300);
-  --color-text-tertiary: var(--p-neutral-500);
-  --color-text-disabled: var(--p-neutral-1300);
-  --color-text-invert: var(--p-neutral-1400);
-  --color-text-accent: var(--p-blue-ocean-700);
-  --color-text-accent-hover: var(--p-blue-ocean-900);
-  --color-text-on-accent: var(--p-neutral-100);
-  --color-text-on-interactive: var(--p-neutral-100);
-  --color-text-on-system: var(--p-neutral-100);
-  --color-text-on-system-caution: var(--p-neutral-100);
+  --color: var(--p-neutral-100);
+  --color-secondary: var(--p-neutral-300);
+  --color-tertiary: var(--p-neutral-500);
+  --color-disabled: hsl(100 100% 100% / 0.4);
+  --color-invert: var(--p-neutral-1400);
+  --color-accent: var(--p-blue-ocean-700);
+  --color-accent-hover: var(--p-blue-ocean-900);
+  --color-on-accent: var(--p-neutral-100);
+  --color-on-interactive: var(--p-neutral-100);
+  --color-on-system: var(--p-neutral-100);
+  --color-on-system-caution: var(--p-neutral-100);
   /* Surface aka Background */
   --color-surface-primary: var(--p-blue-ocean-1300);
   --color-surface-secondary: var(--p-blue-ocean-1100);
@@ -21,13 +21,17 @@
   --color-surface-accent: var(--p-blue-ocean-700);
   --color-surface-interactive: var(--p-blue-ocean-700);
   --color-surface-interactive-hover: var(--p-blue-ocean-900);
-  --color-surface-interactive-pressed: var(--p-blue-ocean-1100);
+  --color-surface-interactive-pressed: var(--p-blue-ocean-1000);
   --color-surface-interactive-disabled: var(--p-blue-ocean-700);
   --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
-  --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1200);
+  --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
   --color-surface-interactive-secondary-pressed: var(--p-blue-ocean-1300);
   --color-surface-interactive-secondary-disabled: var(--p-blue-ocean-1400);
   --color-focus-ring: var(--p-yellow-800);
+
+  --color-alert-danger: var(--p-red-800);
+  --color-alert-danger-hover: var(--p-red-1100);
+  --color-alert-danger-disabled: hsl(var(--hue-red) 100% 55% / 0.33);
 
   /*  SIZEING  --------------------------------------------- */
 
@@ -50,6 +54,10 @@
   --size-700: calc(var(--size-base) * 8); /*  48px */
   --size-800: calc(var(--size-base) * 10); /*  48px */
 
+  --height-medium: var(--size-400);
+  --height-large: var(--size-600);
+  --height-small: var(--size-300);
+
   /*  TYPOGRAPHY  --------------------------------------------- */
 
   --type-family: Lato;
@@ -66,6 +74,10 @@
   --type-900: calc(var(--type-800) * 1.25);
 
   --type-label: var(--type-300);
+
+  --type-button-label: var(--type-400);
+  --type-button-label-large: var(--type-500);
+  --type-button-label-small: var(--type-200);
 
   /*  CORNER RADIUS  --------------------------------------------- */
 
