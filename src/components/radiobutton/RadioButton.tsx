@@ -18,7 +18,7 @@ export type RadioButtonProps = {
 
 const RadioButton: React.FC<RadioButtonProps> = ({ label, onChange, id, disabled, value, checked, ...props }) => {
   return (
-    <div className={style.wrapper}>
+    <div className={style.input_item}>
       <input
         className={`${style.radio}`}
         type="radio"

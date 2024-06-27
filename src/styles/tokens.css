@@ -1,8 +1,77 @@
 :root {
+  /* COLOR TOKENS -------------------------------------- */
+  /* Text and shapes */
+  --color-text: var(--p-neutral-100);
+  --color-text-secondary: var(--p-neutral-300);
+  --color-text-tertiary: var(--p-neutral-500);
+  --color-text-disabled: var(--p-neutral-1300);
+  --color-text-invert: var(--p-neutral-1400);
+  --color-text-accent: var(--p-blue-ocean-700);
+  --color-text-accent-hover: var(--p-blue-ocean-900);
+  --color-text-on-accent: var(--p-neutral-100);
+  --color-text-on-interactive: var(--p-neutral-100);
+  --color-text-on-system: var(--p-neutral-100);
+  --color-text-on-system-caution: var(--p-neutral-100);
+  /* Surface aka Background */
+  --color-surface-primary: var(--p-blue-ocean-1300);
+  --color-surface-secondary: var(--p-blue-ocean-1100);
+  --color-surface-tertiary: var(--p-blue-ocean-900);
+  --color-surface-invert: var(--p-blue-ocean-900);
+  --color-surface-canvas: var(--p-blue-ocean-1300);
+  --color-surface-accent: var(--p-blue-ocean-700);
+  --color-surface-interactive: var(--p-blue-ocean-700);
+  --color-surface-interactive-hover: var(--p-blue-ocean-900);
+  --color-surface-interactive-pressed: var(--p-blue-ocean-1100);
+  --color-surface-interactive-disabled: var(--p-blue-ocean-700);
+  --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
+  --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1200);
+  --color-surface-interactive-secondary-pressed: var(--p-blue-ocean-1300);
+  --color-surface-interactive-secondary-disabled: var(--p-blue-ocean-1400);
+  --color-focus-ring: var(--p-yellow-800);
 
-    --color-text-on-accent: var(--p-neutral-100);
-    --color-surface-accent: var(--p-blue-ocean-1000); 
-    --color-surface-accent-hover: var(--p-blue-ocean-1100); 
+  /*  SIZEING  --------------------------------------------- */
 
-    --color-focus-ring: var(--p-orange-800);
+  --size-base: 0.5rem;
+  --size-025: calc(var(--size-base) * 0.25); /*   2px */
+  --size-050: calc(var(--size-base) * 0.5); /*   4px */
+  --size-075: calc(var(--size-base) * 0.75); /*   6px */
+  --size-100: calc(var(--size-base) * 1); /*   8px */
+  --size-150: calc(var(--size-base) * 1.5); /*  12px */
+  --size-175: calc(var(--size-base) * 1.75); /*  14px */
+  --size-200: calc(var(--size-base) * 2); /*  16px */
+  --size-250: calc(var(--size-base) * 2.5); /*  20px */
+  --size-300: calc(var(--size-base) * 3); /*  24px */
+  --size-350: calc(var(--size-base) * 3.5); /*  28px */
+  --size-400: calc(var(--size-base) * 4); /*  32px */
+  --size-450: calc(var(--size-base) * 4.5); /*  36px */
+  --size-500: calc(var(--size-base) * 5); /*  40px */
+  --size-550: calc(var(--size-base) * 5.5); /*  44px */
+  --size-600: calc(var(--size-base) * 6); /*  48px */
+  --size-700: calc(var(--size-base) * 8); /*  48px */
+  --size-800: calc(var(--size-base) * 10); /*  48px */
+
+  /*  TYPOGRAPHY  --------------------------------------------- */
+
+  --type-family: Lato;
+  --type-base: 1rem;
+  --type-100: calc(var(--type-base) * 0.5);
+  --type-200: calc(var(--type-base) * 0.625);
+  --type-200: calc(var(--type-base) * 0.75);
+  --type-300: calc(var(--type-base) * 0.875);
+  --type-400: var(--type-base);
+  --type-500: calc(var(--type-400) * 1.25);
+  --type-600: calc(var(--type-500) * 1.25);
+  --type-700: calc(var(--type-600) * 1.25);
+  --type-800: calc(var(--type-700) * 1.25);
+  --type-900: calc(var(--type-800) * 1.25);
+
+  --type-label: var(--type-300);
+
+  /*  CORNER RADIUS  --------------------------------------------- */
+
+  --radius-none: 0;
+  --radius-small: var(--size-025);
+  --radius-default: var(--size-050);
+  --radius-round: var(--size-200);
+  --radius-full: 999rem;
 }
