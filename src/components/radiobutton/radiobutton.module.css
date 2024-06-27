@@ -1,13 +1,60 @@
-.wrapper {
-  position: relative;
-  border: none; /* Remove the border from the wrapper and use a pseudo-element instead */
-  padding: 1em;
-  border-radius: 2em;
+.input_item {
   display: flex;
-  gap: 0.5em;
+}
+
+input {
+  appearance: none;
+}
+
+fieldset {
+  border: none;
+}
+
+caption {
+  font-size: var(--type-label);
 }
 
 label {
-  color: white;
-  position: relative; /* Ensure label text appears above the rotating border */
+  position: relative;
+  padding: var(--size-200);
+  padding-left: var(--size-400);
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  color: var(--color-text);
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: var(--size-175);
+    width: var(--size-250);
+    height: var(--size-250);
+    border: 2px solid var(--color-text);
+    border-radius: var(--radius-full);
+  }
+}
+
+input:checked + label:before {
+  border-color: var(--color-text-accent);
+}
+
+input:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 18px;
+  width: var(--size-150);
+  height: var(--size-150);
+  border-radius: var(--radius-full);
+  background-color: var(--color-text-accent);
+}
+
+.input_item:focus-within {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 4px;
+}
+
+input:focus {
+  outline: none;
 }
