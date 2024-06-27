@@ -12,6 +12,6 @@ type Story = StoryObj<typeof Example>;
 
 export const Default: Story = {
   args: {
-    disabled: true,
+    disabled: false,
   },
 };

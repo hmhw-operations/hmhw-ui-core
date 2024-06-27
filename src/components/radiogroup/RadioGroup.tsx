@@ -29,7 +29,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({ name, items, value, onChange, d
           name={name}
           value={i.value}
           id={name + i.value}
-          checked={value === i.value}
+          checked={value?.toLocaleLowerCase() === i.value.toLocaleLowerCase()}
           onChange={handleSelect}
           label={i.label}
         />
