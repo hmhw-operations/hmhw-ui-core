@@ -1,7 +1,13 @@
 import React, { FC } from "react";
 import Button, { ButtonProps } from "../Button";
 
-const Example: FC<ButtonProps> = ({ onClick = () => {}, size = "small", text = "Button", variant }) => {
+// type ExampleProps = {
+//   text: string;
+//   iconPosition?: "leading" | "trailing";
+//   icon?: React.ReactNode;
+// };
+
+const Example: FC<ButtonProps> = ({ onClick = () => {}, size = "small", variant, iconPosition, text, icon }) => {
   return (
     <div
       style={{
@@ -11,7 +17,7 @@ const Example: FC<ButtonProps> = ({ onClick = () => {}, size = "small", text = "
         height: "100%",
       }}
     >
-      <Button size={size} text={text} onClick={onClick} variant={variant} />
+      <Button size={size} text={text} onClick={onClick} variant={variant} iconPosition={iconPosition} icon={icon} />
     </div>
   );
 };

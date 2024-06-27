@@ -28,8 +28,6 @@
   }
 }
 
-
-
 .large {
   font-size: var(--type-500);
   height: var(--space-600);
@@ -40,8 +38,6 @@
 
   height: var(--space-300);
 }
-
-
 
 .secondary {
   background-color: var(--c-button-secondary-background);
@@ -59,5 +55,8 @@
     background-color: transparent;
     color: var(--c-button-tertiary-background-hover);
   }
+}
 
+.destructive {
+  background-color: tomato;
 }
