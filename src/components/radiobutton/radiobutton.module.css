@@ -50,7 +50,7 @@ input:checked + label:after {
   background-color: var(--color-text-accent);
 }
 
-.input_item:focus-within {
+.input_item:has(input:focus-visible) {
   outline: 2px solid var(--color-focus-ring);
   outline-offset: 4px;
 }
