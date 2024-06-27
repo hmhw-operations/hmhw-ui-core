@@ -18,41 +18,15 @@ const Example: FC<{ disabled: boolean }> = ({ disabled }) => {
         height: "100%",
       }}
     >
-      <fieldset>
-        <legend style={{ color: "white" }}>Select your poison 🌮</legend>
-        <RadioButton
-          id="al-pastor"
-          name="taco"
-          onChange={handleClick}
-          label="Al Pastor"
-          checked={value === "Al Pastor"}
-          disabled={disabled}
-          value="Al Pastor"
-        />
-        <RadioButton
-          id="carnitas"
-          name="taco"
-          onChange={handleClick}
-          label="Carnitas"
-          checked={value === "Carnitas"}
-          disabled={disabled}
-          value="Carnitas"
-        />
-        <RadioButton
-          id="birria"
-          name="taco"
-          onChange={handleClick}
-          label="Birria"
-          checked={value === "Birria"}
-          disabled={disabled}
-          value="Birria"
-        />
-      </fieldset>
-
-      <span style={{ color: "white" }}>
-        Value
-        <pre>{value}</pre>
-      </span>
+      <RadioButton
+        id="al-pastor"
+        name="taco"
+        onChange={handleClick}
+        label="Al Pastor"
+        checked={value === "Al Pastor"}
+        disabled={disabled}
+        value="Al Pastor"
+      />
     </div>
   );
 };
