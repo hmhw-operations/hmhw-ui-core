@@ -54,6 +54,7 @@ export const Primary: Story = {
     size: "medium",
     variant: "primary",
     onClick: () => console.log("Button"),
+    disabled: false,
   },
   argTypes: {
     iconPosition: {
@@ -70,6 +71,7 @@ export const Secondary: Story = {
     size: "medium",
     variant: "secondary",
     onClick: () => console.log("Button"),
+    disabled: false,
   },
   argTypes: {
     iconPosition: {
@@ -102,6 +104,7 @@ export const Destructive: Story = {
     size: "medium",
     variant: "destructive",
     onClick: () => console.log("Button"),
+    disabled: false,
   },
   argTypes: {
     iconPosition: {
@@ -120,6 +123,7 @@ export const WithIcon: Story = {
     onClick: () => console.log("Button"),
     iconPosition: "trailing",
     icon: <MockSunIcon />,
+    disabled: false,
   },
   argTypes: {
     variant: {
