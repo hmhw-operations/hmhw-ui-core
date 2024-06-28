@@ -55,7 +55,7 @@
   --size-800: calc(var(--size-base) * 10); /*  48px */
 
   --height-medium: var(--size-400);
-  --height-large: var(--size-600);
+  --height-large: var(--size-500);
   --height-small: var(--size-300);
 
   /*  TYPOGRAPHY  --------------------------------------------- */
