@@ -1,17 +1,23 @@
 import React from "react";
-import Tabs from "../Tabs";
+import TabList from "../TabList";
+import TabItem from "../TabItem";
+import { TabListItem } from "../types";
 
-// const tabItems: TabItem[] = [
-//   { label: "Tab 1", id: "tab1", content: "Tab 1 content" },
-//   { label: "Tab 2", id: "tab2", content: "Tab 2 content" },
-//   { label: "Tab 3", id: "tab3", content: "Tab 3 content" },
-// ];
+const tabItems: TabListItem[] = [
+  { label: "Tab #1", id: "tab-1", content: () => <p>Content of Tab #1</p> },
+  { label: "Tab #2", id: "tab-2", content: () => <p>Content of Tab #2</p>, disabled: true },
+  { label: "Tab #3", id: "tab-3", content: () => <p>Content of Tab #3</p> },
+];
 
 const Example: React.FC = () => {
   return (
-    <>
-      <Tabs />
-    </>
+    <TabList activeTabIndex={1}>
+      {tabItems.map((tab) => (
+        <TabItem key={tab.id} label={tab.label} disabled={tab.disabled}>
+          {tab.content()}
+        </TabItem>
+      ))}
+    </TabList>
   );
 };
 
