@@ -1,7 +1,7 @@
 :root {
   /* COLOR TOKENS -------------------------------------- */
   /* Text and shapes */
-  --color: var(--p-neutral-100);
+  --color-primary: var(--p-neutral-100);
   --color-secondary: var(--p-neutral-300);
   --color-tertiary: var(--p-neutral-500);
   --color-disabled: hsl(100 100% 100% / 0.4);

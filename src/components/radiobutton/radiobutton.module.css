@@ -21,7 +21,7 @@ label {
   cursor: pointer;
   line-height: 1;
   display: inline-block;
-  color: var(--color-text);
+  color: var(--color-primary);
 
   &:before {
     content: "";
@@ -30,7 +30,7 @@ label {
     top: var(--size-175);
     width: var(--size-250);
     height: var(--size-250);
-    border: 2px solid var(--color-text);
+    border: 2px solid var(--color-primary);
     border-radius: var(--radius-full);
   }
 }
