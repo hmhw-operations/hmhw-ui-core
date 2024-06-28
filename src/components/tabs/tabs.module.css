@@ -1,31 +1,42 @@
 .tabs {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-}
 
-.tablist {
-  display: flex;
-  gap: 0.5em;
-  border-bottom: 1px solid #ccc;
-}
-
-.tab_btn {
-  background-color: red;
-  &--active {
-    background-color: aqua;
+  .list {
+    display: flex;
+    gap: var(--size-050);
+    border-bottom: var(--size-075) solid var(--color-surface-interactive);
   }
-}
 
-.tab_btn_active {
-  background-color: aqua !important;
-}
+  .button {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    height: var(--height-medium);
+    padding-inline: var(--size-200);
+    border: none;
+    background-color: var(--color-surface-interactive-secondary);
+    border-radius: var(--radius-default) var(--radius-default) 0 0;
 
-.tab_panel {
-  border: 1px dashed tomato;
-  min-height: 50vh;
-  color: tomato;
-}
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-surface-interactive-secondary-hover);
+    }
 
-.tab_content {
+    &:disabled {
+      color: var(--color-disabled);
+      background-color: var(--color-surface-interactive--second-disabled);
+      cursor: not-allowed;
+    }
+  }
+
+  .active {
+    background-color: red;
+  }
+
+  .tab_panel {
+    min-height: 50vh;
+    padding: var(--size-400) 0;
+    color: var(--color-primary);
+  }
 }

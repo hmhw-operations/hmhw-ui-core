@@ -17,7 +17,7 @@ const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0 }) => {
   return (
     <div className={styles.tabs}>
       <nav className={styles.tabnav}>
-        <ul className={styles.tablist} role="tablist" aria-orientation="horizontal">
+        <ul className={styles.list} role="tablist" aria-orientation="horizontal">
           {tabs.map((tab, index) => (
             <li key={`tab-${index}`}>
               <button
@@ -28,7 +28,7 @@ const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0 }) => {
                 aria-controls={`panel-${sanitizeForId(tab.props.label)}`}
                 aria-selected={activeTab === index}
                 onClick={() => handleTabClick(index)}
-                className={`${styles.tab_btn} ${activeTab === index && styles["tab_btn--active"]}}`}
+                className={`${styles.button} ${activeTab === index && styles["active"]}}`}
               >
                 {tab.props.label}
               </button>
