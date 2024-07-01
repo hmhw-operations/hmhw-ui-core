@@ -1,6 +1,9 @@
 import { TabItemProps } from "./types";
 import { sanitizeForId } from "./utils";
 import styles from "./tabs.module.css";
+import "../../styles/palette.css";
+import "../../styles/tokens.css";
+import "../../styles/globals.css";
 
 const TabItem: React.FC<TabItemProps> = ({ label, children }) => (
   <div

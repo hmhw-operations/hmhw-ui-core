@@ -1,31 +1,66 @@
 .tabs {
+  --tabs-active: var(--color-surface-interactive);
+  --tabs-enabled: var(--color-surface-interactive-secondary);
+  --tabs-border: var(--color-surface-interactive-secondary);
+}
+
+.tabs {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-}
 
-.tablist {
-  display: flex;
-  gap: 0.5em;
-  border-bottom: 1px solid #ccc;
-}
+  .tabs_list {
+    display: flex;
+    gap: var(--size-050);
+    border-bottom: var(--size-075) solid var(--color-surface-interactive);
+  }
 
-.tab_btn {
-  background-color: red;
-  &--active {
-    background-color: aqua;
+  .tabs_button {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    height: var(--height-medium);
+    padding-inline: 1em;
+    border: none;
+    background-color: var(--color-surface-interactive-secondary);
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-surface-interactive-secondary-hover);
+    }
+
+    &:active {
+      cursor: pointer;
+      background-color: var(--color-surface-interactive-secondary-pressed);
+    }
+
+    &:disabled {
+      color: var(--color-disabled);
+      background-color: var(--color-surface-interactive-disabled);
+      cursor: not-allowed;
+    }
+
+    &[aria-selected="true"] {
+      background-color: var(--color-surface-interactive);
+
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+
+  .tab_panel {
+    min-height: 50vh;
+    padding: var(--size-400) 0;
+    color: var(--color-primary);
   }
 }
 
-.tab_btn_active {
-  background-color: aqua !important;
+.large {
+  font-size: var(--type-button-label-large);
+  height: var(--height-large);
 }
 
-.tab_panel {
-  border: 1px dashed tomato;
-  min-height: 50vh;
-  color: tomato;
-}
-
-.tab_content {
+.small {
+  font-size: var(--type-button-label-small);
+  height: var(--height-small);
 }
