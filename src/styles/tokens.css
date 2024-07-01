@@ -14,24 +14,30 @@
   --color-on-system-caution: var(--p-neutral-100);
   /* Surface aka Background */
   --color-surface-primary: var(--p-blue-ocean-1300);
-  --color-surface-secondary: var(--p-blue-ocean-1100);
-  --color-surface-tertiary: var(--p-blue-ocean-900);
-  --color-surface-invert: var(--p-blue-ocean-900);
-  --color-surface-canvas: var(--p-blue-ocean-1300);
+  --color-surface-secondary: var(--p-blue-ocean-1200);
+  --color-surface-tertiary: var(--p-blue-ocean-1100);
+  --color-surface-invert: var(--p-blue-ocean-100);
+  --color-surface-canvas: var(--p-blue-ocean-1400);
   --color-surface-accent: var(--p-blue-ocean-700);
+
   --color-surface-interactive: var(--p-blue-ocean-700);
   --color-surface-interactive-hover: var(--p-blue-ocean-900);
   --color-surface-interactive-pressed: var(--p-blue-ocean-1000);
-  --color-surface-interactive-disabled: var(--p-blue-ocean-700);
+  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-15);
+
   --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
   --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
   --color-surface-interactive-secondary-pressed: var(--p-blue-ocean-1300);
-  --color-surface-interactive-secondary-disabled: var(--p-blue-ocean-1400);
-  --color-focus-ring: var(--p-yellow-800);
+  --color-surface-interactive-secondary-disabled: var(--p-alpha-blue-ocean-15);
 
   --color-alert-danger: var(--p-red-800);
   --color-alert-danger-hover: var(--p-red-1100);
-  --color-alert-danger-disabled: hsl(var(--hue-red) 100% 55% / 0.33);
+  --color-alert-danger-pressed: var(--p-red-1300);
+  --color-alert-danger-disabled: var(--p-alpha-red-35);
+
+  --color-border-accent: var(--color-accent);
+
+  --color-focus-ring: var(--p-yellow-800);
 
   /*  SIZEING  --------------------------------------------- */
 

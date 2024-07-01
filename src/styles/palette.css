@@ -19,22 +19,32 @@
   --p-neutral-1400: hsl(var(--hue-neutral) 0% 12%);
   --p-neutral-1500: hsl(var(--hue-neutral) 0% 10%);
 
+  --p-alpha-neutral-40: hsl(100 100% 100% / 0.4);
+
   --hue-blue-ocean: 198;
-  --p-blue-ocean-100: hsl(var(--hue-blue-ocean) 100% 96%);
-  --p-blue-ocean-200: hsl(var(--hue-blue-ocean) 100% 93%);
-  --p-blue-ocean-300: hsl(var(--hue-blue-ocean) 90% 86%);
-  --p-blue-ocean-400: hsl(var(--hue-blue-ocean) 90% 80%);
-  --p-blue-ocean-500: hsl(var(--hue-blue-ocean) 90% 75%);
-  --p-blue-ocean-600: hsl(var(--hue-blue-ocean) 90% 65%);
-  --p-blue-ocean-700: hsl(var(--hue-blue-ocean) 78% 55%);
-  --p-blue-ocean-800: hsl(var(--hue-blue-ocean) 100% 49%);
-  --p-blue-ocean-900: hsl(var(--hue-blue-ocean) 100% 43%);
-  --p-blue-ocean-1000: hsl(var(--hue-blue-ocean) 100% 38%);
-  --p-blue-ocean-1100: hsl(var(--hue-blue-ocean) 100% 30%);
-  --p-blue-ocean-1200: hsl(var(--hue-blue-ocean) 100% 19%);
-  --p-blue-ocean-1300: hsl(var(--hue-blue-ocean) 100% 16%);
-  --p-blue-ocean-1400: hsl(var(--hue-blue-ocean) 100% 14%);
-  --p-blue-ocean-1500: hsl(var(--hue-blue-ocean) 100% 10%);
+  --p-blue-ocean-100: hsl(var(--hue-blue-ocean) 100% 94%);
+  --p-blue-ocean-200: hsl(var(--hue-blue-ocean) 100% 91%);
+  --p-blue-ocean-300: hsl(var(--hue-blue-ocean) 100% 82%);
+  --p-blue-ocean-400: hsl(var(--hue-blue-ocean) 100% 74%);
+  --p-blue-ocean-500: hsl(var(--hue-blue-ocean) 100% 65%);
+  --p-blue-ocean-600: hsl(var(--hue-blue-ocean) 100% 54%);
+  --p-blue-ocean-700: hsl(var(--hue-blue-ocean) 100% 44%);
+  --p-blue-ocean-800: hsl(var(--hue-blue-ocean) 100% 34%);
+  --p-blue-ocean-900: hsl(var(--hue-blue-ocean) 100% 32%);
+  --p-blue-ocean-1000: hsl(var(--hue-blue-ocean) 100% 27%);
+  --p-blue-ocean-1100: hsl(var(--hue-blue-ocean) 100% 23%);
+  --p-blue-ocean-1200: hsl(var(--hue-blue-ocean) 100% 18%);
+  --p-blue-ocean-1300: hsl(var(--hue-blue-ocean) 100% 14%);
+  --p-blue-ocean-1400: hsl(var(--hue-blue-ocean) 100% 9%);
+  --p-blue-ocean-1500: hsl(var(--hue-blue-ocean) 100% 5%);
+
+  /* Alphas */
+
+  --p-alpha-neutral-40: hsl(100 100% 100% / 0.4);
+  --p-alpha-blue-ocean-15: hsl(var(--hue-blue-ocean) 100% 50%/ 0.15);
+  --p-alpha-blue-ocean-25: hsl(var(--hue-blue-ocean) 100% 50%/ 0.25);
+  --p-alpha-red-35: hsl(var(--hue-red) 100% 55% / 0.35);
+
   /*
   
     --p-blue-ocean-100: oklch(96% 0.08 235);

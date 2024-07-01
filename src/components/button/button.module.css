@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
-  padding-inline: 0.5em;
+  padding-inline: 0.75em;
   border-radius: var(--radius-default);
   text-transform: uppercase;
   font-size: var(--type-button-label);
@@ -15,6 +15,20 @@
   &:hover {
     background-color: var(--color-surface-interactive-hover);
     cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--color-surface-interactive-hover);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--color-surface-interactive-pressed);
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: var(--color-surface-primary-disabled);
+    cursor: not-allowed;
   }
 }
 
@@ -43,26 +57,53 @@ svg {
 
   &:hover {
     background-color: var(--color-surface-interactive-secondary-hover);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--color-surface-interactive-secondary-pressed);
+    cursor: pointer;
+  }
+
+  &:disabled {
+    color: var(--color-disabled);
+    background-color: var(--color-surface-primary-secondary-disabled);
+    cursor: not-allowed;
   }
 }
 
 .tertiary {
+  padding-inline: 0.125em;
+  color: var(--color-accent);
   background-color: transparent;
-  color: var(--color-surface-interactive-tertiary);
+  border-bottom: 1px solid currentColor;
+  border-radius: var(--radius-none);
 
   &:hover {
-    background-color: transparent;
-    color: var(--color-surface-interactive-tertiary-hover);
+    background-color: var(--p-alpha-blue-ocean-15);
+  }
+
+  &:active {
+    background-color: var(--p-alpha-blue-ocean-25);
+  }
+
+  &:disabled {
+    color: var(--color-disabled);
   }
 }
 
 .destructive {
   background-color: var(--color-alert-danger);
+
   &:hover {
     background-color: var(--color-alert-danger-hover);
   }
 
+  &:active {
+    background-color: var(--color-alert-danger-pressed);
+  }
+
   &:disabled {
-    color: yellow;
+    color: var(--color-disabled);
+    background-color: var(--color-alert-danger-disabled);
   }
 }

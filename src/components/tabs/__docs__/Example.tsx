@@ -5,7 +5,7 @@ import { TabListItem } from "../types";
 
 const tabItems: TabListItem[] = [
   { label: "Tab #1", id: "tab-1", content: () => <p>Content of Tab #1</p> },
-  { label: "Tab #2", id: "tab-2", content: () => <p>Content of Tab #2</p>, disabled: true },
+  { label: "Tab #2", id: "tab-2", content: () => <p>Content of Tab #2</p> },
   { label: "Tab #3", id: "tab-3", content: () => <p>Content of Tab #3</p> },
 ];
 

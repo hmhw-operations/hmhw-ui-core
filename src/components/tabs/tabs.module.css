@@ -1,37 +1,51 @@
 .tabs {
+  --tabs-active: var(--color-surface-interactive);
+  --tabs-enabled: var(--color-surface-interactive-secondary);
+  --tabs-border: var(--color-surface-interactive-secondary);
+}
+
+.tabs {
   display: flex;
   flex-direction: column;
 
-  .list {
+  .tabs_list {
     display: flex;
     gap: var(--size-050);
     border-bottom: var(--size-075) solid var(--color-surface-interactive);
   }
 
-  .button {
+  .tabs_button {
     appearance: none;
     display: inline-flex;
     align-items: center;
     height: var(--height-medium);
-    padding-inline: var(--size-200);
+    padding-inline: 1em;
     border: none;
     background-color: var(--color-surface-interactive-secondary);
-    border-radius: var(--radius-default) var(--radius-default) 0 0;
 
     &:hover {
       cursor: pointer;
       background-color: var(--color-surface-interactive-secondary-hover);
     }
 
+    &:active {
+      cursor: pointer;
+      background-color: var(--color-surface-interactive-secondary-pressed);
+    }
+
     &:disabled {
       color: var(--color-disabled);
-      background-color: var(--color-surface-interactive--second-disabled);
+      background-color: var(--color-surface-interactive-disabled);
       cursor: not-allowed;
     }
-  }
 
-  .active {
-    background-color: red;
+    &[aria-selected="true"] {
+      background-color: var(--color-surface-interactive);
+
+      &:hover {
+        cursor: default;
+      }
+    }
   }
 
   .tab_panel {
@@ -39,4 +53,14 @@
     padding: var(--size-400) 0;
     color: var(--color-primary);
   }
+}
+
+.large {
+  font-size: var(--type-button-label-large);
+  height: var(--height-large);
+}
+
+.small {
+  font-size: var(--type-button-label-small);
+  height: var(--height-small);
 }
