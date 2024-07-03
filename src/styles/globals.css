@@ -30,6 +30,11 @@ body {
   overflow-wrap: break-word;
 }
 
+button {
+  border: none;
+  appearance: none;
+}
+
 ul,
 ol {
   list-style: none;

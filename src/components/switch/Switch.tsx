@@ -34,9 +34,9 @@ const Switch: React.FC<SwitchProps> = ({
     onChange(!isChecked);
   };
   return (
-    <div className={`${style.someStyle}`}>
+    <div className={`${style.switch}  ${style[size]} `}>
       <button
-        className={`${style.button}  ${style[size]} ${style[labelPosition]}`}
+        className={`${style.track} ${style[labelPosition]}`}
         type="button"
         name={name}
         aria-label={name}
@@ -45,7 +45,7 @@ const Switch: React.FC<SwitchProps> = ({
         onClick={handleChange}
         disabled={disabled}
       >
-        Remove text
+        <span className={`${style.thumb} `}></span>
       </button>
       {label && <label htmlFor={sanitizedId}>{label}</label>}
     </div>
