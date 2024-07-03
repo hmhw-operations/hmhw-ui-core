@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Example from "./Example";
 
 const meta: Meta<typeof Example> = {
-  excludeStories: ["Boilerplate"],
   title: "Boilerplate",
   component: Example,
 };

@@ -2,7 +2,7 @@ import styles from "./tabs.module.css";
 import React, { useState } from "react";
 import { TabItemProps, TabListProps } from "./types";
 import TabItem from "./TabItem";
-import { sanitizeForId } from "./utils";
+import { sanitizeForId } from "../../utils";
 
 const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0 }) => {
   const [activeTab, setActiveTab] = useState(activeTabIndex);
