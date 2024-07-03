@@ -23,12 +23,12 @@
   --color-surface-interactive: var(--p-blue-ocean-700);
   --color-surface-interactive-hover: var(--p-blue-ocean-900);
   --color-surface-interactive-pressed: var(--p-blue-ocean-1000);
-  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-15);
+  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-13);
 
   --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
   --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
   --color-surface-interactive-secondary-pressed: var(--p-blue-ocean-1300);
-  --color-surface-interactive-secondary-disabled: var(--p-alpha-blue-ocean-15);
+  --color-surface-interactive-secondary-disabled: var(--p-alpha-blue-ocean-14);
 
   --color-alert-danger: var(--p-red-800);
   --color-alert-danger-hover: var(--p-red-1100);
