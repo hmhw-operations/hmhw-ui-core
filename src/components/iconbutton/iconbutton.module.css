@@ -1,0 +1,109 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding-inline: 0.75em;
+  border-radius: var(--radius-default);
+  text-transform: uppercase;
+  font-size: var(--type-button-label);
+  height: var(--height-medium);
+
+  border: 1px solid transparent;
+  color: var(--color-on-interactive);
+  background-color: var(--color-surface-interactive);
+
+  &:hover {
+    background-color: var(--color-surface-interactive-hover);
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--color-surface-interactive-hover);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--color-surface-interactive-pressed);
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: var(--color-surface-primary-disabled);
+    cursor: not-allowed;
+  }
+}
+
+.trailing {
+  flex-direction: row-reverse;
+}
+
+svg {
+  color: inherit;
+  width: 1.125em;
+  height: auto;
+}
+
+.large {
+  font-size: var(--type-button-label-large);
+  height: var(--height-large);
+}
+
+.small {
+  font-size: var(--type-button-label-small);
+  height: var(--height-small);
+}
+
+.secondary {
+  background-color: var(--color-surface-interactive-secondary);
+
+  &:hover {
+    background-color: var(--color-surface-interactive-secondary-hover);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--color-surface-interactive-secondary-pressed);
+    cursor: pointer;
+  }
+
+  &:disabled {
+    color: var(--color-disabled);
+    background-color: var(--color-surface-primary-secondary-disabled);
+    cursor: not-allowed;
+  }
+}
+
+.tertiary {
+  padding-inline: 0.125em;
+  color: var(--color-accent);
+  background-color: transparent;
+  border-bottom: 1px solid currentColor;
+  border-radius: var(--radius-none);
+
+  &:hover {
+    background-color: var(--p-alpha-blue-ocean-15);
+  }
+
+  &:active {
+    background-color: var(--p-alpha-blue-ocean-25);
+  }
+
+  &:disabled {
+    color: var(--color-disabled);
+  }
+}
+
+.destructive {
+  background-color: var(--color-alert-danger);
+
+  &:hover {
+    background-color: var(--color-alert-danger-hover);
+  }
+
+  &:active {
+    background-color: var(--color-alert-danger-pressed);
+  }
+
+  &:disabled {
+    color: var(--color-disabled);
+    background-color: var(--color-alert-danger-disabled);
+  }
+}
