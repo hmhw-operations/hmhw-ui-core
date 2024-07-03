@@ -1,6 +1,5 @@
 .switch {
   display: flex;
-  display: flex;
   gap: var(--size-200);
   justify-content: space-between;
   align-items: center;
@@ -10,7 +9,7 @@
   }
 
   .track {
-    display: flex;
+    display: inline-flex;
     justify-content: left;
     align-items: center;
     height: var(--height-medium);
