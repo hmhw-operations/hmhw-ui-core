@@ -6,7 +6,9 @@ const MockComponent: React.FC<{ text: string }> = ({ text }) => <div>{text}</div
 const items: AccordionItem[] = [
   {
     label: "Item 1",
-    content: <MockComponent text="Content 1" />,
+    content: (
+      <MockComponent text="Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo." />
+    ),
   },
   {
     label: "Item 2",
