@@ -13,24 +13,27 @@ const preview: Preview = {
   ],
   parameters: {
     backgrounds: {
-      default: "Dark ocean",
-      values: [
-        {
-          name: "Dark ocean",
-          value: "#041B25",
-        },
-        {
-          name: "Light",
-          value: "#eee",
-        },
-      ],
+      disable: true,
     },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
-    },
+    // backgrounds: {
+    //   default: "Dark ocean",
+    //   values: [
+    //     {
+    //       name: "Dark ocean",
+    //       value: "#041B25",
+    //     },
+    //     {
+    //       name: "Light",
+    //       value: "#eee",
+    //     },
+    //   ],
+    // },
+    // controls: {
+    //   matchers: {
+    //     color: /(background|color)$/i,
+    //     date: /Date$/i,
+    //   },
+    // },
   },
 
   tags: ["autodocs"],
