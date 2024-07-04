@@ -1,0 +1,14 @@
+.modal {
+  border: 1px dashed tomato;
+  widt: 50%;
+}
+
+.small {
+  width: 100px;
+}
+.medium {
+  width: 250px;
+}
+.large {
+  width: 500px;
+}
