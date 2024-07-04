@@ -122,10 +122,10 @@ html.light-theme {
   --color-surface-neutral: var(--p-neutral-400);
   --color-surface-neutral-disabled: var(--p-neutral-200);
 
-  --color-surface-primary: var(--p-blue-ocean-1300);
-  --color-surface-secondary: var(--p-blue-ocean-1200);
-  --color-surface-tertiary: var(--p-blue-ocean-1100);
-  --color-surface-invert: var(--p-blue-ocean-100);
+  --color-surface-primary: var(--p-blue-ocean-1000);
+  --color-surface-secondary: var(--p-blue-ocean-800);
+  --color-surface-tertiary: var(--p-blue-ocean-600);
+  --color-surface-invert: var(--p-neutral-1500);
   --color-surface-canvas: var(--p-neutral-100);
   --color-surface-accent: var(--p-blue-ocean-700);
 
