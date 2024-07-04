@@ -13,17 +13,18 @@ const preview: Preview = {
   ],
   parameters: {
     backgrounds: {
-      default: "Dark ocean",
-      values: [
-        {
-          name: "Dark ocean",
-          value: "#041B25",
-        },
-        {
-          name: "Light",
-          value: "#eee",
-        },
-      ],
+      disable: true,
+      // default: "Dark ocean",
+      // values: [
+      //   {
+      //     name: "Dark ocean",
+      //     value: "#041B25",
+      //   },
+      //   {
+      //     name: "Light",
+      //     value: "#eee",
+      //   },
+      // ],
     },
     controls: {
       matchers: {
