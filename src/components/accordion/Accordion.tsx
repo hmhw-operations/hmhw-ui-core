@@ -18,7 +18,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
   return items.map((item, index) => (
     <details key={item.label + index} className={style.accordion}>
       <summary>{item.label}</summary>
-      <div>{item.content}</div>
+      <div className={style.content}>{item.content}</div>
     </details>
   ));
 };

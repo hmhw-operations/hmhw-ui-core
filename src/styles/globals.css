@@ -51,9 +51,9 @@ a {
 /* Utilities */
 
 :focus-visible {
-  outline: 2px solid canvasText;
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 4px;
-  box-shadow: 0 0 0 4px canvas;
+  box-shadow: 0 0 0 4px var(--color-surface-canvas);
 }
 
 .hide-me {

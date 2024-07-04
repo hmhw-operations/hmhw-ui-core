@@ -146,5 +146,5 @@ html.light-theme {
 
   --color-border-accent: var(--color-accent);
 
-  --color-focus-ring: var(--p-yellow-800);
+  --color-focus-ring: var(--p-red-800);
 }
