@@ -1,74 +1,74 @@
 .input_item {
   display: flex;
-}
 
-input {
-  appearance: none;
-}
+  input {
+    appearance: none;
+  }
 
-fieldset {
-  border: none;
-}
+  fieldset {
+    border: none;
+  }
 
-caption {
-  font-size: var(--type-label);
-}
+  caption {
+    font-size: var(--type-label);
+  }
 
-label {
-  position: relative;
-  padding: var(--size-200);
-  padding-left: var(--size-400);
-  cursor: pointer;
-  line-height: 1;
-  display: inline-block;
-  color: var(--color-primary);
+  label {
+    position: relative;
+    padding: var(--size-200);
+    padding-left: var(--size-400);
+    cursor: pointer;
+    line-height: 1;
+    display: inline-block;
+    color: var(--color-primary);
 
-  &:before {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: var(--size-175);
+      width: var(--size-250);
+      height: var(--size-250);
+      border: 2px solid var(--color-primary);
+      border-radius: var(--radius-full);
+    }
+  }
+
+  input:checked + label:before {
+    border-color: var(--color-accent);
+  }
+
+  input:checked + label:after {
     content: "";
     position: absolute;
-    left: 0;
-    top: var(--size-175);
-    width: var(--size-250);
-    height: var(--size-250);
-    border: 2px solid var(--color-primary);
+    left: 4px;
+    top: 18px;
+    width: var(--size-150);
+    height: var(--size-150);
     border-radius: var(--radius-full);
+    background-color: var(--color-accent);
   }
-}
 
-input:checked + label:before {
-  border-color: var(--color-accent);
-}
+  .input_item:has(input:focus-visible) {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 4px;
+  }
 
-input:checked + label:after {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 18px;
-  width: var(--size-150);
-  height: var(--size-150);
-  border-radius: var(--radius-full);
-  background-color: var(--color-accent);
-}
+  input:focus {
+    outline: none;
+  }
 
-.input_item:has(input:focus-visible) {
-  outline: 2px solid var(--color-focus-ring);
-  outline-offset: 4px;
-}
+  .input_item:has(input:disabled) {
+    label {
+      color: var(--color-disabled);
 
-input:focus {
-  outline: none;
-}
-
-.input_item:has(input:disabled) {
-  label {
-    color: var(--color-disabled);
-
-    cursor: not-allowed;
-    &:before {
-      border-color: var(--color-disabled);
-    }
-    &:after {
-      background-color: var(--color-disabled);
+      cursor: not-allowed;
+      &:before {
+        border-color: var(--color-disabled);
+      }
+      &:after {
+        background-color: var(--color-disabled);
+      }
     }
   }
 }
