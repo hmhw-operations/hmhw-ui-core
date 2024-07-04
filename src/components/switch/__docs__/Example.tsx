@@ -40,7 +40,7 @@ const Example: FC<SwitchProps> = ({
         disabled={disabled}
         labelPosition={labelPosition}
       />
-      <pre style={{ fontSize: "2rem" }}>{isChecked ? "🙈" : "🙉"}</pre>
+      <pre style={{ fontSize: "2rem" }}>{isChecked ? "🙉" : "🙈"}</pre>
     </div>
   );
 };
