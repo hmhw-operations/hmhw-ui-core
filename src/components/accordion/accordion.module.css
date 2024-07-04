@@ -36,8 +36,8 @@
       top: 40%;
       height: var(--size-100);
       width: var(--size-100);
-      border-top: 1.5px solid var(--color-primary);
-      border-right: 1.5px solid var(--color-primary);
+      border-top: 1.5px solid var(--color-on-interactive);
+      border-right: 1.5px solid var(--color-on-interactive);
       transform: rotate(45deg);
     }
 
