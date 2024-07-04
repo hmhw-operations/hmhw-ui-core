@@ -5,11 +5,14 @@ import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/globals.css";
 
+export type ButtonVariant = "primary" | "secondary" | "tertiary" | "destructive";
+export type ButtonSize = "small" | "medium" | "large";
+
 export type ButtonProps = {
   text: string;
   iconPosition?: "leading" | "trailing";
-  size?: "small" | "medium" | "large";
-  variant?: "primary" | "secondary" | "tertiary" | "destructive";
+  size?: ButtonSize;
+  variant?: ButtonVariant;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   icon?: React.ReactNode;
   disabled?: boolean;
