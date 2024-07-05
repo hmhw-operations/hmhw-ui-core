@@ -1,4 +1,4 @@
-:root {
+html.dark-theme {
   /* COLOR TOKENS -------------------------------------- */
   /* Text and shapes */
   --color-primary: var(--p-neutral-100);
@@ -27,7 +27,7 @@
   --color-surface-interactive: var(--p-blue-ocean-700);
   --color-surface-interactive-hover: var(--p-blue-ocean-900);
   --color-surface-interactive-pressed: var(--p-blue-ocean-1000);
-  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-13);
+  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-15);
 
   --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
   --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
@@ -42,7 +42,9 @@
   --color-border-accent: var(--color-accent);
 
   --color-focus-ring: var(--p-yellow-800);
+}
 
+:root {
   /*  SIZEING  --------------------------------------------- */
 
   --size-base: 0.5rem;
@@ -98,4 +100,51 @@
   --radius-default: var(--size-050);
   --radius-round: var(--size-200);
   --radius-full: 999rem;
+}
+
+html.light-theme {
+  --color-primary: var(--p-neutral-1500);
+
+  --color-secondary: var(--p-neutral-1100);
+
+  --color-tertiary: var(--p-neutral-500);
+  --color-disabled: var(--p-neutral-100);
+  --color-invert: var(--p-neutral-100);
+  --color-accent: #07962f;
+  --color-accent-hover: var(--p-blue-ocean-1000);
+  --color-on-accent: var(--p-neutral-100);
+  --color-on-interactive: var(--p-neutral-100);
+  --color-on-system: var(--p-neutral-100);
+  --color-on-system-caution: var(--p-neutral-100);
+
+  /* Surface aka Background */
+
+  --color-surface-neutral: var(--p-neutral-400);
+  --color-surface-neutral-disabled: var(--p-neutral-200);
+
+  --color-surface-primary: var(--p-blue-ocean-1000);
+  --color-surface-secondary: var(--p-blue-ocean-800);
+  --color-surface-tertiary: var(--p-blue-ocean-600);
+  --color-surface-invert: var(--p-neutral-1500);
+  --color-surface-canvas: var(--p-neutral-100);
+  --color-surface-accent: var(--p-blue-ocean-700);
+
+  --color-surface-interactive: #07962f;
+  --color-surface-interactive-hover: var(--p-blue-ocean-1000);
+  --color-surface-interactive-pressed: var(--p-blue-ocean-1200);
+  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-15);
+
+  --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
+  --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
+  --color-surface-interactive-secondary-pressed: var(--p-blue-ocean-1300);
+  --color-surface-interactive-secondary-disabled: var(--p-alpha-blue-ocean-15);
+
+  --color-alert-danger: var(--p-red-800);
+  --color-alert-danger-hover: var(--p-red-1100);
+  --color-alert-danger-pressed: var(--p-red-1300);
+  --color-alert-danger-disabled: var(--p-alpha-red-35);
+
+  --color-border-accent: var(--color-accent);
+
+  --color-focus-ring: var(--p-red-800);
 }

@@ -1,5 +1,71 @@
+.accordion_list {
+  display: flex;
+  flex-direction: column;
+}
+
 .accordion {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+  color: var(--color-primary);
+  line-height: 1.5;
+
+  + * {
+    border-top: none;
+  }
+
+  summary {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-surface-primary);
+    height: var(--height-medium);
+    padding-left: var(--size-400);
+    font-size: var(--type-300);
+    line-height: 1;
+    color: var(--color-on-interactive);
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: var(--size-100);
+      top: 40%;
+      height: var(--size-100);
+      width: var(--size-100);
+      border-top: 1.5px solid var(--color-on-interactive);
+      border-right: 1.5px solid var(--color-on-interactive);
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    padding: var(--size-200) 0 var(--size-100);
+  }
+
+  &[open] > summary:before {
+    transform: rotate(135deg);
+    left: var(--size-150);
+    top: var(--size-125);
+  }
+
+  .large {
+    summary {
+      height: var(--height-large);
+      font-size: var(--type-400);
+    }
+  }
+  .small {
+    summary {
+      height: var(--height-small);
+      font-size: var(--type-200);
+    }
+  }
 }

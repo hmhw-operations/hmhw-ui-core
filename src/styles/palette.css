@@ -41,6 +41,7 @@
   /* Alphas */
 
   --p-alpha-neutral-40: hsl(100 100% 100% / 0.4);
+  --p-alpha-neutral-15: hsl(100 100% 100% / 0.15);
   --p-alpha-blue-ocean-15: hsl(var(--hue-blue-ocean) 100% 50%/ 0.15);
   --p-alpha-blue-ocean-25: hsl(var(--hue-blue-ocean) 100% 50%/ 0.25);
   --p-alpha-red-35: hsl(var(--hue-red) 100% 55% / 0.35);
