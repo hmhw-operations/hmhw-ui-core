@@ -19,7 +19,7 @@ export type ButtonProps = {
 };
 
 const Button: React.FC<ButtonProps> = ({
-  size = "small",
+  size = "medium",
   variant = "primary",
   text,
   onClick,
