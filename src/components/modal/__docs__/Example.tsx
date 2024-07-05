@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Modal, { ActionType } from "../Modal";
 
 const mockActions: ActionType[] = [
-  { label: "Close", buttonVariant: "secondary", onClick: () => {} },
   { label: "Save", buttonVariant: "primary", onClick: () => {} },
+  { label: "Close", buttonVariant: "secondary", onClick: () => {} },
 ];
 
 const Example = () => {
