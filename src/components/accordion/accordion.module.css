@@ -17,13 +17,17 @@
     display: flex;
     align-items: center;
     position: relative;
-    background-color: var(--color-surface-primary);
+    background-color: var(--color-surface-interactive-secondary);
     height: var(--height-medium);
     padding-left: var(--size-400);
     font-size: var(--type-300);
     line-height: 1;
     color: var(--color-on-interactive);
     list-style: none;
+
+    &:hover {
+      background-color: var(--color-surface-interactive-secondary-hover);
+    }
 
     &::-webkit-details-marker {
       display: none;
