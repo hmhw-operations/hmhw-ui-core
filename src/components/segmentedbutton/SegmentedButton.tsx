@@ -23,18 +23,21 @@ const SegmentedButton: React.FC<SegmentedButtonProps> = ({ name, items, value, o
   const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.currentTarget.value);
 
   return (
-    <fieldset className={style.wrapper} disabled={disabled}>
+    <fieldset className={style.segmented_group} disabled={disabled}>
       {items.map((i) => (
-        <RadioButton
-          key={i.value}
-          name={name}
-          value={i.value}
-          id={name + i.value}
-          checked={value === i.value}
-          onChange={handleSelect}
+        <label className={style.segmented_item}>
           label={i.label}
-          disabled={i.disabled}
-        />
+          <input
+            type="radio"
+            key={i.value}
+            name={name}
+            value={i.value}
+            id={name + i.value}
+            checked={value === i.value}
+            onChange={handleSelect}
+            disabled={i.disabled}
+          />
+        </label>
       ))}
     </fieldset>
   );

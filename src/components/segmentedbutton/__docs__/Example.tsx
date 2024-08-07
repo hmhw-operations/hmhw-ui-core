@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import SegmentedButton, { SegmentedItem } from "../SegmentedButton";
 
 const segmentedItems: SegmentedItem[] = [
-  { value: "cats", label: "Cats" },
-  { value: "dogs", label: "Dogs", disabled: true },
-  { value: "rabbits", label: "Rabbits" },
+  { value: "tacos", label: "Tacos" },
+  { value: "sides", label: "Sides" },
+  { value: "drinks", label: "Drinks" },
 ];
 
 const Example: React.FC<{ disabled: boolean }> = ({ disabled }) => {

@@ -1,6 +1,41 @@
-.wrapper {
+.segmented_group {
   display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
+  gap: 1px;
+
+  input {
+    appearance: none;
+  }
+}
+
+.segmented_item {
+  flex: 1 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--size-200);
+  text-transform: uppercase;
+  font-size: var(--type-button-label);
+  height: var(--height-medium);
+  color: var(--color-on-interactive);
+  background-color: var(--color-surface-interactive-secondary);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-surface-interactive-secondary-hover);
+  }
+
+  &:first-of-type {
+    border-radius: var(--radius-default) 0 0 var(--radius-default);
+  }
+  &:last-of-type {
+    border-radius: 0 var(--radius-default) var(--radius-default) 0;
+  }
+
+  &:has(input:checked) {
+    background-color: var(--color-surface-interactive);
+
+    &:hover {
+      cursor: default;
+    }
+  }
 }
