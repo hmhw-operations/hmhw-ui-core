@@ -21,6 +21,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Commit changes if any
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Commit changes before version bump" || echo "No changes to commit"
+
       - name: Bump version and create new tag
         run: |
           git config --local user.email "action@github.com"
