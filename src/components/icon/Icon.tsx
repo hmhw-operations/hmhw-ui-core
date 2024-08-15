@@ -5,7 +5,7 @@ export type IconProps = {
   name: SvgName;
 };
 
-const Icon: React.FC<IconProps> = ({ name, ...props }) => {
+const Icon: React.FC<IconProps> = ({ name }) => {
   // State to hold the imported icon component (not element)
   const [SvgIconComponent, setSvgIconComponent] = useState<React.ElementType | null>(null);
 
@@ -28,7 +28,7 @@ const Icon: React.FC<IconProps> = ({ name, ...props }) => {
   }
 
   // Render the SVG component correctly as a React component
-  return <SvgIconComponent {...props} />;
+  return <SvgIconComponent />;
 };
 
 export default Icon;
