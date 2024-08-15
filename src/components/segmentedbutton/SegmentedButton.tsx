@@ -3,7 +3,6 @@ import style from "./segmentedbutton.module.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/globals.css";
-import { RadioButton } from "../radiobutton";
 
 export type SegmentedItem = {
   value: string;
@@ -25,7 +24,7 @@ const SegmentedButton: React.FC<SegmentedButtonProps> = ({ name, items, value, o
   return (
     <fieldset className={style.segmented_group} disabled={disabled}>
       {items.map((i) => (
-        <label className={style.segmented_item}>
+        <label key={i.label} className={style.segmented_item}>
           label={i.label}
           <input
             type="radio"
