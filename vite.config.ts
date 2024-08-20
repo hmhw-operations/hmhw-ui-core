@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 import svgr from "vite-plugin-svgr";
 import { peerDependencies } from "./package.json";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default defineConfig({
   build: {
@@ -22,6 +23,7 @@ export default defineConfig({
   },
   plugins: [
     react(), // @vitejs/plugin-react
+    libInjectCss(),
     dts({
       insertTypesEntry: true,
     }),
