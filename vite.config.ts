@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 import svgr from "vite-plugin-svgr";
-import { peerDependencies } from "./package.json";
+// import { peerDependencies } from "./package.json";
 
 export default defineConfig({
   build: {
@@ -14,7 +14,7 @@ export default defineConfig({
       formats: ["cjs", "es"],
     },
     rollupOptions: {
-      external: [...Object.keys(peerDependencies)],
+      // external: [...Object.keys(peerDependencies)],
     },
     sourcemap: true,
     emptyOutDir: true,
