@@ -10,7 +10,7 @@
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "/dist"
+    "dist"
   ],
   "scripts": {
     "generate-svg-types": "node ./gen-svg-types.js",
@@ -55,22 +55,6 @@
     "eslint-plugin-storybook": "^0.8.0",
     "husky": "^9.0.11",
     "jsdom": "^24.1.0",
-    "lint-staged": "^15.2.5",
-    "prettier": "^3.3.0",
-    "storybook": "^8.1.11",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.12",
-    "vite-plugin-dts": "^3.9.1",
-    "vite-plugin-svgr": "^4.2.0",
-    "vitest": "^1.6.0"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "npm run format",
-      "npm run lint"
-    ]
+    "lint-staged": "^15.2.5"
   }
 }

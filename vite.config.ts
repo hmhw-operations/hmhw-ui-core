@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts",
-      name: "vite-react-ts-button",
+      name: "hmhw-ui-core",
       fileName: (format) => `index.${format}.js`,
       formats: ["cjs", "es"],
     },
@@ -18,6 +18,7 @@ export default defineConfig({
     },
     sourcemap: true,
     emptyOutDir: true,
+    outDir: "dist", // Specify the output directory
   },
   plugins: [
     react(), // @vitejs/plugin-react
