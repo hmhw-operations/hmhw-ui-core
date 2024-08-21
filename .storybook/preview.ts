@@ -4,9 +4,11 @@ import { withThemeByClassName } from "@storybook/addon-themes";
 const preview: Preview = {
   decorators: [
     withThemeByClassName({
+      parentSelector: "body",
       themes: {
         light: "light-theme",
         dark: "dark-theme",
+        contrast: "contrast-theme",
       },
       defaultTheme: "light",
     }),
