@@ -23,10 +23,7 @@ export default defineConfig({
   },
   plugins: [
     react(), // @vitejs/plugin-react
-    libInjectCss({
-      // Ensure CSS is injected into the library build
-      include: "**/*.css",
-    }),
+    libInjectCss(), // Ensure CSS is injected into the library build
     dts({
       insertTypesEntry: true,
     }),
