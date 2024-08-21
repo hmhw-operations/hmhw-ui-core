@@ -1,3 +1,14 @@
-.icon {
-  color: tomato;
+.small {
+  width: 1rem;
+  height: auto;
+}
+
+.medium {
+  width: 2rem;
+  height: auto;
+}
+
+.large {
+  width: 3rem;
+  height: auto;
 }

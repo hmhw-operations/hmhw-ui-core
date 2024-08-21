@@ -1,7 +1,7 @@
-import React from "react";
-import Icon from "../Icon";
+import React, { FC } from "react";
+import Icon, { IconProps } from "../Icon";
 
-const Example = () => {
+const Example: FC<IconProps> = ({ name, size = "small" }) => {
   return (
     <div
       style={{
@@ -11,7 +11,7 @@ const Example = () => {
         height: "100%",
       }}
     >
-      <Icon name="notification-off" />
+      <Icon name={name} size={size} />
     </div>
   );
 };

@@ -1,17 +1,17 @@
 // components/button/button.tsx
 import React, { MouseEventHandler } from "react";
-import style from "./button.module.css";
+import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
-import "../../styles/globals.css";
+import { Size } from "../../types";
+import style from "./button.module.css";
 
 export type ButtonVariant = "primary" | "secondary" | "tertiary" | "destructive";
-export type ButtonSize = "small" | "medium" | "large";
 
 export type ButtonProps = {
   text: string;
   iconPosition?: "leading" | "trailing";
-  size?: ButtonSize;
+  size?: Size;
   variant?: ButtonVariant;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   icon?: React.ReactNode;
