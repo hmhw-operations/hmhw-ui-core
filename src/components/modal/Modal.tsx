@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import style from "./modal.module.css";
 import { Button } from "../button";
 import { ButtonVariant } from "../button/Button";
+import { Size } from "../../types";
 
 export type ActionType = {
   label: string;
@@ -9,13 +10,11 @@ export type ActionType = {
   onClick: () => void;
 };
 
-export type ModalSize = "small" | "medium" | "large";
-
 export type ModalProps = {
   children?: React.ReactNode;
   icon?: React.ReactNode;
   title: React.ReactNode;
-  size?: ModalSize;
+  size?: Size;
   open?: boolean;
   actions?: ActionType[];
   onClose?: () => void;
