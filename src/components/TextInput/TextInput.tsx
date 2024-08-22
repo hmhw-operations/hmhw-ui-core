@@ -1,4 +1,5 @@
 import { FC } from "react";
+import style from "./textinput.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
@@ -32,19 +33,24 @@ const TextInput: FC<TextInputProps> = ({
   helperText,
 }) => {
   return (
-    <>
-      <input
-        type="text"
-        name={name}
-        id={sanitizeForId(id)}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-      />
+    <div className={`${style.textInput}`}>
       {label && <label htmlFor={sanitizeForId(id)}>{label}</label>}
-      {helperText && <p>{helperText}</p>}
-      {error?.message && <p>{error.message}</p>}
-    </>
+      <div className={`${style.textInput__wrapper}`}>
+        <div className={`${style.textInput__field}`}>
+          <input
+            type="text"
+            name={name}
+            id={sanitizeForId(id)}
+            placeholder={placeholder}
+            value={value}
+            onChange={onChange}
+          />
+          <div className={`${style.textInput__unit}`}>unit</div>
+        </div>
+        {helperText && <p className="textInput__helpertext">{helperText}</p>}
+        {error?.message && <p className="textinput__error-message">{error.message}</p>}
+      </div>
+    </div>
   );
 };
 
