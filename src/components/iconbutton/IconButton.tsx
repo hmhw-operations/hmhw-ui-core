@@ -23,7 +23,7 @@ const IconButton: React.FC<IconButtonProps> = ({
   ...props
 }) => (
   <button
-    className={`${style.button} ${style[variant]} ${style[size]}`}
+    className={`${style.iconButton} ${style[variant]} ${style[size]}`}
     aria-label={label}
     type="button"
     onClick={onClick}

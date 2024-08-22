@@ -1,4 +1,4 @@
-.button {
+.iconButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -35,58 +35,58 @@
     height: 60%;
     width: 60%;
   }
-}
 
-.small {
-  height: var(--height-small);
-}
-
-.large {
-  height: var(--height-large);
-}
-
-.secondary {
-  background-color: var(--color-surface-interactive-secondary);
-
-  &:hover {
-    background-color: var(--color-surface-interactive-secondary-hover);
-    cursor: pointer;
-  }
-  &:active {
-    background-color: var(--color-surface-interactive-secondary-pressed);
-    cursor: pointer;
-  }
-}
-
-.tertiary {
-  color: var(--color-accent);
-  background-color: transparent;
-
-  &:hover {
-    background-color: var(--p-alpha-blue-ocean-15);
+  &.small {
+    height: var(--height-small);
   }
 
-  &:active {
-    background-color: var(--p-alpha-blue-ocean-25);
+  &.large {
+    height: var(--height-large);
   }
 
-  &:disabled {
+  &.secondary {
+    background-color: var(--color-surface-interactive-secondary);
+
+    &:hover {
+      background-color: var(--color-surface-interactive-secondary-hover);
+      cursor: pointer;
+    }
+    &:active {
+      background-color: var(--color-surface-interactive-secondary-pressed);
+      cursor: pointer;
+    }
+  }
+
+  &.tertiary {
+    color: var(--color-accent);
     background-color: transparent;
+
+    &:hover {
+      background-color: var(--p-alpha-blue-ocean-15);
+    }
+
+    &:active {
+      background-color: var(--p-alpha-blue-ocean-25);
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
   }
-}
 
-.destructive {
-  background-color: var(--color-alert-danger);
+  &.destructive {
+    background-color: var(--color-alert-danger);
 
-  &:hover {
-    background-color: var(--color-alert-danger-hover);
-  }
+    &:hover {
+      background-color: var(--color-alert-danger-hover);
+    }
 
-  &:active {
-    background-color: var(--color-alert-danger-pressed);
-  }
+    &:active {
+      background-color: var(--color-alert-danger-pressed);
+    }
 
-  &:disabled {
-    background-color: var(--color-alert-danger-disabled);
+    &:disabled {
+      background-color: var(--color-alert-danger-disabled);
+    }
   }
 }

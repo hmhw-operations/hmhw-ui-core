@@ -17,9 +17,8 @@ export type CheckboxProps = {
 
 const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, onChange, checked, helperText }) => {
   return (
-    <div className={style.input_item}>
+    <div className={`${style.input_item} ${style.checkbox}`}>
       <input
-        className={`${style.checkbox}`}
         type="checkbox"
         id={sanitizeForId(id)}
         disabled={disabled}
