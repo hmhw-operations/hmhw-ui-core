@@ -1,16 +1,8 @@
-.input_item {
+.radio {
   display: flex;
 
   input {
     appearance: none;
-  }
-
-  fieldset {
-    border: none;
-  }
-
-  caption {
-    font-size: var(--type-label);
   }
 
   label {
@@ -49,7 +41,7 @@
     background-color: var(--color-accent);
   }
 
-  .input_item:has(input:focus-visible) {
+  .radio:has(input:focus-visible) {
     outline: 2px solid var(--color-focus-ring);
     outline-offset: 4px;
   }
@@ -58,7 +50,7 @@
     outline: none;
   }
 
-  .input_item:has(input:disabled) {
+  .radio:has(input:disabled) {
     label {
       color: var(--color-disabled);
 
