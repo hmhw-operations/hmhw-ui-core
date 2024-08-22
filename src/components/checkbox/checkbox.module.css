@@ -1,71 +1,73 @@
-input {
-  appearance: none;
+.checkbox {
+  input {
+    appearance: none;
 
-  &:focus-visible {
-    outline: none;
-    box-shadow: none;
+    &:focus-visible {
+      outline: none;
+      box-shadow: none;
 
-    & + label {
-      outline: 2px solid var(--color-focus-ring);
-      outline-offset: 4px;
-      box-shadow: 0 0 0 4px var(--color-surface-canvas);
+      & + label {
+        outline: 2px solid var(--color-focus-ring);
+        outline-offset: 4px;
+        box-shadow: 0 0 0 4px var(--color-surface-canvas);
+      }
     }
   }
-}
 
-label {
-  position: relative;
-  padding: var(--size-100);
-  padding-left: var(--size-400);
-  cursor: pointer;
-  line-height: 1;
-  display: inline-block;
-  color: var(--color-primary);
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: var(--size-075);
-    width: var(--size-250);
-    height: var(--size-250);
-    border: var(--size-025) solid var(--color-primary);
-    border-radius: var(--radius-small);
-  }
-
-  &:hover {
-    color: var(--color-accent-hover);
+  label {
+    position: relative;
+    padding: var(--size-100);
+    padding-left: var(--size-400);
+    cursor: pointer;
+    line-height: 1;
+    display: inline-block;
+    color: var(--color-primary);
 
     &:before {
-      border-color: var(--color-accent-hover);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: var(--size-075);
+      width: var(--size-250);
+      height: var(--size-250);
+      border: var(--size-025) solid var(--color-primary);
+      border-radius: var(--radius-small);
+    }
+
+    &:hover {
+      color: var(--color-accent-hover);
+
+      &:before {
+        border-color: var(--color-accent-hover);
+      }
     }
   }
-}
 
-input:checked + label {
-  &:before {
-    border-color: var(--color-accent);
-    background-color: var(--color-accent);
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 7px;
-    top: 10px;
-    width: 6px;
-    height: 10px;
-    border-right: var(--size-025) solid var(--color-invert);
-    border-bottom: var(--size-025) solid var(--color-invert);
-    rotate: 40deg;
-  }
-
-  &:hover {
-    color: var(--color-accent-hover);
-
+  input:checked + label {
     &:before {
-      border-color: var(--color-accent-hover);
-      background-color: var(--color-accent-hover);
+      border-color: var(--color-accent);
+      background-color: var(--color-accent);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 10px;
+      width: 6px;
+      height: 10px;
+      border-right: var(--size-025) solid var(--color-invert);
+      border-bottom: var(--size-025) solid var(--color-invert);
+      rotate: 40deg;
+    }
+
+    &:hover {
+      color: var(--color-accent-hover);
+
+      &:before {
+        border-color: var(--color-accent-hover);
+        background-color: var(--color-accent-hover);
+      }
     }
   }
 }
