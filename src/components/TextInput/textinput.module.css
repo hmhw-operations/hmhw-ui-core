@@ -1,0 +1,163 @@
+.textInput {
+  --c-input-text: var(--color-primary);
+  --c-input-text-disabled: var(--p-alpha-white-40);
+  --c-input-text-error: var(--color-primary);
+  --c-input-bg: var(--p-neutral-100);
+  --c-input-bg-disabled: transparent;
+  --c-input-bg-error: var(--p-alpha-red-10);
+  --c-input-border: var(--p-alpha-black-20);
+  --c-input-border-hover: var(--p-alpha-black-80);
+  --c-input-border-active: green;
+  --c-input-border-disabled: var(--p-alpha-white-30);
+  --c-input-border-error: var(--color-alert-danger);
+
+  --c-input-value: var(--p-neutral-1400);
+  --c-input-value-disabled: var(--p-neutral-1400);
+  --c-input-value-error: var(--color-alert-danger);
+
+  --c-input-unit-text: var(--p-neutral-1400);
+  --c-input-unit-text-disabled: var(--c-input-text-disabled);
+  --c-input-unit-error: var(--color-alert-danger);
+
+  --c-input-unit-bg: var(--p-neutral-200);
+  --c-input-unit-bg-disabled: var(--c-input-bg-disabled);
+  --c-input-unit-border: var(--c-input-border);
+  --c-input-unit-border-disabled: var(--c-input-border-disabled);
+  --c-input-unit-border-error: var(--color-alert-danger);
+}
+
+.textInput {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+  color: var(--c-input-text);
+
+  &.horizontal {
+    flex-direction: row;
+    gap: var(--spce-400);
+
+    label {
+      min-width: 200px;
+    }
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    height: var(--height-medium);
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    padding-inline: var(--space-075);
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .textInput__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-100);
+  }
+
+  .textInput__field {
+    display: flex;
+    height: var(--height-medium);
+    color: var(--c-input-value);
+    color: var(--c-input-unit-text);
+    background-color: var(--c-input-bg);
+    border: 1px solid var(--c-input-border);
+    border-radius: 4px;
+
+    input {
+      color: var(--c-input-value);
+    }
+
+    &:focus-within {
+      outline: 2px solid var(--color-focus-ring);
+      outline-offset: 0px;
+      box-shadow: 0 0 0 4px var(--color-surface-canvas);
+      border-color: var(--color-focus-ring);
+    }
+  }
+
+  .textInput__unit {
+    display: flex;
+    min-width: 3rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-input-unit);
+    background-color: var(--c-input-unit-bg);
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid var(--c-input-unit-border);
+  }
+}
+
+.textInput:has(input:disabled) {
+  color: var(--c-input-text-disabled);
+
+  .textInput__field {
+    color: var(--c-input-text-disabled);
+    background-color: var(--c-input-bg-disabled);
+    border: 1px solid var(--c-input-border-disabled);
+  }
+
+  .textInput__unit {
+    color: var(--c-input-unit-text-disabled);
+    background-color: var(--c-input-unit-bg-disabled);
+    border-color: var(--c-input-unit-border-disabled);
+  }
+}
+
+.textInput.error {
+  color: var(--c-input-text-error);
+
+  .textInput__field {
+    display: flex;
+    height: var(--height-medium);
+    color: var(--c-input-value-error);
+    color: var(--c-input-unit-text);
+    background-color: var(--c-input-bg-error);
+    border-color: var(--c-input-border-error);
+
+    input {
+      color: var(--c-input-value-error);
+    }
+  }
+
+  .textInput__unit {
+    color: var(--c-input-unit-error);
+    background-color: var(--c-input-unit-bg-error);
+    border-radius: 0 4px 4px 0;
+    border-color: var(--c-input-unit-border-error);
+  }
+}
+
+.textInput.error {
+  color: var(--c-input-text-error);
+
+  .textInput__field {
+    display: flex;
+    height: var(--height-medium);
+    color: var(--c-input-value-error);
+    color: var(--c-input-unit-text);
+    background-color: var(--c-input-bg-error);
+    border-color: var(--c-input-border-error);
+
+    input {
+      color: var(--c-input-value-error);
+    }
+  }
+}
+
+.textInput__field:hover {
+  border-color: var(--c-input-border-hover);
+}
+
+.textInput__field:active {
+  border-color: var(--c-input-border-active);
+}

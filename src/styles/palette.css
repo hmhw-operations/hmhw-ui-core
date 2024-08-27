@@ -44,8 +44,12 @@
   --p-alpha-neutral-15: hsl(100 100% 100% / 0.15);
   --p-alpha-blue-ocean-15: hsl(var(--hue-blue-ocean) 100% 50%/ 0.15);
   --p-alpha-blue-ocean-25: hsl(var(--hue-blue-ocean) 100% 50%/ 0.25);
+  --p-alpha-red-10: hsl(var(--hue-red) 100% 55% / 0.2);
   --p-alpha-red-35: hsl(var(--hue-red) 100% 55% / 0.35);
-
+  --p-alpha-black-20: hsl(0 100% 0% / 0.2);
+  --p-alpha-black-80: hsl(0 100% 0% / 0.8);
+  --p-alpha-white-30: hsl(0 0% 100% / 0.3);
+  --p-alpha-white-40: hsl(0 0% 100% / 0.4);
   /*
   
     --p-blue-ocean-100: oklch(96% 0.08 235);

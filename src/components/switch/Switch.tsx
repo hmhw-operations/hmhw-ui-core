@@ -4,6 +4,7 @@ import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { sanitizeForId } from "../../utils";
+import { LabelPosition, Size } from "../../types";
 
 export type SwitchProps = {
   label: string;
@@ -12,8 +13,8 @@ export type SwitchProps = {
   disabled?: boolean;
   id: string;
   name: string;
-  size: "small" | "medium" | "large";
-  labelPosition?: "left" | "right";
+  size: Size;
+  labelPosition?: LabelPosition;
 };
 
 const Switch: React.FC<SwitchProps> = ({
