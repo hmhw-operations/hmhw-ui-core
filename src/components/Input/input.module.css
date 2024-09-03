@@ -1,7 +1,7 @@
 .textInput {
   --c-input-text: var(--color-primary);
   --c-input-text-disabled: var(--p-alpha-white-40);
-  --c-input-text-error: var(--color-primary);
+  --c-input-text-error: var(--color-alert-danger);
   --c-input-bg: var(--p-neutral-100);
   --c-input-bg-disabled: transparent;
   --c-input-bg-error: var(--p-alpha-red-10);
@@ -31,16 +31,15 @@
   flex-direction: column;
   gap: var(--space-100);
   color: var(--c-input-text);
+}
 
-  &.horizontal {
-    flex-direction: row;
-    gap: var(--spce-400);
+.horizontal {
+  flex-direction: row;
+  gap: var(--spce-400);
 
-    label {
-      min-width: 200px;
-    }
+  label {
+    min-width: 200px;
   }
-
   label {
     display: flex;
     align-items: center;
@@ -97,6 +96,10 @@
   }
 }
 
+.textInput__errormessage {
+  color: var(--c-input-text-error);
+}
+
 .textInput:has(input:disabled) {
   color: var(--c-input-text-disabled);
 
@@ -113,7 +116,7 @@
   }
 }
 
-.textInput.error {
+.error {
   color: var(--c-input-text-error);
 
   .textInput__field {
@@ -134,23 +137,6 @@
     background-color: var(--c-input-unit-bg-error);
     border-radius: 0 4px 4px 0;
     border-color: var(--c-input-unit-border-error);
-  }
-}
-
-.textInput.error {
-  color: var(--c-input-text-error);
-
-  .textInput__field {
-    display: flex;
-    height: var(--height-medium);
-    color: var(--c-input-value-error);
-    color: var(--c-input-unit-text);
-    background-color: var(--c-input-bg-error);
-    border-color: var(--c-input-border-error);
-
-    input {
-      color: var(--c-input-value-error);
-    }
   }
 }
 

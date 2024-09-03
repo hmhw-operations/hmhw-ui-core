@@ -10,4 +10,4 @@ export * from "./radiogroup";
 export * from "./segmentedbutton";
 export * from "./switch";
 export * from "./tabs";
-export * from "./TextInput";
+export * from "./Input";

@@ -1,11 +1,12 @@
-import React from "react";
-import TextInput from "../TextInput";
+import React, { FC } from "react";
+import Input, { InputProps } from "../Input";
 
-const Example = () => {
+const Example: FC<{ error: boolean; withUnit: boolean }> = ({ error, withUnit }) => {
   const [value, setValue] = React.useState("");
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   };
+
   return (
     <div
       style={{
@@ -15,15 +16,16 @@ const Example = () => {
         height: "100%",
       }}
     >
-      <TextInput
+      <Input
         id="demo id"
         name="Demo"
         label="I am the label"
+        labelPosition="left"
         value={value}
+        unit={withUnit ? "m/s" : undefined}
         onChange={handleChange}
-        error={{ message: "Error message", hasError: true }}
+        error={error ? { message: "Oh dear, something is terribly wrong", hasError: true } : undefined}
       />
-      <pre>{JSON.stringify({ value }, null, 2)}</pre>
     </div>
   );
 };
