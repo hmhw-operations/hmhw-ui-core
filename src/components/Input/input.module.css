@@ -1,4 +1,4 @@
-.textInput {
+.input {
   --c-input-text: var(--color-primary);
   --c-input-text-disabled: var(--p-alpha-white-40);
   --c-input-text-error: var(--color-alert-danger);
@@ -6,7 +6,7 @@
   --c-input-bg-disabled: transparent;
   --c-input-bg-error: var(--p-alpha-red-10);
   --c-input-border: var(--p-alpha-black-20);
-  --c-input-border-hover: var(--p-alpha-black-80);
+  --c-input-border-hover: var(--color-primary);
   --c-input-border-active: green;
   --c-input-border-disabled: var(--p-alpha-white-30);
   --c-input-border-error: var(--color-alert-danger);
@@ -26,21 +26,22 @@
   --c-input-unit-border-error: var(--color-alert-danger);
 }
 
-.textInput {
+.input {
   display: flex;
   flex-direction: column;
   gap: var(--space-100);
   color: var(--c-input-text);
-}
 
-.horizontal {
-  flex-direction: row;
-  gap: var(--spce-400);
+  &.horizontal {
+    flex-direction: row;
+    gap: var(--spce-400);
 
-  label {
-    min-width: 200px;
+    label {
+      min-width: 200px;
+    }
   }
-  label {
+
+  .label {
     display: flex;
     align-items: center;
     height: var(--height-medium);
@@ -57,13 +58,13 @@
     }
   }
 
-  .textInput__wrapper {
+  .wrapper {
     display: flex;
     flex-direction: column;
     gap: var(--space-100);
   }
 
-  .textInput__field {
+  .field {
     display: flex;
     height: var(--height-medium);
     color: var(--c-input-value);
@@ -71,6 +72,14 @@
     background-color: var(--c-input-bg);
     border: 1px solid var(--c-input-border);
     border-radius: 4px;
+
+    &:hover {
+      border-color: var(--c-input-border-hover);
+    }
+
+    &:has(input:active) {
+      border-color: var(--c-input-border-active);
+    }
 
     input {
       color: var(--c-input-value);
@@ -80,36 +89,32 @@
       outline: 2px solid var(--color-focus-ring);
       outline-offset: 0px;
       box-shadow: 0 0 0 4px var(--color-surface-canvas);
-      border-color: var(--color-focus-ring);
+      border-color: var(--c-input-border-hover);
+    }
+
+    .unit {
+      display: flex;
+      min-width: 3rem;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-input-unit);
+      background-color: var(--c-input-unit-bg);
+      border-radius: 0 4px 4px 0;
+      border-left: 1px solid var(--c-input-unit-border);
     }
   }
-
-  .textInput__unit {
-    display: flex;
-    min-width: 3rem;
-    align-items: center;
-    justify-content: center;
-    color: var(--c-input-unit);
-    background-color: var(--c-input-unit-bg);
-    border-radius: 0 4px 4px 0;
-    border-left: 1px solid var(--c-input-unit-border);
-  }
 }
 
-.textInput__errormessage {
-  color: var(--c-input-text-error);
-}
-
-.textInput:has(input:disabled) {
+.input:has(input:disabled) {
   color: var(--c-input-text-disabled);
 
-  .textInput__field {
+  .field {
     color: var(--c-input-text-disabled);
     background-color: var(--c-input-bg-disabled);
     border: 1px solid var(--c-input-border-disabled);
   }
 
-  .textInput__unit {
+  .unit {
     color: var(--c-input-unit-text-disabled);
     background-color: var(--c-input-unit-bg-disabled);
     border-color: var(--c-input-unit-border-disabled);
@@ -119,31 +124,26 @@
 .error {
   color: var(--c-input-text-error);
 
-  .textInput__field {
+  .field {
     display: flex;
     height: var(--height-medium);
     color: var(--c-input-value-error);
     color: var(--c-input-unit-text);
-    background-color: var(--c-input-bg-error);
+
     border-color: var(--c-input-border-error);
 
     input {
       color: var(--c-input-value-error);
     }
+
+    .unit {
+      color: var(--c-input-unit-error);
+      background-color: var(--c-input-bg-error);
+      border-radius: 0 4px 4px 0;
+      border-color: var(--c-input-unit-border-error);
+    }
   }
-
-  .textInput__unit {
-    color: var(--c-input-unit-error);
-    background-color: var(--c-input-unit-bg-error);
-    border-radius: 0 4px 4px 0;
-    border-color: var(--c-input-unit-border-error);
+  .errormessage {
+    color: var(--c-input-text-error);
   }
-}
-
-.textInput__field:hover {
-  border-color: var(--c-input-border-hover);
-}
-
-.textInput__field:active {
-  border-color: var(--c-input-border-active);
 }
