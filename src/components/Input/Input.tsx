@@ -28,10 +28,14 @@ const Input: FC<
   const { value, type } = props;
 
   return (
-    <div className={`${style.textInput} ${labelPosition === "left" && style.horizontal} ${error && style.error}`}>
-      {label && <label htmlFor={sanitizeForId(id)}>{label}</label>}
-      <div className={`${style.textInput__wrapper}`}>
-        <div className={`${style.textInput__field}`}>
+    <div className={`${style.input} ${labelPosition === "left" && style.horizontal} ${error && style.error}`}>
+      {label && (
+        <label className={`${style.label}`} htmlFor={sanitizeForId(id)}>
+          {label}
+        </label>
+      )}
+      <div className={`${style.wrapper}`}>
+        <div className={`${style.field}`}>
           <input
             type={type}
             name={name}
@@ -40,10 +44,10 @@ const Input: FC<
             value={value}
             onChange={onChange}
           />
-          {unit && <div className={`${style.textInput__unit}`}>unit</div>}
+          {unit && <div className={`${style.unit}`}>unit</div>}
         </div>
-        {helperText && <p className={`${style.textInput__helpertext}`}>{helperText}</p>}
-        {error?.message && <p className={`${style["textinput__errormessage"]}`}>{error.message}</p>}
+        {helperText && <p className={`${style.helpertext}`}>{helperText}</p>}
+        {error?.message && <p className={`${style["errormessage"]}`}>{error.message}</p>}
       </div>
     </div>
   );
