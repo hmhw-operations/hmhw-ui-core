@@ -5,3 +5,5 @@ export * from "./components"; // This will export all components from the 'compo
 import "./styles/globals.css";
 import "./styles/palette.css";
 import "./styles/tokens.css";
+
+export { default as global } from "./styles/globals.css";

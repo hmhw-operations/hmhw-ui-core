@@ -13,6 +13,13 @@
     "dist",
     "src/styles"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/lib.es.js"
+    },
+    "./index.css": "./dist/index.css"
+  },
   "scripts": {
     "generate-svg-types": "node ./gen-svg-types.js",
     "test": "vitest run",
