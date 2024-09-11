@@ -31,7 +31,7 @@ export default defineConfig({
     svgr(),
     copy({
       targets: [
-        { src: "src/styles", dest: "dist" }, // Copy styles folder to dist
+        { src: "./src/styles", dest: "dist" }, // Copy styles folder to dist
       ],
     }),
   ],

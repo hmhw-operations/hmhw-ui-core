@@ -6,4 +6,4 @@ import "./styles/globals.css";
 import "./styles/palette.css";
 import "./styles/tokens.css";
 
-export { default as global } from "./styles/globals.css";
+// export { default as global } from "./styles/globals.css";
