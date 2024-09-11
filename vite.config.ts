@@ -5,6 +5,7 @@ import dts from "vite-plugin-dts";
 import svgr from "vite-plugin-svgr";
 import { peerDependencies } from "./package.json";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
+import { copy } from "vite-plugin-copy";
 
 export default defineConfig({
   build: {
@@ -28,6 +29,11 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
     svgr(),
+    copy({
+      targets: [
+        { src: "./src/styles", dest: "dist" }, // Copy styles folder to dist
+      ],
+    }),
   ],
   css: {
     modules: {
