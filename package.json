@@ -3,7 +3,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "name": "@hmhw-operations/hmhw-ui-core",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs.js",
