@@ -4,13 +4,14 @@ import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { sanitizeForId } from "../../utils";
-import { LabelPosition } from "../../types";
+import { LabelPosition, Size } from "../../types";
 
 export type InputProps = {
   id: string;
   name: string;
   placeholder?: string;
   labelPosition?: LabelPosition;
+  size?: Size;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   label?: string;
   value: string;
@@ -24,7 +25,19 @@ export type InputProps = {
 
 const Input: FC<
   InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-> = ({ placeholder, unit, onChange, label, labelPosition = "top", error, id, name, helperText, ...props }) => {
+> = ({
+  placeholder,
+  unit,
+  onChange,
+  label,
+  labelPosition = "top",
+  error,
+  id,
+  name,
+  helperText,
+  size = "medium",
+  ...props
+}) => {
   const { value, type } = props;
 
   return (
