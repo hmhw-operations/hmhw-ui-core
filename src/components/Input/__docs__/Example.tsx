@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import Input, { InputProps } from "../Input";
+import { Size } from "../../../types";
 
-const Example: FC<{ error: boolean; withUnit: boolean }> = ({ error, withUnit }) => {
+const Example: FC<{ error: boolean; withUnit: boolean; size: Size }> = ({ error, withUnit, size = "medium" }) => {
   const [value, setValue] = React.useState("");
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
@@ -22,6 +23,7 @@ const Example: FC<{ error: boolean; withUnit: boolean }> = ({ error, withUnit })
         label="I am the label"
         labelPosition="top"
         value={value}
+        size={size}
         unit={withUnit ? "m/s" : undefined}
         onChange={handleChange}
         error={error ? { message: "Oh dear, something is terribly wrong", hasError: true } : undefined}

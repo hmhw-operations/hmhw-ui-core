@@ -53,6 +53,7 @@ const Input: FC<
             type={type}
             name={name}
             id={sanitizeForId(id)}
+            className={`${style[size]}`}
             placeholder={placeholder}
             value={value}
             onChange={onChange}
