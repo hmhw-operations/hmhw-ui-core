@@ -13,16 +13,6 @@
     "dist",
     "src/styles"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./styles/globals.css": "./dist/styles/globals.css",
-    "./styles/palette.css": "./dist/styles/palette.css",
-    "./styles/tokens.css": "./dist/styles/tokens.css"
-  },
   "scripts": {
     "generate-svg-types": "node ./gen-svg-types.js",
     "test": "vitest run",
