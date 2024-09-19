@@ -1,6 +1,7 @@
 .button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5em;
   padding-inline: 0.75em;
   border-radius: var(--radius-default);
@@ -35,6 +36,13 @@
     color: inherit;
     width: 1.125em;
     height: auto;
+  }
+
+  &.small {
+    font-size: var(--type-button-label-small);
+  }
+  &.large {
+    font-size: var(--type-button-label-large);
   }
 
   &.trailing {
