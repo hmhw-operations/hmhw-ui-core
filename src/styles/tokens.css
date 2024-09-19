@@ -87,8 +87,8 @@
 
   --type-label: var(--type-300);
 
-  --type-button-label: var(--type-400);
-  --type-button-label-large: var(--type-500);
+  --type-button-label: var(--type-300);
+  --type-button-label-large: var(--type-400);
   --type-button-label-small: var(--type-200);
 
   /*  CORNER RADIUS  --------------------------------------------- */
@@ -108,7 +108,7 @@ body.light-theme {
   --color-tertiary: var(--p-neutral-500);
   --color-disabled: var(--p-neutral-100);
   --color-invert: var(--p-neutral-100);
-  --color-accent: #07962f;
+  --color-accent: var(--p-blue-ocean-600);
   --color-accent-hover: var(--p-blue-ocean-1000);
   --color-on-accent: var(--p-neutral-100);
   --color-on-interactive: var(--p-neutral-100);
@@ -127,7 +127,7 @@ body.light-theme {
   --color-surface-canvas: var(--p-neutral-100);
   --color-surface-accent: var(--p-blue-ocean-700);
 
-  --color-surface-interactive: #07962f;
+  --color-surface-interactive: var(--p-blue-ocean-600);
   --color-surface-interactive-hover: var(--p-blue-ocean-1000);
   --color-surface-interactive-pressed: var(--p-blue-ocean-1200);
   --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-15);
