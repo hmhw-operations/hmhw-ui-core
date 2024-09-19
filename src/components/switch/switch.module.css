@@ -8,6 +8,14 @@
     flex-direction: row-reverse;
   }
 
+  &:has(button.top) {
+    flex-direction: column-reverse;
+  }
+
+  &:has(button.top) {
+    flex-direction: column-reverse;
+  }
+
   label {
     color: var(--color-primary);
   }
@@ -16,14 +24,22 @@
     display: inline-flex;
     justify-content: left;
     align-items: center;
-    height: var(--height-medium);
-    width: var(--size-700);
-    padding: var(--size-050);
     background-color: var(--color-surface-neutral);
     border-radius: var(--radius-full);
 
+    height: var(--size-300);
+    width: var(--size-500);
+    padding: var(--size-025);
+
     &:hover {
       cursor: pointer;
+    }
+
+    .thumb {
+      width: var(--size-250);
+      height: var(--size-250);
+      border-radius: var(--radius-full);
+      background-color: var(--color-on-interactive);
     }
 
     &[aria-checked="true"] {
@@ -50,43 +66,40 @@
         background-color: var(--color-disabled);
       }
     }
-
-    .thumb {
-      width: var(--size-300);
-      height: var(--size-300);
-      border-radius: var(--radius-full);
-      background-color: var(--color-on-interactive);
-    }
   }
 }
 
 .switch {
   &.small {
-    font-size: var(--type-300);
+    font-size: var(--type-button-label-small);
 
     .track {
-      height: var(--height-small);
-      width: var(--size-500);
-      padding: var(--size-050);
+      height: var(--size-200);
+      width: var(--size-350);
+      padding: 1px;
     }
     .thumb {
-      width: var(--size-200);
-      height: var(--size-200);
+      width: var(--size-175);
+      height: var(--size-175);
     }
   }
 
   &.large {
-    font-size: var(--type-500);
+    font-size: var(--type-button-label-large);
 
     .track {
-      height: var(--height-large);
-      width: var(--size-900);
-      padding: var(--size-050);
+      height: var(--size-400);
+      width: var(--size-700);
+      padding: var(--size-025);
     }
 
     .thumb {
-      width: var(--size-400);
-      height: var(--size-400);
+      width: var(--size-350);
+      height: var(--size-350);
     }
   }
+}
+
+button.none + label {
+  display: none;
 }
