@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   createColumnHelper,
   flexRender,
@@ -7,8 +8,10 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table";
+
 import Icon from "../icon/Icon";
-import "./table.module.css";
+
+import style from "./table.module.css";
 
 interface Data {
   /** @format int32 */
@@ -138,7 +141,7 @@ const Table: React.FC = () => {
     getSortedRowModel: getSortedRowModel(),
   });
   return (
-    <table className="queue-table">
+    <table className={`${style.table}`}>
       <thead>
         {table.getHeaderGroups().map((headerGroup) => (
           <tr key={headerGroup.id}>
