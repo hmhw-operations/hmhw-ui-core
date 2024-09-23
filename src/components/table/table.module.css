@@ -24,6 +24,10 @@
   background-color: var(--c-table-cell-bg-alt);
 }
 
+.table tr:last-child td {
+  border-color: var(--c-table-header-border);
+}
+
 .table {
   tr {
     height: var(--c-table-height-medium);
