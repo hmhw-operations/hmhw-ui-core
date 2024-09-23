@@ -43,6 +43,16 @@
 
   --color-focus-ring: var(--p-blue-ocean-600);
 
+  --c-table-cell-bg: var(--p-alpha-white-0);
+  --c-table-cell-bg-alt: var(--p-alpha-blue-ocean-05);
+  --c-table-border: var(--p-blue-ocean-1200);
+  --c-table-header-bg: var(--p-alpha-blue-ocean-10);
+  --c-table-header-border: var(--p-blue-ocean-900);
+  --c-table-height-small: var(--size-400);
+  --c-table-height-medium: var(--size-500);
+  --c-table-height-large: var(--size-600);
+  --c-table-padding: var(--size-200);
+
   /*  SIZEING  --------------------------------------------- */
 
   --size-base: 0.5rem;
@@ -145,4 +155,30 @@ body.light-theme {
   --color-border-accent: var(--color-accent);
 
   --color-focus-ring: var(--p-blue-ocean-600);
+}
+
+/* ----------- Component tokens -------- */
+
+:root {
+  --c-table-cell-bg: var(--p-alpha-white-0);
+  --c-table-cell-bg-alt: var(--p-alpha-blue-ocean-05);
+  --c-table-border: var(--p-blue-ocean-1200);
+  --c-table-header-bg: var(--p-alpha-blue-ocean-10);
+  --c-table-header-border: var(--p-blue-ocean-900);
+  --c-table-height-small: var(--size-400);
+  --c-table-height-medium: var(--size-500);
+  --c-table-height-large: var(--size-600);
+  --c-table-padding: var(--size-200);
+}
+
+body.light-theme {
+  --c-table-cell-bg: var(--p-alpha-white-0);
+  --c-table-cell-bg-alt: var(--p-alpha-neutral-05);
+  --c-table-border: var(--p-neutral-400);
+  --c-table-header-bg: var(--p-alpha-blue-ocean-10);
+  --c-table-header-border: var(--p-neutral-700);
+  --c-table-height-small: var(--size-400);
+  --c-table-height-medium: var(--size-500);
+  --c-table-height-large: var(--size-600);
+  --c-table-padding: var(--size-200);
 }
