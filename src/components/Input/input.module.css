@@ -49,6 +49,7 @@
 
   input {
     background-color: transparent;
+    width: 100%;
     border: none;
     padding-inline: var(--space-075);
 
