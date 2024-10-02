@@ -1,4 +1,4 @@
-body.dark-theme {
+:root {
   /* COLOR TOKENS -------------------------------------- */
   /* Text and shapes */
   --color-primary: var(--p-neutral-100);
