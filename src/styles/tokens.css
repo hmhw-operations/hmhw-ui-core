@@ -53,6 +53,8 @@
   --c-table-height-large: var(--size-600);
   --c-table-padding: var(--size-200);
 
+  /* ---- NEW TOKENS    */
+
   --color-primary: var(--p-neutral-100);
   --color-secondary: var(--p-alpha-neutral-80);
   --color-tertiary: var(--p-alpha-neutral-20);
@@ -81,34 +83,39 @@
   --color-surface-interactive-hover: var(--p-blue-ocean-800);
   --color-surface-interactive-active: var(--p-blue-ocean-900);
   --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-10);
+  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-10);
   --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
   --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
   --color-surface-interactive-secondary-active: var(--p-blue-ocean-1200);
   --color-surface-interactive-secondary-disabled: var(--p-blue-ocean-10);
+  --color-surface-interactive-tertiary: var(--p-blue-ocean-1100);
+  --color-surface-interactive-tertiary-hover: var(--p-blue-ocean-1200);
+  --color-surface-interactive-tertiary-active: var(--p-blue-ocean-1300);
+  --color-surface-interactive-tertiary-disabled: var(--p-blue-ocean-10);
 
-  --color-system-info: var(--c-blue-ocean-800);
-  --color-system-info-weak: var(--c-blue-ocean-300);
-  --color-system-on-info: var(--c-neutral-050);
-  --color-system-on-info-weak: var(--c-blue-ocean-1200);
-  --color-system-caution: var(--c-yellow-800);
-  --color-system-caution-weak: var(--c-yellow-300);
-  --color-system-on-caution: var(--c-yellow-1400);
-  --color-system-on-caution-weak: var(--c-yellow-1400);
-  --color-system-warning: var(--c-orange-800);
-  --color-system-warning-weak: var(--c-orange-300);
-  --color-system-on-warning: var(--c-neutral-1500);
-  --color-system-on-warning-weak: var(--c-orange-1500);
-  --color-system-critical: var(--c-red-800);
-  --color-system-critical-hover: var(--c-red-1000);
-  --color-system-critical-active: var(--c-red-1200);
-  --color-system-critical-disabled: var(--c-alpha-red-5);
-  --color-system-critical-weak: var(--c-red-300);
-  --color-system-on-critical: var(--c-neutral-050);
-  --color-system-on-critical-weak: var(--c-red-1400);
-  --color-system-success: var(--c-green-800);
-  --color-system-success-weak: var(--c-green-300);
-  --color-system-on-success: var(--c-green-1500);
-  --color-system-on-success-weak: var(--c-green-1300);
+  --color-system-info: var(--p-blue-ocean-800);
+  --color-system-info-weak: var(--p-blue-ocean-300);
+  --color-system-on-info: var(--p-neutral-050);
+  --color-system-on-info-weak: var(--p-blue-ocean-1200);
+  --color-system-caution: var(--p-yellow-800);
+  --color-system-caution-weak: var(--p-yellow-300);
+  --color-system-on-caution: var(--p-yellow-1400);
+  --color-system-on-caution-weak: var(--p-yellow-1400);
+  --color-system-warning: var(--p-orange-800);
+  --color-system-warning-weak: var(--p-orange-300);
+  --color-system-on-warning: var(--p-neutral-1500);
+  --color-system-on-warning-weak: var(--p-orange-1500);
+  --color-system-critical: var(--p-red-800);
+  --color-system-critical-hover: var(--p-red-1000);
+  --color-system-critical-active: var(--p-red-1200);
+  --color-system-critical-disabled: var(--p-alpha-red-10);
+  --color-system-critical-weak: var(--p-red-300);
+  --color-system-on-critical: var(--p-neutral-050);
+  --color-system-on-critical-weak: var(--p-red-1400);
+  --color-system-success: var(--p-green-800);
+  --color-system-success-weak: var(--p-green-300);
+  --color-system-on-success: var(--p-green-1500);
+  --color-system-on-success-weak: var(--p-green-1300);
 
   --color-pls-running: #f866c7;
   --color-pls-activated: var(--c-blue-ocean-600);

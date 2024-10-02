@@ -8,7 +8,6 @@
   text-transform: uppercase;
   font-size: var(--type-button-label);
   height: var(--height-medium);
-
   border: 1px solid transparent;
   color: var(--color-on-interactive);
   background-color: var(--color-surface-interactive);
@@ -18,17 +17,13 @@
     cursor: pointer;
   }
 
-  &:hover {
-    background-color: var(--color-surface-interactive-hover);
-    cursor: pointer;
-  }
   &:active {
     background-color: var(--color-surface-interactive-pressed);
     cursor: pointer;
   }
 
   &:disabled {
-    background-color: var(--color-surface-primary-disabled);
+    background-color: var(--color-surface-interactive-disabled);
     cursor: not-allowed;
   }
 
@@ -73,7 +68,7 @@
 
     &:disabled {
       color: var(--color-disabled);
-      background-color: var(--color-surface-primary-secondary-disabled);
+      background-color: var(--color-surface-interactive-secondary-disabled);
       cursor: not-allowed;
     }
   }
@@ -95,22 +90,25 @@
 
     &:disabled {
       color: var(--color-disabled);
+      background-color: var(--color-surface-interactive-teertiary-disabled);
+      cursor: not-allowed;
     }
   }
   &.destructive {
-    background-color: var(--color-alert-danger);
+    color: var(--color-system-on-critical);
+    background-color: var(--color-system-critical);
 
     &:hover {
-      background-color: var(--color-alert-danger-hover);
+      background-color: var(--color-system-critical-hover);
     }
 
     &:active {
-      background-color: var(--color-alert-danger-pressed);
+      background-color: var(--color-system-critical-active);
     }
 
     &:disabled {
-      color: var(--color-disabled);
-      background-color: var(--color-alert-danger-disabled);
+      color: black;
+      background-color: var(--color-system-critical-disabled);
     }
   }
 }
