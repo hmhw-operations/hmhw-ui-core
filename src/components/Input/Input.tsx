@@ -27,8 +27,10 @@ const Input: FC<
 > = ({ placeholder, unit, onChange, label, labelPosition = "top", error, id, name, helperText, ...props }) => {
   const { value, type } = props;
 
+  const hasError = error?.hasError;
+
   return (
-    <div className={`${style.input} ${labelPosition === "left" && style.horizontal} ${error && style.error}`}>
+    <div className={`${style.input} ${labelPosition === "left" && style.horizontal} ${hasError && style.error}`}>
       {label && (
         <label className={`${style.label}`} htmlFor={sanitizeForId(id)}>
           {label}
