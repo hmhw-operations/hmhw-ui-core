@@ -5,6 +5,7 @@ import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { sanitizeForId } from "../../utils";
 import { LabelPosition } from "../../types";
+import { Icon } from "../icon";
 
 export type InputProps = {
   id: string;
@@ -46,6 +47,7 @@ const Input: FC<
             value={value}
             onChange={onChange}
           />
+          {hasError && <Icon name="info" />}
           {unit && <div className={`${style.unit}`}>unit</div>}
         </div>
         {helperText && <p className={`${style.helpertext}`}>{helperText}</p>}
