@@ -1,105 +1,20 @@
-.switch {
-  display: flex;
-  gap: var(--size-200);
-  justify-content: space-between;
-  align-items: center;
+.themeswitch {
+  height: 24px;
+  width: 42px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 
-  &:has(button.left) {
-    flex-direction: row-reverse;
-  }
-
-  &:has(button.top) {
-    flex-direction: column-reverse;
-  }
-
-  &:has(button.top) {
-    flex-direction: column-reverse;
-  }
-  /* 
-  label {
-    color: var(--color-primary);
-  } */
-
-  .track {
-    display: inline-flex;
-    justify-content: left;
-    align-items: center;
-    background-color: var(--color-surface-neutral);
-    border-radius: var(--radius-full);
-
-    height: var(--size-300);
-    width: var(--size-500);
-    padding: var(--size-025);
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    .thumb {
-      width: var(--size-250);
-      height: var(--size-250);
-      border-radius: var(--radius-full);
-      background-color: var(--color-on-interactive);
-    }
-
-    &[aria-checked="true"] {
-      justify-content: right;
-      background-color: var(--color-surface-interactive);
-    }
-
-    &:disabled {
-      background-color: var(--color-surface-neutral-disabled);
-
-      &[aria-checked="true"] {
-        background-color: var(--color-surface-interactive-disabled);
-      }
-
-      /* + label {
-        color: var(--color-disabled);
-      } */
-
-      &:hover {
-        cursor: not-allowed;
-      }
-
-      .thumb {
-        background-color: var(--color-disabled);
-      }
-    }
+  svg:last-child {
+    display: none;
   }
 }
 
-.switch {
-  &.small {
-    font-size: var(--type-button-label-small);
-
-    .track {
-      height: var(--size-200);
-      width: var(--size-350);
-      padding: 1px;
-    }
-    .thumb {
-      width: var(--size-175);
-      height: var(--size-175);
-    }
+.themeswitch[aria-checked="true"] {
+  svg:first-child {
+    display: none;
   }
-
-  &.large {
-    font-size: var(--type-button-label-large);
-
-    .track {
-      height: var(--size-400);
-      width: var(--size-700);
-      padding: var(--size-025);
-    }
-
-    .thumb {
-      width: var(--size-350);
-      height: var(--size-350);
-    }
+  svg:last-child {
+    display: block;
   }
 }
-
-/* button.none + label {
-  display: none;
-} */
