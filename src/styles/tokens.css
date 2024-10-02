@@ -1,4 +1,4 @@
-:root {
+body.dark-theme {
   /* COLOR TOKENS -------------------------------------- */
   /* Text and shapes */
   --color-primary: var(--p-neutral-100);
@@ -52,6 +52,83 @@
   --c-table-height-medium: var(--size-500);
   --c-table-height-large: var(--size-600);
   --c-table-padding: var(--size-200);
+
+  --color-primary: var(--p-neutral-100);
+  --color-secondary: var(--p-alpha-neutral-80);
+  --color-tertiary: var(--p-alpha-neutral-20);
+  --color-diabled: var(--p-alpha-neutral-30);
+  --color-invert: var(--p-neutral-900);
+  --color-accent: var(--p-blue-ocean-700);
+  --color-interactive: var(--p-blue-ocean-700);
+  --color-interactive-hover: var(--p-blue-ocean-800);
+  --color-interactive-disabled: var(--p-blue-ocean-900);
+  --color-interactive-secondary: var(--p-blue-ocean-1000);
+  --color-interactive-secondary-hover: var(--p-blue-ocean-1100);
+  --color-interactive-secondary-disabled: var(--p-blue-ocean-1200);
+  --color-on-accent: var(--p-neutral-050);
+  --color-on-interactive: var(--p-neutral-050);
+  --color-on-interactive-secondary: var(--p-neutral-200);
+  --color-on-interactive-secondary: var(--p-blue-ocean-100);
+  --color-on-system: var(--p-neutral-050);
+
+  --color-surface-primary: var(--p-blue-ocean-1300);
+  --color-surface-secondary: var(--p-blue-ocean-1200);
+  --color-surface-tertiary: var(--p-blue-ocean-1100);
+  --color-surface-invert: var(--p-blue-ocean-100);
+  --color-surface-accent: var(--p-blue-ocean-600);
+  --color-surface-canvas: var(--p-blue-ocean-1400);
+  --color-surface-interactive: var(--p-blue-ocean-700);
+  --color-surface-interactive-hover: var(--p-blue-ocean-800);
+  --color-surface-interactive-active: var(--p-blue-ocean-900);
+  --color-surface-interactive-disabled: var(--p-alpha-blue-ocean-10);
+  --color-surface-interactive-secondary: var(--p-blue-ocean-1000);
+  --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
+  --color-surface-interactive-secondary-active: var(--p-blue-ocean-1200);
+  --color-surface-interactive-secondary-disabled: var(--p-blue-ocean-10);
+
+  --color-system-info: var(--c-blue-ocean-800);
+  --color-system-info-weak: var(--c-blue-ocean-300);
+  --color-system-on-info: var(--c-neutral-050);
+  --color-system-on-info-weak: var(--c-blue-ocean-1200);
+  --color-system-caution: var(--c-yellow-800);
+  --color-system-caution-weak: var(--c-yellow-300);
+  --color-system-on-caution: var(--c-yellow-1400);
+  --color-system-on-caution-weak: var(--c-yellow-1400);
+  --color-system-warning: var(--c-orange-800);
+  --color-system-warning-weak: var(--c-orange-300);
+  --color-system-on-warning: var(--c-neutral-1500);
+  --color-system-on-warning-weak: var(--c-orange-1500);
+  --color-system-critical: var(--c-red-800);
+  --color-system-critical-hover: var(--c-red-1000);
+  --color-system-critical-active: var(--c-red-1200);
+  --color-system-critical-disabled: var(--c-alpha-red-5);
+  --color-system-critical-weak: var(--c-red-300);
+  --color-system-on-critical: var(--c-neutral-050);
+  --color-system-on-critical-weak: var(--c-red-1400);
+  --color-system-success: var(--c-green-800);
+  --color-system-success-weak: var(--c-green-300);
+  --color-system-on-success: var(--c-green-1500);
+  --color-system-on-success-weak: var(--c-green-1300);
+
+  --color-pls-running: #f866c7;
+  --color-pls-activated: var(--c-blue-ocean-600);
+  --color-pls-deactivated: var(--c-blue-ocean-1200);
+  --color-pls-ready: #5fbf94;
+  --color-pls-undefined: #787878;
+  --color-pls-fault: #cc2a14;
+
+  --color-border-primary: var(--p-blue-ocean-600);
+  --color-border-secondary: var(--p-blue-ocean-800);
+  --color-border-neutral: var(--p-neutral-100);
+  --color-border-invert: var(--p-neutral-1500);
+  --color-border-interactive: var(--blue-ocean-600);
+  --color-border-interactive-hover: var(--blue-ocean-800);
+  --color-border-interactive-active: var(--blue-ocean-1000);
+  --color-border-interactive-disabled: var(--p-alpha-blue-ocean-05);
+  --color-border-interactive-secondary: var(--blue-ocean-600);
+  --color-border-interactive-secondary-hover: var(--blue-ocean-800);
+  --color-border-interactive-secondary-active: var(--blue-ocean-1000);
+  --color-border-interactive-secondary-disabled: var(--alpha-blue-ocean-05);
 
   /*  SIZEING  --------------------------------------------- */
 
@@ -182,3 +259,14 @@ body.light-theme {
   --c-table-height-large: var(--size-600);
   --c-table-padding: var(--size-200);
 }
+
+/* ------ Updated color tokens: Dark mode
+
+
+
+
+
+
+
+
+*/
