@@ -53,8 +53,6 @@
   --c-table-height-large: var(--size-600);
   --c-table-padding: var(--size-200);
 
-  /* ---- NEW TOKENS    */
-
   --color-primary: var(--p-neutral-100);
   --color-secondary: var(--p-alpha-neutral-80);
   --color-tertiary: var(--p-alpha-neutral-20);
@@ -77,7 +75,7 @@
   --color-surface-secondary: var(--p-blue-ocean-1200);
   --color-surface-tertiary: var(--p-blue-ocean-1100);
   --color-surface-invert: var(--p-blue-ocean-100);
-  --color-surface-accent: var(--p-blue-ocean-600);
+  --color-surface-accent: var(--p-blue-ocean-700);
   --color-surface-canvas: var(--p-blue-ocean-1400);
   --color-surface-interactive: var(--p-blue-ocean-700);
   --color-surface-interactive-hover: var(--p-blue-ocean-800);
@@ -88,6 +86,31 @@
   --color-surface-interactive-secondary-hover: var(--p-blue-ocean-1100);
   --color-surface-interactive-secondary-active: var(--p-blue-ocean-1200);
   --color-surface-interactive-secondary-disabled: var(--p-blue-ocean-10);
+
+  --color-system-info: var(--c-blue-ocean-800);
+  --color-system-info-weak: var(--c-blue-ocean-300);
+  --color-system-on-info: var(--c-neutral-050);
+  --color-system-on-info-weak: var(--c-blue-ocean-1200);
+  --color-system-caution: var(--c-yellow-800);
+  --color-system-caution-weak: var(--c-yellow-300);
+  --color-system-on-caution: var(--c-yellow-1500);
+  --color-system-on-caution-weak: var(--c-yellow-1500);
+  --color-system-warning: var(--c-orange-800);
+  --color-system-warning-weak: var(--c-orange-300);
+  --color-system-on-warning: var(--c-neutral-1500);
+  --color-system-on-warning-weak: var(--c-neutral-1500);
+  --color-system-critical: var(--c-red-800);
+  --color-system-critical-hover: var(--c-red-1000);
+  --color-system-critical-active: var(--c-red-1200);
+  --color-system-critical-disabled: var(--c-alpha-red-5);
+  --color-system-critical-weak: var(--c-red-300);
+  --color-system-on-critical: var(--c-neutral-050);
+  --color-system-on-critical-weak: var(--c-red-1400);
+  --color-system-success: var(--c-green-800);
+  --color-system-success-weak: var(--c-green-300);
+  --color-system-on-success: var(--c-green-1500);
+  --color-system-on-success-weak: var(--c-green-1300);
+
   --color-surface-interactive-tertiary: var(--p-blue-ocean-1100);
   --color-surface-interactive-tertiary-hover: var(--p-blue-ocean-1200);
   --color-surface-interactive-tertiary-active: var(--p-blue-ocean-1300);
@@ -124,7 +147,7 @@
   --color-pls-undefined: #787878;
   --color-pls-fault: #cc2a14;
 
-  --color-border-primary: var(--p-blue-ocean-600);
+  --color-border-primary: var(--p-blue-ocean-670);
   --color-border-secondary: var(--p-blue-ocean-800);
   --color-border-neutral: var(--p-neutral-100);
   --color-border-invert: var(--p-neutral-1500);
@@ -209,8 +232,6 @@ body.light-theme {
   --color-on-system: var(--p-neutral-100);
   --color-on-system-caution: var(--p-neutral-100);
 
-  /* Surface aka Background */
-
   --color-surface-neutral: var(--p-neutral-400);
   --color-surface-neutral-disabled: var(--p-neutral-200);
 
@@ -239,6 +260,88 @@ body.light-theme {
   --color-border-accent: var(--color-accent);
 
   --color-focus-ring: var(--p-blue-ocean-600);
+
+  /* ---- Color tokens: "Cold day" --- */
+
+  --color-primary: var(--p-blue-193-1500);
+  --color-secondary: var(--p-neutral-cold-1000);
+  --color-tertiary: var(--p-neutral-cold-500);
+  --color-diabled: var(--p-alpha-neutral-30);
+  --color-invert: var(--p-neutral-cold-050);
+  --color-accent: var(--p-blue-193-900);
+  --color-interactive: var(--p-blue-193-900);
+  --color-interactive-hover: var(--p-blue-193-700);
+  --color-interactive-disabled: var(--p-blue-193-500);
+  --color-interactive-secondary: var(--p-blue-193-700);
+  --color-interactive-secondary-hover: var(--p-blue-193-500);
+  --color-interactive-secondary-disabled: var(--p-blue-193-500);
+  --color-on-accent: var(--p-neutral-1200);
+  --color-on-interactive: var(--p-neutral-050);
+  --color-on-interactive-secondary: var(--p-neutral-1400);
+
+  --color-surface-primary: var(--p-neutral-cold-050);
+  --color-surface-secondary: var(--p-neutral-cold-700);
+  --color-surface-tertiary: var(--p-neutral-cold-600);
+  --color-surface-invert: var(--p-neutral-cold-1100);
+  --color-surface-accent: var(--p-blue-193-1100);
+  --color-surface-canvas: var(--p-neutral-cold-100);
+  --color-surface-interactive: var(--p-blue-193-900);
+  --color-surface-interactive-hover: var(--p-blue-193-800);
+  --color-surface-interactive-active: var(--p-blue-193-700);
+  --color-surface-interactive-disabled: var(--p-neutral-cold-400);
+  --color-surface-interactive-secondary: var(--p-blue-193-700);
+  --color-surface-interactive-secondary-hover: var(--p-blue-193-600);
+  --color-surface-interactive-secondary-active: var(--p-blue-193-500);
+  --color-surface-interactive-secondary-disabled: var(--p-blue-193-400);
+
+  --color-system-info: var(--c-blue-193-900);
+  --color-system-info-weak: var(--c-blue-193-700);
+  --color-system-on-info: var(--c-neutral-cold-1500);
+  --color-system-on-info-weak: var(--c-neutral-cold-1200);
+  --color-system-caution: var(--c-yellow-800);
+  --color-system-caution-weak: var(--c-yellow-300);
+  --color-system-on-caution: var(--c-yellow-1500);
+  --color-system-on-caution-weak: var(--c-yellow-1500);
+  --color-system-warning: var(--c-orange-800);
+  --color-system-warning-weak: var(--c-orange-300);
+  --color-system-on-warning: var(--c-neutral-cold-1500);
+  --color-system-on-warning-weak: var(--c-neutral-cold-1500);
+
+  --color-system-critical: var(--c-redalt--800);
+  --color-system-critical-hover: var(--c-red-alt-1000);
+  --color-system-critical-active: var(--c-red-alt-1200);
+  --color-system-critical-disabled: var(--c-red-alt-1400);
+  --color-system-critical-weak: var(--c-red-alt-500);
+  --color-system-on-critical: var(--c-neutral-cold-050);
+  --color-system-on-critical-weak: var(--c-red--alt-1500);
+
+  --color-system-success: var(--c-green-alt-800);
+  --color-system-success-weak: var(--c-green-alt-500);
+  --color-system-on-success: var(--c-neutral-cold-1500);
+  --color-system-on-success-weak: var(--c-green-alt-1500);
+
+  --color-pls-running: #f866c7;
+  --color-pls-activated: var(--c-blue-ocean-600);
+  --color-pls-deactivated: var(--c-blue-ocean-1200);
+  --color-pls-ready: #5fbf94;
+  --color-pls-undefined: #787878;
+  --color-pls-fault: #cc2a14;
+
+  --color-border-primary: var(--p-blue-ocean-600);
+  --color-border-secondary: var(--p-blue-ocean-800);
+  --color-border-neutral: var(--p-neutral-100);
+
+  --color-border-invert: var(--p-neutral-cold-1500);
+
+  --color-border-interactive: var(--blue-193-700);
+  --color-border-interactive-hover: var(--blue-193-800);
+  --color-border-interactive-active: var(--blue-193-900);
+  --color-border-interactive-disabled: var(--p-blue-193-1300);
+
+  --color-border-interactive-secondary: var(--blue-ocean-900);
+  --color-border-interactive-secondary-hover: var(--blue-ocean-1000);
+  --color-border-interactive-secondary-active: var(--blue-ocean-1100);
+  --color-border-interactive-secondary-disabled: var(--p-blue-193-1300);
 }
 
 /* ----------- Component tokens -------- */
@@ -266,14 +369,3 @@ body.light-theme {
   --c-table-height-large: var(--size-600);
   --c-table-padding: var(--size-200);
 }
-
-/* ------ Updated color tokens: Dark mode
-
-
-
-
-
-
-
-
-*/
