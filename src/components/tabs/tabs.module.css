@@ -21,16 +21,17 @@
     height: var(--height-medium);
     padding-inline: 1em;
     border: none;
+    color: var(--color-on-interactive-secondary);
     background-color: var(--color-surface-interactive-secondary);
 
     &:hover {
       cursor: pointer;
-      background-color: var(--color-surface-interactive-secondary-hover);
+      background-color: var(--color-surface-interactive-hover);
     }
 
     &:active {
       cursor: pointer;
-      background-color: var(--color-surface-interactive-secondary-pressed);
+      background-color: var(--color-surface-interactive-active);
     }
 
     &:disabled {
@@ -40,6 +41,7 @@
     }
 
     &[aria-selected="true"] {
+      color: var(--color-on-interactive);
       background-color: var(--color-surface-interactive);
 
       &:hover {
