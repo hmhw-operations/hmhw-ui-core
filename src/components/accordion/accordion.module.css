@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    background-color: var(--color-surface-interactive-secondary);
+    background-color: var(--color-surface-interactive);
     height: var(--height-medium);
     padding-left: var(--size-400);
     font-size: var(--type-300);
@@ -26,7 +26,7 @@
     list-style: none;
 
     &:hover {
-      background-color: var(--color-surface-interactive-secondary-hover);
+      background-color: var(--color-surface-interactive-hover);
     }
 
     &::-webkit-details-marker {

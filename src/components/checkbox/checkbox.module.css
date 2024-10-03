@@ -35,10 +35,8 @@
     }
 
     &:hover {
-      color: var(--color-accent-hover);
-
       &:before {
-        border-color: var(--color-accent-hover);
+        border-color: var(--color-interactive-hover);
       }
     }
   }
@@ -46,7 +44,7 @@
   input:checked + label {
     &:before {
       border-color: var(--color-accent);
-      background-color: var(--color-accent);
+      background-color: var(--color-interactive);
     }
 
     &:after {
@@ -56,17 +54,15 @@
       top: 10px;
       width: 6px;
       height: 10px;
-      border-right: var(--size-025) solid var(--color-invert);
-      border-bottom: var(--size-025) solid var(--color-invert);
+      border-right: var(--size-025) solid var(--color-on-interactive);
+      border-bottom: var(--size-025) solid var(--color-on-interactive);
       rotate: 40deg;
     }
 
     &:hover {
-      color: var(--color-accent-hover);
-
       &:before {
-        border-color: var(--color-accent-hover);
-        background-color: var(--color-accent-hover);
+        border-color: var(--color-interactive-hover);
+        background-color: var(--color-interactive-hover);
       }
     }
   }

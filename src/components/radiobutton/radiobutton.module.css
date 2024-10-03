@@ -28,6 +28,7 @@
 
   input:checked + label:before {
     border-color: var(--color-accent);
+    border-color: var(--color-interactive);
   }
 
   input:checked + label:after {
@@ -38,7 +39,11 @@
     width: var(--size-150);
     height: var(--size-150);
     border-radius: var(--radius-full);
-    background-color: var(--color-accent);
+    background-color: var(--color-interactive);
+  }
+
+  label:hover:before {
+    border-color: var(--color-interactive-hover);
   }
 
   .radio:has(input:focus-visible) {

@@ -16,7 +16,7 @@
   text-transform: uppercase;
   font-size: var(--type-button-label);
   height: var(--height-medium);
-  color: var(--color-on-interactive);
+  color: var(--color-on-interactive-secondary);
   background-color: var(--color-surface-interactive-secondary);
 
   &:hover {
@@ -33,6 +33,7 @@
 
   &:has(input:checked) {
     background-color: var(--color-surface-interactive);
+    color: var(--color-surface-on-interactive);
 
     &:hover {
       cursor: default;
