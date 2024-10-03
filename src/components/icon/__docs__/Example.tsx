@@ -9,6 +9,7 @@ const Example: FC<IconProps> = ({ name, size = "small" }) => {
         justifyContent: "center",
         alignItems: "center",
         height: "100%",
+        color: "var(--color-primary)",
       }}
     >
       <Icon name={name} size={size} />

@@ -1,6 +1,23 @@
 /* Palette */
 
 :root {
+  --hue-red-alt: 5;
+  --p-red-alt-100: hsl(var(--hue-red-alt) 0% 97%);
+  --p-red-alt-200: hsl(var(--hue-red-alt) 3% 96%);
+  --p-red-alt-300: hsl(var(--hue-red-alt) 7% 92%);
+  --p-red-alt-400: hsl(var(--hue-red-alt) 11% 87%);
+  --p-red-alt-500: hsl(var(--hue-red-alt) 18% 83%);
+  --p-red-alt-600: hsl(var(--hue-red-alt) 26% 28%);
+  --p-red-alt-700: hsl(var(--hue-red-alt) 44% 75%);
+  --p-red-alt-800: hsl(var(--hue-red-alt) 100% 64%);
+  --p-red-alt-900: hsl(var(--hue-red-alt) 100% 62%);
+  --p-red-alt-1000: hsl(var(--hue-red-alt) 100% 57%);
+  --p-red-alt-1100: hsl(var(--hue-red-alt) 100% 52%);
+  --p-red-alt-1200: hsl(var(--hue-red-alt) 100% 46%);
+  --p-red-alt-1300: hsl(var(--hue-red-alt) 100% 40%);
+  --p-red-alt-1400: hsl(var(--hue-red-alt) 100% 33%);
+  --p-red-alt-1500: hsl(var(--hue-red-alt) 100% 23%);
+
   --hue-neutral: 0;
   --p-neutral-050: hsl(var(--hue-neutral) 0% 100%);
   --p-neutral-100: hsl(var(--hue-neutral) 0% 100%);
@@ -90,25 +107,6 @@
   --p-alpha-neutral-05: hsl(var(--hue-neutral) 100% 0% / 0.05);
 
   --p-alpha-neutral-40: hsl(100 100% 100% / 0.4);
-
-  /*
-  
-    --p-blue-ocean-100: oklch(96% 0.08 235);
-    --p-blue-ocean-200: oklch(90% 0.08 235);
-    --p-blue-ocean-300: oklch(84% 0.08 235);
-    --p-blue-ocean-400: oklch(78% 0.08 235);
-    --p-blue-ocean-500: oklch(72% 0.08 235);
-    --p-blue-ocean-600: oklch(66% 0.08 235);
-    --p-blue-ocean-700: oklch(60% 0.08 235);
-    --p-blue-ocean-800: oklch(54% 0.08 235);
-    --p-blue-ocean-900: oklch(48% 0.08 235);
-    --p-blue-ocean-1000: oklch(42% 0.08 235);
-    --p-blue-ocean-1100: oklch(36% 0.08 235);
-    --p-blue-ocean-1200: oklch(30% 0.08 235);
-    --p-blue-ocean-1300: oklch(28% 0.08 235);
-    --p-blue-ocean-1400: oklch(24%.08 235);
-    --p-blue-ocean-1500: oklch(20% 0.08 235);
-  */
 
   --hue-blue-193: 193;
   --p-blue-193-100: hsl(var(--hue-blue-193) 2% 99%);
@@ -263,21 +261,4 @@
   --p-red-1300: hsl(var(--hue-red) 100% 30%);
   --p-red-1400: hsl(var(--hue-red) 100% 25%);
   --p-red-1500: hsl(var(--hue-red) 100% 20%);
-
-  --hue-red-alt: 5;
-  --p-red-alt-100: hsl(var(--hue-red-alt) 0% 97%);
-  --p-red-alt-200: hsl(var(--hue-red-alt) 3% 96%);
-  --p-red-alt-300: hsl(var(--hue-red-alt) 7% 92%);
-  --p-red-alt-400: hsl(var(--hue-red-alt) 11% 87%);
-  --p-red-alt-500: hsl(var(--hue-red-alt) 18% 83%);
-  --p-red-alt-600: hsl(var(--hue-red-alt) 26% 28%);
-  --p-red-alt-700: hsl(var(--hue-red-alt) 44% 75%);
-  --p-red-alt-800: hsl(var(--hue-red-alt) 100% 64%);
-  --p-red-alt-900: hsl(var(--hue-red-alt) 100% 62%);
-  --p-red-alt-1000: hsl(var(--hue-red-alt) 100% 57%);
-  --p-red-alt-1100: hsl(var(--hue-red-alt) 100% 52%);
-  --p-red-alt-1200: hsl(var(--hue-red-alt) 100% 46%);
-  --p-red-alt-1300: hsl(var(--hue-red-alt) 100% 40%);
-  --p-red-alt-1400: hsl(var(--hue-red-alt) 100% 33%);
-  --p-red-alt-1500: hsl(var(--hue-red-alt) 100% 23%);
 }
