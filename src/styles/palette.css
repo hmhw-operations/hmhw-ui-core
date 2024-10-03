@@ -153,6 +153,23 @@
   --p-green-1400: hsl(var(--hue-green) 100% 12%);
   --p-green-1500: hsl(var(--hue-green) 100% 10%);
 
+  --hue-green-alt: 94;
+  --p-green-alt-100: hsl(var(--hue-green-alt) 2% 99%);
+  --p-green-alt-200: hsl(var(--hue-green-alt) 5% 98%);
+  --p-green-alt-300: hsl(var(--hue-green-alt) 11% 96%);
+  --p-green-alt-400: hsl(var(--hue-green-alt) 17% 94%);
+  --p-green-alt-500: hsl(var(--hue-green-alt) 25% 92%);
+  --p-green-alt-600: hsl(var(--hue-green-alt) 35% 90%);
+  --p-green-alt-700: hsl(var(--hue-green-alt) 48% 87%);
+  --p-green-alt-800: hsl(var(--hue-green-alt) 90% 84%);
+  --p-green-alt-900: hsl(var(--hue-green-alt) 90% 81%);
+  --p-green-alt-1000: hsl(var(--hue-green-alt) 90% 75%);
+  --p-green-alt-1100: hsl(var(--hue-green-alt) 90% 69%);
+  --p-green-alt-1200: hsl(var(--hue-green-alt) 90% 61%);
+  --p-green-alt-1300: hsl(var(--hue-green-alt) 90% 53%);
+  --p-green-alt-1400: hsl(var(--hue-green-alt) 90% 43%);
+  --p-green-alt-1500: hsl(var(--hue-green-alt) 90% 31%);
+
   --hue-orange: 36;
   --p-orange-100: hsl(var(--hue-orange) 100% 95%);
   --p-orange-200: hsl(var(--hue-orange) 100% 90%);
