@@ -13,7 +13,7 @@ export type ThemeSwitchProps = {
   disabled?: boolean;
   id: string;
   name: string;
-  size: Size;
+  size?: Size;
   // labelPosition?: LabelPosition;
 };
 
@@ -24,7 +24,7 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
   disabled = false,
   id,
   name,
-  size = "small",
+  // size = "small",
   // labelPosition = "right",
 }) => {
   const [isChecked, setIsChecked] = useState(checked);
