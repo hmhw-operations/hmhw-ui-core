@@ -1,9 +1,10 @@
 .themeswitch {
-  height: 24px;
+  height: var(--size-300);
   width: 42px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  color: inherit;
 
   svg:last-child {
     display: none;
