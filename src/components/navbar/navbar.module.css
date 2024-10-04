@@ -1,9 +1,53 @@
-.nav {
-  color: tomato;
-  width: 100%;
-  border: 1px dashed plum;
+.appbar {
+  display: grid;
 
-  display: flex;
-  justify-content: space-between;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: var(--size-200);
+
   align-items: center;
+  width: 100%;
+  height: var(--size-600);
+  padding-inline: var(--size-200);
+  color: var(--c-appbar-text);
+  background-color: var(--c-appbar-surface);
+
+  & > * {
+    display: flex;
+    align-items: center;
+    gap: var(--size-100);
+  }
+
+  & > :last-child {
+    justify-content: end;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: var(--size-200);
+
+  a {
+  }
+
+  a:hover {
+    color: var(--color-interactive-hover);
+  }
+
+  a:active {
+    color: var(--color-interactive-active);
+  }
+}
+
+.apptitle {
+  .logo {
+    height: var(--size-200);
+    width: auto;
+  }
+
+  .title {
+    font-size: var(--type-400);
+  }
+}
+
+.controls {
 }
