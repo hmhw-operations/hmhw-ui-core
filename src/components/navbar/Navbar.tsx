@@ -3,6 +3,7 @@ import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { ThemeSwitch } from "../themeswitch";
+import { IconButton } from "../iconbutton";
 
 const Navbar = () => {
   return (
