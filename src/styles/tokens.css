@@ -254,6 +254,6 @@ body.light-theme {
   --c-switch-thumb-off: var(--p-neutral-cold-050);
   --c-switch-thumb-on: var(--p-neutral-cold-050);
 
-  --c-appbar-surface: var(--p-blue-130-1400);
+  --c-appbar-surface: var(--p-blue-193-1400);
   --c-appbar-text: var(--p-color-primary);
 }
