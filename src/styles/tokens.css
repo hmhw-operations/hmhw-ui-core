@@ -253,10 +253,7 @@ body.light-theme {
   --c-switch-track-on-hover: var(--p-blue-193-1100);
   --c-switch-thumb-off: var(--p-neutral-cold-050);
   --c-switch-thumb-on: var(--p-neutral-cold-050);
-  
-  --c-appbar-surface: var(--p-blue-193-1400);
-  --c-appbar-text: var(--p-color-primary);
-  --c-appbar-surface: var(--p-blue-130-1400);
-  --c-appbar-text: var(--p-neutral-050);
 
+  --c-appbar-surface: var(--p-blue-193-1400);
+  --c-appbar-text: var(--p-neutral-050);
 }
