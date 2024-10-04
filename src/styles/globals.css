@@ -48,6 +48,21 @@ a {
   color: inherit;
 }
 
+.text-link {
+  color: var(--color-interactive);
+  text-decoration: underline;
+  text-underline-offset: var(--size-075);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-interactive-hover);
+  }
+
+  &:active {
+    color: var(--color-interactive-active);
+  }
+}
+
 /* Utilities */
 
 :focus-visible {
