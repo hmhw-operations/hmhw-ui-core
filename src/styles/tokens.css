@@ -115,14 +115,12 @@
   --color-system-success-weak: var(--p-green-300);
   --color-system-on-success: var(--p-green-1500);
   --color-system-on-success-weak: var(--p-green-1300);
-
   --color-pls-running: #f866c7;
   --color-pls-activated: #40b8ec;
   --color-pls-deactivated: #00405c;
   --color-pls-ready: #5fbf94;
   --color-pls-undefined: #787878;
   --color-pls-fault: #cc2a14;
-
   --color-border-primary: var(--p-blue-ocean-670);
   --color-border-secondary: var(--p-blue-ocean-800);
   --color-border-neutral: var(--p-neutral-100);
@@ -231,6 +229,9 @@ body.light-theme {
   --c-switch-track-on-hover: var(--color-interactive-hover);
   --c-switch-thumb-off: var(--p-neutral-050);
   --c-switch-thumb-on: var(--p-neutral-050);
+
+  --c-appbar-surface: var(--p-blue-ocean-1500);
+  --c-appbar-text: var(--p-color-primary);
 }
 
 body.light-theme {
@@ -252,4 +253,7 @@ body.light-theme {
   --c-switch-track-on-hover: var(--p-blue-193-1100);
   --c-switch-thumb-off: var(--p-neutral-cold-050);
   --c-switch-thumb-on: var(--p-neutral-cold-050);
+
+  --c-appbar-surface: var(--p-blue-130-1400);
+  --c-appbar-text: var(--p-color-primary);
 }
