@@ -12,3 +12,4 @@ export * from "./switch";
 export * from "./tabs";
 export * from "./Input";
 export * from "./themeswitch";
+export * from "./navbar";

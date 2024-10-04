@@ -1,0 +1,9 @@
+.nav {
+  color: tomato;
+  width: 100%;
+  border: 1px dashed plum;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
