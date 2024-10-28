@@ -1,0 +1,15 @@
+.select {
+  border: 1px dashed tomato;
+}
+
+.small {
+  width: 100px;
+}
+
+.medium {
+  width: 200px;
+}
+
+.large {
+  width: 300px;
+}
