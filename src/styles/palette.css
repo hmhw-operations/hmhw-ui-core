@@ -20,7 +20,7 @@
 
   --hue-neutral: 0;
   --p-neutral-050: hsl(var(--hue-neutral) 0% 100%);
-  --p-neutral-100: hsl(var(--hue-neutral) 0% 100%);
+  --p-neutral-100: hsl(var(--hue-neutral) 0% 96%);
   --p-neutral-200: hsl(var(--hue-neutral) 0% 94%);
   --p-neutral-300: hsl(var(--hue-neutral) 0% 87%);
   --p-neutral-400: hsl(var(--hue-neutral) 0% 74%);

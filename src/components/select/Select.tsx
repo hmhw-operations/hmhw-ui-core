@@ -7,7 +7,7 @@ import style from "./select.module.css";
 
 export type SelectProps = {
   options: string[];
-  label?: string;
+  label: string;
   value?: string;
   helperText?: string;
   size?: Size;
@@ -24,18 +24,15 @@ const Select = ({ options, label, value, helperText, size = "medium", disabled, 
   };
 
   return (
-    <>
+    <div className={`${style.select} ${style[size]}`}>
       {label && <label>{label}</label>}
-      <select
-        className={`${style.select} ${style[size]}`}
-        value={selectedValue}
-        onChange={handleChange}
-        disabled={disabled}
-      >
-        {options && options.map((option) => <option value={option}>{option}</option>)}
-      </select>
+      <div className={`${style.wrapper}`}>
+        <select className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
+          {options && options.map((option) => <option value={option}>{option}</option>)}
+        </select>
+      </div>
       {helperText && <p>{helperText}</p>}
-    </>
+    </div>
   );
 };
 
