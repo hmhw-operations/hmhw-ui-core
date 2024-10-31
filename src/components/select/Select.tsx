@@ -5,6 +5,8 @@ import "../../styles/tokens.css";
 import { Size } from "../../types";
 import style from "./select.module.css";
 
+import { Icon } from "../icon";
+
 export type SelectProps = {
   options: string[];
   label: string;
@@ -30,6 +32,7 @@ const Select = ({ options, label, value, helperText, size = "medium", disabled, 
         <select className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
           {options && options.map((option) => <option value={option}>{option}</option>)}
         </select>
+        <Icon name="caret-double" />
       </div>
       {helperText && <p>{helperText}</p>}
     </div>

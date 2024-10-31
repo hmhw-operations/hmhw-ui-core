@@ -1,20 +1,41 @@
 .select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-100);
+
   .wrapper {
+    cursor: pointer;
     position: relative;
     display: flex;
     justify-content: center;
-    background-size: var(--size-250);
-
     height: var(--height-medium);
+    padding-inline: 0.75em 0.25rem;
     font-size: var(--type-300);
-
     line-height: 1;
 
     border: 1px solid var(--c-input-border);
     border-radius: var(--c-input-radius);
+    background-color: var(--c-input-bg);
+
+    &:hover {
+      border-color: var(--c-input-border-hover);
+    }
+
+    select {
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      color: inherit;
+    }
 
     &:focus-within {
       outline: 2px solid var(--color-focus-ring);
+      outline-offset: 2px;
+
+      select {
+        outline: none;
+        box-shadow: none;
+      }
     }
 
     &:has(select:disabled) {
@@ -23,32 +44,8 @@
       color: var(--c-input-text-disabled);
     }
 
-    --size: 0.5em;
-    --border: 0.125em;
-    --right: 0.75em;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 33%;
-      right: var(--right);
-      width: var(--size);
-      height: var(--size);
-      border-left: var(--border) solid var(--c-input-icon);
-      border-bottom: var(--border) solid var(--c-input-icon);
-      transform: rotate(135deg);
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: 47%;
-      border-top: var(--border) solid var(--c-input-icon);
-      right: var(--right);
-      width: var(--size);
-      height: var(--size);
-      border-right: var(--border) solid var(--c-input-icon);
-      transform: rotate(135deg);
+    svg {
+      width: 1.5rem;
     }
   }
 
@@ -56,35 +53,19 @@
     .wrapper {
       font-size: var(--type-200);
       height: var(--height-small);
+
+      svg {
+        width: 1rem;
+      }
     }
   }
+
   &.large .wrapper {
     font-size: var(--type-400);
     height: var(--height-large);
+
+    svg {
+      width: 1.75rem;
+    }
   }
-}
-
-.xxx {
-  appearance: none;
-  cursor: cursor;
-  width: 100%;
-  padding-inline: 0.5em var(--right);
-
-  color: var(--c-input-text-value);
-  border: none;
-  background-color: transparent;
-
-  &:disabled {
-  }
-
-  &:focus-within {
-    outline: 0;
-  }
-}
-
-.xxx:before {
-  content: "X";
-  display: block;
-  width: 200px;
-  position: relative;
 }

@@ -242,6 +242,7 @@ body.light-theme {
   --c-input-text-disabled: var(--p-alpha-white-40);
   --c-input-text-error: var(--color-alert-danger);
   --c-input-bg: var(--p-neutral-100);
+  --c-input-bg-hover: var(--p-alpha-white-05);
   --c-input-icon: var(--color-secondary);
   --c-input-bg-disabled: transparent;
   --c-input-bg-error: var(--p-alpha-red-10);
@@ -295,7 +296,7 @@ body.light-theme {
   --c-input-text-disabled: var(--p-alpha-black-40);
   --c-input-text-error: var(--color-alert-danger);
   --c-input-bg: var(--p-neutral-100);
-  --c-input-bg: var(--p-neutral-100);
+  --c-input-bg-hover: var(--p-neutral-100);
   --c-input-bg-disabled: transparent;
   --c-input-bg-error: var(--p-alpha-red-10);
   --c-input-border: var(--p-alpha-black-20);
