@@ -155,6 +155,7 @@ body.light-theme {
   --color-interactive-secondary-disabled: var(--p-blue-193-1100);
   --color-on-accent: var(--p-blue-193-050);
   --color-on-interactive: var(--p-blue-193-050);
+  --color-on-interactive: var(--p-blue-193-050);
   --color-on-interactive-secondary: var(--p-neutral-050);
   --color-surface-primary: var(--p-neutral-cold-050);
   --color-surface-secondary: var(--p-neutral-cold-700);

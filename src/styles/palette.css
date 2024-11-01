@@ -109,6 +109,7 @@
   --p-alpha-neutral-40: hsl(100 100% 100% / 0.4);
 
   --hue-blue-193: 193;
+  --p-blue-193-050: hsl(var(--hue-blue-193) 100% 100%);
   --p-blue-193-100: hsl(var(--hue-blue-193) 75% 94%);
   --p-blue-193-200: hsl(var(--hue-blue-193) 75% 90%);
   --p-blue-193-300: hsl(var(--hue-blue-193) 75% 85%);
@@ -123,7 +124,7 @@
   --p-blue-193-1200: hsl(var(--hue-blue-193) 100% 24%);
   --p-blue-193-1300: hsl(var(--hue-blue-193) 100% 18%);
   --p-blue-193-1400: hsl(var(--hue-blue-193) 100% 12%);
-  --p-blue-193-1500: hsl(var(--hue-blue-193) 100% --p-red-800);
+  --p-blue-193-1500: hsl(var(--hue-blue-193) 100% 8%);
 
   --hue-neutral-cold: 194;
   --p-neutral-cold-050: hsl(var(--hue-neutral-cold) 0% 100%);
