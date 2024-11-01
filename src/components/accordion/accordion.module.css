@@ -19,11 +19,12 @@
     position: relative;
     background-color: var(--color-surface-interactive);
     height: var(--height-medium);
-    padding-left: var(--size-400);
+    padding-left: var(--space-50);
     font-size: var(--type-300);
     line-height: 1;
     color: var(--color-on-interactive);
     list-style: none;
+    gap: var(--space-50);
 
     &:hover {
       background-color: var(--color-surface-interactive-hover);
@@ -33,20 +34,15 @@
       display: none;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: var(--size-100);
-      top: 40%;
-      height: var(--size-100);
-      width: var(--size-100);
-      border-top: 1.5px solid var(--color-on-interactive);
-      border-right: 1.5px solid var(--color-on-interactive);
-      transform: rotate(45deg);
-    }
-
     &:hover {
       cursor: pointer;
+    }
+
+    svg {
+      width: var(--size-300);
+      height: auto;
+      transition: transform 0.2s ease-out;
+      fill: var(--color-on-interactive);
     }
   }
 
@@ -54,19 +50,18 @@
     padding: var(--size-200) 0 var(--size-100);
   }
 
-  &[open] > summary:before {
-    transform: rotate(135deg);
-    left: var(--size-150);
-    top: var(--size-125);
+  &[open] > summary > svg {
+    transform: rotate(90deg);
+    
   }
 
-  .large {
+  &.large {
     summary {
       height: var(--height-large);
       font-size: var(--type-400);
     }
   }
-  .small {
+  &.small {
     summary {
       height: var(--height-small);
       font-size: var(--type-200);
