@@ -127,7 +127,7 @@
   --color-border-secondary: var(--p-blue-ocean-800);
   --color-border-neutral: var(--p-neutral-100);
   --color-border-invert: var(--p-neutral-1500);
-  --color-accent: var(--color-accent);
+  --color-border-accent: var(--color-accent);
   --color-border-interactive: var(--color-accent);
   --color-border-interactive-hover: var(--blue-ocean-800);
   --color-border-interactive-active: var(--blue-ocean-1000);
