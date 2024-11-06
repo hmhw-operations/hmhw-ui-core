@@ -72,7 +72,7 @@
   --color-interactive-secondary-active: var(--p-blue-ocean-1300);
   --color-interactive-secondary-disabled: var(--p-blue-ocean-1200);
   --color-on-accent: var(--p-neutral-050);
-  --color-on-disabled: var(--p-alpha-white-20);
+  --color-on-disabled: var(--p-blue-ocean-100);
   --color-on-interactive: var(--p-neutral-050);
   --color-on-interactive-secondary: var(--p-neutral-200);
   --color-on-interactive-secondary: var(--p-blue-ocean-100);
@@ -158,7 +158,7 @@ body.light-theme {
   --color-interactive-secondary-hover: var(--p-blue-193-900);
   --color-interactive-secondary-active: var(--p-blue-193-1100);
   --color-interactive-secondary-disabled: var(--p-blue-193-1100);
-  --color-on-disabled: var(--p-neutral-cold-200);
+  --color-on-disabled: var(--p-neutral-cold-050);
   --color-on-accent: var(--p-blue-193-050);
   --color-on-interactive: var(--p-blue-193-050);
   --color-on-interactive: var(--p-blue-193-050);
