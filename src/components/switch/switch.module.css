@@ -24,7 +24,7 @@
     display: inline-flex;
     justify-content: left;
     align-items: center;
-    background-color: var(--c-switch-track-off);
+    background-color: var(--color-surface-neutral);
     border-radius: var(--radius-full);
 
     height: var(--size-300);
@@ -33,26 +33,26 @@
 
     &:hover {
       cursor: pointer;
-      background-color: var(--c-switch-track-off-hover);
+      background-color: var(--color-surface-neutral-hover);
     }
 
     .thumb {
       width: var(--size-250);
       height: var(--size-250);
       border-radius: var(--radius-full);
-      background-color: var(--c-switch-thumb-off);
+      background-color: var(--color-on-interactive);
     }
 
     &[aria-checked="true"] {
       justify-content: right;
-      background-color: var(--c-switch-track-on);
+      background-color: var(--color-surface-interactive);
 
       &:hover {
-        background-color: var(--c-switch-track-on-hover);
+        background-color: var(--color-surface-interactive-hover);
       }
 
       .thumb {
-        background-color: var(--c-switch-thumb-on);
+        background-color: var(--color-on-interactive);
       }
     }
 
@@ -72,7 +72,7 @@
       }
 
       .thumb {
-        background-color: var(--color-disabled);
+        background-color: var(--color-on-disabled);
       }
     }
   }
