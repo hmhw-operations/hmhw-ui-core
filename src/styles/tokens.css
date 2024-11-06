@@ -249,6 +249,19 @@ body.light-theme {
 
   --c-appbar-surface: var(--p-blue-ocean-1500);
   --c-appbar-text: var(--p-neutral-050);
+
+  --c-input-value: var(--p-neutral-1400);
+  --c-input-bg: var(--p-neutral-100);
+  --c-input-border: var(--p-alpha-black-20);
+  --c-input-border-disabled: var(--p-alpha-black-20);
+  --c-input-value-disabled: var(--p-neutral-1400);
+  --c-input-bg-disabled: transparent;
+  --c-input-bg-error: var(--p-alpha-red-10);
+  --c-input-border: var(--p-alpha-black-20);
+  --c-input-border-hover: var(--color-primary);
+  --c-input-border-active: green;
+  --c-input-border-disabled: var(--p-alpha-white-30);
+  --c-input-border-error: var(--color-system-critical);
 }
 
 body.light-theme {

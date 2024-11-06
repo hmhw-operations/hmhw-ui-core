@@ -1,0 +1,49 @@
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-100);
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-100);
+  }
+
+  .label {
+    color: var(--color-primary);
+  }
+
+  .textareas {
+    appearance: none;
+    display: block;
+    width: calc(100% - 1rem);
+    background-color: var(--c-input-bg);
+    border: 1px solid var(--c-input-border);
+    border-radius: 4px;
+    padding: var(--size-075);
+    min-height: var(--height-medium);
+  }
+
+  .helpertext {
+    display: flex;
+    align-items: center;
+    gap: var(--size-100);
+    color: var(--color-system-critical);
+
+    svg {
+      width: var(--size-300);
+    }
+  }
+}
+
+.error {
+  .textareas {
+    border: 1px solid var(--c-input-border-error);
+  }
+}
+
+.textareas:disabled {
+  border-color: var(--c-input-border-disabled);
+  color: var(--c-input-value-disabled);
+}
