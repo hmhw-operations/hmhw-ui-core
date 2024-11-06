@@ -63,6 +63,13 @@
   --p-alpha-blue-ocean-15: hsl(var(--hue-blue-ocean) 100% 50%/ 0.15);
   --p-alpha-blue-ocean-20: hsl(var(--hue-blue-ocean) 100% 50%/ 0.2);
   --p-alpha-blue-ocean-25: hsl(var(--hue-blue-ocean) 100% 50%/ 0.25);
+  --p-alpha-blue-ocean-30: hsl(var(--hue-blue-ocean) 100% 50%/ 0.3);
+  --p-alpha-blue-ocean-40: hsl(var(--hue-blue-ocean) 100% 50%/ 0.4);
+  --p-alpha-blue-ocean-50: hsl(var(--hue-blue-ocean) 100% 50%/ 0.5);
+  --p-alpha-blue-ocean-60: hsl(var(--hue-blue-ocean) 100% 50%/ 0.6);
+  --p-alpha-blue-ocean-70: hsl(var(--hue-blue-ocean) 100% 50%/ 0.7);
+  --p-alpha-blue-ocean-80: hsl(var(--hue-blue-ocean) 100% 50%/ 0.8);
+  --p-alpha-blue-ocean-90: hsl(var(--hue-blue-ocean) 100% 50%/ 0.9);
 
   --p-alpha-red-05: hsl(var(--hue-red) 100% 55% / 0.05);
   --p-alpha-red-10: hsl(var(--hue-red) 100% 55% / 0.1);
