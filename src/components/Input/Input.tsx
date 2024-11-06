@@ -17,6 +17,7 @@ export type InputProps = {
   value: string;
   helperText?: string;
   unit?: string;
+  disabled?: boolean;
   error?: {
     message?: string;
     hasError?: boolean;
@@ -25,7 +26,19 @@ export type InputProps = {
 
 const Input: FC<
   InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-> = ({ placeholder, unit, onChange, label, labelPosition = "top", error, id, name, helperText, ...props }) => {
+> = ({
+  placeholder,
+  unit,
+  onChange,
+  label,
+  labelPosition = "top",
+  error,
+  id,
+  name,
+  helperText,
+  disabled,
+  ...props
+}) => {
   const { value, type } = props;
 
   const hasError = error?.hasError;
@@ -46,6 +59,7 @@ const Input: FC<
             placeholder={placeholder}
             value={value}
             onChange={onChange}
+            disabled={disabled}
           />
           {hasError && <Icon name="info" />}
           {unit && <div className={`${style.unit}`}>unit</div>}

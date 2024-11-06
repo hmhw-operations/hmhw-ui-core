@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import Textarea, { TextareaProps } from "../Textarea";
 
-const Example: FC<{ error: boolean }> = ({ error }) => {
+const Example: FC<{ error: boolean; disabled: boolean }> = ({ error, disabled }) => {
   const [value, setValue] = React.useState("");
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
     setValue(event.target.value);
   };
 
@@ -20,8 +20,10 @@ const Example: FC<{ error: boolean }> = ({ error }) => {
         id="demo id"
         name="Demo"
         label="I am the label"
+        onChange={handleChange}
         value={value}
         error={error ? { message: "Oh dear, something is terribly wrong", hasError: true } : undefined}
+        disabled={disabled}
       />
     </div>
   );

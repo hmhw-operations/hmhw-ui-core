@@ -12,9 +12,10 @@ export type TextareaProps = {
   name: string;
   placeholder?: string;
   labelPosition?: LabelPosition;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   label?: string;
   value: string;
+  disabled?: boolean;
   helperText?: string;
   error?: {
     message?: string;
@@ -24,7 +25,7 @@ export type TextareaProps = {
 
 const Textarea: FC<
   TextareaProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-> = ({ placeholder, onChange, label, labelPosition = "top", error, id, name, helperText, ...props }) => {
+> = ({ placeholder, onChange, label, labelPosition = "top", error, id, name, helperText, disabled, ...props }) => {
   const { value } = props;
 
   const hasError = error?.hasError;
@@ -40,7 +41,9 @@ const Textarea: FC<
         <textarea
           className={`${style.textareas}`}
           name={name}
+          disabled={disabled}
           id={sanitizeForId(id)}
+          onChange={onChange}
           placeholder={placeholder}
           value={value}
         />
