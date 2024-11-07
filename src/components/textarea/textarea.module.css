@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: var(--size-100);
   width: 100%;
+  color: var(--color-primary);
 
   .wrapper {
     display: flex;
@@ -11,7 +12,6 @@
   }
 
   .label {
-    color: var(--color-primary);
   }
 
   .textareas {
@@ -21,8 +21,24 @@
     background-color: var(--c-input-bg);
     border: 1px solid var(--c-input-border);
     border-radius: 4px;
-    padding: var(--size-075);
+    padding: var(--size-075) var(--size-100);
     min-height: var(--height-medium);
+    color: var(--c-input-value);
+
+    &:hover {
+      border-color: var(--c-input-border-hover);
+    }
+
+    &:active {
+      border-color: var(--c-input-border-active);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-focus-ring);
+      outline-offset: 2px;
+      box-shadow: 0 0 0 4px var(--color-surface-canvas);
+      border-color: var(--c-input-border-active);
+    }
   }
 
   .helpertext {
@@ -43,7 +59,12 @@
   }
 }
 
+.textarea:has(.textareas:disabled) {
+  color: var(--color-disabled);
+}
+
 .textareas:disabled {
+  color: var(--c-input-text-disabled);
   border-color: var(--c-input-border-disabled);
-  color: var(--c-input-value-disabled);
+  background-color: var(--c-input-bg-disabled);
 }

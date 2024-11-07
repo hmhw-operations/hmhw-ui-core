@@ -13,5 +13,6 @@ export const Default: Story = {
   args: {
     error: false,
     withUnit: false,
+    disabled: false,
   },
 };
