@@ -75,18 +75,18 @@
   }
 
   &.destructive {
-    background-color: var(--color-alert-danger);
+    background-color: var(--color-system-critical);
 
     &:hover {
-      background-color: var(--color-alert-danger-hover);
+      background-color: var(--color-system-critical-hover);
     }
 
     &:active {
-      background-color: var(--color-alert-danger-pressed);
+      background-color: var(--color-system-critical-hover);
     }
 
     &:disabled {
-      background-color: var(--color-alert-danger-disabled);
+      background-color: var(--color-system-critical-disabled);
     }
   }
 }
