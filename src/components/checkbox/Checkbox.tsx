@@ -28,7 +28,11 @@ const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, o
         onChange={onChange}
       />
       {label && <label htmlFor={sanitizeForId(id)}>{label}</label>}
-      {description && <p className={style.helper_text}>{description}</p>}
+      {description && <p className={style.description}>{description}</p>}
+      <p className={style.description}>
+        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod
+        semper.
+      </p>
     </div>
   );
 };

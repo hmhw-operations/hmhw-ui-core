@@ -1,16 +1,22 @@
 .checkbox {
+  font-size: var(--type-175);
+
+  &.small {
+    font-size: var(--type-150);
+  }
+  &.large {
+    font-size: var(--type-200);
+  }
+
+  &:has(input:focus-visible) {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
   input {
     appearance: none;
-
-    &:focus-visible {
+    &:focus {
       outline: none;
-      box-shadow: none;
-
-      & + label {
-        outline: 2px solid var(--color-focus-ring);
-        outline-offset: 4px;
-        box-shadow: 0 0 0 4px var(--color-surface-canvas);
-      }
     }
   }
 
@@ -19,8 +25,9 @@
     padding: var(--size-100);
     padding-left: var(--size-400);
     cursor: pointer;
-    line-height: 1;
+    line-height: 1.125;
     display: inline-block;
+
     color: var(--color-primary);
 
     &:before {
@@ -65,5 +72,12 @@
         background-color: var(--color-interactive-hover);
       }
     }
+  }
+
+  .description {
+    padding-left: var(--size-400);
+    font-size: 0.875em;
+    line-height: 1.25;
+    color: var(--color-secondary);
   }
 }

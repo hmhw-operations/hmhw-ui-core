@@ -58,7 +58,7 @@
 
 :root {
   --color-primary: var(--p-neutral-100);
-  --color-secondary: var(--p-alpha-neutral-80);
+  --color-secondary: var(--p-alpha-white-60);
   --color-tertiary: var(--p-alpha-neutral-20);
   --color-invert: var(--p-neutral-900);
   --color-accent: var(--p-blue-ocean-700);
@@ -140,6 +140,7 @@
   --color-border-interactive-secondary-hover: var(--p-blue-ocean-800);
   --color-border-interactive-secondary-active: var(--p-blue-ocean-1000);
   --color-border-interactive-secondary-disabled: var(--p-alpha-blue-ocean-05);
+  --color-focus-ring: var(--color-accent);
 }
 
 body.light-theme {
