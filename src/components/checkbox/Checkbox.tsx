@@ -12,10 +12,10 @@ export type CheckboxProps = {
   name: string;
   disabled?: boolean;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
-  helperText?: string;
+  description?: string;
 };
 
-const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, onChange, checked, helperText }) => {
+const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, onChange, checked, description }) => {
   return (
     <div className={`${style.input_item} ${style.checkbox}`}>
       <input
@@ -28,7 +28,7 @@ const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, o
         onChange={onChange}
       />
       {label && <label htmlFor={sanitizeForId(id)}>{label}</label>}
-      {helperText && <p className={style.helper_text}>{helperText}</p>}
+      {description && <p className={style.helper_text}>{description}</p>}
     </div>
   );
 };
