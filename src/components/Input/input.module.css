@@ -1,5 +1,8 @@
+/*
+
 .input {
   --c-input-text: var(--color-primary);
+
   --c-input-text-disabled: var(--p-alpha-white-40);
   --c-input-text-error: var(--color-alert-danger);
   --c-input-bg: var(--p-neutral-100);
@@ -26,11 +29,12 @@
   --c-input-unit-border-error: var(--color-alert-danger);
 }
 
+*/
 .input {
   display: flex;
   flex-direction: column;
   gap: 0;
-  color: var(--c-input-text);
+  color: var(--color-primary);
 
   &.horizontal {
     flex-direction: row;
@@ -69,7 +73,6 @@
     display: flex;
     height: var(--height-medium);
     color: var(--c-input-value);
-    color: var(--c-input-unit-text);
     background-color: var(--c-input-bg);
     border: 1px solid var(--c-input-border);
     border-radius: 4px;
@@ -80,10 +83,6 @@
 
     &:has(input:active) {
       border-color: var(--c-input-border-active);
-    }
-
-    input {
-      color: var(--c-input-value);
     }
 
     &:focus-within {
@@ -107,24 +106,22 @@
 }
 
 .input:has(input:disabled) {
-  color: var(--c-input-text-disabled);
+  color: var(--color-disabled);
 
   .field {
-    color: var(--c-input-text-disabled);
-    background-color: var(--c-input-bg-disabled);
+    color: var(--color-disabled);
+    background-color: transparent;
     border: 1px solid var(--c-input-border-disabled);
   }
 
   .unit {
-    color: var(--c-input-unit-text-disabled);
-    background-color: var(--c-input-unit-bg-disabled);
-    border-color: var(--c-input-unit-border-disabled);
+    color: var(--color-disabled);
+    background-color: transparent;
+    border-color: var(--c-input-border-disabled);
   }
 }
 
 .error {
-  color: var(--c-input-text-error);
-
   .field {
     display: flex;
     height: var(--height-medium);
@@ -139,14 +136,14 @@
     }
 
     .unit {
-      color: var(--c-input-unit-error);
+      color: var(--c-input-error);
       background-color: var(--c-input-bg-error);
       border-radius: 0 4px 4px 0;
       border-color: var(--c-input-unit-border-error);
     }
   }
   .errormessage {
-    color: var(--c-input-text-error);
+    color: var(--c-input-error);
   }
 
   svg {
