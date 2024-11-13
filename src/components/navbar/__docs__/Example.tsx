@@ -12,7 +12,7 @@ const Example = () => {
         width: "100%",
       }}
     >
-      <Navbar />
+      <Navbar title="Automator" links={[{href: "#", label: "Home"}, {href: "#", label: "Users"}, {href: "#", label: "About"}]} />
     </div>
   );
 };
