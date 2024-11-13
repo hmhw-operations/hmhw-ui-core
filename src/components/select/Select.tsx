@@ -27,7 +27,7 @@ const Select = ({ options, label, value, helperText, size = "medium", disabled, 
 
   return (
     <div className={`${style.select} ${style[size]}`}>
-      {label && <label>{label}</label>}
+      {label && <label className={`${style.label} `}>{label}</label>}
       <div className={`${style.wrapper}`}>
         <select className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
           {options && options.map((option) => <option value={option}>{option}</option>)}

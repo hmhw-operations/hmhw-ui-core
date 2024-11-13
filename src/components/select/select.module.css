@@ -3,18 +3,24 @@
   flex-direction: column;
   gap: var(--size-100);
 
+  .label {
+    font-size: var(--type-400);
+    line-height: 100%;
+    color: var(--color-primary);
+  }
+
   .wrapper {
     cursor: pointer;
     position: relative;
     display: flex;
     justify-content: center;
     height: var(--height-medium);
-    padding-inline: 0.75em 0.25rem;
-    font-size: var(--type-300);
+
+    font-size: var(--type-400);
     line-height: 1;
 
     border: 1px solid var(--c-input-border);
-    border-radius: var(--c-input-radius);
+    border-radius: var(--radius-input);
     background-color: var(--c-input-bg);
 
     &:hover {
@@ -26,6 +32,8 @@
       background-color: transparent;
       border: none;
       color: inherit;
+      flex-grow: 1;
+      padding-inline: var(--size-100);
     }
 
     &:focus-within {
@@ -41,7 +49,7 @@
     &:has(select:disabled) {
       border-color: var(--c-input-border-disabled);
       background-color: var(--c-input-bg-disabled);
-      color: var(--c-input-text-disabled);
+      color: var(--c-input-value-disabled);
     }
 
     svg {
@@ -61,7 +69,7 @@
   }
 
   &.large .wrapper {
-    font-size: var(--type-400);
+    font-size: var(--type-500);
     height: var(--height-large);
 
     svg {
