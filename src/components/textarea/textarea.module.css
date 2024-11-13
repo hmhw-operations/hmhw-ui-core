@@ -59,10 +59,6 @@
   }
 }
 
-.textarea:has(.textareas:disabled) {
-  color: var(--color-disabled);
-}
-
 .textareas:disabled {
   color: var(--c-input-text-disabled);
   border-color: var(--c-input-border-disabled);
