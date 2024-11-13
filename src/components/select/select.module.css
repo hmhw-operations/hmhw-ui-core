@@ -1,0 +1,71 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-100);
+
+  .wrapper {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: var(--height-medium);
+    padding-inline: 0.75em 0.25rem;
+    font-size: var(--type-300);
+    line-height: 1;
+
+    border: 1px solid var(--c-input-border);
+    border-radius: var(--c-input-radius);
+    background-color: var(--c-input-bg);
+
+    &:hover {
+      border-color: var(--c-input-border-hover);
+    }
+
+    select {
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      color: inherit;
+    }
+
+    &:focus-within {
+      outline: 2px solid var(--color-focus-ring);
+      outline-offset: 2px;
+
+      select {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    &:has(select:disabled) {
+      border-color: var(--c-input-border-disabled);
+      background-color: var(--c-input-bg-disabled);
+      color: var(--c-input-text-disabled);
+    }
+
+    svg {
+      width: 1.5rem;
+    }
+  }
+
+  &.small {
+    .wrapper {
+      font-size: var(--type-200);
+      height: var(--height-small);
+
+      svg {
+        width: 1rem;
+      }
+    }
+  }
+
+  &.large .wrapper {
+    font-size: var(--type-400);
+    height: var(--height-large);
+
+    svg {
+      width: 1.75rem;
+    }
+  }
+}

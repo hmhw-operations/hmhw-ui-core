@@ -14,3 +14,4 @@ export * from "./Input";
 export * from "./themeswitch";
 export * from "./navbar";
 export * from "./textarea";
+export * from "./select";
