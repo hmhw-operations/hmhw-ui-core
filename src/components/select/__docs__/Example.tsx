@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import Select from "../Select";
 import { SelectProps } from "../Select";
 
-const Example: FC<SelectProps> = ({ options, size, disabled, value }) => {
+const Example: FC<SelectProps> = ({ options, size, disabled, value, label }) => {
   const [selectedValue, setSelectedValue] = useState(value || "");
 
   return (
@@ -11,11 +11,11 @@ const Example: FC<SelectProps> = ({ options, size, disabled, value }) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center",
         height: "100%",
       }}
     >
       <Select
+        label={label}
         options={options}
         size={size}
         value={value}
