@@ -54,6 +54,8 @@
   --radius-default: var(--size-050);
   --radius-round: var(--size-200);
   --radius-full: 999rem;
+  --radius-input: var(--radius-default);
+  --radius-input: var(--size-050);
 }
 
 :root {
@@ -252,13 +254,14 @@ body.light-theme {
   --c-appbar-text: var(--p-neutral-050);
 
   --c-input-value: var(--p-neutral-1400);
+  --c-input-value-disabled: var(--color-disabled);
   --c-input-bg: var(--p-neutral-100);
-  --c-input-border: var(--p-alpha-black-20);
   --c-input-bg-error: var(--p-alpha-red-10);
+  --c-input-bg-disabled: var(--p-alpha-white-10);
   --c-input-border: var(--p-alpha-black-20);
   --c-input-border-hover: var(--color-primary);
   --c-input-border-active: green;
-  --c-input-border-disabled: var(--p-alpha-white-30);
+  --c-input-border-disabled: var(--color-disabled);
   --c-input-border-error: var(--color-system-critical);
   --c-input-error: var(--color-system-critical);
   --c-input-unit-text: var(--p-neutral-1400);
@@ -269,9 +272,6 @@ body.light-theme {
   --c-input-unit-border: var(--c-input-border);
   --c-input-unit-border-disabled: var(--c-input-border-disabled);
   --c-input-unit-border-error: var(--color-system-critical);
-  --c-input-border-disabled: var(--color-disabled);
-  --c-input-value-disabled: var(--p-neutral-1400);
-  --c-input-bg-disabled: var(--p-alpha-white-10);
 }
 
 body.light-theme {
@@ -302,11 +302,13 @@ body.light-theme {
   --c-input-bg: var(--p-neutral-100);
   --c-input-border: var(--p-alpha-black-20);
   --c-input-bg-error: var(--p-alpha-red-10);
+  --c-input-bg-disabled: var(--p-alpha-white-10);
   --c-input-border: var(--p-alpha-black-20);
   --c-input-border-hover: var(--color-secondary);
   --c-input-border-active: var(--color-accent);
   --c-input-border-disabled: var(--p-alpha-white-30);
   --c-input-border-error: var(--color-system-critical);
+  --c-input-border-disabled: var(--color-disabled);
   --c-input-error: var(--color-system-critical);
   --c-input-unit-text: var(--p-neutral-1400);
   --c-input-unit-text-disabled: var(--c-input-text-disabled);
@@ -316,7 +318,4 @@ body.light-theme {
   --c-input-unit-border: var(--c-input-border);
   --c-input-unit-border-disabled: var(--c-input-border-disabled);
   --c-input-unit-border-error: var(--color-system-critical);
-  --c-input-border-disabled: var(--color-disabled);
-  --c-input-value-disabled: var(--p-neutral-1400);
-  --c-input-bg-disabled: var(--p-alpha-white-10);
 }

@@ -12,6 +12,8 @@
   }
 
   .label {
+    font-size: var(--type-400);
+    line-height: 100%;
   }
 
   .textareas {
@@ -20,8 +22,8 @@
     width: calc(100% - 1rem);
     background-color: var(--c-input-bg);
     border: 1px solid var(--c-input-border);
-    border-radius: 4px;
-    padding: var(--size-075) var(--size-100);
+    border-radius: var(--radius-input);
+    padding: var(--size-100) var(--size-075);
     min-height: var(--height-medium);
     color: var(--c-input-value);
 
