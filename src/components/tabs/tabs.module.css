@@ -10,8 +10,8 @@
 
   .tabs_list {
     display: flex;
-    gap: var(--size-050);
-    border-bottom: var(--size-075) solid var(--color-surface-interactive);
+    gap: var(--size-100);
+    border-bottom: var(--size-025) solid var(--color-border-interactive);
   }
 
   .tabs_button {
@@ -19,10 +19,11 @@
     display: inline-flex;
     align-items: center;
     height: var(--height-medium);
-    padding-inline: 1em;
+    padding-inline: var(--size-200);
     border: none;
     color: var(--color-on-interactive-secondary);
     background-color: var(--color-surface-interactive-secondary);
+    border-radius: 2px 2px 0 0;
 
     &:hover {
       cursor: pointer;
