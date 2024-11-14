@@ -31,7 +31,7 @@
       appearance: none;
       background-color: transparent;
       border: none;
-      color: inherit;
+      color: var(--c-input-value);
       flex-grow: 1;
       padding-inline: var(--size-100);
     }
