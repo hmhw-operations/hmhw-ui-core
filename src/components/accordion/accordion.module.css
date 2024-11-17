@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    background-color: var(--color-surface-interactive);
+    background-color: var(--color-surface-interactive-secondary);
     height: var(--height-medium);
     padding-left: var(--space-50);
     font-size: var(--type-300);
@@ -25,6 +25,7 @@
     color: var(--color-on-interactive);
     list-style: none;
     gap: var(--space-50);
+    border-radius: var(--Radius-Medium, 4px);
 
     &:hover {
       background-color: var(--color-surface-interactive-hover);
@@ -36,6 +37,7 @@
 
     &:hover {
       cursor: pointer;
+      background-color: var(--color-surface-interactive-hover);
     }
 
     svg {
