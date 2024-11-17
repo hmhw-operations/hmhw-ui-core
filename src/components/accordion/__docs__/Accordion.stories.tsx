@@ -31,5 +31,6 @@ type Story = StoryObj<typeof Example>;
 export const Default: Story = {
   args: {
     items,
+    size: "medium",
   },
 };
