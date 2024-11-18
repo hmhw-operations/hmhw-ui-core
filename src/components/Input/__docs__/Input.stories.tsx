@@ -1,18 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Example from "./Example";
+import Input from "../Input";
 
-const meta: Meta<typeof Example> = {
+const meta: Meta<typeof Input> = {
   title: "Input",
-  component: Example,
+  component: Input,
+  args: { id: 'input-id', label: 'Label' },
 };
-
 export default meta;
-type Story = StoryObj<typeof Example>;
 
-export const Default: Story = {
-  args: {
-    error: false,
-    withUnit: false,
-    disabled: false,
-  },
-};
+type Story = StoryObj<typeof Input>;
+export const Default: Story = { args: { id: 'input-id', placeholder: 'Placeholder', } };
+export const Primary: Story = { name: 'Numerical with decimals & units', ...Input, args: { id: 'input-id', value: '', type: 'number', decimals: 2, unit: 'm/s', label: 'This is the label', helperText: 'This is the helperText', labelPosition: 'top' } };
