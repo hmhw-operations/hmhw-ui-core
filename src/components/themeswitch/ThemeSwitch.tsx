@@ -4,9 +4,9 @@ import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { sanitizeForId } from "../../utils";
-import { Size } from "../../types";
+import { BaseComponentProps, Size } from "../../types";
 
-export type ThemeSwitchProps = {
+export type ThemeSwitchProps = BaseComponentProps & {
   // label: string;
   checked: boolean;
   onChange: (checked: boolean) => void;
@@ -48,8 +48,8 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
       <svg className="day" viewBox="0 0 42 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           fill="currentColor"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M32 1H10a9 9 0 0 0 0 18h22a9 9 0 1 0 0-18zM10 0C4.477 0 0 4.477 0 10s4.477 10 10 10h22c5.523 0 10-4.477 10-10S37.523 0 32 0H10z"
         />
         <path
@@ -58,22 +58,22 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
         />
         <path
           fill="currentColor"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M32 20c5.523 0 10-4.477 10-10S37.523 0 32 0 22 4.477 22 10s4.477 10 10 10zm-.5-14.018V4.5h1v1.482h-1zm4.725.482l-.705-.708-.895.899.705.708.895-.9zM32 6.986A3.01 3.01 0 0 0 29 10a3.01 3.01 0 0 0 3 3.014c1.655 0 3-1.351 3-3.014a3.01 3.01 0 0 0-3-3.014zm3.515 7.263l-.895-.904.7-.703.9.9-.705.707zm1.985-3.747H36V9.498h1.5v1.004zm-8.12-3.847l-.9-.9-.705.709.895.899.71-.708zM26.5 9.498H28v1.004h-1.5V9.498zm1.275 4.038l.705.708.895-.904-.705-.708-.895.904zm4.725.482V15.5h-1v-1.482h1z"
         />
       </svg>
       <svg className="night" viewBox="0 0 42 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           fill="currentColor"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M32 1H10a9 9 0 0 0 0 18h22a9 9 0 1 0 0-18zM10 0C4.477 0 0 4.477 0 10s4.477 10 10 10h22c5.523 0 10-4.477 10-10S37.523 0 32 0H10z"
         />
         <path
           fill="currentColor"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10zm1-15c.525 0 1.025.08 1.5.23A4.996 4.996 0 0 0 9 10c0 2.24 1.47 4.135 3.5 4.77A5.002 5.002 0 0 1 6 10c0-2.76 2.24-5 5-5z"
         />
         <path

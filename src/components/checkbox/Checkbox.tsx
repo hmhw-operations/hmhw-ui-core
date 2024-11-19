@@ -3,8 +3,9 @@ import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { sanitizeForId } from "../../utils";
+import { BaseComponentProps } from "../../types";
 
-export type CheckboxProps = {
+export type CheckboxProps = BaseComponentProps & {
   value: string | number | readonly string[] | undefined;
   checked?: boolean;
   label?: string;

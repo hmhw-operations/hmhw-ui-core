@@ -1,15 +1,17 @@
 import { FC } from "react";
-import style from "./input.module.css";
+import style from "./numeric.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { sanitizeForId } from "../../utils";
-import { BaseComponentProps, LabelPosition } from "../../types";
+import { LabelPosition } from "../../types";
 import { Icon } from "../icon";
 import React from "react";
 
-/** Props for the Input */
-export type InputProps =BaseComponentProps & {
+export type NumericProps = {
+  id: string;
+  name: string;
+  decimals?: number;
   placeholder?: string;
   labelPosition?: LabelPosition;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -19,14 +21,15 @@ export type InputProps =BaseComponentProps & {
   value: string;
   helperText?: string;
   unit?: string;
+  disabled?: boolean;
   error?: {
     message?: string;
     hasError?: boolean;
   };
 };
 
-const Input: FC<
-  InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+const Numeric: FC<
+  NumericProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 > = ({
   placeholder,
   unit,
@@ -42,15 +45,28 @@ const Input: FC<
   disabled,
   ...props
 }) => {
-    const { value, type } = props;
-    const [currentValue, setCurrentValue] = React.useState(value);
+    const { value, decimals } = props;
+    const [currentValue, setCurrentValue] = React.useState(value || '');
 
     const hasError = error?.hasError;
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      setCurrentValue(event.target.value);
-      if (onChange) {
-        onChange(event);
+      const _previousVal = currentValue;
+      const _val = event.target.value;
+
+      // builtin type=number is useless, we need to validate the value ourselves
+      const decimalsPart = decimals ? `([.,]?[0-9]{0,${decimals}})` : '';
+      const regex = new RegExp(`^[0-9]*${decimalsPart}$`); // No global on this, it kills the regex
+      const valOk = regex.test(_val);
+
+      if (valOk) {
+        setCurrentValue(_val);
+        if (onChange) {
+          onChange(event);
+        }
+      }
+      else {
+        setCurrentValue(_previousVal);
       }
 
     };
@@ -74,7 +90,7 @@ const Input: FC<
         <div className={`${style.wrapper}`}>
           <div className={`${style.field}`}>
             <input
-              type={type}
+              type='text'
               name={name}
               id={sanitizeForId(id)}
               placeholder={placeholder}
@@ -93,4 +109,4 @@ const Input: FC<
     );
   };
 
-export default Input;
+export default Numeric;

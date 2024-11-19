@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Example from "./Example";
+import Select from '../Select';
 
 const options = ["Carne Asada", "Carne Al Pastor", "Birria Tacos", "Tacos"];
 
-const meta: Meta<typeof Example> = {
+const meta: Meta<typeof Select> = {
   title: "Select",
-  component: Example,
+  component: Select,
 };
 
 export default meta;
-type Story = StoryObj<typeof Example>;
+type Story = StoryObj<typeof Select>;
 
 export const Default: Story = {
   args: {
@@ -18,3 +18,15 @@ export const Default: Story = {
     disabled: false,
   },
 };
+
+export const Primary: Story = {
+  name: 'Custom placeholder',
+  ...Select,
+  args: {
+    options,
+    size: "medium",
+    disabled: false,
+    placeholder: "Select a meal",
+  }
+};
+
