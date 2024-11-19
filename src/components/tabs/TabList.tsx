@@ -21,6 +21,7 @@ const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0 }) => {
           {tabs.map((tab, index) => (
             <li key={`tab-${index}`}>
               <button
+                type="button"
                 disabled={tab.props.disabled}
                 key={`tab-${index}`}
                 role="tab"

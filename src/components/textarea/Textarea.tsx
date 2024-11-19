@@ -4,18 +4,14 @@ import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import { sanitizeForId } from "../../utils";
-import { LabelPosition } from "../../types";
+import { BaseComponentProps, LabelPosition } from "../../types";
 import { Icon } from "../icon";
 
-export type TextareaProps = {
-  id: string;
-  name: string;
-  placeholder?: string;
+export type TextareaProps = BaseComponentProps & {
   labelPosition?: LabelPosition;
   onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   label?: string;
   value: string;
-  disabled?: boolean;
   helperText?: string;
   error?: {
     message?: string;
