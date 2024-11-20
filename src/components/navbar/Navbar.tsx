@@ -39,7 +39,7 @@ const Navbar = ({ links, title, logoutUrl }: NavbarProps) => {
       </a>
 
       <div className={style.controls}>
-        <ThemeSwitch checked onChange={() => console.log("Clicked")} id="theme-switch" name="theme-switch" />
+        <ThemeSwitch title='Switch theme' checked onChange={() => console.log("Clicked")} id="theme-switch" name="theme-switch" />
         <a href={logoutUrl}>Logout</a>
       </div>
     </header>
