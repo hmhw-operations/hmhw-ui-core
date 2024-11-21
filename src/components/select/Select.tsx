@@ -8,7 +8,7 @@ import style from "./select.module.css";
 import { Icon } from "../icon";
 
 export type SelectProps = BaseComponentProps & {
-  options: string[];
+  options: SelectOption[];
   label: string;
   value?: string;
   placeholder?: string;
@@ -17,6 +17,11 @@ export type SelectProps = BaseComponentProps & {
   size?: Size;
   disabled?: boolean;
   onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+};
+
+export type SelectOption = {
+  value: string;
+  text: string;
 };
 
 const Select = ({ id, key, title, options, label, value, placeholder, defaultValue, helperText, size = "medium", disabled, onChange }: SelectProps) => {
@@ -46,7 +51,7 @@ const Select = ({ id, key, title, options, label, value, placeholder, defaultVal
         >
           {<option value={selectOption} hidden={true}>{selectOption}</option>}
           {options && options.map((option) =>
-            <option key={`option_${option}`} value={option} >{option}</option>
+            <option key={`option_${option}`} value={option.value} >{option.text}</option>
           )}
         </select>
         <Icon name="caret-double" />

@@ -1,5 +1,7 @@
 export type Size = "small" | "medium" | "large";
+
 export type LabelPosition = "left" | "right" | "top" | "none";
+
 export type FieldType =
   | "number"
   | "text"
@@ -7,6 +9,7 @@ export type FieldType =
   | "email"
   | "tel"
   | "url";
+
 export type BaseComponentProps = {
   id: string;
   title: string;
