@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Numeric from "../Numeric";
+import { Secondary } from '../../button/__docs__/Button.stories';
 
 const meta: Meta<typeof Numeric> = {
   title: "Numeric",
