@@ -9,5 +9,5 @@ const meta: Meta<typeof Numeric> = {
 export default meta;
 
 type Story = StoryObj<typeof Numeric>;
-export const Default: Story = { args: { id: 'input-id', placeholder: 0, } };
-export const Primary: Story = { name: 'Numerical with decimals & units', ...Numeric, args: { id: 'input-id', value: '', decimals: 2, unit: 'm/s', label: 'This is the label', helperText: 'This is the helper text', labelPosition: 'top' } };
+export const Default: Story = { args: { id: 'input-id', placeholder: 0, value: 10 } };
+export const Primary: Story = { name: 'Numerical with decimals & units', ...Numeric, args: { id: 'input-id', value: 25, decimals: 2, unit: 'm/s', label: 'This is the label', helperText: 'This is the helper text', labelPosition: 'top' } };

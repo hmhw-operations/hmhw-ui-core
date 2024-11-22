@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import style from "./input.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
@@ -44,6 +44,10 @@ const Input: FC<
 }) => {
     const { value, type } = props;
     const [currentValue, setCurrentValue] = React.useState(value);
+
+    useEffect(() => {
+      setCurrentValue(value);
+    }, [value]);
 
     const hasError = error?.hasError;
 
