@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  width: var(--Space-200, 16px);
+  height: var(--Size-200, 16px);
+  padding: 0px var(--size-08, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.container > div {
+  min-width: var(--Size-200, 16px);
+  background: var(--Text-and-shape-Accent);
+
+  &.thick {
+    height: 4px;
+  }
+
+  &.thin {
+    height: 1px;
+  }
+
+  &.primary {
+    background: var(--color-accent);
+  }
+
+  &.secondary {
+    background: var(--color-surface-interactive-secondary);
+  }
+
+  &.vertical {
+    transform: rotate(90deg);
+  }
+
+  &.horizontal {
+    width: 100%;
+  }
+}
