@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--size-200);
+  width: 100%;
+  color: var(--color-primary);
+
+  /* Target second label */
+  & > label:nth-of-type(2) {
+    align-self: flex-end;
+  }
+}
+
+.progressbar {
+  width: 100%;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-accent);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &::-webkit-progress-value {
+    background-color: var(--color-accent);
+    transition: width 750ms ease;
+    border-radius: var(--radius-full) 0 0 var(--radius-full);
+  }
+
+  &::-webkit-progress-bar {
+    background: transparent;
+    border-radius: var(--radius-full);
+  }
+
+  &[value] {
+    &.large {
+      height: var(--size-400);
+    }
+    &.medium {
+      height: var(--size-300);
+    }
+    &.small {
+      height: var(--size-200);
+    }
+  }
+}
+
+.progressFull {
+  &::-webkit-progress-value {
+    border-radius: var(--radius-full);
+  }
+}
