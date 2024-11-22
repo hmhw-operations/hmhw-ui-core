@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import style from "./numeric.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
@@ -16,6 +16,7 @@ export type NumericProps = {
   labelPosition?: LabelPosition;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
+  /** onChanged is only triggered on blur or if the user presses enter */
   onChanged?: (value: string) => void;
   label?: string;
   value: string;
@@ -47,6 +48,10 @@ const Numeric: FC<
 }) => {
     const { value, decimals } = props;
     const [currentValue, setCurrentValue] = React.useState(value || '');
+
+    useEffect(() => {
+      setCurrentValue(value);
+    }, [value]);
 
     const hasError = error?.hasError;
 
@@ -94,6 +99,11 @@ const Numeric: FC<
               name={name}
               id={sanitizeForId(id)}
               placeholder={placeholder}
+              onKeyUp={(e) => {
+                if (e.key === 'Enter' && onChanged) {
+                  onChanged(currentValue);
+                }
+              }}
               value={currentValue}
               onChange={handleChange}
               onBlur={handleBlur}

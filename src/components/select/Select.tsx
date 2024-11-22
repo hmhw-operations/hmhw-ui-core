@@ -51,7 +51,7 @@ const Select = ({ id, key, title, options, label, value, placeholder, defaultVal
         >
           {<option value={selectOption} hidden={true}>{selectOption}</option>}
           {options && options.map((option) =>
-            <option key={`option_${option}`} value={option.value} >{option.text}</option>
+            <option key={`option_${option.value}`} value={option.value} >{option.text}</option>
           )}
         </select>
         <Icon name="caret-double" />
