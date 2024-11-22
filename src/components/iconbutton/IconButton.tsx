@@ -3,8 +3,9 @@ import style from "./iconbutton.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
+import { BaseComponentProps } from "../../types";
 
-export type IconButtonProps = {
+export type IconButtonProps = BaseComponentProps & {
   label: string;
   size?: "small" | "medium" | "large";
   variant?: "primary" | "secondary" | "tertiary" | "destructive";

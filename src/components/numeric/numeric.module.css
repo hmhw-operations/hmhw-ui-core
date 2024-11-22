@@ -1,0 +1,125 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-100);
+  color: var(--color-primary);
+
+  &.horizontal {
+    flex-direction: row;
+    gap: var(--spce-400);
+
+    label {
+      min-width: 200px;
+    }
+  }
+
+  .label {
+    font-size: var(--type-400);
+    line-height: 100%;
+  }
+
+  input {
+    background-color: transparent;
+    text-align: right;
+    width: 100%;
+    border: none;
+    padding-inline: var(--space-075);
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-100);
+  }
+
+  .field {
+    display: flex;
+    height: var(--height-medium);
+    color: var(--c-input-value);
+    background-color: var(--c-input-bg);
+    border: 1px solid var(--c-input-border);
+    border-radius: var(--radius-input);
+
+    input {
+      color: inherit;
+    }
+
+    &:hover {
+      border-color: var(--c-input-border-hover);
+    }
+
+    &:has(input:active) {
+      border-color: var(--c-input-border-active);
+    }
+
+    &:focus-within {
+      outline: 2px solid var(--color-focus-ring);
+      outline-offset: 0px;
+      box-shadow: 0 0 0 4px var(--color-surface-canvas);
+      border-color: var(--c-input-border-hover);
+    }
+
+    .unit {
+      display: flex;
+      min-width: 3rem;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-input-unit);
+      background-color: var(--c-input-unit-bg);
+      border-radius: 0 4px 4px 0;
+      border-left: 1px solid var(--c-input-unit-border);
+    }
+  }
+}
+
+.input:has(input:disabled) {
+  .field {
+    color: var(--color-disabled);
+    background-color: transparent;
+    border: 1px solid var(--c-input-border-disabled);
+  }
+
+  .unit {
+    color: var(--color-disabled);
+    background-color: transparent;
+    border-color: var(--c-input-border-disabled);
+  }
+}
+
+.error {
+  .field {
+    display: flex;
+    height: var(--height-medium);
+    color: var(--c-input-unit-text);
+
+    border-color: var(--c-input-border-error);
+    background-color: var(--color-surface-critical-weak);
+    background-color: var(--c-input-bg-error);
+
+    input {
+      color: var(--c-input-value-error);
+    }
+
+    .unit {
+      color: var(--c-input-error);
+      background-color: var(--c-input-bg-error);
+      border-radius: 0 4px 4px 0;
+      border-color: var(--c-input-unit-border-error);
+    }
+  }
+  .errormessage {
+    color: var(--c-input-error);
+  }
+
+  svg {
+    color: var(--color-system-critical);
+    width: var(--size-300);
+    height: auto;
+    margin-right: var(--size-100);
+  }
+}

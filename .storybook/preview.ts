@@ -13,9 +13,14 @@ const preview: Preview = {
       defaultTheme: "light",
     }),
   ],
+
   parameters: {
     backgrounds: {
       disable: true,
+    },
+    options: {
+      //Sort alphabetically
+      storySort: (a, b) => (a.id === b.id ? 0 : a.id.localeCompare(b.id, undefined, { numeric: true })),
     },
     // backgrounds: {
     //   default: "Dark ocean",

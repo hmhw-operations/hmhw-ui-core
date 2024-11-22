@@ -3,12 +3,12 @@ import React, { MouseEventHandler } from "react";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
-import { Size } from "../../types";
+import { BaseComponentProps, Size } from "../../types";
 import style from "./button.module.css";
 
 export type ButtonVariant = "primary" | "secondary" | "tertiary" | "destructive";
 
-export type ButtonProps = {
+export type ButtonProps = BaseComponentProps & {
   text: string;
   iconPosition?: "leading" | "trailing";
   size?: Size;
