@@ -24,15 +24,27 @@ const VerticalExample: FC<DividerProps> = ({ orientation, weight, type }) => {
       style={{
         display: "flex",
         flexDirection: "row",
-        alignItems: "center",
+
         height: "100%",
         gap: ".5rem",
         color: "var(--color-primary)",
       }}
     >
-      <p>Divider example</p>
+      <div>
+        <h3>Divider example</h3>
+        <p>
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        </p>
+      </div>
       <Divider orientation={orientation} weight={weight} type={type} />
-      <p>Divider example</p>
+      <div>
+        <h3>Divider example</h3>
+        <p>
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        </p>
+      </div>
     </div>
   );
 };
@@ -43,15 +55,27 @@ const HorizontalExample: FC<DividerProps> = ({ orientation, weight, type }) => {
       style={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
+
         height: "100%",
         gap: ".5rem",
         color: "var(--color-primary)",
       }}
     >
-      <p>Divider example</p>
+      <div>
+        <h3>Divider example</h3>
+        <p>
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        </p>
+      </div>
       <Divider orientation={orientation} weight={weight} type={type} />
-      <p>Divider example</p>
+      <div>
+        <h3>Divider example</h3>
+        <p>
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        </p>
+      </div>
     </div>
   );
 };
