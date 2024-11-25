@@ -15,6 +15,7 @@
   font-size: var(--type-200);
   text-transform: uppercase;
   color: var(--c-table-header-text);
+  background-color: var(--c-table-header-bg);
   padding-inline: var(--c-table-padding);
   text-align: left;
   border-block: 1px solid var(--c-table-header-border);
@@ -22,6 +23,19 @@
 
 .table tr:nth-child(even) td {
   background-color: var(--c-table-cell-bg-alt);
+}
+
+.table tr {
+  &.hover {
+    td {
+      background-color: var(--c-table-cell-bg-hover);
+    }
+  }
+  &.selected {
+    td {
+      background-color: var(--c-table-cell-bg-selected);
+    }
+  }
 }
 
 .table {
