@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+
+  & > span {
+    padding-inline: var(--space-200);
+  }
+
+  &.small {
+    & > span {
+      font-size: var(--type-200);
+      line-height: 1;
+    }
+  }
+
+  &.medium {
+    & > span {
+      font-size: var(--type-300);
+      line-height: 1;
+    }
+  }
+
+  &.large {
+    & > span {
+      font-size: var(--type-500);
+      line-height: 1;
+    }
+  }
+}
