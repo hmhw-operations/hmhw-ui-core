@@ -1,39 +1,35 @@
-.container {
-  display: flex;
-  width: var(--Space-200, 16px);
-  height: var(--Size-200, 16px);
-  padding: 0px var(--size-08, 8px);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}
+.divider {
+  --divider-thick: 4px;
+  --divider-thin: 1px;
 
-.container > div {
-  min-width: var(--Size-200, 16px);
-  background: var(--Text-and-shape-Accent);
-
-  &.thick {
-    height: 4px;
-  }
-
-  &.thin {
-    height: 1px;
-  }
+  border: 1px solid transparent;
+  margin: 0;
 
   &.primary {
-    background: var(--color-accent);
+    background-color: var(--color-border-primary);
   }
 
   &.secondary {
-    background: var(--color-surface-interactive-secondary);
-  }
-
-  &.vertical {
-    transform: rotate(90deg);
+    background-color: var(--color-border-secondary);
   }
 
   &.horizontal {
+    margin: var(--size-100) 0;
+    height: var(--divider-thick);
     width: 100%;
+
+    &.thin {
+      height: var(--divider-thin);
+    }
+  }
+
+  &.vertical {
+    margin: 0 var(--size-100);
+    width: var(--divider-thick);
+    min-height: 1rem;
+
+    &.thin {
+      width: var(--divider-thin);
+    }
   }
 }

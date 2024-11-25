@@ -1,3 +1,6 @@
+import "../../styles/globals.css";
+import "../../styles/palette.css";
+import "../../styles/tokens.css";
 import styles from "./divider.module.css";
 
 export type DividerProps = {
@@ -12,10 +15,8 @@ export default function Divider({
   type = "primary",
 }: DividerProps) {
   return (
-    <div className={styles.container}>
-      <div
-        className={`${styles.divider} ${styles[weight]} ${styles[type]} ${styles[orientation]}`}
-      />
-    </div>
+    <hr
+      className={`${styles.divider} ${styles[weight]} ${styles[type]} ${styles[orientation]}`}
+    />
   );
 }
