@@ -4,6 +4,10 @@
   color: var(--c-table-cell-text);
 }
 
+.table thead {
+  background-color: var(--c-table-header-bg);
+}
+
 .table td {
   border-bottom: 1px solid var(--c-table-cell-border);
   padding-inline: var(--c-table-padding);
@@ -15,7 +19,6 @@
   font-size: var(--type-200);
   text-transform: uppercase;
   color: var(--c-table-header-text);
-  background-color: var(--c-table-header-bg);
   padding-inline: var(--c-table-padding);
   text-align: left;
   border-block: 1px solid var(--c-table-header-border);
