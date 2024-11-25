@@ -58,7 +58,7 @@
   }
 
   &.tertiary {
-    color: var(--color-accent);
+    color: var(--color-primary);
     background-color: transparent;
 
     &:hover {
@@ -71,6 +71,7 @@
 
     &:disabled {
       background-color: transparent;
+      color: var(--color-disabled);
     }
   }
 
@@ -87,6 +88,7 @@
 
     &:disabled {
       background-color: var(--color-system-critical-disabled);
+      color: var(--color-disabled);
     }
   }
 }
