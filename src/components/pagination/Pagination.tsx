@@ -29,31 +29,27 @@ export default function Pagination({
   showMaxCount = false,
 }: PaginationProps) {
   const handlePageChange = (changeType: PageCangeType) => {
-    if (
-      changeType === PageCangeType.first ||
-      changeType === PageCangeType.last
-    ) {
-      onPageChange(changeType === PageCangeType.first ? 1 : totalPages);
-      return;
-    }
+    const newPage =
+      changeType === PageCangeType.first
+        ? 1
+        : changeType === PageCangeType.last
+          ? totalPages
+          : changeType === PageCangeType.next
+            ? currentPage + 1
+            : currentPage - 1;
 
-    onPageChange(
-      changeType === PageCangeType.next ? currentPage + 1 : currentPage - 1
-    );
+    onPageChange(newPage);
   };
 
   const shouldDisableButton = (changeType: PageCangeType) => {
-    if (changeType === PageCangeType.first) {
-      return currentPage <= 1;
-    }
+    const conditions = {
+      [PageCangeType.first]: currentPage <= 1,
+      [PageCangeType.last]: currentPage >= totalPages,
+      [PageCangeType.next]: currentPage >= totalPages,
+      [PageCangeType.previous]: currentPage <= 1,
+    };
 
-    if (changeType === PageCangeType.last) {
-      return currentPage >= totalPages;
-    }
-
-    return changeType === PageCangeType.next
-      ? currentPage >= totalPages
-      : currentPage <= 1;
+    return conditions[changeType];
   };
 
   return (
