@@ -12,7 +12,6 @@ export type SelectProps = BaseComponentProps & {
   label: string;
   value?: string;
   placeholder?: string;
-  defaultValue?: string;
   helperText?: string;
   size?: Size;
   disabled?: boolean;
@@ -24,7 +23,7 @@ export type SelectOption = {
   text: string;
 };
 
-const Select = ({ id, key, title, options, label, value, placeholder, defaultValue, helperText, size = "medium", disabled, onChange }: SelectProps) => {
+const Select = ({ id, key, title, options, label, value, placeholder, helperText, size = "medium", disabled, onChange }: SelectProps) => {
   const [selectedValue, setSelectedValue] = useState(value || "");
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -44,7 +43,6 @@ const Select = ({ id, key, title, options, label, value, placeholder, defaultVal
           id={id}
           key={key || ''}
           className={`${style.xxx}`}
-          defaultValue={defaultValue || ''}
           value={selectedValue}
           onChange={handleChange}
           disabled={disabled}
