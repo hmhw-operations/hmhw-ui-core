@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styles from "./pagination.module.css";
 import { IconButton } from "../iconbutton";
 import { Icon } from "../icon";
