@@ -17,6 +17,7 @@ const preview: Preview = {
   parameters: {
     backgrounds: {
       disable: true,
+
     },
     options: {
       //Sort alphabetically
