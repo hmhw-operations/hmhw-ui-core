@@ -476,7 +476,7 @@
   --color-component-input-border-locked: var(--palette-blue-198-600);
   --color-component-input-disabled: var(--palette-blue-198-1100);
 }
-body.light-mode {
+body.light-theme {
   /* mode: light mode */
   --color-foreground-primary: var(--palette-blue-193-1500);
   --color-foreground-secondary: var(--palette-alpha-black-060);
@@ -607,7 +607,7 @@ body.light-mode {
   --color-component-input-border-locked: var(--palette-neutral-cold-800);
   --color-component-input-disabled: var(--palette-neutral-cold-600);
 }
-.body-high-contrast {
+body.contrast-theme {
   /* mode: high contrast */
   --color-foreground-primary: var(--palette-alpha-black-100);
   --color-foreground-secondary: var(--palette-alpha-black-100);
