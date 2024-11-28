@@ -1,17 +1,12 @@
 .tabs {
-  --tabs-active: var(--color-surface-interactive);
-  --tabs-enabled: var(--color-surface-interactive-secondary);
-  --tabs-border: var(--color-surface-interactive-secondary);
-}
-
-.tabs {
   display: flex;
   flex-direction: column;
 
   .tabs_list {
     display: flex;
     gap: var(--size-050);
-    border-bottom: var(--size-075) solid var(--color-surface-interactive);
+    border-bottom: var(--size-075) solid
+      var(--color-background-interactive-default);
   }
 
   .tabs_button {
@@ -21,28 +16,28 @@
     height: var(--height-medium);
     padding-inline: 1em;
     border: none;
-    color: var(--color-on-interactive-secondary);
-    background-color: var(--color-surface-interactive-secondary);
+    color: var(--color-foreground-interactive-secondary-on);
+    background-color: var(--color-background-interactive-secondary-default);
 
     &:hover {
       cursor: pointer;
-      background-color: var(--color-surface-interactive-hover);
+      background-color: var(--color-background-interactive-hover);
     }
 
     &:active {
       cursor: pointer;
-      background-color: var(--color-surface-interactive-active);
+      background-color: var(--color-background-interactive-active);
     }
 
     &:disabled {
       color: var(--color-disabled);
-      background-color: var(--color-surface-interactive-disabled);
+      background-color: var(--color-background-interactive-disabled);
       cursor: not-allowed;
     }
 
     &[aria-selected="true"] {
-      color: var(--color-on-interactive);
-      background-color: var(--color-surface-interactive);
+      color: var(--color-foreground-interactive-on);
+      background-color: var(--color-background-interactive-default);
 
       &:hover {
         cursor: default;
@@ -55,14 +50,14 @@
     padding: var(--size-400) 0;
     color: var(--color-primary);
   }
-}
 
-.large {
-  font-size: var(--type-button-label-large);
-  height: var(--height-large);
-}
+  &.large {
+    font-size: var(--type-button-label-large);
+    height: var(--height-large);
+  }
 
-.small {
-  font-size: var(--type-button-label-small);
-  height: var(--height-small);
+  &.small {
+    font-size: var(--type-button-label-small);
+    height: var(--height-small);
+  }
 }

@@ -3,6 +3,7 @@ import style from "./iconbutton.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
+import "../../styles/variables.css";
 import { BaseComponentProps } from "../../types";
 
 export type IconButtonProps = BaseComponentProps & {

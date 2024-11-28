@@ -9,21 +9,21 @@
   font-size: var(--type-button-label);
   height: var(--height-medium);
   border: 1px solid transparent;
-  color: var(--color-on-interactive);
-  background-color: var(--color-surface-interactive);
+  color: var(--color-foreground-interactive-on);
+  background-color: var(--color-background-interactive-default);
 
   &:hover {
-    background-color: var(--color-surface-interactive-hover);
+    background-color: var(--color-background-interactive-hover);
     cursor: pointer;
   }
 
   &:active {
-    background-color: var(--color-surface-interactive-pressed);
+    background-color: var(--color-background-interactive-active);
     cursor: pointer;
   }
 
   &:disabled {
-    background-color: var(--color-surface-interactive-disabled);
+    background-color: var(--color-background-interactive-disabled);
     cursor: not-allowed;
   }
 
@@ -55,20 +55,20 @@
   }
 
   &.secondary {
-    background-color: var(--color-surface-interactive-secondary);
+    background-color: var(--color-background-interactive-secondary-default);
 
     &:hover {
-      background-color: var(--color-surface-interactive-secondary-hover);
+      background-color: var(--color-background-interactive-secondary-hover);
       cursor: pointer;
     }
     &:active {
-      background-color: var(--color-surface-interactive-secondary-pressed);
+      background-color: var(--color-background-interactive-secondary-active);
       cursor: pointer;
     }
 
     &:disabled {
       color: var(--color-disabled);
-      background-color: var(--color-surface-interactive-secondary-disabled);
+      background-color: var(--color-background-interactive-secondary-disabled);
       cursor: not-allowed;
     }
   }
@@ -81,22 +81,22 @@
     border-radius: var(--radius-none);
 
     &:hover {
-      background-color: var(--p-alpha-blue-ocean-15);
+      background-color: var(--palette-alpha-blue-015);
     }
 
     &:active {
-      background-color: var(--p-alpha-blue-ocean-25);
+      background-color: var(--palette-alpha-blue-025);
     }
 
     &:disabled {
       color: var(--color-disabled);
-      background-color: var(--color-surface-interactive-teertiary-disabled);
+      background-color: var(--color-background-interactive-tertiary-disabled);
       cursor: not-allowed;
     }
   }
   &.destructive {
-    color: var(--color-system-on-critical);
-    background-color: var(--color-system-critical);
+    color: var(--color-system-critical-on);
+    background-color: var(--color-system-critical-default);
 
     &:hover {
       background-color: var(--color-system-critical-hover);
