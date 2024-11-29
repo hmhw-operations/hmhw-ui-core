@@ -16,12 +16,12 @@
   text-transform: uppercase;
   font-size: var(--type-button-label);
   height: var(--height-medium);
-  color: var(--color-on-interactive-secondary);
-  background-color: var(--color-surface-interactive-secondary);
+  color: var(--color-foreground-interactive-secondary-on);
+  background-color: var(--color-background-interactive-secondary-default);
 
   &:hover {
     cursor: pointer;
-    background-color: var(--color-surface-interactive-secondary-hover);
+    background-color: var(--color-background-interactive-secondary-hover);
   }
 
   &:first-of-type {
@@ -32,8 +32,8 @@
   }
 
   &:has(input:checked) {
-    background-color: var(--color-surface-interactive);
-    color: var(--color-surface-on-interactive);
+    background-color: var(--color-background-interactive-default);
+    color: var(--color-foreground-interactive-on);
 
     &:hover {
       cursor: default;
