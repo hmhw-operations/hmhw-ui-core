@@ -17,7 +17,8 @@
   color: var(--color-foreground-interactive-secondary-on);
   background-color: var(--color-background-interactive-secondary-default);
 
-  font: medium uppercase large var(--type-family-primary);
+  font: var(--type-action-label-medium);
+  text-transform: uppercase;
 
   &:hover {
     cursor: pointer;
