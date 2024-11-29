@@ -27,8 +27,8 @@
   }
 
   input:checked + label:before {
-    border-color: var(--color-accent);
-    border-color: var(--color-interactive);
+    border-color: var(--color-foreground-accent);
+    border-color: var(--colorforeground-interactive-default);
   }
 
   input:checked + label:after {
@@ -39,7 +39,7 @@
     width: var(--size-150);
     height: var(--size-150);
     border-radius: var(--radius-full);
-    background-color: var(--color-foreground-interactive);
+    background-color: var(--color-foreground-interactive-default);
   }
 
   label:hover:before {
