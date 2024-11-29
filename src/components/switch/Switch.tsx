@@ -48,7 +48,11 @@ const Switch: React.FC<SwitchProps> = ({
       >
         <span className={`${style.thumb} `}></span>
       </button>
-      {label && <label htmlFor={sanitizedId}>{label}</label>}
+      {label && (
+        <label className={`${style.label}`} htmlFor={sanitizedId}>
+          {label}
+        </label>
+      )}
     </div>
   );
 };
