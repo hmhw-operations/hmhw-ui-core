@@ -96,7 +96,7 @@ const Input: FC<
           {hasError && <Icon name="info" />}
           {unit && <div className={`${style.unit}`}>{unit}</div>}
         </div>
-        {helperText && <p className={`${style.helpertext}`}>{helperText}</p>}
+        {helperText && <p className={`${style.description}`}>{helperText}</p>}
         {error?.message && (
           <p className={`${style["errormessage"]}`}>{error.message}</p>
         )}

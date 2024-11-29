@@ -15,7 +15,8 @@ Global.css
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-surface-canvas);
+  background-color: var(--color-background-canvas);
+  color: var(--color-foreground-primary);
 }
 
 :where(img, picture, video, canvas, svg) {
@@ -55,11 +56,11 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: var(--color-interactive-hover);
+    color: var(--color-foreground-interactive-hover);
   }
 
   &:active {
-    color: var(--color-interactive-active);
+    color: var(--color-foreground-interactive-active);
   }
 }
 
@@ -68,7 +69,7 @@ a {
 :focus-visible {
   outline: 2px solid var(--color-focus-ring);
   outline-offset: 4px;
-  box-shadow: 0 0 0 4px var(--color-surface-canvas);
+  box-shadow: 0 0 0 4px var(--color-background-canvas);
 }
 
 .hide-me {
@@ -88,8 +89,7 @@ a {
   white-space: nowrap !important;
 }
 
-/* Token base */
-
+/*
 :root {
   --type-family: Lato;
   --type-base: 1rem;
@@ -104,26 +104,28 @@ a {
   --type-800: calc(var(--type-700) * 1.25);
   --type-900: calc(var(--type-800) * 1.25);
 
-  /* Spacing tokens - based upon a 8px grid */
+
   --space-base: 0.5rem;
-  --space-025: calc(var(--space-base) * 0.25); /*   4px */
-  --space-050: calc(var(--space-base) * 0.5); /*   4px */
-  --space-075: calc(var(--space-base) * 0.75); /*   6px */
-  --space-100: calc(var(--space-base) * 1); /*   8px */
-  --space-150: calc(var(--space-base) * 1.5); /*  12px */
-  --space-175: calc(var(--space-base) * 1.75); /*  14px */
-  --space-200: calc(var(--space-base) * 2); /*  16px */
-  --space-250: calc(var(--space-base) * 2.5); /*  20px */
-  --space-300: calc(var(--space-base) * 3); /*  24px */
-  --space-350: calc(var(--space-base) * 3.5); /*  28px */
-  --space-400: calc(var(--space-base) * 4); /*  32px */
-  --space-450: calc(var(--space-base) * 4.5); /*  36px */
-  --space-500: calc(var(--space-base) * 5); /*  40px */
-  --space-550: calc(var(--space-base) * 5.5); /*  44px */
-  --space-600: calc(var(--space-base) * 6); /*  48px */
-  --space-700: calc(var(--space-base) * 8); /*  48px */
-  --space-800: calc(var(--space-base) * 10); /*  48px */
+  --space-025: calc(var(--space-base) * 0.25);   
+  --space-050: calc(var(--space-base) * 0.5); 
+  --space-075: calc(var(--space-base) * 0.75);
+  --space-100: calc(var(--space-base) * 1); 
+  --space-150: calc(var(--space-base) * 1.5); 
+  --space-175: calc(var(--space-base) * 1.75);
+  --space-200: calc(var(--space-base) * 2); 
+  space-250: calc(var(--space-base) * 2.5); 
+  --space-300: calc(var(--space-base) * 3); 
+  --space-350: calc(var(--space-base) * 3.5); 
+  --space-400: calc(var(--space-base) * 4); 
+  --space-450: calc(var(--space-base) * 4.5); 
+  --space-500: calc(var(--space-base) * 5); 
+  --space-550: calc(var(--space-base) * 5.5); 
+  --space-600: calc(var(--space-base) * 6); 
+  --space-700: calc(var(--space-base) * 8); 
+  --space-800: calc(var(--space-base) * 10);
 }
+
+*/
 
 /* Fonts */
 

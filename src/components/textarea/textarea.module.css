@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: var(--size-100);
   width: 100%;
-  color: var(--color-primary);
+  color: var(--color-foreground-primary);
 
   .wrapper {
     display: flex;
@@ -12,57 +12,59 @@
   }
 
   .label {
-    font-size: var(--type-400);
-    line-height: 100%;
+    font: var(--type-label-medium);
   }
 
   .textareas {
     appearance: none;
     display: block;
     width: calc(100% - 1rem);
-    background-color: var(--c-input-bg);
-    border: 1px solid var(--c-input-border);
+    background-color: var(--color-component-input-bg);
+    border: 1px solid var(--color-component-input-border);
     border-radius: var(--radius-input);
     padding: var(--size-100) var(--size-075);
     min-height: var(--height-medium);
-    color: var(--c-input-value);
+    color: var(--color-comnponent-input-value);
 
     &:hover {
-      border-color: var(--c-input-border-hover);
+      border-color: var(--color-component-input-border-hover);
     }
 
     &:active {
-      border-color: var(--c-input-border-active);
+      border-color: var(--color-component-input-border-active);
     }
 
     &:focus-visible {
       outline: 2px solid var(--color-focus-ring);
       outline-offset: 2px;
-      box-shadow: 0 0 0 4px var(--color-surface-canvas);
-      border-color: var(--c-input-border-active);
+      box-shadow: 0 0 0 4px var(--color-background-canvas);
+      border-color: var(--color-component-input-border-active);
     }
   }
 
-  .helpertext {
+  .description {
     display: flex;
     align-items: center;
     gap: var(--size-100);
-    color: var(--color-system-critical);
+    font: var(--type-description-medium);
 
     svg {
-      width: var(--size-300);
+      width: var(--size-250);
     }
   }
 }
 
 .error {
   .textareas {
-    border: 1px solid var(--c-input-border-error);
+    border: 1px solid var(--color-component-input-border-error);
+  }
+  .description {
+    color: var(--color-sysytem-critical-default);
   }
 }
 
 .textareas:disabled {
-  color: var(--c-input-text-disabled);
-  border-color: var(--c-input-border-disabled);
-  background-color: var(--c-input-bg-disabled);
+  color: var(--color-component-input-text-disabled);
+  border-color: var(--color-component-input-border-disabled);
+  background-color: var(--color-component-input-bg-disabled);
 }
