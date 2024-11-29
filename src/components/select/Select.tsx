@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
+import "../../styles/variables.css";
 import { BaseComponentProps, Size } from "../../types";
 import style from "./select.module.css";
 

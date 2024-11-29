@@ -602,7 +602,7 @@ body.light-theme {
   --color-component-input-foreground-disabled: var(--color-foreground-disabled);
   --color-component-input-foreground-locked: var(--palette-neutral-cold-1500);
   --color-component-input-label: var(--palette-neutral-cold-050);
-  --color-component-input-bg: var(--palette-alpha-blue-light-010);
+  --color-component-input-bg: var(--palette-alpha-white-100);
   --color-component-input-bg-hover: var(--palette-neutral-cold-200);
   --color-component-input-bg-disabled: var(--palette-alpha-white-000);
   --color-component-input-unit-bg: var(--palette-neutral-cold-050);

@@ -58,9 +58,9 @@
   --type-label-large: 400 var(--type-400) / 1 var(--type-family-primary);
 
   --type-description-small: 400 var(--type-200) / 1.5 var(--type-family-primary);
-  --type-description-medium: 400 var(--type-200) / 1.5
+  --type-description-medium: 400 var(--type-300) / 1.5
     var(--type-family-primary);
-  --type-description-large: 400 var(--type-300) / 1.5 var(--type-family-primary);
+  --type-description-large: 400 var(--type-350) / 1.5 var(--type-family-primary);
 
   --type-action-label-small: 400 var(--type-200) / 1 var(--type-family-primary);
   --type-action-label-medium: medium small-caps var(--type-300) / 1

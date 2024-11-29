@@ -3,6 +3,7 @@ import style from "./textarea.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
+import "../../styles/variables.css";
 import { sanitizeForId } from "../../utils";
 import { BaseComponentProps, LabelPosition } from "../../types";
 import { Icon } from "../icon";
@@ -20,14 +21,31 @@ export type TextareaProps = BaseComponentProps & {
 };
 
 const Textarea: FC<
-  TextareaProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-> = ({ placeholder, onChange, label, labelPosition = "top", error, id, name, helperText, disabled, ...props }) => {
+  TextareaProps &
+    React.DetailedHTMLProps<
+      React.InputHTMLAttributes<HTMLInputElement>,
+      HTMLInputElement
+    >
+> = ({
+  placeholder,
+  onChange,
+  label,
+  labelPosition = "top",
+  error,
+  id,
+  name,
+  helperText,
+  disabled,
+  ...props
+}) => {
   const { value } = props;
 
   const hasError = error?.hasError;
 
   return (
-    <div className={`${style.textarea} ${labelPosition === "left" && style.horizontal} ${hasError && style.error}`}>
+    <div
+      className={`${style.textarea} ${labelPosition === "left" && style.horizontal} ${hasError && style.error}`}
+    >
       {label && (
         <label className={`${style.label}`} htmlFor={sanitizeForId(id)}>
           {label}
@@ -43,10 +61,12 @@ const Textarea: FC<
           placeholder={placeholder}
           value={value}
         />
-        <div className={`${style.helpertext}`}>
+        <div className={`${style.description}`}>
           {hasError && <Icon name="info" />}
           {helperText && <p className={`${style.helpertext}`}>{helperText}</p>}
-          {error?.message && <p className={`${style["errormessage"]}`}>{error.message}</p>}
+          {error?.message && (
+            <p className={`${style["errormessage"]}`}>{error.message}</p>
+          )}
         </div>
       </div>
     </div>
