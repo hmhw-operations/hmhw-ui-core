@@ -13,11 +13,11 @@
   align-items: center;
   justify-content: center;
   padding-inline: var(--size-200);
-  text-transform: uppercase;
-  font-size: var(--type-button-label);
   height: var(--height-medium);
   color: var(--color-foreground-interactive-secondary-on);
   background-color: var(--color-background-interactive-secondary-default);
+
+  font: medium uppercase large var(--type-family-primary);
 
   &:hover {
     cursor: pointer;

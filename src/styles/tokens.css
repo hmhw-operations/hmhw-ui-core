@@ -49,16 +49,25 @@
   --type-button-label-large: var(--type-400);
   --type-button-label-small: var(--type-200);
 
+  /*  Font tokens  --------------------------------------------- */
+
   /* font-weight font-size/line-height font-family */
 
-  --type-label-small: 500 var(--type-200) / 1 var(--type-family-primary);
-  --type-label-medium: 500 var(--type-300) / 1 var(--type-family-primary);
-  --type-label-large: 500 var(--type-400) / 1 var(--type-family-primary);
+  --type-label-small: 400 var(--type-200) / 1 var(--type-family-primary);
+  --type-label-medium: 400 var(--type-300) / 1 var(--type-family-primary);
+  --type-label-large: 400 var(--type-400) / 1 var(--type-family-primary);
 
-  --type-description-small: 500 var(--type-200) / 1.5 var(--type-family-primary);
-  --type-description-medium: 500 var(--type-200) / 1.5
+  --type-description-small: 400 var(--type-200) / 1.5 var(--type-family-primary);
+  --type-description-medium: 400 var(--type-200) / 1.5
     var(--type-family-primary);
-  --type-description-large: 500 var(--type-300) / 1.5 var(--type-family-primary);
+  --type-description-large: 400 var(--type-300) / 1.5 var(--type-family-primary);
+
+  --type-action-label-small: 500 uppercase var(--type-200) / 1
+    var(--type-family-primary);
+  --type-action-label-medium: 500 uppercase var(--type-300) / 1
+    var(--type-family-primary);
+  --type-action-label-large: 500 uppercase var(--type-400) / 1
+    var(--type-family-primary);
 
   /*  CORNER RADIUS  --------------------------------------------- */
 
