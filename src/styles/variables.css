@@ -449,14 +449,17 @@
     --color-system-critical-default
   );
   --color-component-bar-corner: 0;
-  --color-component-data-table-bg-head: var(--palette-alpha-blue-light-010);
-  --color-component-data-table-bg-default: var(--palette-alpha-white-000);
-  --color-component-data-table-bg-alt: var(--palette-alpha-blue-light-005);
-  --color-component-data-table-bg-hover: var(--palette-alpha-blue-light-015);
-  --color-component-data-table-bg-selected: var(--palette-blue-198-1000);
-  --color-component-data-table-bg-transparent: hsla(0, 0%, 0%, 0);
-  --color-component-data-table-border-cell: var(--palette-blue-198-1000);
-  --color-component-data-table-border-head: var(--palette-blue-198-800);
+
+  --color-component-table-bg-head: var(--palette-alpha-blue-light-010);
+  --color-component-table-bg-default: var(--palette-alpha-white-000);
+  --color-component-table-bg-alt: var(--palette-alpha-blue-light-005);
+  --color-component-table-bg-hover: var(--palette-alpha-blue-light-015);
+  --color-component-table-bg-selected: var(--palette-blue-198-1000);
+  --color-component-table-bg-transparent: hsla(0, 0%, 0%, 0);
+  --color-component-table-border-cell: var(--palette-blue-198-1000);
+
+  --color-component-table-border-head: var(--palette-blue-198-800);
+
   --color-component-app-header-background: var(--palette-blue-198-1500);
   --color-component-app-header-foreground: var(--palette-alpha-white-100);
   --color-component-input-value: var(--palette-neutral-1400);
@@ -580,14 +583,16 @@ body.light-theme {
     --color-system-critical-default
   );
   --color-component-bar-corner: 4;
-  --color-component-data-table-bg-head: var(--palette-neutral-300);
-  --color-component-data-table-bg-default: var(--palette-alpha-white-000);
-  --color-component-data-table-bg-alt: var(--palette-alpha-black-002);
-  --color-component-data-table-bg-hover: var(--palette-alpha-black-100);
-  --color-component-data-table-bg-selected: var(--palette-blue-193-500);
-  --color-component-data-table-bg-transparent: hsla(0, 0%, 100%, 0);
-  --color-component-data-table-border-cell: var(--palette-neutral-cold-500);
-  --color-component-data-table-border-head: var(--palette-neutral-cold-800);
+
+  --color-component-table-bg-head: var(--palette-neutral-300);
+  --color-component-table-bg-default: var(--palette-alpha-white-000);
+  --color-component-table-bg-alt: var(--palette-alpha-black-002);
+  --color-component-table-bg-hover: var(--palette-alpha-black-100);
+  --color-component-table-bg-selected: var(--palette-blue-193-500);
+  --color-component-table-bg-transparent: hsla(0, 0%, 100%, 0);
+  --color-component-table-border-cell: var(--palette-neutral-cold-500);
+  --color-component-table-border-head: var(--palette-neutral-cold-800);
+
   --color-component-app-header-background: var(--palette-blue-193-100);
   --color-component-app-header-foreground: var(--input-text);
   --color-component-input-foreground: var(--palette-neutral-cold-1500);
@@ -713,14 +718,14 @@ body.contrast-theme {
     --color-system-critical-default
   );
   --color-component-bar-corner: 4;
-  --color-component-data-table-bg-head: var(--palette-neutral-300);
-  --color-component-data-table-bg-default: var(--palette-alpha-white-010);
-  --color-component-data-table-bg-alt: var(--palette-neutral-200);
-  --color-component-data-table-bg-hover: var(--palette-neutral-300);
-  --color-component-data-table-bg-selected: var(--palette-neutral-cold-500);
-  --color-component-data-table-bg-transparent: hsla(0, 0%, 100%, 0);
-  --color-component-data-table-border-cell: var(--palette-neutral-cold-500);
-  --color-component-data-table-border-head: var(--palette-neutral-cold-800);
+  --color-component-table-bg-head: var(--palette-neutral-300);
+  --color-component-table-bg-default: var(--palette-alpha-white-010);
+  --color-component-table-bg-alt: var(--palette-neutral-200);
+  --color-component-table-bg-hover: var(--palette-neutral-300);
+  --color-component-table-bg-selected: var(--palette-neutral-cold-500);
+  --color-component-table-bg-transparent: hsla(0, 0%, 100%, 0);
+  --color-component-table-border-cell: var(--palette-neutral-cold-500);
+  --color-component-table-border-head: var(--palette-neutral-cold-800);
   --color-component-app-header-background: var(--color-foreground-accent);
   --color-component-app-header-foreground: var(--palette-alpha-white-100);
   --color-component-input-foreground: var(--palette-alpha-black-100);
