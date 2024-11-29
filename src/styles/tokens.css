@@ -29,7 +29,9 @@
   /*  TYPOGRAPHY  --------------------------------------------- */
 
   --type-family: Lato;
+  --type-family-primary: Lato;
   --type-base: 1rem;
+
   --type-100: calc(var(--type-base) * 0.5);
   --type-200: calc(var(--type-base) * 0.625);
   --type-200: calc(var(--type-base) * 0.75);
@@ -46,6 +48,17 @@
   --type-button-label: var(--type-300);
   --type-button-label-large: var(--type-400);
   --type-button-label-small: var(--type-200);
+
+  /* font-weight font-size/line-height font-family */
+
+  --type-label-small: 500 var(--type-200) / 1 var(--type-family-primary);
+  --type-label-medium: 500 var(--type-300) / 1 var(--type-family-primary);
+  --type-label-large: 500 var(--type-400) / 1 var(--type-family-primary);
+
+  --type-description-small: 500 var(--type-200) / 1.5 var(--type-family-primary);
+  --type-description-medium: 500 var(--type-200) / 1.5
+    var(--type-family-primary);
+  --type-description-large: 500 var(--type-300) / 1.5 var(--type-family-primary);
 
   /*  CORNER RADIUS  --------------------------------------------- */
 

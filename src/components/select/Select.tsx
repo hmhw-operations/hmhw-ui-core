@@ -23,7 +23,19 @@ export type SelectOption = {
   text: string;
 };
 
-const Select = ({ id, key, title, options, label, value, placeholder, helperText, size = "medium", disabled, onChange }: SelectProps) => {
+const Select = ({
+  id,
+  key,
+  title,
+  options,
+  label,
+  value,
+  placeholder,
+  helperText,
+  size = "medium",
+  disabled,
+  onChange,
+}: SelectProps) => {
   const [selectedValue, setSelectedValue] = useState(value || "");
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -41,21 +53,28 @@ const Select = ({ id, key, title, options, label, value, placeholder, helperText
         <select
           title={title || label}
           id={id}
-          key={key || ''}
+          key={key || ""}
           className={`${style.xxx}`}
           value={selectedValue}
           onChange={handleChange}
           disabled={disabled}
         >
-          {<option value={selectOption} hidden={true}>{selectOption}</option>}
-          {options && options.map((option) =>
-            <option key={`option_${option.value}`} value={option.value} >{option.text}</option>
-          )}
+          {
+            <option value={selectOption} hidden={true}>
+              {selectOption}
+            </option>
+          }
+          {options &&
+            options.map((option) => (
+              <option key={`option_${option.value}`} value={option.value}>
+                {option.text}
+              </option>
+            ))}
         </select>
         <Icon name="caret-double" />
       </div>
-      {helperText && <p>{helperText}</p>}
-    </div >
+      {helperText && <p className={`${style.description}`}>{helperText}</p>}
+    </div>
   );
 };
 
