@@ -1,6 +1,7 @@
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
+import "../../styles/variables.css";
 import styles from "./divider.module.css";
 
 export type DividerProps = {

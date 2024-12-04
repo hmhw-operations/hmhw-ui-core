@@ -2,6 +2,7 @@ import style from "./checkbox.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
+import "../../styles/variables.css";
 import { sanitizeForId } from "../../utils";
 import { BaseComponentProps } from "../../types";
 
@@ -16,7 +17,16 @@ export type CheckboxProps = BaseComponentProps & {
   description?: string;
 };
 
-const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, onChange, checked, description }) => {
+const Checkbox: React.FC<CheckboxProps> = ({
+  value,
+  label,
+  id,
+  name,
+  disabled,
+  onChange,
+  checked,
+  description,
+}) => {
   return (
     <div className={`${style.input_item} ${style.checkbox}`}>
       <input
@@ -31,8 +41,8 @@ const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, o
       {label && <label htmlFor={sanitizeForId(id)}>{label}</label>}
       {description && <p className={style.description}>{description}</p>}
       <p className={style.description}>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod
-        semper.
+        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        Vestibulum id ligula porta felis euismod semper.
       </p>
     </div>
   );

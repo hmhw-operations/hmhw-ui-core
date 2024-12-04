@@ -29,7 +29,9 @@
   /*  TYPOGRAPHY  --------------------------------------------- */
 
   --type-family: Lato;
+  --type-family-primary: Lato;
   --type-base: 1rem;
+
   --type-100: calc(var(--type-base) * 0.5);
   --type-200: calc(var(--type-base) * 0.625);
   --type-200: calc(var(--type-base) * 0.75);
@@ -47,6 +49,24 @@
   --type-button-label-large: var(--type-400);
   --type-button-label-small: var(--type-200);
 
+  /*  Font tokens  --------------------------------------------- */
+
+  /* font-weight font-size/line-height font-family */
+
+  --type-label-small: 400 var(--type-200) / 1 var(--type-family-primary);
+  --type-label-medium: 400 var(--type-300) / 1 var(--type-family-primary);
+  --type-label-large: 400 var(--type-400) / 1 var(--type-family-primary);
+
+  --type-description-small: 400 var(--type-200) / 1.5 var(--type-family-primary);
+  --type-description-medium: 400 var(--type-300) / 1.5
+    var(--type-family-primary);
+  --type-description-large: 400 var(--type-350) / 1.5 var(--type-family-primary);
+
+  --type-action-label-small: 400 var(--type-200) / 1 var(--type-family-primary);
+  --type-action-label-medium: medium small-caps var(--type-300) / 1
+    var(--type-family-primary);
+  --type-action-label-large: 400 var(--type-300) / 1 var(--type-family-primary);
+
   /*  CORNER RADIUS  --------------------------------------------- */
 
   --radius-none: 0;
@@ -58,6 +78,7 @@
   --radius-input: var(--size-050);
 }
 
+/*
 :root {
   --color-primary: var(--p-neutral-100);
   --color-secondary: var(--p-alpha-white-60);
@@ -229,20 +250,9 @@ body.light-theme {
   --color-focus-ring: var(--p-blue-ocean-600);
 }
 
-/* ----------- Component tokens -------- */
+
 
 :root {
-  --c-table-cell-text: var(--p-neutral-050);
-  --c-table-cell-bg: var(--p-alpha-white-0);
-  --c-table-cell-bg-alt: var(--p-alpha-blue-ocean-05);
-  --c-table-cell-border: var(--p-blue-ocean-1200);
-  --c-table-header-bg: var(--p-alpha-blue-ocean-10);
-  --c-table-header-border: var(--p-blue-ocean-900);
-  --c-table-height-small: var(--size-400);
-  --c-table-height-medium: var(--size-500);
-  --c-table-height-large: var(--size-600);
-  --c-table-padding: var(--size-200);
-
   --c-switch-track-off: var(--p-neutral-700);
   --c-switch-track-off-hover: var(--p-neutral-900);
   --c-switch-track-on: var(--color-interactive);
@@ -319,3 +329,6 @@ body.light-theme {
   --c-input-unit-border-disabled: var(--c-input-border-disabled);
   --c-input-unit-border-error: var(--color-system-critical);
 }
+
+
+*/

@@ -3,6 +3,7 @@ import style from "./segmentedbutton.module.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/globals.css";
+import "../../styles/variables.css";
 
 export type SegmentedItem = {
   value: string;
@@ -18,8 +19,15 @@ export type SegmentedButtonProps = {
   disabled?: boolean;
 };
 
-const SegmentedButton: React.FC<SegmentedButtonProps> = ({ name, items, value, onChange, disabled }) => {
-  const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.currentTarget.value);
+const SegmentedButton: React.FC<SegmentedButtonProps> = ({
+  name,
+  items,
+  value,
+  onChange,
+  disabled,
+}) => {
+  const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) =>
+    onChange(e.currentTarget.value);
 
   return (
     <fieldset className={style.segmented_group} disabled={disabled}>

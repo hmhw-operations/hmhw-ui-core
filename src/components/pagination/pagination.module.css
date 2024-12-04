@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-primary);
+  color: var(--color-foreground-primary);
 
   & > span {
     padding-inline: var(--space-200);

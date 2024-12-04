@@ -8,8 +8,8 @@
   width: 100%;
   height: var(--size-600);
   padding-inline: var(--size-200);
-  color: var(--c-appbar-text);
-  background-color: var(--c-appbar-surface);
+  color: var(--color-component-app-header-foreground);
+  background-color: var(--color-component-app-header-background);
 
   & > * {
     display: flex;
@@ -30,11 +30,11 @@
   }
 
   a:hover {
-    color: var(--color-interactive-hover);
+    color: var(--color-foreground-interactive-hover);
   }
 
   a:active {
-    color: var(--color-interactive-active);
+    color: var(--color-foreground-interactive-active);
   }
 }
 

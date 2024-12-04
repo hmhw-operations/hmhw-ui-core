@@ -1,6 +1,8 @@
 import React, { FC, useEffect } from "react";
 import Pagination, { PaginationProps } from "../Pagination";
 
+import { Divider } from "../../divider";
+
 const backgroundColors: string[] = [
   "var(--color-surface-primary)",
   "var(--color-surface-neutral)",
@@ -19,20 +21,6 @@ const backgroundColors: string[] = [
   "var(--color-on-interactive)",
   "var(--color-on-interactive-secondary)",
 ];
-
-const codeDisplay = `const [pageNr, setPageNr] = React.useState(currentPage);
-
-const handlePageChange = (page: number) => {
-    setPageNr(page);
-    console.log("Page changed to:", page)
-  };
-
-useEffect(() => {
-  if (currentPage <= totalPages && currentPage > 0) {
-    setPageNr(currentPage);
-  }
-}, [currentPage]);
-`;
 
 const Example: FC<PaginationProps> = ({
   onPageChange,
@@ -60,8 +48,6 @@ const Example: FC<PaginationProps> = ({
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
         height: "100%",
         color: "var(--color-primary)",
         backgroundColor: "var(--color-surface-canvas)",
@@ -70,17 +56,11 @@ const Example: FC<PaginationProps> = ({
       }}
     >
       <h1>Pagination</h1>
-      <p style={{ textAlign: "center" }}>
-        Pagination is a <i>controlled</i> UI component used to divide content
-        across multiple pages.
-        <br />
-        The counter is controlled by the code below the example.
-      </p>
-
       <div
         style={{
           backgroundColor: backgroundColors[pageNr - 1],
           padding: "5rem",
+          textAlign: "center",
         }}
       >
         Page {pageNr}
@@ -93,16 +73,7 @@ const Example: FC<PaginationProps> = ({
         size={size}
         showMaxCount={showMaxCount}
       />
-
-      <pre
-        style={{
-          backgroundColor: "var(--color-surface-neutral-disabled)",
-          padding: "1rem",
-          width: "100%",
-        }}
-      >
-        {codeDisplay}
-      </pre>
+      <Divider weight="thin" />
     </div>
   );
 };
