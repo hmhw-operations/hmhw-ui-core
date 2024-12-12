@@ -42,6 +42,8 @@
     }
 
     &:hover {
+      color: var(--color-foreground-interactive-hover);
+
       &:before {
         border-color: var(--color-foreground-interactive-hover);
       }

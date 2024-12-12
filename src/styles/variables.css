@@ -514,7 +514,7 @@ body.light-theme {
   --color-background-canvas: var(--palette-neutral-cold-100);
   --color-background-landing: var(--palette-beaware-alt-backdrop-bright-lan-2);
   --color-background-interactive-default: var(--color-foreground-accent);
-  --color-background-interactive-hover: var(--palette-blue-193-800);
+  --color-background-interactive-hover: var(--palette-blue-193-1200);
   --color-background-interactive-active: var(--palette-blue-193-900);
   --color-background-interactive-disabled: var(--palette-neutral-cold-300);
   --color-background-interactive-secondary-default: var(

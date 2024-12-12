@@ -4,6 +4,7 @@ import style from "./radiobutton.module.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/globals.css";
+import "../../styles/variables.css";
 import { BaseComponentProps } from "../../types";
 
 export type RadioButtonProps = BaseComponentProps & {
@@ -13,7 +14,16 @@ export type RadioButtonProps = BaseComponentProps & {
   checked?: boolean;
 };
 
-const RadioButton: React.FC<RadioButtonProps> = ({ label, onChange, id, title, disabled, value, checked, ...props }) => {
+const RadioButton: React.FC<RadioButtonProps> = ({
+  label,
+  onChange,
+  id,
+  title,
+  disabled,
+  value,
+  checked,
+  ...props
+}) => {
   return (
     <div className={`${style.input_item} ${style.radio}`}>
       <input
