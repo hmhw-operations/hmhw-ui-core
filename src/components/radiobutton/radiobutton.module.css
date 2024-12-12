@@ -43,8 +43,11 @@
     background-color: var(--color-foreground-interactive-default);
   }
 
-  label:hover:before {
-    border-color: var(--color-foreground-interactive-hover);
+  label:hover {
+    color: var(--color-foreground-interactive-hover);
+    &:before {
+      border-color: var(--color-foreground-interactive-hover);
+    }
   }
 
   .radio:has(input:focus-visible) {
@@ -56,17 +59,16 @@
     outline: none;
   }
 
-  .radio:has(input:disabled) {
-    label {
-      color: var(--color-disabled);
-
-      cursor: not-allowed;
-      &:before {
-        border-color: var(--color-foreground-disabled);
-      }
-      &:after {
-        background-color: var(--color-foreground-disabled);
-      }
+  input:disabled + label {
+    cursor: not-allowed;
+    color: var(--color-foreground-disabled);
+    &:before {
+      border-color: var(--color-foreground-disabled);
+    }
+  }
+  input:disabled:checked + label {
+    &:after {
+      background-color: var(--color-foreground-disabled);
     }
   }
 }
