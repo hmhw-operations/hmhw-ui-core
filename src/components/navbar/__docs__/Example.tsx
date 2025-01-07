@@ -12,7 +12,16 @@ const Example = () => {
         width: "100%",
       }}
     >
-      <Navbar title="Automator" links={[{href: "#", label: "Home"}, {href: "#", label: "Users"}, {href: "#", label: "About"}]} />
+      <Navbar
+        title="Automator"
+        links={[
+          { href: "#", label: "Home" },
+          { href: "#", label: "Users" },
+          { href: "#", label: "About" },
+        ]}
+        onThemeChange={() => console.log("Theme changed")}
+        logoutUrl="#"
+      />
     </div>
   );
 };
