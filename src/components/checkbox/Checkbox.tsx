@@ -17,33 +17,12 @@ export type CheckboxProps = BaseComponentProps & {
   description?: string;
 };
 
-const Checkbox: React.FC<CheckboxProps> = ({
-  value,
-  label,
-  id,
-  name,
-  disabled,
-  onChange,
-  checked,
-  description,
-}) => {
+const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, onChange, checked, description }) => {
   return (
     <div className={`${style.input_item} ${style.checkbox}`}>
-      <input
-        type="checkbox"
-        id={sanitizeForId(id)}
-        disabled={disabled}
-        name={name}
-        checked={checked}
-        value={value}
-        onChange={onChange}
-      />
+      <input type="checkbox" id={sanitizeForId(id)} disabled={disabled} name={name} checked={checked} value={value} onChange={onChange} />
       {label && <label htmlFor={sanitizeForId(id)}>{label}</label>}
       {description && <p className={style.description}>{description}</p>}
-      <p className={style.description}>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        Vestibulum id ligula porta felis euismod semper.
-      </p>
     </div>
   );
 };
