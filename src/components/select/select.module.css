@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-100);
+  color: var(--color-component-input-foreground);
 
   .label {
     font: var(--type-label-medium);
-    color: var(--color-foreground-primary);
   }
 
   .description {
     font: var(--type-description-medium);
-    color: var(--color-foreground-primary);
   }
 
   .wrapper {
@@ -19,13 +18,12 @@
     display: flex;
     justify-content: center;
     height: var(--height-medium);
-
     font-size: var(--type-400);
     line-height: 1;
-
     border: 1px solid var(--color-component-input-border);
     border-radius: var(--radius-input);
     background-color: var(--color-component-input-bg);
+    padding-inline: 0.5em 0.125em;
 
     &:hover {
       border-color: var(--c-input-border-hover);
@@ -35,9 +33,8 @@
       appearance: none;
       background-color: transparent;
       border: none;
-      color: var(--c-input-value);
+      color: var(--color-component-input-foreground);
       flex-grow: 1;
-      padding-inline: var(--size-100);
     }
 
     &:focus-within {
@@ -50,14 +47,8 @@
       }
     }
 
-    &:has(select:disabled) {
-      border-color: var(--c-input-border-disabled);
-      background-color: var(--c-input-bg-disabled);
-      color: var(--color-component-input-value-disabled);
-    }
-
     svg {
-      width: 1.5rem;
+      width: var(--size-300);
     }
   }
 
@@ -69,30 +60,52 @@
     .description {
       font: var(--type-description-small);
     }
+
     .wrapper {
       font-size: var(--type-200);
       height: var(--height-small);
 
       svg {
-        width: 1rem;
+        width: var(--size-250);
       }
     }
   }
 
-  &.large .label {
-    font: var(--type-label-large);
+  &.large {
+    .label {
+      font: var(--type-label-large);
+    }
+
+    .description {
+      font: var(--type-description-large);
+    }
+
+    .wrapper {
+      font-size: var(--type-500);
+
+      svg {
+        width: var(--size-350);
+      }
+    }
   }
 
-  .description {
-    font: var(--type-description-large);
-  }
+  &:has(select:disabled) {
+    label {
+      color: var(--color-component-input-foreground-disabled);
+    }
 
-  .wrapper {
-    font-size: var(--type-500);
-    height: var(--height-large);
+    .wrapper {
+      border-color: var(--color-component-input-border-disabled);
+      background-color: var(--color-component-input-background-disabled);
+      color: var(--color-component-input-foreground-disabled);
 
-    svg {
-      width: 1.75rem;
+      select {
+        color: var(--color-component-input-foreground-disabled);
+      }
+    }
+
+    .description {
+      color: var(--color-component-input-foreground-disabled);
     }
   }
 }

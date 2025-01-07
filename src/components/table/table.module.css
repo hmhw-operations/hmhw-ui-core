@@ -2,7 +2,6 @@
   --small: var(--size-400);
   --medium: var(--size-500);
   --large: var(--size-600);
-
   --padding: var(--size-200);
 }
 
@@ -10,6 +9,22 @@
   width: 100%;
   color: var(--color-foreground-primary);
   border-collapse: collapse;
+
+  tr {
+    height: var(--medium);
+  }
+
+  &.large {
+    tr {
+      height: var(--large);
+    }
+  }
+
+  &.small {
+    tr {
+      height: var(--small);
+    }
+  }
 
   th {
     font-size: var(--type-200);
@@ -29,23 +44,11 @@
     height: var(--size-medium);
   }
 
-  tr:nth-child(even) td {
+  tr.alt:nth-child(even) td {
     background-color: var(--color-component-table-bg-alt);
   }
 
-  tr {
-    height: var(--medium);
-  }
-
-  &.large {
-    tr {
-      height: var(--large);
-    }
-  }
-
-  &.small {
-    tr {
-      height: var(--small);
-    }
+  tr.selected td {
+    background-color: var(--color-component-table-bg-selected);
   }
 }
