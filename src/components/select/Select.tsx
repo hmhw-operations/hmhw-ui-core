@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/variables.css";
 import { BaseComponentProps, Size } from "../../types";
 import style from "./select.module.css";
-
 import { Icon } from "../icon";
 
 export type SelectProps = BaseComponentProps & {
@@ -24,20 +23,13 @@ export type SelectOption = {
   text: string;
 };
 
-const Select = ({
-  id,
-  key,
-  title,
-  options,
-  label,
-  value,
-  placeholder,
-  helperText,
-  size = "medium",
-  disabled,
-  onChange,
-}: SelectProps) => {
+const Select = ({ id, key, title, options, label, value, placeholder, helperText, size = "medium", disabled, onChange }: SelectProps) => {
   const [selectedValue, setSelectedValue] = useState(value || "");
+
+  // Add this useEffect to sync the internal state with the value prop
+  useEffect(() => {
+    setSelectedValue(value || "");
+  }, [value]);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedValue(event.target.value);
@@ -51,15 +43,7 @@ const Select = ({
     <div className={`${style.select} ${style[size]}`}>
       {label && <label className={`${style.label} `}>{label}</label>}
       <div className={`${style.wrapper}`}>
-        <select
-          title={title || label}
-          id={id}
-          key={key || ""}
-          className={`${style.xxx}`}
-          value={selectedValue}
-          onChange={handleChange}
-          disabled={disabled}
-        >
+        <select title={title || label} id={id} key={key || ""} className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
           {
             <option value={selectOption} hidden={true}>
               {selectOption}
