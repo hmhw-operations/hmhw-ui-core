@@ -15,7 +15,7 @@ type NavbarProps = {
   links?: NavBarLink[];
   title: string;
   logoutUrl?: string;
-  onThemeChange?: () => void;
+  onThemeChange?: (isDarkTheme: boolean) => void;
 };
 
 const Navbar = ({ links, title, logoutUrl, onThemeChange }: NavbarProps) => {
@@ -23,7 +23,7 @@ const Navbar = ({ links, title, logoutUrl, onThemeChange }: NavbarProps) => {
 
   const handleThemeChange = () => {
     setIsDarkTheme(!isDarkTheme);
-    onThemeChange?.();
+    onThemeChange?.(isDarkTheme);
   };
 
   return (
