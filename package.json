@@ -70,10 +70,10 @@
     "vite-plugin-svgr": "^4.2.0",
     "vitest": "^1.6.1"
   },
-  "peerDependencies": {
-    "react": ">=19.0.0 <20.0.0",
-    "react-dom": ">=19.0.0 <20.0.0"
-  },
+"peerDependencies": {
+  "react": ">=18.2.0 <20.0.0",
+  "react-dom": ">=18.2.0 <20.0.0"
+},
   "lint-staged": {
     "*.{ts,tsx}": [
       "npm run format",
