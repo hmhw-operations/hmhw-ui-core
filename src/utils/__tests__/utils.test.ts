@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import { sanitizeForId } from "../index";
 
 describe("sanitizeForId", () => {
