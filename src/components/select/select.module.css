@@ -24,6 +24,7 @@
     border-radius: var(--radius-input);
     background-color: var(--color-component-input-bg);
     padding-inline: 0.5em 0.125em;
+    color: var(--color-component-input-value);
 
     &:hover {
       border-color: var(--c-input-border-hover);
@@ -32,8 +33,8 @@
     select {
       appearance: none;
       background-color: transparent;
+      color: inherit;
       border: none;
-      color: var(--color-component-input-foreground);
       flex-grow: 1;
     }
 
