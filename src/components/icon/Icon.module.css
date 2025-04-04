@@ -1,14 +1,14 @@
 .small {
-  width: 1rem;
+  width: var(--size-200);
   height: auto;
 }
 
 .medium {
-  width: 2rem;
+  width: var(--size-300);
   height: auto;
 }
 
 .large {
-  width: 3rem;
+  width: var(--size-400);
   height: auto;
 }

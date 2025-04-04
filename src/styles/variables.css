@@ -352,7 +352,7 @@
   --color-foreground-tertiary: var(--palette-alpha-white-020);
   --color-foreground-disabled: var(--palette-alpha-white-030);
   --color-foreground-on-disabled: var(--palette-blue-198-100);
-  --color-foreground-invert: var(--palette-neutral-900);
+  --color-foreground-invert: var(--palette-neutral-1400);
   --color-foreground-accent: var(--palette-blue-198-700);
   --color-foreground-interactive-default: var(--color-foreground-accent);
   --color-foreground-interactive-on: var(--palette-neutral-050);

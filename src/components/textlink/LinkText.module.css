@@ -1,0 +1,44 @@
+.linkText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--color-foreground-interactive-default);
+
+  &:hover {
+    cursor: pointer;
+    color: var(--color-foreground-interactive-hover);
+  }
+
+  & a {
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+
+  &.small {
+    font: var(--type-label-small);
+    gap: var(--size-050);
+
+    & svg {
+      width: var(--size-200);
+    }
+  }
+
+  &.medium {
+    font: var(--type-label-medium);
+    gap: var(--size-075);
+
+    & svg {
+      width: var(--size-250);
+    }
+  }
+
+  &.large {
+    font: var(--type-label-large);
+    gap: var(--size-100);
+
+    & svg {
+      width: var(--size-300);
+    }
+  }
+}
