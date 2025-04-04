@@ -6,6 +6,7 @@ export * from "./divider";
 export * from "./icon";
 export * from "./iconbutton";
 export * from "./Input";
+export * from "./linktext";
 export * from "./modal";
 export * from "./navbar";
 export * from "./numeric";
