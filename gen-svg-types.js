@@ -1,5 +1,6 @@
 import { readdir, writeFile } from "fs";
 import { join, extname, basename } from "path";
+import { platform } from "os";
 
 // Function to adjust the path for Windows
 const adjustPathForWindows = (path) => {
@@ -7,8 +8,19 @@ const adjustPathForWindows = (path) => {
   return process.platform === "win32" ? path.substring(1) : path;
 };
 
-const svgDirPath = join(adjustPathForWindows(new URL("./src/static/icons", import.meta.url).pathname));
-const outputPath = join(adjustPathForWindows(new URL("./src/components/icon/types.ts", import.meta.url).pathname));
+const getPath = (path) => {
+  if (platform() === "win32") {
+    return adjustPathForWindows(path);
+  }
+  return path;
+};
+
+const svgDirPath = join(
+  getPath(new URL("./src/static/icons", import.meta.url).pathname)
+);
+const outputPath = join(
+  getPath(new URL("./src/components/icon/types.ts", import.meta.url).pathname)
+);
 
 readdir(svgDirPath, (err, files) => {
   if (err) {
