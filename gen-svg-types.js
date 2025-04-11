@@ -11,7 +11,7 @@ const adjustPathForWindows = (path) => {
 const getPath = (path) => {
   console.log (path)
   if (platform() === "win32") {
-    return adjustPathForWindows(path);
+    return adjustPathForWindows(new URL(path, import.meta.url).pathname);
   }
   return path;
 };
