@@ -352,7 +352,7 @@
   --color-foreground-tertiary: var(--palette-alpha-white-020);
   --color-foreground-disabled: var(--palette-alpha-white-030);
   --color-foreground-on-disabled: var(--palette-blue-198-100);
-  --color-foreground-invert: var(--palette-neutral-1400);
+  --color-foreground-invert: var(--palette-neutral-1500);
   --color-foreground-accent: var(--palette-blue-198-700);
   --color-foreground-interactive-default: var(--color-foreground-accent);
   --color-foreground-interactive-on: var(--palette-neutral-050);
@@ -462,6 +462,7 @@
 
   --color-component-app-header-background: var(--palette-blue-198-1500);
   --color-component-app-header-foreground: var(--palette-alpha-white-100);
+
   --color-component-input-value: var(--palette-neutral-1400);
   --color-component-input-value-disabled: var(--color-foreground-disabled);
   --color-component-input-foreground-locked: var(--palette-blue-198-600);
@@ -469,12 +470,10 @@
   --color-component-input-bg: var(--palette-neutral-100);
   --color-component-input-bg-hover: var(--palette-blue-198-100);
   --color-component-input-bg-disabled: var(--palette-alpha-white-000);
-
   --color-component-input-unit-value: var(--palette-neutral-1400);
   --color-component-input-unit-bg: var(--palette-neutral-200);
   --color-component-input-unit-bg-locked: var(--palette-alpha-blue-light-010);
   --color-component-input-unit-bg-hover: var(--palette-blue-198-200);
-
   --color-component-input-border: var(--palette-alpha-blue-020);
   --color-component-input-border-hover: var(--palette-alpha-blue-020);
   --color-component-input-border-select: var(--color-foreground-accent);
