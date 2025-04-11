@@ -12,6 +12,7 @@ export type ActionType = {
   label: string;
   buttonVariant: ButtonVariant;
   onClick: () => void;
+  disabled?: boolean;
 };
 
 export type ModalProps = BaseComponentProps & {
@@ -33,12 +34,10 @@ const Modal: React.FC<ModalProps> = ({
   titleComponent,
   iconComponent,
 }) => {
-  // const [open, setIsOpen] = useState(isOpen);
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const handleClose = () => {
     dialogRef.current?.close();
-    // setIsOpen(false);
     onClose && onClose();
   };
 
@@ -102,6 +101,7 @@ const Modal: React.FC<ModalProps> = ({
                 key={action.label}
                 onClick={action.onClick}
                 text={action.label}
+                disabled={action.disabled}
               />
             );
           })}
