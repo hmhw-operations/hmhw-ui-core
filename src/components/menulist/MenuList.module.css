@@ -1,0 +1,99 @@
+.menuList {
+  display: flex;
+  gap: 8px;
+  align-self: stretch;
+  width: 100%;
+  min-width: 160px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-200, 16px);
+}
+
+.menuListButton {
+  background: none;
+  border: none;
+  display: flex;
+  height: var(--size-400, 32px);
+  padding: 0px var(--size-100, 4px);
+  align-items: center;
+  gap: var(--Size-100, 8px);
+  align-self: stretch;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  color: var(--color-foreground-primary, #000);
+}
+
+.menuListButton:focus,
+.menuListButton:hover {
+  background-color: var(--Color-Component-MenuList-Background-Active, #fff);
+}
+
+.menuListButtonSelected {
+  background-color: var(
+    --Color-Component-MenuList-Background-Hover,
+    rgba(0, 179, 255, 0.1)
+  );
+
+  font-weight: 600;
+  box-shadow: 0 0 0 1px #e0e6ea;
+}
+
+.menuListIcon {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  min-width: 1.5em;
+  justify-content: center;
+}
+
+.menuListLabel {
+  flex: 1;
+  text-align: left;
+}
+
+.menuListGroupHeader {
+  color: var(--Color-Component-Side-menu-Foreground-Secondary, #455054);
+
+  font-family: var(--Typorgaphy-Family-Standard, Lato);
+  font-size: var(--Typorgaphy-Size-14, 14px);
+  font-style: normal;
+  font-weight: var(--Typorgaphy-Weight-Regular, 400);
+  line-height: 100%;
+  pointer-events: none;
+}
+
+.menuListItem {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure sublist does not expand parent width */
+.menuListSubList {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: var(--size-350); /* Remove margin-left, use padding-left for indentation */
+  position: relative;
+}
+
+.menuListSubList::before {
+  content: "";
+  position: absolute;
+  left: var(--size-150);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e0e6ea;
+  border-radius: 1px;
+  z-index: 0;
+}
+
+.menuListSubList > * {
+  position: relative;
+  z-index: 1;
+}

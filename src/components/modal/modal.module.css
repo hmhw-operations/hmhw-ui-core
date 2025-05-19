@@ -7,7 +7,6 @@
   gap: var(--size-200);
   margin: 10% auto;
   width: 80%;
-
   max-width: 600px;
   background-color: var(--color-background-primary);
   color: var(--color-foreground-primary);
