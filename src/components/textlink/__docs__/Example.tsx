@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import LinkText, { LinkTextProps } from "../LinkText";
+import TextLink, { TextLinkProps } from "../TextLink";
 
-const Example: FC<LinkTextProps> = (props) => {
+const Example: FC<TextLinkProps> = (props) => {
   return (
     <div
       style={{
@@ -12,7 +12,7 @@ const Example: FC<LinkTextProps> = (props) => {
         color: "var(--color-foreground-primary)",
       }}
     >
-      <LinkText {...props} />
+      <TextLink {...props} />
     </div>
   );
 };
