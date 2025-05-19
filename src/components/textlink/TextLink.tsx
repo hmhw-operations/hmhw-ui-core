@@ -1,8 +1,8 @@
 import { Size } from "../../types";
 import { Icon } from "../icon";
-import styles from "./LinkText.module.css";
+import styles from "./TextLink.module.css";
 
-export type LinkTextProps = {
+export type TextLinkProps = {
   text: string;
   href: string;
   newTab?: boolean;
@@ -10,15 +10,15 @@ export type LinkTextProps = {
   size?: Size;
 };
 
-export default function LinkText({
+export default function TextLink({
   text,
   href,
   newTab,
   isExternal = true,
   size = "small",
-}: LinkTextProps) {
+}: TextLinkProps) {
   return (
-    <div className={`${styles.linkText} ${styles[size]}`}>
+    <div className={`${styles.textLink} ${styles[size]}`}>
       <a href={href} target={`${newTab && "_"}`}>
         {text}
       </a>
