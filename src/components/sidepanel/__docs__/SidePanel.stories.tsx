@@ -8,7 +8,6 @@ export default meta;
 type Story = StoryObj<typeof SidePanel>;
 
 export const Default: Story = {
-  ...SidePanel,
   args: {
     open: true,
     onClose: () => console.log("onClose"),
