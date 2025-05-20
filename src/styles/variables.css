@@ -802,3 +802,37 @@ body.day-theme {
   --c-switch-track-active-hover: var(--color-foreground-interactive-hover);
   --c-switch-track-active-disabled: var(--color-foreground-disabled);
 }
+
+
+/*******  Divider tokens  *******/
+
+body.dark-theme {
+  --c-divider-primary: var(--color-foreground-interactive-default);
+  --c-divider-secondary:var(--color-foreground-interactive-secondary-default);
+}
+
+body.light-theme {
+  --c-divider-primary: var(--color-foreground-interactive-default);
+  --c-divider-secondary:var(--color-foreground-interactive-secondary-default);
+}
+
+body.day-theme {
+  --c-divider-primary: var(--color-foreground-interactive-default);
+  --c-divider-secondary:var(--color-foreground-interactive-secondary-default);
+}
+
+
+
+/*******  XXX  tokens  *******/
+
+body.dark-theme {
+  --c-xxx-foreground-primary: var(--color-foreground-primary);
+}
+
+body.light-theme {
+  --c-xxx-foreground-primary: var(--color-foreground-primary);
+}
+
+body.day-theme {
+  --c-xxx-foreground-primary: var(--color-foreground-primary);
+}
