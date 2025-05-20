@@ -17,7 +17,7 @@
   }
 
   .label {
-    color: var(--c-switch-foreground-primary);
+    color: var(--c-switch-label);
     font: var(--type-label-medium);
   }
 
@@ -65,7 +65,7 @@ h
       }
 
       + label {
-        color: var(--c-switch-foreground-disabled);
+        color: var(--c-switch-label-disabled);
       }
 
       &:hover {

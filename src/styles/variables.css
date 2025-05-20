@@ -761,9 +761,9 @@ body.day-theme {
 /*******  Switch (toggle) tokens  *******/
 
 body.dark-theme {
-  --c-switch-foreground-primary: var(--color-foreground-primary);
-  --c-switch-foreground-secondary: var(--color-foreground-secondary);
-  --c-switch-foreground-disabled: var(--color-foreground-disabled);
+  --c-switch-label: var(--color-foreground-primary);
+  --c-switch-label-disabled: var(--color-foreground-disabled);
+  --c-switch-description: var(--color-foreground-secondary);
   --c-switch-thumb: var(--palette-alpha-white-100);
   --c-switch-thumb-active: var(--palette-alpha-white-100);
   --c-switch-thumb-disabled: var(--palette-alpha-white-100);
@@ -776,9 +776,9 @@ body.dark-theme {
 }
 
 body.light-theme {
-  --c-switch-foreground-primary: var(--color-foreground-primary);
-  --c-switch-foreground-secondary: var(--color-foreground-secondary);
-  --c-switch-foreground-disabled: var(--color-foreground-disabled);
+  --c-switch-label: var(--color-foreground-primary);
+  --c-switch-label-disabled: var(--color-foreground-disabled);
+  --c-switch-description: var(--color-foreground-secondary);
   --c-switch-thumb: var(--palette-neutral-cold-050);
   --c-switch-thumb-active: var(--palette-neutral-cold-050);
   --c-switch-thumb-disabled: var(--palette-neutral-cold-050);
@@ -791,9 +791,9 @@ body.light-theme {
 }
 
 body.day-theme {
-  --c-switch-foreground-primary: var(--color-foreground-primary);
-  --c-switch-foreground-secondary: var(--color-foreground-secondary);
-  --c-switch-foreground-disabled: var(--color-foreground-disabled);
+  --c-switch-label: var(--color-foreground-primary);
+  --c-switch-label-disabled: var(--color-foreground-disabled);
+  --c-switch-description: var(--color-foreground-secondary);
   --c-switch-thumb: var(--palette-neutral-new-050);
   --c-switch-thumb-active: var(--palette-neutral-new-050);
   --c-switch-thumb-disabled: var(--palette-neutral-new-050);
