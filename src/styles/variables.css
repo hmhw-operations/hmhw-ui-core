@@ -703,10 +703,12 @@ body.day-theme {
   --color-foreground-on-invert: var(--palette-neutral-new-900);
   --color-foreground-accent: var(--palette-blue-198-new-500);
   --color-foreground-accent-on: var(--palette-neutral-new-050);
+
   --color-foreground-interactive-default: var(--palette-blue-198-new-500);
   --color-foreground-interactive-on: var(--palette-blue-new-050);
   --color-foreground-interactive-hover: var(--palette-blue-198-new-600);
   --color-foreground-interactive-disabled: var(--color-foreground-disabled);
+
   --color-background-canvas: var(--palette-neutral-new-050);
   --color-background-primary: var(--palette-neutral-new-100);
 }
@@ -812,13 +814,56 @@ body.dark-theme {
 }
 
 body.light-theme {
-  --c-divider-primary: var(--color-foreground-interactive-default);
-  --c-divider-secondary:var(--color-foreground-interactive-secondary-default);
+  --c-divider-primary: var(--palette-neutral-cold-300);
+  --c-divider-secondary:var(--palette-neutral-cold-200);
 }
 
 body.day-theme {
-  --c-divider-primary: var(--color-foreground-interactive-default);
-  --c-divider-secondary:var(--color-foreground-interactive-secondary-default);
+  --c-divider-primary: var(--palette-neutral-new-300);
+  --c-divider-secondary:var(--palette-neutral-new-200);
+}
+
+
+
+/*******  Checkbox tokens  *******/
+
+body.dark-theme {
+  --c-checkbox-label: var(--color-foreground-primary);
+  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked: var(--color-foreground-primary);
+  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
+  --c-checkbox-check-checked: var(--palette-alpha-white-100);
+}
+
+body.light-theme {
+  --c-checkbox-label: var(--color-foreground-primary);
+  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked: var(--color-foreground-primary);
+  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
+  --c-checkbox-check-checked: var(--palette-alpha-white-100);
+}
+
+body.day-theme {
+  --c-checkbox-label: var(--color-foreground-primary);
+  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked: var(--color-foreground-primary);
+  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
+  --c-checkbox-check-checked: var(--palette-alpha-white-100);
 }
 
 
