@@ -132,9 +132,9 @@ const MenuListSubList: React.FC<MenuListSubListProps> = ({
           <span className={styles.menuListLabel}>{label}</span>
         </span>
         {open ? (
-          <Icon name="chevron-down" size="small" />
+          <Icon name="caret-down" size="small" />
         ) : (
-          <Icon name="chevron-right" size="small" />
+          <Icon name="caret-right" size="small" />
         )}
       </button>
       {open && (
