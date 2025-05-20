@@ -42,7 +42,7 @@ const SidePanel: React.FC<SidePanelProps> = ({ open = false, onClose, children, 
     >
       <header className={style.header}>
         <h3 className={style.title}>{titleComponent}</h3>
-        <button title="Close" id="modalbutton_close" onClick={onClose}>
+        <button title="Close" aria-label="Close side panel" id="modalbutton_close" onClick={onClose}>
           X
         </button>
       </header>
