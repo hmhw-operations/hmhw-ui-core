@@ -5,13 +5,15 @@ import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/variables.css";
 import { BaseComponentProps } from "../../types";
+import { SvgName } from "../icon/types";
+import Icon from "../icon/Icon";
 
 export type IconButtonProps = BaseComponentProps & {
   label: string;
   size?: "small" | "medium" | "large";
   variant?: "primary" | "secondary" | "tertiary" | "destructive";
   onClick?: MouseEventHandler<HTMLButtonElement>;
-  icon: React.ReactNode;
+  icon: SvgName;
   disabled?: boolean;
 };
 
@@ -32,7 +34,7 @@ const IconButton: React.FC<IconButtonProps> = ({
     disabled={disabled}
     {...props}
   >
-    {icon}
+    <Icon name={icon} size={size ?? "medium"} />
   </button>
 );
 

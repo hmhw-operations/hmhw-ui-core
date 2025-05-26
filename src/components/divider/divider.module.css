@@ -6,11 +6,11 @@
   margin: 0;
 
   &.primary {
-    background-color: var(--color-foreground-interactive-default);
+    background-color: var(--c-divider-primary);
   }
 
   &.secondary {
-    background-color: var(--color-foreground-interactive-secondary-default);
+    background-color: var(--c-divider-secondary);
   }
 
   &.horizontal {

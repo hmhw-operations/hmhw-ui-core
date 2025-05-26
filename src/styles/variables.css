@@ -1,6 +1,5 @@
 :root{
   --palette-neutral-050: hsla(0,0%,100%,1.00);
-  --palette-blue-198-new-100: hsla(198,100%,96%,1.00);
   --palette-neutral-new-050: hsla(0,0%,100%,1.00);
   --palette-neutral-new-100: hsla(198,10%,96%,1.00);
   --palette-neutral-new-200: hsla(198,10%,90%,1.00);
@@ -11,6 +10,8 @@
   --palette-neutral-new-700: hsla(198,10%,30%,1.00);
   --palette-neutral-new-800: hsla(198,10%,20%,1.00);
   --palette-neutral-new-900: hsla(198,10%,10%,1.00);
+
+  --palette-blue-198-new-100: hsla(198,100%,96%,1.00);
   --palette-blue-198-new-200: hsla(198,100%,90%,1.00);
   --palette-blue-198-new-300: hsla(198,100%,80%,1.00);
   --palette-blue-198-new-400: hsla(198,100%,70%,1.00);
@@ -19,6 +20,8 @@
   --palette-blue-198-new-700: hsla(198,100%,30%,1.00);
   --palette-blue-198-new-800: hsla(198,100%,18%,1.00);
   --palette-blue-198-new-900: hsla(198,100%,8%,1.00);
+
+
   --palette-alpha-blue-005: hsla(198,100%,20%,0.05);
   --palette-alpha-blue-010: hsla(198,100%,14%,0.10);
   --palette-alpha-blue-020: hsla(198,100%,14%,0.20);
@@ -29,6 +32,8 @@
   --palette-alpha-blue-080: hsla(198,100%,14%,0.80);
   --palette-alpha-blue-090: hsla(198,100%,14%,0.90);
   --palette-alpha-blue-100: hsla(198,100%,14%,1.00);
+
+
   --palette-alpha-blue-light-001: hsla(198,100%,50%,0.01);
   --palette-alpha-blue-light-005: hsla(198,100%,50%,0.05);
   --palette-alpha-blue-light-010: hsla(198,100%,50%,0.10);
@@ -36,7 +41,6 @@
   --palette-alpha-blue-light-020: hsla(198,100%,50%,0.20);
   --palette-alpha-blue-light-030: hsla(198,100%,50%,0.30);
   --palette-alpha-blue-light-040: hsla(198,100%,50%,0.40);
-  --palette-alpha-cold-blue-015: hsla(193,100%,50%,0.15);
   --palette-alpha-blue-light-050: hsla(198,100%,50%,0.50);
   --palette-alpha-blue-light-060: hsla(198,100%,50%,0.60);
   --palette-alpha-blue-light-070: hsla(198,100%,50%,0.70);
@@ -44,7 +48,11 @@
   --palette-alpha-blue-light-080: hsla(198,100%,50%,0.80);
   --palette-alpha-blue-light-090: hsla(198,100%,50%,0.90);
   --palette-alpha-blue-light-100: hsla(198,100%,50%,1.00);
+
+  --palette-alpha-cold-blue-015: hsla(193,100%,50%,0.15);
+
   --palette-alpha-red-005: hsla(7,82%,44%,0.25);
+
   --palette-alpha-white-000: hsla(0,0%,100%,0.00);
   --palette-alpha-white-010: hsla(0,0%,100%,0.10);
   --palette-alpha-white-020: hsla(0,0%,100%,0.20);
@@ -56,6 +64,7 @@
   --palette-alpha-white-080: hsla(0,0%,100%,0.80);
   --palette-alpha-white-090: hsla(0,0%,100%,0.90);
   --palette-alpha-white-100: hsla(0,0%,100%,1.00);
+
   --palette-alpha-black-000: hsla(0,0%,0%,0.00);
   --palette-alpha-black-002: hsla(0,0%,0%,0.02);
   --palette-alpha-black-005: hsla(0,0%,0%,0.05);
@@ -69,6 +78,8 @@
   --palette-alpha-black-080: hsla(0,0%,0%,0.80);
   --palette-alpha-black-090: hsla(0,0%,0%,0.90);
   --palette-alpha-black-100: hsla(0,0%,0%,1.00);
+
+  --palette-neutral-050: hsla(0,0%,100%,1.00);
   --palette-neutral-075: hsla(198,6%,95%,1.00);
   --palette-neutral-100: hsla(0,0%,95%,1.00);
   --palette-neutral-200: hsla(0,0%,93%,1.00);
@@ -85,7 +96,8 @@
   --palette-neutral-1300: hsla(0,0%,20%,1.00);
   --palette-neutral-1400: hsla(0,0%,13%,1.00);
   --palette-neutral-1500: hsla(0,0%,7%,1.00);
-  --palette-neutral-cold-050: hsla(0,0%,100%,1.00);
+
+  --palette-neutral-cold-050: hsla(175,08%,100%,1.00);
   --palette-neutral-cold-100: hsla(180,11%,96%,1.00);
   --palette-neutral-cold-200: hsla(195,17%,95%,1.00);
   --palette-neutral-cold-300: hsla(197,14%,90%,1.00);
@@ -101,6 +113,7 @@
   --palette-neutral-cold-1300: hsla(194,16%,35%,1.00);
   --palette-neutral-cold-1400: hsla(195,16%,29%,1.00);
   --palette-neutral-cold-1500: hsla(190,15%,8%,1.00);
+
   --palette-blue-193-100: hsla(193,70%,94%,1.00);
   --palette-blue-193-200: hsla(193,70%,90%,1.00);
   --palette-blue-193-300: hsla(193,70%,85%,1.00);
@@ -478,13 +491,6 @@
   --color-high-contrast-primary: var(--palette-alpha-white-000);
   --color-high-contrast-accent: var(--palette-alpha-white-000);
 
-
-  --color-component-toggle-button-background-default: var(--color-background-interactive-secondary-default);
-  --color-component-toggle-button-background-active: var(--color-background-interactive-default);
-  --color-component-toggle-button-foreground-default: var(--palette-alpha-white-100);
-  --color-component-toggle-button-foreground-active: var(--palette-alpha-white-100);
-  --color-component-toggle-button-border-default: var(--palette-alpha-white-000);
-  --color-component-toggle-button-border-active: var(--palette-alpha-white-000);
   --color-component-bar-border: var(--color-border-primary);
   --color-component-bar-indicator: var(--palette-alpha-blue-light-075);
   --color-component-bar-indicator-warning: var(--color-system-warning-default);
@@ -523,23 +529,8 @@
   --color-component-input-disabled: var(--palette-blue-198-1100);
   --color-high-contrast-accent: var(--palette-alpha-white-000);
   --color-high-contrast-primary-border: hsla(0,0%,100%,0.00);
-  --color-component-menulist-foreground: var(--palette-alpha-white-100);
-  --color-component-menulist-foreground-secondary: var(--palette-alpha-white-070);
-  --color-component-menulist-background: var(--palette-alpha-white-000);
-  --color-component-menulist-background-hover: var(--palette-alpha-white-010);
-  --color-component-menulist-background-active: var(--color-foreground-accent);
-  --color-component-menulist-foreground-active: var(--color-foreground-on-accent);
-  --color-component-menulist-border: var(--palette-alpha-white-050);
-  --color-component-switch-thumb: var(--palette-alpha-white-100);
-  --color-component-switch-thumb-active: var(--palette-alpha-white-100);
-  --color-component-switch-thumb-disabled: var(--palette-alpha-white-100);
-  --color-component-switch-track: var(--palette-neutral-500);
-  --color-component-switch-track-hover: var(--color-foreground-interactive-hover);
-  --color-component-switch-track-active: var(--color-foreground-accent);
-  --color-component-switch-track-disabled: var(--color-foreground-accent);
-  --color-component-switch-foreground: var(--palette-alpha-white-100);
-  --color-component-switch-foreground-secondary: var(--palette-alpha-white-100);
-  --color-component-switch-foreground-disabled: var(--palette-alpha-white-100);
+
+
   --color-component-context-menu-foreground: var(--color-foreground-on-invert);
   --color-component-context-menu-background: var(--color-background-invert);
   --color-component-context-menu-border: var(--color-border-weak);
@@ -552,140 +543,344 @@
 
 
 body.light-theme {
- 
-}
-body.contrast-theme {
-  /* mode: high contrast */
-  --color-foreground-primary: var(--palette-alpha-black-100);
-  --color-foreground-secondary: var(--palette-alpha-black-100);
-  --color-foreground-tertiary: var(--palette-alpha-black-030);
+
+  /* mode: light mode */
+  --color-foreground-primary: var(--palette-blue-193-1500);
+  --color-foreground-secondary: var(--palette-alpha-black-060);
+  --color-foreground-tertiary: var(--palette-alpha-black-020);
   --color-foreground-disabled: var(--palette-alpha-black-030);
-  --color-foreground-on-disabled: var(--palette-neutral-1100);
-  --color-foreground-invert: var(--palette-alpha-white-100);
-  --color-foreground-accent: var(--palette-blue-198-1300);
-  --color-foreground-interactive-default: var(--color-foreground-accent);
-  --color-foreground-interactive-on: var(--palette-alpha-white-100);
-  --color-foreground-interactive-hover: var(--palette-blue-193-1200);
-  --color-foreground-interactive-disabled: var(--palette-blue-193-1300);
-  --color-background-primary: var(--palette-alpha-white-100);
-  --color-foreground-interactive-secondary-default: var(
-    --palette-blue-198-1000
-  );
-  --color-background-neutral: var(--palette-neutral-cold-1300);
-  --color-foreground-interactive-secondary-on: var(--color-foreground-accent);
-  --color-background-neutral-hover: var(--palette-neutral-cold-1100);
-  --color-foreground-interactive-secondary-hover: var(--palette-blue-193-700);
-  --color-foreground-on-accent: var(--palette-alpha-white-100);
+  --color-foreground-on-disabled: var(--palette-neutral-cold-050);
+  --color-foreground-invert: var(--palette-neutral-cold-050);
+  --color-foreground-on-invert: var(--palette-neutral-cold-050);
+  --color-foreground-accent: var(--palette-blue-193-1000);
+  --color-foreground-interactive-default: var(--palette-blue-193-600);
+  --color-foreground-interactive-on: var(--palette-alpha-black-080);
+  --color-foreground-interactive-hover: var(--palette-blue-193-800);
+  --color-foreground-interactive-disabled: var(--palette-blue-193-1000);
+  --color-background-primary: var(--palette-neutral-cold-050);
+  --color-foreground-interactive-secondary-default: var(--palette-blue-193-400);
+  --color-foreground-interactive-secondary-on: var(--palette-neutral-cold-1500);
+  --color-background-neutral: var(--palette-neutral-cold-600);
+  --color-background-neutral-hover: var(--palette-neutral-cold-800);
+  --color-foreground-interactive-secondary-hover: var(--palette-blue-193-900);
   --color-background-neutral-disabled: var(--palette-alpha-black-020);
-  --color-background-secondary: var(--palette-alpha-white-100);
-  --color-foreground-on-muted: var(--palette-alpha-white-100);
-  --color-foreground-interactive-tertiary-default: var(--palette-blue-198-1000);
-  --color-background-tertiary: var(--palette-alpha-black-040);
-  --color-background-invert: var(--palette-alpha-black-100);
-  --color-foreground-interactive-tertiary-on: var(--palette-neutral-1300);
-  --color-foreground-interactive-tertiary-hover: var(--palette-blue-198-1000);
+  --color-foreground-on-accent: var(--palette-neutral-1200);
+  --color-foreground-on-muted: var(--palette-neutral-050);
+  --color-background-secondary: var(--palette-neutral-cold-400);
+  --color-foreground-interactive-tertiary-default: var(--palette-blue-193-500);
+  --color-background-tertiary: var(--palette-neutral-cold-600);
+  --color-foreground-interactive-tertiary-on: var(--palette-neutral-1500);
+  --color-background-invert: var(--palette-neutral-cold-1500);
+  --color-foreground-interactive-tertiary-hover: var(--palette-blue-193-700);
   --color-background-accent: var(--color-foreground-accent);
-  --color-background-canvas: var(--palette-neutral-050);
+  --color-background-canvas: var(--palette-neutral-cold-100);
   --color-background-landing: var(--palette-beaware-alt-backdrop-bright-lan-2);
-  --color-background-interactive-default: var(
-    --color-foreground-interactive-default
-  );
-  --color-background-interactive-hover: var(--palette-blue-193-700);
-  --color-background-interactive-active: var(--palette-blue-193-800);
-  --color-background-interactive-disabled: var(--palette-alpha-black-100);
-  --color-background-interactive-secondary-default: var(
-    --palette-alpha-white-000
-  );
-  --color-background-interactive-tertiary-default: var(
-    --palette-alpha-white-100
-  );
-  --color-background-interactive-secondary-hover: var(
-    --palette-alpha-black-100
-  );
-  --color-background-interactive-secondary-active: var(
-    --palette-alpha-black-100
-  );
-  --color-background-interactive-secondary-disabled: var(
-    --palette-alpha-black-100
-  );
-  --color-instrument-running: hsla(320, 91%, 69%, 1);
-  --color-instrument-activated: hsla(198, 82%, 59%, 1);
-  --color-instrument-deactivated: hsla(198, 100%, 18%, 1);
-  --color-instrument-ready: hsla(153, 43%, 56%, 1);
-  --color-instrument-undefined: hsla(0, 0%, 47%, 1);
-  --color-instrument-fault: hsla(7, 82%, 44%, 1);
+  --color-background-be-aware: hsla(173,65%,56%,1.00);
+  --color-background-interactive-default: var(--palette-blue-193-600);
+  --color-background-interactive-focus: var(--palette-alpha-blue-light-001);
+  --color-background-interactive-hover: var(--palette-blue-193-800);
+  --color-background-interactive-active: var(--palette-blue-193-1000);
+  --color-background-interactive-disabled: var(--palette-neutral-cold-400);
+  --color-background-interactive-secondary-default: var(--palette-blue-193-400);
+  --color-background-interactive-tertiary-default: var(--palette-alpha-white-000);
+  --color-background-interactive-secondary-hover: var(--palette-blue-193-500);
+  --color-background-interactive-secondary-active: var(--palette-blue-193-600);
+  --color-background-interactive-secondary-disabled: var(--palette-neutral-cold-300);
+  --color-instrument-running: var(--palette-trend-pink);
+  --color-instrument-activated: var(--palette-blue-193-700);
+  --color-instrument-deactivated: var(--palette-blue-193-400);
+  --color-instrument-ready: var(--palette-scale-alt-green-800);
+  --color-instrument-undefined: var(--palette-beaware-alt-alert-signal-fault);
+  --color-instrument-fault: var(--palette-scale-alt-red-800);
   --color-system-info-default: var(--palette-blue-193-1100);
   --color-system-info-on: var(--palette-neutral-cold-100);
+  --color-border-primary: var(--palette-neutral-cold-1300);
   --color-system-info-weak: var(--palette-neutral-cold-400);
-  --color-border-primary: var(--palette-alpha-black-100);
-  --color-border-secondary: var(--palette-alpha-black-050);
+  --color-border-weak: var(--palette-neutral-cold-1300);
+  --color-border-strong: var(--palette-neutral-cold-1300);
   --color-system-info-on-weak: var(--palette-neutral-1500);
-  --color-border-invert: var(--palette-alpha-black-100);
+  --color-border-secondary: var(--palette-neutral-cold-600);
+  --color-border-invert: var(--palette-neutral-cold-700);
   --color-system-caution-default: var(--palette-scale-alt-yellow-800);
   --color-border-accent: var(--color-foreground-accent);
   --color-system-caution-on: var(--palette-neutral-cold-1500);
-  --color-border-interactive-default: var(--color-foreground-accent);
+  --color-border-interactive-default: var(--color-foreground-interactive-default);
   --color-system-be-aware-default: var(--palette-beaware-alt-blues-noticeme);
-  --color-system-be-aware-on: var(--palette-alpha-black-100);
-  --color-border-interactive-secondary-default: var(--palette-alpha-black-100);
-  --color-border-interactive-hover: var(--palette-alpha-black-100);
+  --color-system-be-aware-on: var(--palette-beaware-alt-blues-nevermindme-5);
+  --color-border-interactive-secondary-default: var(--color-foreground-interactive-secondary-default);
   --color-system-be-aware-weak: var(--palette-beaware-alt-blues-knowme-3);
-  --color-border-interactive-disabled: var(--palette-alpha-black-100);
-  --color-system-be-aware-on-weak: var(--colors-alpha-black-100%);
+  --color-border-interactive-hover: var(--color-foreground-interactive-hover);
+  --color-system-be-aware-on-weak: var(--palette-beaware-alt-blues-nevermindme-4);
+  --color-border-interactive-disabled: var(--palette-neutral-cold-300);
   --color-system-caution-weak: var(--palette-scale-alt-yellow-300);
   --color-system-caution-on-weak: var(--palette-neutral-cold-1500);
   --color-system-warning-default: var(--palette-scale-alt-orange-800);
-  --color-system-warning-on: var(--palette-alpha-black-100);
-  --color-system-warning-weak: var(--palette-orange-300);
-  --color-system-warning-on-weak: var(--palette-alpha-black-100);
-  --color-system-critical-default: var(--palette-red-1000);
+  --color-system-warning-on: var(--palette-neutral-cold-1500);
+  --color-system-warning-weak: var(--palette-scale-alt-orange-300);
+  --color-system-warning-on-weak: var(--palette-neutral-cold-1500);
+  --color-system-critical-default: var(--palette-scale-alt-red-900);
   --color-system-critical-on: var(--palette-neutral-cold-050);
   --color-system-critical-hover: var(--palette-scale-alt-red-1100);
   --color-system-critical-active: var(--palette-scale-alt-red-1200);
   --color-system-critical-disabled: var(--palette-scale-alt-red-500);
   --color-system-critical-weak: var(--palette-scale-alt-red-300);
   --color-system-critical-on-weak: var(--palette-scale-alt-red-1500);
-  --color-system-success-default: hsla(150, 100%, 20%, 1);
-  --color-system-success-on: var(--palette-alpha-white-100);
-  --color-system-success-hover: hsla(94, 100%, 18%, 1);
-  --color-system-success-active: hsla(94, 100%, 12%, 1);
-  --color-system-success-weak: hsla(94, 91%, 86%, 1);
-  --color-system-success-on-weak: var(--palette-alpha-black-100);
-  --color-high-contrast-primary: var(--color-foreground-primary);
-  --color-high-contrast-accent: var(--color-foreground-accent);
+  --color-system-success-default: var(--palette-scale-alt-green-800);
+  --color-system-success-on: var(--palette-neutral-cold-1500);
+  --color-system-success-hover: var(--palette-scale-alt-green-900);
+  --color-system-success-active: var(--palette-scale-alt-green-800);
+  --color-system-success-weak: var(--palette-scale-alt-green-500);
+  --color-system-success-on-weak: var(--palette-neutral-cold-1500);
+  --color-high-contrast-primary: var(--palette-alpha-white-000);
+  --color-component-toggle-button-background-default: hsla(0,0%,100%,1.00);
+  --color-component-toggle-button-background-active: hsla(0,0%,100%,1.00);
+  --color-component-toggle-button-foreground-default: hsla(0,0%,100%,1.00);
+  --color-component-toggle-button-foreground-active: hsla(0,0%,100%,1.00);
+  --color-component-toggle-button-border-default: hsla(0,0%,100%,1.00);
+  --color-component-toggle-button-border-active: hsla(0,0%,100%,1.00);
   --color-component-bar-border: var(--color-border-primary);
   --color-component-bar-indicator: var(--palette-blue-193-600);
   --color-component-bar-indicator-warning: var(--color-system-warning-default);
-  --color-component-bar-indicator-critical: var(
-    --color-system-critical-default
-  );
+  --color-component-bar-indicator-critical: var(--color-system-critical-default);
   --color-component-bar-corner: 4;
   --color-component-table-bg-head: var(--palette-neutral-300);
-  --color-component-table-bg-default: var(--palette-alpha-white-010);
-  --color-component-table-bg-alt: var(--palette-neutral-200);
-  --color-component-table-bg-hover: var(--palette-neutral-300);
-  --color-component-table-bg-selected: var(--palette-neutral-cold-500);
-  --color-component-table-bg-transparent: hsla(0, 0%, 100%, 0);
+  --color-component-table-bg-default: var(--palette-alpha-white-000);
+  --color-component-table-bg-alt: var(--palette-alpha-black-002);
+  --color-component-table-bg-hover: var(--palette-alpha-blue-light-015);
+  --color-component-table-bg-selected: var(--palette-blue-193-500);
+  --color-component-table-bg-transparent: var(--palette-alpha-white-000);
   --color-component-table-border-cell: var(--palette-neutral-cold-500);
   --color-component-table-border-head: var(--palette-neutral-cold-800);
-  --color-component-app-header-background: var(--color-foreground-accent);
-  --color-component-app-header-foreground: var(--palette-alpha-white-100);
-  --color-component-input-foreground: var(--palette-alpha-black-100);
+  --color-component-app-header-background: var(--palette-blue-193-100);
+  --color-component-app-header-foreground: var(--input-text);
+  --color-component-input-foreground: var(--palette-neutral-cold-1500);
   --color-component-input-foreground-disabled: var(--color-foreground-disabled);
   --color-component-input-foreground-locked: var(--palette-neutral-cold-1500);
-  --color-component-input-label: var(--palette-neutral-cold-050);
-  --color-component-input-bg: var(--palette-alpha-white-100);
-  --color-component-input-bg-hover: var(--palette-neutral-cold-200);
-  --color-component-input-bg-disabled: var(--palette-alpha-white-000);
-  --color-component-input-unit-bg: var(--palette-alpha-white-000);
-  --color-component-input-unit-bg-locked: var(--palette-alpha-white-000);
-  --color-component-input-unit-bg-hover: var(--palette-neutral-cold-050);
+  --color-component-input-foreground-error: var(--color-system-critical-default);
+  --color-component-input-background: var(--palette-neutral-050);
+  --color-component-input-background-hover: var(--palette-neutral-cold-200);
+  --color-component-input-background-disabled: var(--palette-alpha-white-000);
+  --color-component-input-background-error: var(--palette-red-100);
+  --color-component-input-value: var(--palette-neutral-cold-1500);
+  --color-component-input-value-disabled: var(--palette-neutral-cold-1500);
+  --color-component-input-value-error: var(--color-system-critical-default);
+  --color-component-input-value-locked: var(--palette-neutral-cold-1500);
+  --color-component-input-unit-background: var(--palette-neutral-cold-050);
+  --color-component-input-unit-background-locked: var(--palette-alpha-white-000);
+  --color-component-input-unit-background-hover: var(--palette-neutral-cold-050);
   --color-component-input-border: var(--palette-neutral-cold-1500);
   --color-component-input-border-hover: var(--palette-neutral-cold-600);
   --color-component-input-border-select: var(--palette-neutral-cold-600);
   --color-component-input-border-disabled: var(--palette-neutral-cold-600);
   --color-component-input-border-locked: var(--palette-neutral-cold-800);
   --color-component-input-disabled: var(--palette-neutral-cold-600);
+  --color-high-contrast-accent: var(--palette-alpha-white-000);
+  --color-high-contrast-primary-border: hsla(0,0%,100%,0.00);
+
+
+  --color-component-context-menu-foreground: hsla(0,0%,13%,1.00);
+  --color-component-context-menu-background: hsla(193,70%,94%,1.00);
+  --color-component-context-menu-border: hsla(0,0%,13%,1.00);
+  --color-component-context-menu-foreground-hover: hsla(0,0%,13%,1.00);
+  --color-component-context-menu-background-hover: hsla(193,70%,94%,1.00);
+  --color-component-context-menu-border-hover: hsla(0,0%,13%,1.00);
+  --color-component-context-menu-foreground-disabled: hsla(0,0%,13%,1.00);
+  --color-component-context-menu-background-disabled: hsla(193,70%,94%,1.00);
+
+ 
 }
 
 
+
+
+body.day-theme {
+  --color-foreground-primary: var(--palette-neutral-new-900);
+  --color-foreground-secondary: var(--palette-neutral-new-500);
+  --color-foreground-tertiary: var(--palette-neutral-new-300);
+  --color-foreground-disabled: var(--palette-neutral-new-200);
+  --color-foreground-on-disabled: var(--palette-neutral-new-400);
+  --color-foreground-invert: var(--palette-neutral-new-050);
+  --color-foreground-on-invert: var(--palette-neutral-new-900);
+  --color-foreground-accent: var(--palette-blue-198-new-500);
+  --color-foreground-accent-on: var(--palette-neutral-new-050);
+
+  --color-foreground-interactive-default: var(--palette-blue-198-new-500);
+  --color-foreground-interactive-on: var(--palette-blue-new-050);
+  --color-foreground-interactive-hover: var(--palette-blue-198-new-600);
+  --color-foreground-interactive-disabled: var(--color-foreground-disabled);
+
+  --color-background-canvas: var(--palette-neutral-new-050);
+  --color-background-primary: var(--palette-neutral-new-100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*******  Menu list tokens  *******/
+
+ body.dark-theme { 
+  --c-menulist-foreground-primary: var(--palette-alpha-white-100);
+  --c-menulist-foreground-secondary: var(--palette-alpha-white-070);
+  --c-menulist-foreground-active: var(--color-foreground-on-accent);
+  --c-menulist-background: var(--palette-alpha-white-000);
+  --c-menulist-background-hover: var(--palette-alpha-white-010);
+  --c-menulist-background-active: var(--color-foreground-accent);
+  --c-menulist-border: var(--palette-alpha-white-050);
+}
+
+body.light-theme {
+    --c-menulist-foreground: var(--input-text);
+  --c-menulist-foreground-secondary: var(--input-text);
+  --c-menulist-background: var(--palette-blue-193-100);
+  --c-menulist-background-hover: var(--palette-blue-193-100);
+  --c-menulist-background-active: var(--palette-blue-193-100);
+  --c-menulist-foreground-active: var(--palette-blue-193-100);
+  --c-menulist-border: var(--input-text);
+}
+
+body.day-theme {
+  --c-menulist-foreground: var(--color-foreground-primary);
+  --c-menulist-foreground-secondary: var(--color-foreground-secondary);
+  --c-menulist-foreground-active: var(--color-foreground-primary);
+  --c-menulist-foreground-hover: var(--color-foreground-primary);
+  --c-menulist-background: transparent;
+  --c-menulist-background-hover: var(--palette-neutral-new-100);
+  --c-menulist-background-active: var(--palette-neutral-new-200);
+  --c-menulist-border: var(--palette-neutral-new-200);
+}
+
+
+
+
+
+/*******  Switch (toggle) tokens  *******/
+
+body.dark-theme {
+  --c-switch-label: var(--color-foreground-primary);
+  --c-switch-label-disabled: var(--color-foreground-disabled);
+  --c-switch-description: var(--color-foreground-secondary);
+  --c-switch-thumb: var(--palette-alpha-white-100);
+  --c-switch-thumb-active: var(--palette-alpha-white-100);
+  --c-switch-thumb-disabled: var(--palette-alpha-white-100);
+  --c-switch-track: var(--palette-neutral-500);
+  --c-switch-track-hover: var(--palette-neutral-700);
+  --c-switch-track-disabled: var(--palette-alpha-white-030);
+  --c-switch-track-active: var(--color-foreground-interactive-default);
+  --c-switch-track-active-hover:  var(--color-foreground-interactive-hover);
+  --c-switch-track-active-disabled: var(--palette-alpha-white-030);
+}
+
+body.light-theme {
+  --c-switch-label: var(--color-foreground-primary);
+  --c-switch-label-disabled: var(--color-foreground-disabled);
+  --c-switch-description: var(--color-foreground-secondary);
+  --c-switch-thumb: var(--palette-neutral-cold-050);
+  --c-switch-thumb-active: var(--palette-neutral-cold-050);
+  --c-switch-thumb-disabled: var(--palette-neutral-cold-050);
+  --c-switch-track: var(--palette-neutral-cold-300);
+  --c-switch-track-hover: var(--palette-neutral-cold-400);
+  --c-switch-track-disabled: var(--palette-neutral-cold-200);
+  --c-switch-track-active: var(--color-foreground-interactive-default);
+  --c-switch-track-active-hover: var(--color-foreground-interactive-hover);
+  --c-switch-track-active-disabled: var(--palette-neutral-cold-300);
+}
+
+body.day-theme {
+  --c-switch-label: var(--color-foreground-primary);
+  --c-switch-label-disabled: var(--color-foreground-disabled);
+  --c-switch-description: var(--color-foreground-secondary);
+  --c-switch-thumb: var(--palette-neutral-new-050);
+  --c-switch-thumb-active: var(--palette-neutral-new-050);
+  --c-switch-thumb-disabled: var(--palette-neutral-new-050);
+  --c-switch-track: var(--palette-neutral-new-300);
+  --c-switch-track-hover: var(--palette-neutral-new-400);
+  --c-switch-track-disabled: var(--color-foreground-disabled);
+  --c-switch-track-active: var(--color-foreground-interactive-default);
+  --c-switch-track-active-hover: var(--color-foreground-interactive-hover);
+  --c-switch-track-active-disabled: var(--color-foreground-disabled);
+}
+
+
+/*******  Divider tokens  *******/
+
+body.dark-theme {
+  --c-divider-primary: var(--color-foreground-interactive-default);
+  --c-divider-secondary:var(--color-foreground-interactive-secondary-default);
+}
+
+body.light-theme {
+  --c-divider-primary: var(--palette-neutral-cold-300);
+  --c-divider-secondary:var(--palette-neutral-cold-200);
+}
+
+body.day-theme {
+  --c-divider-primary: var(--palette-neutral-new-300);
+  --c-divider-secondary:var(--palette-neutral-new-200);
+}
+
+
+
+/*******  Checkbox tokens  *******/
+
+body.dark-theme {
+  --c-checkbox-label: var(--color-foreground-primary);
+  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked: var(--color-foreground-primary);
+  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
+  --c-checkbox-check-checked: var(--palette-alpha-white-100);
+}
+
+body.light-theme {
+  --c-checkbox-label: var(--color-foreground-primary);
+  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked: var(--color-foreground-primary);
+  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
+  --c-checkbox-check-checked: var(--palette-alpha-white-100);
+}
+
+body.day-theme {
+  --c-checkbox-label: var(--color-foreground-primary);
+  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked: var(--color-foreground-primary);
+  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
+  --c-checkbox-check-checked: var(--palette-alpha-white-100);
+}
+
+
+
+/*******  XXX  tokens  *******/
+
+body.dark-theme {
+  --c-xxx-foreground-primary: var(--color-foreground-primary);
+}
+
+body.light-theme {
+  --c-xxx-foreground-primary: var(--color-foreground-primary);
+}
+
+body.day-theme {
+  --c-xxx-foreground-primary: var(--color-foreground-primary);
+}

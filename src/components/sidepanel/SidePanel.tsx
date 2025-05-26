@@ -7,10 +7,16 @@ import style from "./sidepanel.module.css";
 import { Button } from "../button";
 import { ButtonVariant } from "../button/Button";
 import { BaseComponentProps, Size } from "../../types";
+import { IconButton } from "../iconbutton";
 
 export type Side = "left" | "right";
 
-export type ActionType = { label: string; buttonVariant: ButtonVariant; onClick: () => void; disabled?: boolean };
+export type ActionType = {
+  label: string;
+  buttonVariant: ButtonVariant;
+  onClick: () => void;
+  disabled?: boolean;
+};
 
 export type SidePanelProps = BaseComponentProps & {
   children?: React.ReactNode;
@@ -22,7 +28,15 @@ export type SidePanelProps = BaseComponentProps & {
   side?: Side;
 };
 
-const SidePanel: React.FC<SidePanelProps> = ({ open = false, onClose, children, actions, size = "medium", titleComponent, side = "right" }) => {
+const SidePanel: React.FC<SidePanelProps> = ({
+  open = false,
+  onClose,
+  children,
+  actions,
+  size = "medium",
+  titleComponent,
+  side = "right",
+}) => {
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -42,24 +56,30 @@ const SidePanel: React.FC<SidePanelProps> = ({ open = false, onClose, children, 
     >
       <header className={style.header}>
         <h3 className={style.title}>{titleComponent}</h3>
-        <button title="Close" aria-label="Close side panel" id="modalbutton_close" onClick={onClose}>
-          X
-        </button>
+        <IconButton
+          icon="close"
+          label="Close"
+          title="Close"
+          aria-label="Close side panel"
+          id="modalbutton_close"
+          onClick={onClose}
+          size="medium"
+          variant="tertiary"
+        />
       </header>
       <div className={style.content}>{children}</div>
       <footer className={style.footer}>
-        {actions?.length &&
-          actions.map((action) => (
-            <Button
-              id={`sidepanelbutton_${action.label}`}
-              title={action.label}
-              variant={action.buttonVariant}
-              key={action.label}
-              onClick={action.onClick}
-              text={action.label}
-              disabled={action.disabled}
-            />
-          ))}
+        {actions?.map((action) => (
+          <Button
+            id={`sidepanelbutton_${action.label}`}
+            title={action.label}
+            variant={action.buttonVariant}
+            key={action.label}
+            onClick={action.onClick}
+            text={action.label}
+            disabled={action.disabled}
+          />
+        ))}
       </footer>
     </div>
   );

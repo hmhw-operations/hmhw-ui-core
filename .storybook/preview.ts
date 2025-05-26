@@ -9,8 +9,9 @@ const preview: Preview = {
         light: "light-theme",
         dark: "dark-theme",
         contrast: "contrast-theme",
+        day: "day-theme",
       },
-      defaultTheme: "light",
+      defaultTheme: "dark",
     }),
   ],
 
