@@ -3,6 +3,7 @@ import style from "./switch.module.css";
 import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
+import "../../styles/variables.css";
 import { sanitizeForId } from "../../utils";
 import { LabelPosition, Size } from "../../types";
 
