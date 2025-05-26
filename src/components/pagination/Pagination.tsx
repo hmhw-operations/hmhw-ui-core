@@ -1,6 +1,5 @@
 import styles from "./pagination.module.css";
 import { IconButton } from "../iconbutton";
-import { Icon } from "../icon";
 import { Size } from "../../types";
 
 export type PaginationProps = {
@@ -56,7 +55,7 @@ export default function Pagination({
       {skipMode && (
         <IconButton
           size={size}
-          icon={<Icon name="chevron-double-left" />}
+          icon={"chevron-double-left"}
           onClick={() => handlePageChange(PageCangeType.first)}
           disabled={shouldDisableButton(PageCangeType.first)}
           id="pagination-previous"
@@ -67,7 +66,7 @@ export default function Pagination({
       )}
       <IconButton
         size={size}
-        icon={<Icon name="chevron-left" />}
+        icon={"chevron-left"}
         onClick={() => handlePageChange(PageCangeType.previous)}
         disabled={shouldDisableButton(PageCangeType.previous)}
         id="pagination-previous"
@@ -81,7 +80,7 @@ export default function Pagination({
       <IconButton
         size={size}
         id="pagination-next"
-        icon={<Icon name="chevron-right" />}
+        icon={"chevron-right"}
         onClick={() => handlePageChange(PageCangeType.next)}
         disabled={shouldDisableButton(PageCangeType.next)}
         variant="tertiary"
@@ -91,7 +90,7 @@ export default function Pagination({
       {skipMode && (
         <IconButton
           size={size}
-          icon={<Icon name="chevron-double-right" />}
+          icon={"chevron-double-right"}
           onClick={() => handlePageChange(PageCangeType.last)}
           disabled={shouldDisableButton(PageCangeType.last)}
           id="pagination-skip-first"
