@@ -871,16 +871,51 @@ body.day-theme {
 
 
 
-/*******  XXX  tokens  *******/
+/*******  Checkbox tokens  *******/
 
 body.dark-theme {
-  --c-xxx-foreground-primary: var(--color-foreground-primary);
+  --component-checkbox-label: var(--color-foreground-primary);
+  --component-checkbox-label-hover: var(--color-foreground-primary);
+  --component-checkbox-label-disabled: var(--color-foreground-disabled);
+  --component-checkbox-box-unchecked: var(--color-foreground-primary);
+  --component-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --component-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --component-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --component-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --component-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-checked-disabled: var(--color-foreground-disabled);
+  --component-checkbox-checkmark: var(--palette-alpha-white-100);
+  --component-checkbox-checkmark-hover: var(--palette-alpha-white-100);
+  --component-checkbox-description: var(--color-foreground-primary);
 }
 
 body.light-theme {
-  --c-xxx-foreground-primary: var(--color-foreground-primary);
+  --component-checkbox-label: var(--color-foreground-primary);
+  --component-checkbox-label-hover: var(--color-foreground-primary);
+  --component-checkbox-label-disabled: var(--color-foreground-disabled);
+  --component-checkbox-box-unchecked: var(--color-foreground-primary);
+  --component-checkbox-box-unchecked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --component-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --component-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-checked-disabled: var(--color-foreground-disabled);
+  --component-checkbox-checkmark: var(--palette-alpha-white-100);
+  --component-checkbox-checkmark-hover: var(--palette-alpha-white-100);
+  --component-checkbox-description: var(--color-foreground-primary);
 }
 
 body.day-theme {
-  --c-xxx-foreground-primary: var(--color-foreground-primary);
+  --component-checkbox-label: var(--color-foreground-primary);
+  --component-checkbox-label-hover: var(--color-foreground-primary);
+  --component-checkbox-label-disabled: var(--color-foreground-disabled);
+  --component-checkbox-box-unchecked: var(--color-foreground-primary);
+  --component-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --component-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
+  --component-checkbox-box-checked: var(--color-foreground-interactive-default);
+  --component-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-checked-disabled: var(--color-foreground-disabled);
+  --component-checkbox-checkmark: var(--palette-alpha-white-100);
+  --component-checkbox-checkmark-hover: var(--palette-alpha-white-100);
+  --component-checkbox-description: var(--color-foreground-primary);
 }
+
