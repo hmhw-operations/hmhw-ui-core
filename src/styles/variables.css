@@ -488,8 +488,8 @@
   --color-system-success-active: var(--palette-green-1200);
   --color-system-success-weak: var(--palette-green-300);
   --color-system-success-on-weak: var(--palette-green-1300);
-  --color-high-contrast-primary: var(--palette-alpha-white-000);
-  --color-high-contrast-accent: var(--palette-alpha-white-000);
+  --color-high-contrast-primary: transparent;
+  --color-high-contrast-accent: transparent;
 
   --color-component-bar-border: var(--color-border-primary);
   --color-component-bar-indicator: var(--palette-alpha-blue-light-075);
@@ -497,11 +497,11 @@
   --color-component-bar-indicator-critical: var(--color-system-critical-default);
   --color-component-bar-corner: 0;
   --color-component-table-bg-head: var(--palette-alpha-blue-light-010);
-  --color-component-table-bg-default: var(--palette-alpha-white-000);
+  --color-component-table-bg-default: transparent;
   --color-component-table-bg-alt: var(--palette-alpha-blue-light-015);
   --color-component-table-bg-hover: var(--palette-alpha-blue-light-020);
   --color-component-table-bg-selected: var(--palette-beaware-main-contrast-3);
-  --color-component-table-bg-transparent: var(--palette-alpha-white-000);
+  --color-component-table-bg-transparent: transparent;
   --color-component-table-border-cell: var(--palette-blue-198-1000);
   --color-component-table-border-head: var(--palette-blue-198-800);
   --color-component-app-header-background: var(--palette-blue-198-1300);
@@ -512,7 +512,7 @@
   --color-component-input-foreground-error: var(--color-system-critical-default);
   --color-component-input-background: var(--palette-neutral-100);
   --color-component-input-background-hover: var(--palette-blue-198-100);
-  --color-component-input-background-disabled: var(--palette-alpha-white-000);
+  --color-component-input-background-disabled: transparent;
   --color-component-input-background-error: var(--palette-red-100);
   --color-component-input-value: var(--palette-neutral-1400);
   --color-component-input-value-disabled: var(--color-foreground-disabled);
@@ -527,7 +527,7 @@
   --color-component-input-border-disabled: var(--palette-alpha-white-030);
   --color-component-input-border-locked: var(--palette-blue-198-600);
   --color-component-input-disabled: var(--palette-blue-198-1100);
-  --color-high-contrast-accent: var(--palette-alpha-white-000);
+  --color-high-contrast-accent: transparent;
   --color-high-contrast-primary-border: hsla(0,0%,100%,0.00);
 
 
@@ -538,7 +538,7 @@
   --color-component-context-menu-background-hover: var(--palette-alpha-blue-light-020);
   --color-component-context-menu-border-hover: var(--color-foreground-accent);
   --color-component-context-menu-foreground-disabled: var(--palette-neutral-300);
-  --color-component-context-menu-background-disabled: var(--palette-alpha-white-000);
+  --color-component-context-menu-background-disabled: transparent;
 }
 
 
@@ -582,7 +582,7 @@ body.light-theme {
   --color-background-interactive-active: var(--palette-blue-193-1000);
   --color-background-interactive-disabled: var(--palette-neutral-cold-400);
   --color-background-interactive-secondary-default: var(--palette-blue-193-400);
-  --color-background-interactive-tertiary-default: var(--palette-alpha-white-000);
+  --color-background-interactive-tertiary-default: transparent;
   --color-background-interactive-secondary-hover: var(--palette-blue-193-500);
   --color-background-interactive-secondary-active: var(--palette-blue-193-600);
   --color-background-interactive-secondary-disabled: var(--palette-neutral-cold-300);
@@ -631,7 +631,7 @@ body.light-theme {
   --color-system-success-active: var(--palette-scale-alt-green-800);
   --color-system-success-weak: var(--palette-scale-alt-green-500);
   --color-system-success-on-weak: var(--palette-neutral-cold-1500);
-  --color-high-contrast-primary: var(--palette-alpha-white-000);
+  --color-high-contrast-primary: transparent;
   --color-component-toggle-button-background-default: hsla(0,0%,100%,1.00);
   --color-component-toggle-button-background-active: hsla(0,0%,100%,1.00);
   --color-component-toggle-button-foreground-default: hsla(0,0%,100%,1.00);
@@ -644,11 +644,11 @@ body.light-theme {
   --color-component-bar-indicator-critical: var(--color-system-critical-default);
   --color-component-bar-corner: 4;
   --color-component-table-bg-head: var(--palette-neutral-300);
-  --color-component-table-bg-default: var(--palette-alpha-white-000);
+  --color-component-table-bg-default: transparent;
   --color-component-table-bg-alt: var(--palette-alpha-black-002);
   --color-component-table-bg-hover: var(--palette-alpha-blue-light-015);
   --color-component-table-bg-selected: var(--palette-blue-193-500);
-  --color-component-table-bg-transparent: var(--palette-alpha-white-000);
+  --color-component-table-bg-transparent: transparent;
   --color-component-table-border-cell: var(--palette-neutral-cold-500);
   --color-component-table-border-head: var(--palette-neutral-cold-800);
   --color-component-app-header-background: var(--palette-blue-193-100);
@@ -659,14 +659,14 @@ body.light-theme {
   --color-component-input-foreground-error: var(--color-system-critical-default);
   --color-component-input-background: var(--palette-neutral-050);
   --color-component-input-background-hover: var(--palette-neutral-cold-200);
-  --color-component-input-background-disabled: var(--palette-alpha-white-000);
+  --color-component-input-background-disabled: transparent;
   --color-component-input-background-error: var(--palette-red-100);
   --color-component-input-value: var(--palette-neutral-cold-1500);
   --color-component-input-value-disabled: var(--palette-neutral-cold-1500);
   --color-component-input-value-error: var(--color-system-critical-default);
   --color-component-input-value-locked: var(--palette-neutral-cold-1500);
   --color-component-input-unit-background: var(--palette-neutral-cold-050);
-  --color-component-input-unit-background-locked: var(--palette-alpha-white-000);
+  --color-component-input-unit-background-locked: transparent;
   --color-component-input-unit-background-hover: var(--palette-neutral-cold-050);
   --color-component-input-border: var(--palette-neutral-cold-1500);
   --color-component-input-border-hover: var(--palette-neutral-cold-600);
@@ -674,7 +674,7 @@ body.light-theme {
   --color-component-input-border-disabled: var(--palette-neutral-cold-600);
   --color-component-input-border-locked: var(--palette-neutral-cold-800);
   --color-component-input-disabled: var(--palette-neutral-cold-600);
-  --color-high-contrast-accent: var(--palette-alpha-white-000);
+  --color-high-contrast-accent: transparent;
   --color-high-contrast-primary-border: hsla(0,0%,100%,0.00);
 
 
@@ -730,7 +730,7 @@ body.day-theme {
   --c-menulist-foreground-primary: var(--palette-alpha-white-100);
   --c-menulist-foreground-secondary: var(--palette-alpha-white-070);
   --c-menulist-foreground-active: var(--color-foreground-on-accent);
-  --c-menulist-background: var(--palette-alpha-white-000);
+  --c-menulist-background: transparent;
   --c-menulist-background-hover: var(--palette-alpha-white-010);
   --c-menulist-background-active: var(--color-foreground-accent);
   --c-menulist-border: var(--palette-alpha-white-050);
@@ -871,16 +871,71 @@ body.day-theme {
 
 
 
-/*******  XXX  tokens  *******/
+/*******  Button  tokens  *******/
 
 body.dark-theme {
-  --c-xxx-foreground-primary: var(--color-foreground-primary);
+  --component-button-primary-foreground: var(--color-foreground-on-accent);
+  --component-button-primary-background: var(--color-background-interactive-default);
+  --component-button-primary-background-hover: var(--color-background-interactive-hover);
+  --component-button-primary-background-disabled: var(--color-background-neutral-disabled);
+  --component-button-primary-border: var(--component-button-primary-background);
+  --component-button-primary-border-hover: var(--component-button-primary-background-hover);
+  --component-button-secondary-foreground: var(--color-foreground-on-accent);
+  --component-button-secondary-background: var(--color-background-interactive-secondary-default);
+  --component-button-secondary-background-hover: var(--color-background-interactive-secondary-hover);
+  --component-button-secondary-border: transparent;
+  --component-button-tertiary-foreground: var(--color-foreground-primary);
+  --component-button-tertiary-foreground-hover: var(--color-foreground-accent);
+  --component-button-tertiary-foreground-disabled: var(--color-foreground-disabled);
+  --component-button-tertiary-background: transparent;
+  --component-button-tertiary-background-hover: transparent;
+  --component-button-tertiary-background-focus: transparent;
+  --component-button-tertiary-background-disabled: transparent;
+  --component-button-tertiary-border: transparent;
+  --component-button-tertiary-border-hover: transparent;
+
 }
 
 body.light-theme {
-  --c-xxx-foreground-primary: var(--color-foreground-primary);
+  --component-button-primary-foreground: var(--color-foreground-on-accent);
+  --component-button-primary-background: var(--color-background-interactive-default);
+  --component-button-primary-background-hover: var(--color-background-interactive-active);
+  --component-button-primary-background-disabled: var(--color-background-neutral-disabled);
+  --component-button-primary-border: var(--component-button-secondary-background);
+  --component-button-primary-border-hover: var(--component-button-secondary-background-hover);
+  --component-button-secondary-foreground: var(--color-foreground-on-accent);
+  --component-button-secondary-background: var(--color-background-interactive-secondary-default);
+  --component-button-secondary-background-hover: var(--color-background-interactive-secondary-hover);
+  --component-button-secondary-border: transparent;
+  --component-button-tertiary-foreground: var(--color-foreground-primary);
+  --component-button-tertiary-foreground-hover: var(--color-foreground-primary);
+  --component-button-tertiary-foreground-disabled: var(--color-foreground-primary);
+  --component-button-tertiary-background: transparent;
+  --component-button-tertiary-background-hover: var(--palette-alpha-black-005);
+    --component-button-tertiary-background-focus: transparent;
+  --component-button-tertiary-background-disabled: transparent;
+  --component-button-tertiary-border: transparent;
+  --component-button-tertiary-border-hover: transparent;
 }
 
 body.day-theme {
-  --c-xxx-foreground-primary: var(--color-foreground-primary);
+  --component-button-primary-foreground: var(--color-foreground-on-accent);
+  --component-button-primary-background: var(--color-background-interactive-default);
+  --component-button-primary-background-hover: var(--color-background-interactive-hover);
+  --component-button-primary-background-disabled: var(--color-background-neutral-disabled);
+  --component-button-primary-border: var(--component-button-primary-background);
+  --component-button-primary-border-hover: var(--component-button-primary-background-hover);
+  --component-button-secondary-foreground: var(--color-foreground-primary);
+  --component-button-secondary-background: transparent;
+  --component-button-secondary-background-hover: var(--palette-neutral-new-100);
+  --component-button-secondary-border: var(--palette-neutral-new-300);
+  --component-button-tertiary-foreground: var(--color-foreground-primary);
+  --component-button-tertiary-foreground-hover: var(--component-button-tertiary-foreground);
+  --component-button-tertiary-foreground-disabled: var(--color-foreground-disabled);
+  --component-button-tertiary-background: transparent;
+  --component-button-tertiary-background-hover: var(--palette-alpha-black-002);
+    --component-button-tertiary-background-focus: transparent;
+  --component-button-tertiary-background-disabled: transparent;
+  --component-button-tertiary-border: transparent;
+  --component-button-tertiary-border-hover: transparent;
 }
