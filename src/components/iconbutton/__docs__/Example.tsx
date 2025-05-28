@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import IconButton, { IconButtonProps } from "../IconButton";
 
-const Example: FC<IconButtonProps> = ({ onClick = () => {}, size = "small", variant, label, icon, disabled }) => {
+const Example: FC<IconButtonProps> = ({ onClick = () => {}, size = "small", variant, label, icon, disabled, title }) => {
   return (
     <div
       style={{
@@ -11,7 +11,7 @@ const Example: FC<IconButtonProps> = ({ onClick = () => {}, size = "small", vari
         height: "100%",
       }}
     >
-      <IconButton size={size} onClick={onClick} variant={variant} icon={icon} label={label} disabled={disabled} />
+      <IconButton  size={size} onClick={onClick} variant={variant} icon={icon} label={label} disabled={disabled} id={""} title={title} />
     </div>
   );
 };

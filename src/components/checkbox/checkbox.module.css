@@ -28,7 +28,7 @@
     line-height: 1.125;
     display: inline-block;
 
-    color: var(--c-checkbox-label);
+    color: var(--component-checkbox-label);
 
     &:before {
       content: "";
@@ -37,23 +37,23 @@
       top: var(--size-075);
       width: var(--size-250);
       height: var(--size-250);
-      border: 1.5px solid var(--c-checkbox-box-unchecked);
+      border: 1.5px solid var(--component-checkbox-box-unchecked);
       border-radius: var(--radius-small);
     }
 
     &:hover {
-      color: var(--c-checkbox-label-hover);
+      color: var(--component-checkbox-label-hover);
 
       &:before {
-        border-color: var(--c-checkbox-box-unchecked-hover);
+        border-color: var(--component-checkbox-box-unchecked-hover);
       }
     }
   }
 
   input:checked + label {
     &:before {
-      border-color: var(--c-checkbox-box-checked);
-      background-color: var(--c-checkbox-box-checked);
+      border-color: var(--component-checkbox-box-checked);
+      background-color: var(--component-checkbox-box-checked);
     }
 
     &:after {
@@ -63,15 +63,15 @@
       top: 0.7rem;
       width: 0.7rem;
       height: 0.4rem;
-      border-left: 2px solid var(--c-checkbox-check-checked);
-      border-bottom: 2px solid var(--c-checkbox-check-checked);
+      border-left: 2px solid var(--component-checkbox-checkmark);
+      border-bottom: 2px solid var(--component-checkbox-checkmark);
       rotate: -40deg;
     }
 
     &:hover {
       &:before {
-        border-color: var(--c-checkbox-box-checked-hover);
-        background-color: var(--c-checkbox-box-checked-hover);
+        border-color: var(--component-checkbox-box-checked-hover);
+        background-color: var(--component-checkbox-box-checked-hover);
       }
     }
   }
@@ -79,6 +79,6 @@
   .description {
     padding-left: var(--size-400);
     font: var(--type-description-medium);
-    color: var(--color-foreground-secondary);
+    color: var(--component-checkbox-description);
   }
 }
