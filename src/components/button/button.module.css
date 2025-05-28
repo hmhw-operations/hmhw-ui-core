@@ -8,9 +8,9 @@
   text-transform: uppercase;
   font-size: var(--type-button-label);
   height: var(--height-medium);
-  border: 1px solid var(--component-button-primary-background);
   color: var(--component-button-primary-foreground);
   background-color: var(--component-button-primary-background);
+  border: 1px solid var(--component-button-primary-border);
 
   &:hover {
     background-color: var(--component-button-primary-background-hover);
