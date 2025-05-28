@@ -16,7 +16,7 @@ export const Default: Story = {
     onClose: () => console.log("onClose"),
     side: "right",
     size: "large",
-    titleComponent: <div>Panel Title</div>,
+    titleComponent: "Panel title",
     actions: [
       {
         label: "Action 1",

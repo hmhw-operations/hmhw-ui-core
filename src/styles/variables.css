@@ -919,3 +919,22 @@ body.day-theme {
   --component-checkbox-description: var(--color-foreground-primary);
 }
 
+/*******  Side panel tokens  *******/
+
+body.dark-theme {
+  --component-sidepanel-background: var(--color-background-canvas);
+  --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
+}
+
+body.light-theme {
+  --component-sidepanel-background: var(--color-background-canvas);
+    --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
+
+
+}
+
+body.day-theme {
+  --component-sidepanel-background: var(--color-background-canvas);
+  --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
+
+}
