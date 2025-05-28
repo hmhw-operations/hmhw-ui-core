@@ -20,7 +20,7 @@ export type ActionType = {
 
 export type SidePanelProps = BaseComponentProps & {
   children?: React.ReactNode;
-  titleComponent: React.ReactNode;
+  titleComponent: string;
   size?: Size;
   open?: boolean;
   actions?: ActionType[];
@@ -52,7 +52,7 @@ const SidePanel: React.FC<SidePanelProps> = ({
       tabIndex={-1}
       role="dialog"
       aria-modal="true"
-      style={{ display: open ? "block" : "none" }}
+      style={{ display: open ? "flex" : "none" }}
     >
       <header className={style.header}>
         <h3 className={style.title}>{titleComponent}</h3>
