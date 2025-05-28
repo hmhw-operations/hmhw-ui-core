@@ -14,33 +14,33 @@
   background-color: var(--component-sidepanel-background);
   padding: var(--size-300);
 
-  .right {
+  &.right {
     right: 0;
     transform: translateX(100%);
   }
 
-  .left {
+  &.left {
     left: 0;
     transform: translateX(-100%);
   }
 
-  .open.right {
-    transform: translateX(0); 
-  }
-
-  .open.left {
+  &.open.right {
     transform: translateX(0);
   }
 
-  .small {
+  &.open.left {
+    transform: translateX(0);
+  }
+
+  &.small {
     width: 280px;
   }
 
-  .medium {
+  &.medium {
     width: 400px;
   }
 
-  .large {
+  &.large {
     width: 640px;
   }
 
@@ -57,7 +57,7 @@
   .content {
   }
 
-  .footer {  
+  .footer {
     display: flex;
     gap: var(--size-200);
   }
