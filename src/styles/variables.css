@@ -1090,3 +1090,36 @@ body.day-theme {
   }
 
 
+  /*******  Menulist panel tokens  *******/
+
+body.dark-theme {
+  --component-menulist-background: var(--color-background-canvas);
+  --component-menulist-border: var(--palette-alpha-white-010);
+  --component-menulist-button-foreground: var(--color-foreground-primary);
+  --component-menulist-button-background: transparent;
+  --component-menulist-button-background-hover: var(--palette-alpha-white-010);
+  --component-menulist-button-background-active: transparent;
+  --component-menulist-button-radius: 2px;
+}
+
+body.light-theme {
+  --component-menulist-background: var(--color-background-canvas);
+  --component-menulist-border: var(--palette-neutral-cold-600);
+  --component-menulist-button-foreground: var(--color-foreground-primary);
+  --component-menulist-button-background: transparent;
+  --component-menulist-button-background-hover: var(--palette-neutral-cold-300);
+  --component-menulist-button-background-active: var(--palette-blue-193-100);
+  --component-menulist-button-radius: 2px;
+}
+
+body.day-theme {
+  --component-menulist-background: var(--color-background-canvas);
+  --component-menulist-border: var(--palette-neutral-new-300);
+  --component-menulist-button-foreground: var(--color-foreground-primary);
+  --component-menulist-button-background: transparent;
+  --component-menulist-button-background-hover: var(--palette-neutral-new-100);
+  --component-menulist-button-background-active: var(--palette-blue-210-100);
+  --component-menulist-button-radius: 2px;
+}
+
+
