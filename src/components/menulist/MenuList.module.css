@@ -1,85 +1,81 @@
 .menuList {
   display: flex;
-  align-self: stretch;
-  width: 100%;
-  min-width: 160px;
-  box-sizing: border-box;
+  min-width: fit-content;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--size-100);
+  padding: var(--size-200);
+  background-color: var(--component-menulist-background);
+
+  .menuListItem {
+    width: 100%;
+    box-sizing: border-box;
+
+    + .menuListGroupHeader {
+      margin-top: var(--size-200);
+    }
+  }
+  
+  .menuListGroupHeader {
+    color: var(--component-sidemenu-foreground);
+    font-size: var(--type-400);
+  }
+
+  .menuListSubList {
+    display: block;
+    list-style-type: none;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: var(--size-350);
+    position: relative;
+ 
+    &:before {
+      content: "";
+      position: absolute;
+      left: var(--size-150);
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: var(--component-menulist-border);
+      border-radius: 1px;
+      z-index: 0;
+    } 
+
+    & > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .menuListButton {
+    display: flex;
+    height: var(--size-400);
+    padding: 0px var(--size-100);
+    align-items: center;
+    gap: var(--size-100);
+    align-self: stretch;
+    cursor: pointer;
+    width: 100%;
+    justify-content: flex-start;
+    color: var(--component-menulist-button-foreground);
+    background-color: var(--component-menulist-button-background);
+    border-radius: var(--component-menulist-button-radius);
+
+    &:focus,
+    &:hover {
+      background-color: var(--component-menulist-button-background-hover);
+    }
+
+    &.menuListButtonSelected {
+      background-color: var(--component-menulist-button-background-active);
+    }
+
+    .menuListLabel {
+      flex: 1;
+      text-align: left;
+    }
+  }
 }
 
-.menuListButton {
-  background: none;
-  border: none;
-  display: flex;
-  height: var(--size-400);
-  padding: 0px var(--size-100);
-  align-items: center;
-  gap: var(--size-100);
-  align-self: stretch;
-  cursor: pointer;
-  outline: none;
-  width: 100%;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  color: var(--c-menulist-foreground-primary);
-}
 
-.menuListButton:focus,
-.menuListButton:hover {
-  background-color: var(--c-menulist-background-hover);
-}
-
-.menuListButtonSelected {
-  background-color: var(--c-menulist-background-active);
-}
-
-.menuListLabel {
-  flex: 1;
-  text-align: left;
-}
-
-.menuListGroupHeader {
-  color: var(--c-sidemenu-foreground-secondary);
-
-  font-family: var(--Typorgaphy-Family-Standard, Lato);
-  font-size: var(--Typorgaphy-Size-14);
-  font-style: normal;
-  font-weight: var(--Typorgaphy-Weight-Regular, 400);
-  line-height: 100%;
-  pointer-events: none;
-  margin-top: var(--size-100);
-}
-
-.menuListItem {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.menuListSubList {
-  width: 100%;
-  list-style-type: none;
-  min-width: 0;
-  box-sizing: border-box;
-  padding: 0;
-  padding-left: var(--size-350);
-  position: relative;
-}
-
-.menuListSubList::before {
-  content: "";
-  position: absolute;
-  left: var(--size-150);
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--c-menulist-border);
-  border-radius: 1px;
-  z-index: 0;
-}
-
-.menuListSubList > * {
-  position: relative;
-  z-index: 1;
-}
