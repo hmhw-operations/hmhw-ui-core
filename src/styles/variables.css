@@ -993,7 +993,7 @@ body.light-theme {
   --component-button-tertiary-foreground-disabled: var(--color-foreground-primary);
   --component-button-tertiary-background: transparent;
   --component-button-tertiary-background-hover: var(--palette-alpha-black-005);
-    --component-button-tertiary-background-focus: transparent;
+  --component-button-tertiary-background-focus: transparent;
   --component-button-tertiary-background-disabled: transparent;
   --component-button-tertiary-border: transparent;
   --component-button-tertiary-border-hover: transparent;
@@ -1123,3 +1123,98 @@ body.day-theme {
 }
 
 
+
+  /*******  Input tokens  *******/
+
+body.dark-theme {
+
+  --component-input-label: var(--color-foreground-secondary);
+  --component-input-label-disabled: var(--color-foreground-disabled);
+  --component-input-value: var(--palette-neutral-1400);
+  --component-input-value-readonly: var(--color-foreground-primary);
+  --component-input-value-disabled: var(--color-foreground-disabled);
+  --component-input-value-error: var(--component-input-value);  
+  --component-input-icon: var(--palette-neutral-1400);
+  --component-input-icon-readonly: var(--color-foreground-primary);
+  --component-input-icon-disabled: var(--component-input-value-disabled);
+  --component-input-unit: var(--palette-neutral-1400);
+  --component-input-unit-readonly: var(--color-foreground-primary);
+  --component-input-unit-disabled: var(--component-input-value-disabled);
+  --component-input-description: var(--color-foreground-secondary);
+  --component-input-description-error: var(--color-system-critical-weak);
+  --component-input-description-disabled: var(--color-foreground-disabled);
+  --component-input-border: var(--palette-neutral-300);
+  --component-input-border-hover: var(--palette-neutral-1200);
+  --component-input-border-active: var(--color-foreground-interactive-default);
+  --component-input-border-error: var(--color-system-critical-default);
+  --component-input-border-readonly: var(--palette-alpha-white-000);
+  --component-input-border-disabled: var(--palette-alpha-white-030);
+  --component-input-background: var(--palette-neutral-050);
+  --component-input-background-active: var(--palette-blue-210-100);
+  --component-input-background-error: var(--color-system-critical-weak);
+  --component-input-background-unit: var(--palette-alpha-black-005);
+  --component-input-background-readonly: var(--palette-alpha-white-000);
+  --component-input-background-disabled: var(--palette-alpha-white-000);
+  --component-input-radius: var(--radius-input);  
+}
+
+body.light-theme {
+  --component-input-label: var(--color-foreground-secondary);
+  --component-input-label-disabled: var(--color-foreground-disabled);
+  --component-input-value: var(--color-foreground-primary);
+  --component-input-value-readonly: var(--color-foreground-primary);
+  --component-input-value-disabled: var(--color-foreground-disabled);
+  --component-input-value-error: var(--component-input-value);
+  --component-input-icon: var(--color-foreground-primary);
+  --component-input-icon-readonly: var(--color-foreground-primary);
+  --component-input-icon-disabled: var(--component-input-value-disabled);
+  --component-input-unit: var(--color-foreground-primary);
+  --component-input-unit-readonly: var(--color-foreground-primary);
+  --component-input-unit-disabled: var(--component-input-value-disabled);
+  --component-input-description: var(--color-foreground-secondary);
+  --component-input-description-error: var(--color-system-critical-default);
+  --component-input-description-disabled: var(--color-foreground-disabled);
+  --component-input-border: var(--palette-neutral-cold-500);
+  --component-input-border-hover: var(--palette-neutral-cold-600);
+  --component-input-border-active: var(--color-foreground-interactive-default);
+  --component-input-border-error: var(--color-system-critical-default);
+  --component-input-border-readonly: var(--palette-alpha-white-000);
+  --component-input-border-disabled: var(--palette-neutral-cold-300);
+  --component-input-background: var(--palette-neutral-cold-050);
+  --component-input-background-active: var(--palette-blue-193-100);
+  --component-input-background-error: var(--color-system-critical-weak);
+  --component-input-background-unit: var(--palette-alpha-black-002);
+  --component-input-background-readonly: var(--palette-alpha-white-000);
+  --component-input-background-disabled: var(--palette-alpha-white-000);
+  --component-input-radius: var(--radius-input);
+}
+body.day-theme {
+  --component-input-label: var(--color-foreground-secondary);
+  --component-input-label-disabled: var(--color-foreground-disabled);
+  --component-input-value: var(--color-foreground-primary);
+  --component-input-value-readonly: var(--color-foreground-primary);
+  --component-input-value-disabled: var(--color-foreground-disabled);
+  --component-input-value-error: var(--component-input-value);
+  --component-input-icon: var(--color-foreground-primary);
+  --component-input-icon-readonly: var(--color-foreground-primary);
+  --component-input-icon-disabled: var(--component-input-value-disabled);
+  --component-input-unit: var(--color-foreground-primary);
+  --component-input-unit-readonly: var(--color-foreground-primary);
+  --component-input-unit-disabled: var(--component-input-value-disabled);
+  --component-input-description: var(--color-foreground-secondary);
+  --component-input-description-error: var(--color-system-critical-default);
+  --component-input-description-disabled: var(--color-foreground-disabled);
+  --component-input-border: var(--palette-neutral-new-300);
+  --component-input-border-hover: var(--palette-neutral-new-600);
+  --component-input-border-active: var(--color-foreground-interactive-default);
+  --component-input-border-error: var(--color-system-critical-default);
+  --component-input-border-readonly: var(--palette-alpha-white-000);
+  --component-input-border-disabled: var(--palette-neutral-new-200);
+  --component-input-background: var(--palette-neutral-new-050);
+  --component-input-background-active: var(--palette-blue-205-100);
+  --component-input-background-error: var(--color-system-critical-weak);
+  --component-input-background-unit: var(--palette-alpha-white-000);
+  --component-input-background-readonly: var(--palette-alpha-white-000);
+  --component-input-background-disabled: var(--palette-neutral-new-050);
+  --component-input-radius: var(--radius-input);
+}
