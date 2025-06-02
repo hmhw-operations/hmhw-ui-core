@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Tag, { TagProps } from "../Tag";
 
-const Example: FC<TagProps> = ({ text = "Started", size = "small", type = "neutral" }) => {
+const Example: FC<TagProps> = ({ text = "Started", size = "medium", type = "neutral" }) => {
   return (
     <div
       style={{
