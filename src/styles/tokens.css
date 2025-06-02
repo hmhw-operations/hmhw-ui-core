@@ -34,7 +34,7 @@
   --type-base: 1rem;
 
   --type-100: calc(var(--type-base) * 0.5);
-  --type-200: calc(var(--type-base) * 0.625);
+  --type-150: calc(var(--type-base) * 0.625);
   --type-200: calc(var(--type-base) * 0.75);   /*12*/
   --type-300: calc(var(--type-base) * 0.875);  /*14*/
   --type-400: var(--type-base);
@@ -57,6 +57,9 @@
   --type-label-small: 400 var(--type-200) / 1 var(--type-family-primary);
   --type-label-medium: 400 var(--type-300) / 1 var(--type-family-primary);
   --type-label-large: 400 var(--type-400) / 1 var(--type-family-primary);
+
+
+
 
   --type-description-small: 400 var(--type-200) / 1.5 var(--type-family-primary);
   --type-description-medium: 400 var(--type-300) / 1.5
