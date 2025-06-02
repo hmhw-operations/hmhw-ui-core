@@ -993,7 +993,7 @@ body.light-theme {
   --component-button-tertiary-foreground-disabled: var(--color-foreground-primary);
   --component-button-tertiary-background: transparent;
   --component-button-tertiary-background-hover: var(--palette-alpha-black-005);
-    --component-button-tertiary-background-focus: transparent;
+  --component-button-tertiary-background-focus: transparent;
   --component-button-tertiary-background-disabled: transparent;
   --component-button-tertiary-border: transparent;
   --component-button-tertiary-border-hover: transparent;
@@ -1133,6 +1133,7 @@ body.dark-theme {
   --component-input-value: var(--palette-neutral-1400);
   --component-input-value-readonly: var(--color-foreground-primary);
   --component-input-value-disabled: var(--color-foreground-disabled);
+  --component-input-value-error: var(--component-input-value);  
   --component-input-icon: var(--palette-neutral-1400);
   --component-input-icon-readonly: var(--color-foreground-primary);
   --component-input-icon-disabled: var(--component-input-value-disabled);
@@ -1154,6 +1155,7 @@ body.dark-theme {
   --component-input-background-unit: var(--palette-alpha-black-005);
   --component-input-background-readonly: var(--palette-alpha-white-000);
   --component-input-background-disabled: var(--palette-alpha-white-000);
+  --component-input-radius: var(--radius-input);  
 }
 
 body.light-theme {
@@ -1162,6 +1164,7 @@ body.light-theme {
   --component-input-value: var(--color-foreground-primary);
   --component-input-value-readonly: var(--color-foreground-primary);
   --component-input-value-disabled: var(--color-foreground-disabled);
+  --component-input-value-error: var(--component-input-value);
   --component-input-icon: var(--color-foreground-primary);
   --component-input-icon-readonly: var(--color-foreground-primary);
   --component-input-icon-disabled: var(--component-input-value-disabled);
@@ -1183,6 +1186,7 @@ body.light-theme {
   --component-input-background-unit: var(--palette-alpha-black-002);
   --component-input-background-readonly: var(--palette-alpha-white-000);
   --component-input-background-disabled: var(--palette-alpha-white-000);
+  --component-input-radius: var(--radius-input);
 }
 body.day-theme {
   --component-input-label: var(--color-foreground-secondary);
@@ -1190,6 +1194,7 @@ body.day-theme {
   --component-input-value: var(--color-foreground-primary);
   --component-input-value-readonly: var(--color-foreground-primary);
   --component-input-value-disabled: var(--color-foreground-disabled);
+  --component-input-value-error: var(--component-input-value);
   --component-input-icon: var(--color-foreground-primary);
   --component-input-icon-readonly: var(--color-foreground-primary);
   --component-input-icon-disabled: var(--component-input-value-disabled);
@@ -1211,4 +1216,5 @@ body.day-theme {
   --component-input-background-unit: var(--palette-alpha-white-000);
   --component-input-background-readonly: var(--palette-alpha-white-000);
   --component-input-background-disabled: var(--palette-neutral-new-050);
+  --component-input-radius: var(--radius-input);
 }

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-100);
-  color: var(--color-foreground-primary);
 
   &.horizontal {
     flex-direction: row;
@@ -15,51 +14,54 @@
 
   .label {
     font: var(--type-label-medium);
+    color: var(--component-input-label);
   }
 
-  input {
-    background-color: transparent;
-    width: 100%;
-    border: none;
-    padding-inline: var(--size-075);
-
-    &:focus {
-      outline: none;
-      box-shadow: none;
-    }
+    .description {
+    font: var(--type-description-medium);
+    color: var(--component-input-description);
   }
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    gap: var(--space-100);
+    gap: var(--size-100);
   }
 
   .field {
     display: flex;
     height: var(--height-medium);
-    color: var(--color-component-input-foreground-value);
-    background-color: var(--color-component-input-bg);
-    border: 1px solid var(--color-component-input-border);
+    color: var(--component-input-value);
+    background-color: var(--component-input-background);
+    border: 1px solid var(--component-input-border);
     border-radius: var(--radius-input);
 
     input {
-      color: var(--color-component-input-value);
+      background-color: transparent;
+      color: var(--component-input-value);
+      width: 100%;
+      border: none;
+      padding-inline: var(--size-075);
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
     }
 
     &:hover {
-      border-color: var(--color-component-input-border-hover);
+      border-color: var(--component-input-border-hover);
     }
 
     &:has(input:active) {
-      border-color: var(--color-component-input-border-active);
+      border-color: var(--component-input-border-active);
     }
 
     &:focus-within {
       outline: 2px solid var(--color-focus-ring);
       outline-offset: 0px;
       box-shadow: 0 0 0 4px var(--color-background-canvas);
-      border-color: var(--color-component-input-border-hover);
+      border-color: var(--component-input-border-hover);
     }
 
     .unit {
@@ -67,62 +69,83 @@
       min-width: 3rem;
       align-items: center;
       justify-content: center;
-      color: var(--color-component-input-unit-value);
-      background-color: var(--color-component-input-unit-bg);
+      color: var(--component-input-unit);
       border-radius: 0 4px 4px 0;
-      border-left: 1px solid var(--color-component-input-border);
+      border-left: 1px solid var(--component-input-border);
     }
   }
 }
 
 .input:has(input:disabled) {
   .field {
-    color: var(--color-component-input-value-disabled);
+    color: var(--component-input-value-disabled);
     background-color: transparent;
-    border: 1px solid var(--color-component-input-border-disabled);
+    border: 1px solid var(--component-input-border-disabled);
   }
 
   .unit {
-    color: var(--color-component-input-value-disabled);
+    color: var(--component-input-unit-disabled);
     background-color: transparent;
-    border-color: var(--color-component-input-border-disabled);
+    border-color: var(--component-input-border-disabled);
   }
-}
 
-.description {
-  margin-top: var(--size-100);
-  font: var(--type-description-medium);
+  .description {
+    color: var(--component-input-description-disabled);
+  }
 }
 
 .error {
   .field {
-    display: flex;
-    height: var(--height-medium);
-    color: var(--color-component-input-unit-text);
-
-    border-color: var(--color-component-input-border-error);
-    background-color: var(--color-background-critical-weak);
-    background-color: var(--color-component-input-bg-error);
+    border-color: var(--component-input-border-error);
+    background-color: var(--component-input-background-error);
 
     input {
-      color: var(--color-component-input-value-error);
+      color: var(--component-input-value-error);
     }
 
     .unit {
-      color: var(--color-component-input-error);
-      background-color: var(--color-component-input-bg-error);
-      border-radius: 0 4px 4px 0;
-      border-color: var(--color-component-input-unit-border-error);
+      border-radius: 0 var(--component-input-radius) var(--component-input-radius)  0;
+      border-color: var(--component-input-border-error);
     }
   }
   .errormessage {
-    color: var(--c-input-error);
+    color: var(--component-input-description-error);
   }
 
   svg {
-    color: var(--color-system-critical-default);
+    color: var(--component-input-description-error);
     width: var(--size-300);
     height: auto;
     margin-right: var(--size-100);
+  }
+}
+
+.input {
+  &.small {
+    .label {
+      font: var(--type-label-small);
+      color: red;
+    }
+    .wrapper .field {
+      height: var(--height-small);
+    }
+  }
+
+  &.large{
+    .label {
+      font: var(--type-label-large);
+    }
+    .field {
+      height: var(--height-large);
+    }
+  }
+
+  &.x-large{
+    .label {
+      font: var(--type-label-x-large);
+    }
+    .field {
+      height: var(--height-x-large);
+    }
   }
 }

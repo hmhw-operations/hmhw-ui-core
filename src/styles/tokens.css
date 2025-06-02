@@ -24,6 +24,7 @@
 
   --height-medium: var(--size-400);
   --height-large: var(--size-500);
+  --height-x-large: var(--size-600);
   --height-small: var(--size-300);
 
   /*  TYPOGRAPHY  --------------------------------------------- */
