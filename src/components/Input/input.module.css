@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-100);
+  font-size: var(--type-200);
 
   &.horizontal {
     flex-direction: row;
-    gap: var(--spce-400);
+    gap: var(--space-400);
 
     label {
       min-width: 200px;
@@ -13,13 +14,12 @@
   }
 
   .label {
-    font: var(--type-label-medium);
     color: var(--component-input-label);
   }
 
-    .description {
-    font: var(--type-description-medium);
+  .description {
     color: var(--component-input-description);
+    font-style: italic;
   }
 
   .wrapper {
@@ -35,13 +35,14 @@
     background-color: var(--component-input-background);
     border: 1px solid var(--component-input-border);
     border-radius: var(--radius-input);
+    font-size: var(--type-300);
 
     input {
       background-color: transparent;
       color: var(--component-input-value);
       width: 100%;
       border: none;
-      padding-inline: var(--size-075);
+      padding-inline: 0.5em;
 
       &:focus {
         outline: none;
@@ -122,30 +123,29 @@
 
 .input {
   &.small {
-    .label {
-      font: var(--type-label-small);
-      color: red;
-    }
+    font-size: var(--type-200);
+    
     .wrapper .field {
       height: var(--height-small);
+      font-size: var(--type-200);
     }
   }
 
-  &.large{
-    .label {
-      font: var(--type-label-large);
-    }
+  &.large {
+    font-size: var(--type-300);
+    
     .field {
       height: var(--height-large);
+      font-size: var(--type-400);
     }
   }
 
   &.x-large{
-    .label {
-      font: var(--type-label-x-large);
-    }
+    font-size: var(--type-400);
+    
     .field {
       height: var(--height-x-large);
+      font-size: var(--type-500);
     }
   }
 }

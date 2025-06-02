@@ -2,33 +2,32 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-100);
-  color: var(--color-component-input-foreground);
+  font-size: var(--type-200);
 
   .label {
-    font: var(--type-label-medium);
+    color: var(--component-input-label);
   }
 
   .description {
-    font: var(--type-description-medium);
+    color: var(--component-input-description);
+    font-style: italic;
   }
 
   .wrapper {
-    cursor: pointer;
-    position: relative;
     display: flex;
-    justify-content: center;
-    height: var(--height-medium);
-    font-size: var(--type-400);
-    line-height: 1;
-    border: 1px solid var(--color-component-input-border);
-    border-radius: var(--radius-input);
-    background-color: var(--color-component-input-bg);
-    padding-inline: 0.5em 0.125em;
-    color: var(--color-component-input-value);
+    flex-direction: column;
+    gap: var(--size-100);
+  }
 
-    &:hover {
-      border-color: var(--c-input-border-hover);
-    }
+  .field {
+    display: flex;
+    height: var(--height-medium);
+    color: var(--component-input-value);
+    background-color: var(--component-input-background);
+    border: 1px solid var(--component-input-border);
+    border-radius: var(--radius-input);
+    font-size: var(--type-300);
+    padding-inline: 0.5em;
 
     select {
       appearance: none;
@@ -48,65 +47,46 @@
       }
     }
 
+    &:hover {
+      border-color: var(--component-input-border-hover);
+    }
+
+    &:has(input:active) {
+      border-color: var(--component-input-border-active);
+    }
+
     svg {
-      width: var(--size-300);
+      width: 1.25em;
     }
   }
+}
 
+
+.select {
   &.small {
-    .label {
-      font: var(--type-label-small);
-    }
-
-    .description {
-      font: var(--type-description-small);
-    }
-
-    .wrapper {
-      font-size: var(--type-200);
+    font-size: var(--type-200);
+    
+    .wrapper .field {
       height: var(--height-small);
-
-      svg {
-        width: var(--size-250);
-      }
+      font-size: var(--type-200);
     }
   }
 
   &.large {
-    .label {
-      font: var(--type-label-large);
-    }
-
-    .description {
-      font: var(--type-description-large);
-    }
-
-    .wrapper {
-      font-size: var(--type-500);
-
-      svg {
-        width: var(--size-350);
-      }
+    font-size: var(--type-300);
+    
+    .field {
+      height: var(--height-large);
+      font-size: var(--type-400);
     }
   }
 
-  &:has(select:disabled) {
-    label {
-      color: var(--color-component-input-foreground-disabled);
-    }
-
-    .wrapper {
-      border-color: var(--color-component-input-border-disabled);
-      background-color: var(--color-component-input-background-disabled);
-      color: var(--color-component-input-foreground-disabled);
-
-      select {
-        color: var(--color-component-input-foreground-disabled);
-      }
-    }
-
-    .description {
-      color: var(--color-component-input-foreground-disabled);
+  &.x-large {
+    font-size: var(--type-400);
+    
+    .field {
+      height: var(--height-x-large);
+      font-size: var(--type-500);
     }
   }
 }

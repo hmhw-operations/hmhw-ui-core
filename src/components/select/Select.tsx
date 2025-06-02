@@ -43,6 +43,7 @@ const Select = ({ id, key, title, options, label, value, placeholder, helperText
     <div className={`${style.select} ${style[size]}`}>
       {label && <label className={`${style.label} `}>{label}</label>}
       <div className={`${style.wrapper}`}>
+              <div className={`${style.field}`}>
         <select title={title || label} id={id} key={key || ""} className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
           {
             <option value={selectOption} hidden={true}>
@@ -57,6 +58,7 @@ const Select = ({ id, key, title, options, label, value, placeholder, helperText
             ))}
         </select>
         <Icon name="caret-double" />
+        </div>
       </div>
       {helperText && <p className={`${style.description}`}>{helperText}</p>}
     </div>
