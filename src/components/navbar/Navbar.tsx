@@ -5,6 +5,7 @@ import "../../styles/tokens.css";
 import "../../styles/variables.css";
 import { ThemeSwitch } from "../themeswitch";
 import { useState } from "react";
+import { IconButton } from "../iconbutton";
 
 type NavBarLink = {
   label: string;
@@ -16,9 +17,10 @@ type NavbarProps = {
   title: string;
   logoutUrl?: string;
   onThemeChange?: (isDarkTheme: boolean) => void;
+  onMenuClick?: () => void;
 };
 
-const Navbar = ({ links, title, logoutUrl, onThemeChange }: NavbarProps) => {
+const Navbar = ({ links, title, logoutUrl, onThemeChange, onMenuClick }: NavbarProps) => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const handleThemeChange = () => {
@@ -29,6 +31,7 @@ const Navbar = ({ links, title, logoutUrl, onThemeChange }: NavbarProps) => {
   return (
     <header className={style.appbar}>
       <div className={style.nav}>
+        {onMenuClick && <IconButton size="large" variant="tertiary" icon="menu" onClick={onMenuClick} label="Menu" id={"menu"} title={"menu"} />}
         <nav className={style.nav}>
           {links?.map((link) => (
             <a key={link.href} href={link.href}>
