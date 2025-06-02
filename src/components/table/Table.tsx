@@ -44,7 +44,7 @@ const Table = <TData extends object>({ data, columns }: TableProps<TData>) => {
         {table.getRowModel().rows.map((row) => (
           <tr key={row.id}>
             {row.getVisibleCells().map((cell) => (
-              <td key={cell.id} className={cell.column.columnDef.className ? cell.column.columnDef.className(cell.getContext()) : ""}>
+              <td key={cell.id}>
                 {flexRender(cell.column.columnDef.cell, cell.getContext())}
               </td>
             ))}
