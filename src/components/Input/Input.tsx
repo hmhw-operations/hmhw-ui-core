@@ -5,7 +5,7 @@ import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/variables.css";
 import { sanitizeForId } from "../../utils";
-import { BaseComponentProps, LabelPosition } from "../../types";
+import { BaseComponentProps, LabelPosition, Size } from "../../types";
 import { Icon } from "../icon";
 import React from "react";
 
@@ -24,6 +24,7 @@ export type InputProps = BaseComponentProps & {
     message?: string;
     hasError?: boolean;
   };
+  size?: Size;
 };
 
 const Input: FC<
@@ -45,6 +46,7 @@ const Input: FC<
   name,
   helperText,
   disabled,
+  size = "medium",
   ...props
 }) => {
   const { value, type } = props;
@@ -74,7 +76,7 @@ const Input: FC<
 
   return (
     <div
-      className={`${style.input} ${labelPosition === "left" && style.horizontal} ${hasError && style.error}`}
+      className={`${style.input} ${labelPosition === "left" && style.horizontal} ${hasError && style.error} ${style[size]}`}
     >
       {label && (
         <label className={`${style.label}`} htmlFor={sanitizeForId(id)}>
