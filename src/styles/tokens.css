@@ -38,6 +38,7 @@
   --type-200: calc(var(--type-base) * 0.75);   /*12*/
   --type-300: calc(var(--type-base) * 0.875);  /*14*/
   --type-400: var(--type-base);
+  --type-450: calc(var(--type-base) * 1.125); 
   --type-500: calc(var(--type-400) * 1.25);
   --type-600: calc(var(--type-500) * 1.25);
   --type-700: calc(var(--type-600) * 1.25);
