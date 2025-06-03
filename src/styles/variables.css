@@ -1,283 +1,281 @@
-:root{
-  --palette-neutral-050: hsla(0,0%,100%,1.00);
-  --palette-neutral-new-050: hsla(0,0%,100%,1.00);
-  --palette-neutral-new-100: hsla(198,10%,96%,1.00);
-  --palette-neutral-new-200: hsla(198,10%,90%,1.00);
-  --palette-neutral-new-300: hsla(198,10%,80%,1.00);
-  --palette-neutral-new-400: hsla(198,10%,70%,1.00);
-  --palette-neutral-new-500: hsla(198,10%,60%,1.00);
-  --palette-neutral-new-600: hsla(198,10%,40%,1.00);
-  --palette-neutral-new-700: hsla(198,10%,30%,1.00);
-  --palette-neutral-new-800: hsla(198,10%,20%,1.00);
-  --palette-neutral-new-900: hsla(198,10%,10%,1.00);
+:root {
+  --palette-neutral-050: hsla(0, 0%, 100%, 1);
+  --palette-neutral-new-050: hsla(0, 0%, 100%, 1);
+  --palette-neutral-new-100: hsla(198, 10%, 96%, 1);
+  --palette-neutral-new-200: hsla(198, 10%, 90%, 1);
+  --palette-neutral-new-300: hsla(198, 10%, 80%, 1);
+  --palette-neutral-new-400: hsla(198, 10%, 70%, 1);
+  --palette-neutral-new-500: hsla(198, 10%, 60%, 1);
+  --palette-neutral-new-600: hsla(198, 10%, 40%, 1);
+  --palette-neutral-new-700: hsla(198, 10%, 30%, 1);
+  --palette-neutral-new-800: hsla(198, 10%, 20%, 1);
+  --palette-neutral-new-900: hsla(198, 10%, 10%, 1);
 
-  --palette-blue-198-new-100: hsla(198,100%,96%,1.00);
-  --palette-blue-198-new-200: hsla(198,100%,90%,1.00);
-  --palette-blue-198-new-300: hsla(198,100%,80%,1.00);
-  --palette-blue-198-new-400: hsla(198,100%,70%,1.00);
-  --palette-blue-198-new-500: hsla(198,100%,50%,1.00);
-  --palette-blue-198-new-600: hsla(198,100%,40%,1.00);
-  --palette-blue-198-new-700: hsla(198,100%,30%,1.00);
-  --palette-blue-198-new-800: hsla(198,100%,18%,1.00);
-  --palette-blue-198-new-900: hsla(198,100%,8%,1.00);
+  --palette-blue-198-new-100: hsla(198, 100%, 96%, 1);
+  --palette-blue-198-new-200: hsla(198, 100%, 90%, 1);
+  --palette-blue-198-new-300: hsla(198, 100%, 80%, 1);
+  --palette-blue-198-new-400: hsla(198, 100%, 70%, 1);
+  --palette-blue-198-new-500: hsla(198, 100%, 50%, 1);
+  --palette-blue-198-new-600: hsla(198, 100%, 40%, 1);
+  --palette-blue-198-new-700: hsla(198, 100%, 30%, 1);
+  --palette-blue-198-new-800: hsla(198, 100%, 18%, 1);
+  --palette-blue-198-new-900: hsla(198, 100%, 8%, 1);
 
+  --palette-alpha-blue-005: hsla(198, 100%, 20%, 0.05);
+  --palette-alpha-blue-010: hsla(198, 100%, 14%, 0.1);
+  --palette-alpha-blue-020: hsla(198, 100%, 14%, 0.2);
+  --palette-alpha-blue-040: hsla(198, 100%, 14%, 0.4);
+  --palette-alpha-blue-050: hsla(198, 100%, 14%, 0.5);
+  --palette-alpha-blue-060: hsla(198, 100%, 14%, 0.6);
+  --palette-alpha-blue-070: hsla(198, 100%, 14%, 0.7);
+  --palette-alpha-blue-080: hsla(198, 100%, 14%, 0.8);
+  --palette-alpha-blue-090: hsla(198, 100%, 14%, 0.9);
+  --palette-alpha-blue-100: hsla(198, 100%, 14%, 1);
 
-  --palette-alpha-blue-005: hsla(198,100%,20%,0.05);
-  --palette-alpha-blue-010: hsla(198,100%,14%,0.10);
-  --palette-alpha-blue-020: hsla(198,100%,14%,0.20);
-  --palette-alpha-blue-040: hsla(198,100%,14%,0.40);
-  --palette-alpha-blue-050: hsla(198,100%,14%,0.50);
-  --palette-alpha-blue-060: hsla(198,100%,14%,0.60);
-  --palette-alpha-blue-070: hsla(198,100%,14%,0.70);
-  --palette-alpha-blue-080: hsla(198,100%,14%,0.80);
-  --palette-alpha-blue-090: hsla(198,100%,14%,0.90);
-  --palette-alpha-blue-100: hsla(198,100%,14%,1.00);
+  --palette-alpha-blue-light-001: hsla(198, 100%, 50%, 0.01);
+  --palette-alpha-blue-light-005: hsla(198, 100%, 50%, 0.05);
+  --palette-alpha-blue-light-010: hsla(198, 100%, 50%, 0.1);
+  --palette-alpha-blue-light-015: hsla(198, 100%, 50%, 0.15);
+  --palette-alpha-blue-light-020: hsla(198, 100%, 50%, 0.2);
+  --palette-alpha-blue-light-030: hsla(198, 100%, 50%, 0.3);
+  --palette-alpha-blue-light-040: hsla(198, 100%, 50%, 0.4);
+  --palette-alpha-blue-light-050: hsla(198, 100%, 50%, 0.5);
+  --palette-alpha-blue-light-060: hsla(198, 100%, 50%, 0.6);
+  --palette-alpha-blue-light-070: hsla(198, 100%, 50%, 0.7);
+  --palette-alpha-blue-light-075: hsla(198, 100%, 50%, 0.75);
+  --palette-alpha-blue-light-080: hsla(198, 100%, 50%, 0.8);
+  --palette-alpha-blue-light-090: hsla(198, 100%, 50%, 0.9);
+  --palette-alpha-blue-light-100: hsla(198, 100%, 50%, 1);
 
+  --palette-alpha-cold-blue-015: hsla(193, 100%, 50%, 0.15);
 
-  --palette-alpha-blue-light-001: hsla(198,100%,50%,0.01);
-  --palette-alpha-blue-light-005: hsla(198,100%,50%,0.05);
-  --palette-alpha-blue-light-010: hsla(198,100%,50%,0.10);
-  --palette-alpha-blue-light-015: hsla(198,100%,50%,0.15);
-  --palette-alpha-blue-light-020: hsla(198,100%,50%,0.20);
-  --palette-alpha-blue-light-030: hsla(198,100%,50%,0.30);
-  --palette-alpha-blue-light-040: hsla(198,100%,50%,0.40);
-  --palette-alpha-blue-light-050: hsla(198,100%,50%,0.50);
-  --palette-alpha-blue-light-060: hsla(198,100%,50%,0.60);
-  --palette-alpha-blue-light-070: hsla(198,100%,50%,0.70);
-  --palette-alpha-blue-light-075: hsla(198,100%,50%,0.75);
-  --palette-alpha-blue-light-080: hsla(198,100%,50%,0.80);
-  --palette-alpha-blue-light-090: hsla(198,100%,50%,0.90);
-  --palette-alpha-blue-light-100: hsla(198,100%,50%,1.00);
+  --palette-alpha-red-005: hsla(7, 82%, 44%, 0.25);
 
-  --palette-alpha-cold-blue-015: hsla(193,100%,50%,0.15);
+  --palette-alpha-white-000: hsla(0, 0%, 100%, 0);
+  --palette-alpha-white-010: hsla(0, 0%, 100%, 0.1);
+  --palette-alpha-white-020: hsla(0, 0%, 100%, 0.2);
+  --palette-alpha-white-030: hsla(0, 0%, 100%, 0.3);
+  --palette-alpha-white-040: hsla(0, 0%, 100%, 0.4);
+  --palette-alpha-white-050: hsla(0, 0%, 100%, 0.5);
+  --palette-alpha-white-060: hsla(0, 0%, 100%, 0.6);
+  --palette-alpha-white-070: hsla(0, 0%, 100%, 0.7);
+  --palette-alpha-white-080: hsla(0, 0%, 100%, 0.8);
+  --palette-alpha-white-090: hsla(0, 0%, 100%, 0.9);
+  --palette-alpha-white-100: hsla(0, 0%, 100%, 1);
 
-  --palette-alpha-red-005: hsla(7,82%,44%,0.25);
+  --palette-alpha-black-000: hsla(0, 0%, 0%, 0);
+  --palette-alpha-black-002: hsla(0, 0%, 0%, 0.02);
+  --palette-alpha-black-005: hsla(0, 0%, 0%, 0.05);
+  --palette-alpha-black-010: hsla(0, 0%, 0%, 0.1);
+  --palette-alpha-black-020: hsla(0, 0%, 0%, 0.2);
+  --palette-alpha-black-030: hsla(0, 0%, 0%, 0.3);
+  --palette-alpha-black-040: hsla(0, 0%, 0%, 0.4);
+  --palette-alpha-black-050: hsla(0, 0%, 0%, 0.5);
+  --palette-alpha-black-060: hsla(0, 0%, 0%, 0.6);
+  --palette-alpha-black-070: hsla(0, 0%, 0%, 0.7);
+  --palette-alpha-black-080: hsla(0, 0%, 0%, 0.8);
+  --palette-alpha-black-090: hsla(0, 0%, 0%, 0.9);
+  --palette-alpha-black-100: hsla(0, 0%, 0%, 1);
 
-  --palette-alpha-white-000: hsla(0,0%,100%,0.00);
-  --palette-alpha-white-010: hsla(0,0%,100%,0.10);
-  --palette-alpha-white-020: hsla(0,0%,100%,0.20);
-  --palette-alpha-white-030: hsla(0,0%,100%,0.30);
-  --palette-alpha-white-040: hsla(0,0%,100%,0.40);
-  --palette-alpha-white-050: hsla(0,0%,100%,0.50);
-  --palette-alpha-white-060: hsla(0,0%,100%,0.60);
-  --palette-alpha-white-070: hsla(0,0%,100%,0.70);
-  --palette-alpha-white-080: hsla(0,0%,100%,0.80);
-  --palette-alpha-white-090: hsla(0,0%,100%,0.90);
-  --palette-alpha-white-100: hsla(0,0%,100%,1.00);
+  --palette-neutral-050: hsla(0, 0%, 100%, 1);
+  --palette-neutral-075: hsla(198, 6%, 95%, 1);
+  --palette-neutral-100: hsla(0, 0%, 95%, 1);
+  --palette-neutral-200: hsla(0, 0%, 93%, 1);
+  --palette-neutral-300: hsla(0, 0%, 87%, 1);
+  --palette-neutral-400: hsla(0, 0%, 80%, 1);
+  --palette-neutral-500: hsla(0, 0%, 73%, 1);
+  --palette-neutral-600: hsla(0, 0%, 67%, 1);
+  --palette-neutral-700: hsla(0, 0%, 60%, 1);
+  --palette-neutral-800: hsla(0, 0%, 50%, 1);
+  --palette-neutral-900: hsla(0, 0%, 47%, 1);
+  --palette-neutral-1000: hsla(0, 0%, 40%, 1);
+  --palette-neutral-1100: hsla(0, 0%, 33%, 1);
+  --palette-neutral-1200: hsla(0, 0%, 27%, 1);
+  --palette-neutral-1300: hsla(0, 0%, 20%, 1);
+  --palette-neutral-1400: hsla(0, 0%, 13%, 1);
+  --palette-neutral-1500: hsla(0, 0%, 7%, 1);
 
-  --palette-alpha-black-000: hsla(0,0%,0%,0.00);
-  --palette-alpha-black-002: hsla(0,0%,0%,0.02);
-  --palette-alpha-black-005: hsla(0,0%,0%,0.05);
-  --palette-alpha-black-010: hsla(0,0%,0%,0.10);
-  --palette-alpha-black-020: hsla(0,0%,0%,0.20);
-  --palette-alpha-black-030: hsla(0,0%,0%,0.30);
-  --palette-alpha-black-040: hsla(0,0%,0%,0.40);
-  --palette-alpha-black-050: hsla(0,0%,0%,0.50);
-  --palette-alpha-black-060: hsla(0,0%,0%,0.60);
-  --palette-alpha-black-070: hsla(0,0%,0%,0.70);
-  --palette-alpha-black-080: hsla(0,0%,0%,0.80);
-  --palette-alpha-black-090: hsla(0,0%,0%,0.90);
-  --palette-alpha-black-100: hsla(0,0%,0%,1.00);
+  --palette-neutral-cold-050: hsla(175, 08%, 100%, 1);
+  --palette-neutral-cold-100: hsla(180, 11%, 96%, 1);
+  --palette-neutral-cold-200: hsla(195, 17%, 95%, 1);
+  --palette-neutral-cold-300: hsla(197, 14%, 90%, 1);
+  --palette-neutral-cold-400: hsla(196, 16%, 85%, 1);
+  --palette-neutral-cold-500: hsla(194, 16%, 79%, 1);
+  --palette-neutral-cold-600: hsla(196, 17%, 74%, 1);
+  --palette-neutral-cold-700: hsla(195, 18%, 67%, 1);
+  --palette-neutral-cold-800: hsla(194, 20%, 55%, 1);
+  --palette-neutral-cold-900: hsla(194, 18%, 53%, 1);
+  --palette-neutral-cold-1000: hsla(195, 16%, 50%, 1);
+  --palette-neutral-cold-1100: hsla(194, 17%, 45%, 1);
+  --palette-neutral-cold-1200: hsla(194, 17%, 40%, 1);
+  --palette-neutral-cold-1300: hsla(194, 16%, 35%, 1);
+  --palette-neutral-cold-1400: hsla(195, 16%, 29%, 1);
+  --palette-neutral-cold-1500: hsla(190, 15%, 8%, 1);
 
-  --palette-neutral-050: hsla(0,0%,100%,1.00);
-  --palette-neutral-075: hsla(198,6%,95%,1.00);
-  --palette-neutral-100: hsla(0,0%,95%,1.00);
-  --palette-neutral-200: hsla(0,0%,93%,1.00);
-  --palette-neutral-300: hsla(0,0%,87%,1.00);
-  --palette-neutral-400: hsla(0,0%,80%,1.00);
-  --palette-neutral-500: hsla(0,0%,73%,1.00);
-  --palette-neutral-600: hsla(0,0%,67%,1.00);
-  --palette-neutral-700: hsla(0,0%,60%,1.00);
-  --palette-neutral-800: hsla(0,0%,50%,1.00);
-  --palette-neutral-900: hsla(0,0%,47%,1.00);
-  --palette-neutral-1000: hsla(0,0%,40%,1.00);
-  --palette-neutral-1100: hsla(0,0%,33%,1.00);
-  --palette-neutral-1200: hsla(0,0%,27%,1.00);
-  --palette-neutral-1300: hsla(0,0%,20%,1.00);
-  --palette-neutral-1400: hsla(0,0%,13%,1.00);
-  --palette-neutral-1500: hsla(0,0%,7%,1.00);
-
-  --palette-neutral-cold-050: hsla(175,08%,100%,1.00);
-  --palette-neutral-cold-100: hsla(180,11%,96%,1.00);
-  --palette-neutral-cold-200: hsla(195,17%,95%,1.00);
-  --palette-neutral-cold-300: hsla(197,14%,90%,1.00);
-  --palette-neutral-cold-400: hsla(196,16%,85%,1.00);
-  --palette-neutral-cold-500: hsla(194,16%,79%,1.00);
-  --palette-neutral-cold-600: hsla(196,17%,74%,1.00);
-  --palette-neutral-cold-700: hsla(195,18%,67%,1.00);
-  --palette-neutral-cold-800: hsla(194,20%,55%,1.00);
-  --palette-neutral-cold-900: hsla(194,18%,53%,1.00);
-  --palette-neutral-cold-1000: hsla(195,16%,50%,1.00);
-  --palette-neutral-cold-1100: hsla(194,17%,45%,1.00);
-  --palette-neutral-cold-1200: hsla(194,17%,40%,1.00);
-  --palette-neutral-cold-1300: hsla(194,16%,35%,1.00);
-  --palette-neutral-cold-1400: hsla(195,16%,29%,1.00);
-  --palette-neutral-cold-1500: hsla(190,15%,8%,1.00);
-
-  --palette-blue-193-100: hsla(193,70%,94%,1.00);
-  --palette-blue-193-200: hsla(193,70%,90%,1.00);
-  --palette-blue-193-300: hsla(193,70%,85%,1.00);
-  --palette-blue-193-400: hsla(193,74%,80%,1.00);
-  --palette-blue-193-500: hsla(193,75%,75%,1.00);
-  --palette-blue-193-600: hsla(193,80%,70%,1.00);
-  --palette-blue-193-700: hsla(193,80%,55%,1.00);
-  --palette-blue-193-800: hsla(193,85%,45%,1.00);
-  --palette-blue-193-900: hsla(193,90%,40%,1.00);
-  --palette-blue-193-1000: hsla(193,95%,35%,1.00);
-  --palette-blue-193-1100: hsla(193,100%,29%,1.00);
-  --palette-blue-193-1200: hsla(193,100%,24%,1.00);
-  --palette-blue-193-1300: hsla(193,100%,18%,1.00);
-  --palette-blue-193-1400: hsla(193,100%,10%,1.00);
-  --palette-blue-193-1500: hsla(193,100%,6%,1.00);
-  --palette-blue-198-050: hsla(198,100%,96%,1.00);
-  --palette-blue-198-100: hsla(198,100%,93%,1.00);
-  --palette-blue-198-200: hsla(198,100%,91%,1.00);
-  --palette-blue-198-300: hsla(198,100%,82%,1.00);
-  --palette-blue-198-400: hsla(198,100%,74%,1.00);
-  --palette-blue-198-500: hsla(198,100%,65%,1.00);
-  --palette-blue-198-700: hsla(198,100%,44%,1.00);
-  --palette-blue-198-600: hsla(198,100%,54%,1.00);
-  --palette-blue-198-800: hsla(198,100%,34%,1.00);
-  --palette-blue-198-900: hsla(198,100%,32%,1.00);
-  --palette-blue-198-1000: hsla(198,100%,27%,1.00);
-  --palette-blue-198-1100: hsla(198,100%,23%,1.00);
-  --palette-blue-198-1200: hsla(198,100%,18%,1.00);
-  --palette-blue-198-1300: hsla(198,100%,14%,1.00);
-  --palette-blue-198-1400: hsla(198,100%,9%,1.00);
-  --palette-blue-198-1500: hsla(198,100%,5%,1.00);
-  --palette-yellow-100: hsla(52,100%,95%,1.00);
-  --palette-yellow-200: hsla(50,100%,92%,1.00);
-  --palette-yellow-300: hsla(52,100%,87%,1.00);
-  --palette-yellow-400: hsla(52,100%,80%,1.00);
-  --palette-yellow-500: hsla(52,100%,73%,1.00);
-  --palette-yellow-600: hsla(52,100%,67%,1.00);
-  --palette-yellow-700: hsla(52,100%,60%,1.00);
-  --palette-yellow-800: hsla(50,100%,55%,1.00);
-  --palette-yellow-900: hsla(52,100%,47%,1.00);
-  --palette-yellow-1000: hsla(52,100%,40%,1.00);
-  --palette-yellow-1100: hsla(52,100%,33%,1.00);
-  --palette-yellow-1200: hsla(52,100%,27%,1.00);
-  --palette-yellow-1300: hsla(52,100%,20%,1.00);
-  --palette-yellow-1400: hsla(52,100%,13%,1.00);
-  --palette-yellow-1500: hsla(52,100%,7%,1.00);
-  --palette-orange-050: hsla(30,90%,97%,1.00);
-  --palette-orange-100: hsla(30,90%,94%,1.00);
-  --palette-green-100: hsla(155,43%,95%,1.00);
-  --palette-green-200: hsla(154,42%,93%,1.00);
-  --palette-green-300: hsla(153,44%,85%,1.00);
-  --palette-green-400: hsla(153,43%,78%,1.00);
-  --palette-green-500: hsla(154,43%,71%,1.00);
-  --palette-green-600: hsla(153,43%,63%,1.00);
-  --palette-green-700: hsla(153,43%,56%,1.00);
-  --palette-green-800: hsla(153,43%,48%,1.00);
-  --palette-green-900: hsla(153,43%,42%,1.00);
-  --palette-green-1000: hsla(153,43%,36%,1.00);
-  --palette-green-1100: hsla(153,43%,30%,1.00);
-  --palette-green-1200: hsla(153,43%,24%,1.00);
-  --palette-green-1300: hsla(153,43%,18%,1.00);
-  --palette-green-1400: hsla(153,44%,12%,1.00);
-  --palette-green-1500: hsla(152,42%,6%,1.00);
-  --palette-red-100: hsla(0,83%,95%,1.00);
-  --palette-red-200: hsla(0,85%,90%,1.00);
-  --palette-red-300: hsla(0,87%,85%,1.00);
-  --palette-red-400: hsla(0,89%,75%,1.00);
-  --palette-red-500: hsla(0,91%,65%,1.00);
-  --palette-red-600: hsla(0,93%,60%,1.00);
-  --palette-red-700: hsla(0,95%,50%,1.00);
-  --palette-red-800: hsla(0,100%,45%,1.00);
-  --palette-red-900: hsla(0,100%,38%,1.00);
-  --palette-red-1000: hsla(0,100%,35%,1.00);
-  --palette-red-1100: hsla(0,100%,30%,1.00);
-  --palette-red-1200: hsla(0,100%,25%,1.00);
-  --palette-red-1300: hsla(0,100%,20%,1.00);
-  --palette-red-1400: hsla(0,100%,18%,1.00);
-  --palette-red-1500: hsla(0,100%,12%,1.00);
-  --palette-orange-200: hsla(30,85%,90%,1.00);
-  --palette-orange-300: hsla(30,100%,85%,1.00);
-  --palette-orange-400: hsla(30,85%,80%,1.00);
-  --palette-orange-500: hsla(30,85%,75%,1.00);
-  --palette-orange-600: hsla(30,85%,70%,1.00);
-  --palette-orange-700: hsla(30,85%,65%,1.00);
-  --palette-orange-800: hsla(36,100%,55%,1.00);
-  --palette-orange-900: hsla(30,85%,50%,1.00);
-  --palette-orange-1000: hsla(30,85%,45%,1.00);
-  --palette-orange-1100: hsla(30,85%,40%,1.00);
-  --palette-orange-1200: hsla(30,85%,35%,1.00);
-  --palette-orange-1300: hsla(30,85%,30%,1.00);
-  --palette-orange-1400: hsla(30,85%,25%,1.00);
-  --palette-orange-1500: hsla(26,73%,15%,1.00);
-  --palette-trend-pale-yellow: hsla(56,100%,87%,1.00);
-  --palette-trend-yellow: hsla(56,100%,78%,1.00);
-  --palette-trend-peach: hsla(25,73%,83%,1.00);
-  --palette-trend-orange: hsla(24,100%,69%,1.00);
-  --palette-trend-salmon: hsla(1,64%,66%,1.00);
-  --palette-trend-pink: hsla(339,72%,65%,1.00);
-  --palette-trend-rose: hsla(349,67%,75%,1.00);
-  --palette-trend-malve: hsla(327,22%,62%,1.00);
-  --palette-trend-light-plum: hsla(349,29%,62%,1.00);
-  --palette-trend-plum: hsla(335,18%,45%,1.00);
-  --palette-trend-sand: hsla(19,20%,69%,1.00);
-  --palette-trend-muddy-brown: hsla(40,59%,55%,1.00);
-  --palette-trend-brown: hsla(40,49%,47%,1.00);
-  --palette-trend-eggplant: hsla(227,21%,31%,1.00);
-  --palette-trend-purple: hsla(229,25%,57%,1.00);
-  --palette-trend-violet: hsla(271,99%,74%,1.00);
-  --palette-trend-teal: hsla(199,38%,43%,1.00);
-  --palette-trend-sky: hsla(191,100%,40%,1.00);
-  --palette-trend-turquiose: hsla(177,95%,75%,1.00);
-  --palette-trend-neon-green: hsla(122,91%,73%,1.00);
-  --palette-trend-leaf-green: hsla(98,45%,45%,1.00);
-  --palette-trend-olive-green: hsla(91,26%,47%,1.00);
-  --palette-trend-sea-green: hsla(165,34%,61%,1.00);
-  --palette-trend-jungle-green: hsla(165,29%,46%,1.00);
-  --palette-trend-grey: hsla(198,9%,51%,1.00);
-  --palette-trend-black: hsla(198,52%,5%,1.00);
-  --palette-beaware-main-blues-noticeme: hsla(199,71%,65%,1.00);
-  --palette-beaware-main-contrast-1: hsla(199,38%,92%,1.00);
-  --palette-beaware-main-contrast-2: hsla(199,38%,84%,1.00);
-  --palette-beaware-main-contrast-3: hsla(198,38%,72%,1.00);
-  --palette-beaware-main-contrast-4: hsla(198,22%,60%,1.00);
-  --palette-beaware-main-system-1: hsla(198,100%,14%,1.00);
-  --palette-beaware-main-system-2: hsla(199,100%,16%,1.00);
-  --palette-beaware-main-system-3: hsla(200,92%,19%,1.00);
-  --palette-beaware-main-system-ghost: hsla(198,100%,15%,1.00);
-  --palette-beaware-main-system-shadow: hsla(199,100%,7%,1.00);
-  --palette-beaware-main-alert-beaware-1: hsla(19,75%,48%,1.00);
-  --palette-beaware-main-alert-beaware-2: hsla(196,18%,21%,1.00);
-  --palette-beaware-main-alert-something-is-wrong-1: hsla(7,82%,35%,1.00);
-  --palette-beaware-main-alert-something-is-wrong-2: hsla(220,18%,17%,1.00);
-  --palette-beaware-main-alert-this-is-ready: hsla(153,43%,47%,1.00);
-  --palette-beaware-main-alert-pay-attention-1: hsla(52,100%,49%,1.00);
-  --palette-beaware-main-alert-pay-attention-2: hsla(130,21%,44%,1.00);
-  --palette-beaware-main-alert-system-error: hsla(192,8%,88%,1.00);
-  --palette-beaware-main-alert-system-error-background: hsla(198,44%,24%,1.00);
-  --palette-beaware-main-alert-signal-fault: hsla(197,14%,38%,1.00);
-  --palette-beaware-main-alert-signal-error: hsla(197,14%,29%,1.00);
-  --palette-beaware-main-blues-knowme-1: hsla(198,100%,30%,1.00);
-  --palette-beaware-main-blues-knowme-2: hsla(198,100%,35%,1.00);
-  --palette-beaware-main-blues-knowme-3: hsla(198,100%,40%,1.00);
-  --palette-beaware-main-blues-nevermindme-1: hsla(198,100%,22%,1.00);
-  --palette-beaware-main-blues-nevermindme-2: hsla(199,64%,31%,1.00);
-  --palette-beaware-main-blues-nevermindme-3: hsla(198,42%,40%,1.00);
-  --palette-beaware-main-backdrop-bright: hsla(199,50%,91%,1.00);
-  --palette-beaware-main-scale-main-orange-100: hsla(18,92%,95%,1.00);
-  --palette-beaware-main-scale-main-orange-200: hsla(18,88%,93%,1.00);
-  --palette-beaware-main-scale-main-orange-300: hsla(19,91%,87%,1.00);
-  --palette-beaware-main-scale-main-orange-400: hsla(18,90%,80%,1.00);
-  --palette-beaware-main-scale-main-orange-500: hsla(18,90%,73%,1.00);
-  --palette-beaware-main-scale-main-orange-600: hsla(18,89%,67%,1.00);
-  --palette-beaware-main-scale-main-orange-700: hsla(19,90%,60%,1.00);
-  --palette-beaware-main-scale-main-orange-800: hsla(19,90%,50%,1.00);
-  --palette-beaware-main-scale-main-orange-900: hsla(19,90%,47%,1.00);
-  --palette-beaware-main-scale-main-orange-1000: hsla(19,90%,40%,1.00);
-  --palette-beaware-main-scale-main-orange-1100: hsla(19,89%,33%,1.00);
-  --palette-beaware-main-scale-main-orange-1200: hsla(19,90%,27%,1.00);
-  --palette-beaware-main-scale-main-orange-1300: hsla(19,90%,20%,1.00);
-  --palette-beaware-main-scale-main-orange-1400: hsla(19,91%,13%,1.00);
-  --palette-beaware-main-scale-main-orange-1500: hsla(19,88%,7%,1.00);
-  --palette-beaware-main-backdrop-bright-lan: hsla(198,38%,72%,1.00);
-  --palette-beaware-main-backdrop-bright-lan-2: hsla(198,38%,72%,1.00);
-  --palette-beaware-main-backdrop-backdrop: hsla(198,100%,14%,1.00);
+  --palette-blue-193-100: hsla(193, 70%, 94%, 1);
+  --palette-blue-193-200: hsla(193, 70%, 90%, 1);
+  --palette-blue-193-300: hsla(193, 70%, 85%, 1);
+  --palette-blue-193-400: hsla(193, 74%, 80%, 1);
+  --palette-blue-193-500: hsla(193, 75%, 75%, 1);
+  --palette-blue-193-600: hsla(193, 80%, 70%, 1);
+  --palette-blue-193-700: hsla(193, 80%, 55%, 1);
+  --palette-blue-193-800: hsla(193, 85%, 45%, 1);
+  --palette-blue-193-900: hsla(193, 90%, 40%, 1);
+  --palette-blue-193-1000: hsla(193, 95%, 35%, 1);
+  --palette-blue-193-1100: hsla(193, 100%, 29%, 1);
+  --palette-blue-193-1200: hsla(193, 100%, 24%, 1);
+  --palette-blue-193-1300: hsla(193, 100%, 18%, 1);
+  --palette-blue-193-1400: hsla(193, 100%, 10%, 1);
+  --palette-blue-193-1500: hsla(193, 100%, 6%, 1);
+  --palette-blue-198-050: hsla(198, 100%, 96%, 1);
+  --palette-blue-198-100: hsla(198, 100%, 93%, 1);
+  --palette-blue-198-200: hsla(198, 100%, 91%, 1);
+  --palette-blue-198-300: hsla(198, 100%, 82%, 1);
+  --palette-blue-198-400: hsla(198, 100%, 74%, 1);
+  --palette-blue-198-500: hsla(198, 100%, 65%, 1);
+  --palette-blue-198-700: hsla(198, 100%, 44%, 1);
+  --palette-blue-198-600: hsla(198, 100%, 54%, 1);
+  --palette-blue-198-800: hsla(198, 100%, 34%, 1);
+  --palette-blue-198-900: hsla(198, 100%, 32%, 1);
+  --palette-blue-198-1000: hsla(198, 100%, 27%, 1);
+  --palette-blue-198-1100: hsla(198, 100%, 23%, 1);
+  --palette-blue-198-1200: hsla(198, 100%, 18%, 1);
+  --palette-blue-198-1300: hsla(198, 100%, 14%, 1);
+  --palette-blue-198-1400: hsla(198, 100%, 9%, 1);
+  --palette-blue-198-1500: hsla(198, 100%, 5%, 1);
+  --palette-yellow-100: hsla(52, 100%, 95%, 1);
+  --palette-yellow-200: hsla(50, 100%, 92%, 1);
+  --palette-yellow-300: hsla(52, 100%, 87%, 1);
+  --palette-yellow-400: hsla(52, 100%, 80%, 1);
+  --palette-yellow-500: hsla(52, 100%, 73%, 1);
+  --palette-yellow-600: hsla(52, 100%, 67%, 1);
+  --palette-yellow-700: hsla(52, 100%, 60%, 1);
+  --palette-yellow-800: hsla(50, 100%, 55%, 1);
+  --palette-yellow-900: hsla(52, 100%, 47%, 1);
+  --palette-yellow-1000: hsla(52, 100%, 40%, 1);
+  --palette-yellow-1100: hsla(52, 100%, 33%, 1);
+  --palette-yellow-1200: hsla(52, 100%, 27%, 1);
+  --palette-yellow-1300: hsla(52, 100%, 20%, 1);
+  --palette-yellow-1400: hsla(52, 100%, 13%, 1);
+  --palette-yellow-1500: hsla(52, 100%, 7%, 1);
+  --palette-orange-050: hsla(30, 90%, 97%, 1);
+  --palette-orange-100: hsla(30, 90%, 94%, 1);
+  --palette-green-100: hsla(155, 43%, 95%, 1);
+  --palette-green-200: hsla(154, 42%, 93%, 1);
+  --palette-green-300: hsla(153, 44%, 85%, 1);
+  --palette-green-400: hsla(153, 43%, 78%, 1);
+  --palette-green-500: hsla(154, 43%, 71%, 1);
+  --palette-green-600: hsla(153, 43%, 63%, 1);
+  --palette-green-700: hsla(153, 43%, 56%, 1);
+  --palette-green-800: hsla(153, 43%, 48%, 1);
+  --palette-green-900: hsla(153, 43%, 42%, 1);
+  --palette-green-1000: hsla(153, 43%, 36%, 1);
+  --palette-green-1100: hsla(153, 43%, 30%, 1);
+  --palette-green-1200: hsla(153, 43%, 24%, 1);
+  --palette-green-1300: hsla(153, 43%, 18%, 1);
+  --palette-green-1400: hsla(153, 44%, 12%, 1);
+  --palette-green-1500: hsla(152, 42%, 6%, 1);
+  --palette-red-100: hsla(0, 83%, 95%, 1);
+  --palette-red-200: hsla(0, 85%, 90%, 1);
+  --palette-red-300: hsla(0, 87%, 85%, 1);
+  --palette-red-400: hsla(0, 89%, 75%, 1);
+  --palette-red-500: hsla(0, 91%, 65%, 1);
+  --palette-red-600: hsla(0, 93%, 60%, 1);
+  --palette-red-700: hsla(0, 95%, 50%, 1);
+  --palette-red-800: hsla(0, 100%, 45%, 1);
+  --palette-red-900: hsla(0, 100%, 38%, 1);
+  --palette-red-1000: hsla(0, 100%, 35%, 1);
+  --palette-red-1100: hsla(0, 100%, 30%, 1);
+  --palette-red-1200: hsla(0, 100%, 25%, 1);
+  --palette-red-1300: hsla(0, 100%, 20%, 1);
+  --palette-red-1400: hsla(0, 100%, 18%, 1);
+  --palette-red-1500: hsla(0, 100%, 12%, 1);
+  --palette-orange-200: hsla(30, 85%, 90%, 1);
+  --palette-orange-300: hsla(30, 100%, 85%, 1);
+  --palette-orange-400: hsla(30, 85%, 80%, 1);
+  --palette-orange-500: hsla(30, 85%, 75%, 1);
+  --palette-orange-600: hsla(30, 85%, 70%, 1);
+  --palette-orange-700: hsla(30, 85%, 65%, 1);
+  --palette-orange-800: hsla(36, 100%, 55%, 1);
+  --palette-orange-900: hsla(30, 85%, 50%, 1);
+  --palette-orange-1000: hsla(30, 85%, 45%, 1);
+  --palette-orange-1100: hsla(30, 85%, 40%, 1);
+  --palette-orange-1200: hsla(30, 85%, 35%, 1);
+  --palette-orange-1300: hsla(30, 85%, 30%, 1);
+  --palette-orange-1400: hsla(30, 85%, 25%, 1);
+  --palette-orange-1500: hsla(26, 73%, 15%, 1);
+  --palette-trend-pale-yellow: hsla(56, 100%, 87%, 1);
+  --palette-trend-yellow: hsla(56, 100%, 78%, 1);
+  --palette-trend-peach: hsla(25, 73%, 83%, 1);
+  --palette-trend-orange: hsla(24, 100%, 69%, 1);
+  --palette-trend-salmon: hsla(1, 64%, 66%, 1);
+  --palette-trend-pink: hsla(339, 72%, 65%, 1);
+  --palette-trend-rose: hsla(349, 67%, 75%, 1);
+  --palette-trend-malve: hsla(327, 22%, 62%, 1);
+  --palette-trend-light-plum: hsla(349, 29%, 62%, 1);
+  --palette-trend-plum: hsla(335, 18%, 45%, 1);
+  --palette-trend-sand: hsla(19, 20%, 69%, 1);
+  --palette-trend-muddy-brown: hsla(40, 59%, 55%, 1);
+  --palette-trend-brown: hsla(40, 49%, 47%, 1);
+  --palette-trend-eggplant: hsla(227, 21%, 31%, 1);
+  --palette-trend-purple: hsla(229, 25%, 57%, 1);
+  --palette-trend-violet: hsla(271, 99%, 74%, 1);
+  --palette-trend-teal: hsla(199, 38%, 43%, 1);
+  --palette-trend-sky: hsla(191, 100%, 40%, 1);
+  --palette-trend-turquiose: hsla(177, 95%, 75%, 1);
+  --palette-trend-neon-green: hsla(122, 91%, 73%, 1);
+  --palette-trend-leaf-green: hsla(98, 45%, 45%, 1);
+  --palette-trend-olive-green: hsla(91, 26%, 47%, 1);
+  --palette-trend-sea-green: hsla(165, 34%, 61%, 1);
+  --palette-trend-jungle-green: hsla(165, 29%, 46%, 1);
+  --palette-trend-grey: hsla(198, 9%, 51%, 1);
+  --palette-trend-black: hsla(198, 52%, 5%, 1);
+  --palette-beaware-main-blues-noticeme: hsla(199, 71%, 65%, 1);
+  --palette-beaware-main-contrast-1: hsla(199, 38%, 92%, 1);
+  --palette-beaware-main-contrast-2: hsla(199, 38%, 84%, 1);
+  --palette-beaware-main-contrast-3: hsla(198, 38%, 72%, 1);
+  --palette-beaware-main-contrast-4: hsla(198, 22%, 60%, 1);
+  --palette-beaware-main-system-1: hsla(198, 100%, 14%, 1);
+  --palette-beaware-main-system-2: hsla(199, 100%, 16%, 1);
+  --palette-beaware-main-system-3: hsla(200, 92%, 19%, 1);
+  --palette-beaware-main-system-ghost: hsla(198, 100%, 15%, 1);
+  --palette-beaware-main-system-shadow: hsla(199, 100%, 7%, 1);
+  --palette-beaware-main-alert-beaware-1: hsla(19, 75%, 48%, 1);
+  --palette-beaware-main-alert-beaware-2: hsla(196, 18%, 21%, 1);
+  --palette-beaware-main-alert-something-is-wrong-1: hsla(7, 82%, 35%, 1);
+  --palette-beaware-main-alert-something-is-wrong-2: hsla(220, 18%, 17%, 1);
+  --palette-beaware-main-alert-this-is-ready: hsla(153, 43%, 47%, 1);
+  --palette-beaware-main-alert-pay-attention-1: hsla(52, 100%, 49%, 1);
+  --palette-beaware-main-alert-pay-attention-2: hsla(130, 21%, 44%, 1);
+  --palette-beaware-main-alert-system-error: hsla(192, 8%, 88%, 1);
+  --palette-beaware-main-alert-system-error-background: hsla(198, 44%, 24%, 1);
+  --palette-beaware-main-alert-signal-fault: hsla(197, 14%, 38%, 1);
+  --palette-beaware-main-alert-signal-error: hsla(197, 14%, 29%, 1);
+  --palette-beaware-main-blues-knowme-1: hsla(198, 100%, 30%, 1);
+  --palette-beaware-main-blues-knowme-2: hsla(198, 100%, 35%, 1);
+  --palette-beaware-main-blues-knowme-3: hsla(198, 100%, 40%, 1);
+  --palette-beaware-main-blues-nevermindme-1: hsla(198, 100%, 22%, 1);
+  --palette-beaware-main-blues-nevermindme-2: hsla(199, 64%, 31%, 1);
+  --palette-beaware-main-blues-nevermindme-3: hsla(198, 42%, 40%, 1);
+  --palette-beaware-main-backdrop-bright: hsla(199, 50%, 91%, 1);
+  --palette-beaware-main-scale-main-orange-100: hsla(18, 92%, 95%, 1);
+  --palette-beaware-main-scale-main-orange-200: hsla(18, 88%, 93%, 1);
+  --palette-beaware-main-scale-main-orange-300: hsla(19, 91%, 87%, 1);
+  --palette-beaware-main-scale-main-orange-400: hsla(18, 90%, 80%, 1);
+  --palette-beaware-main-scale-main-orange-500: hsla(18, 90%, 73%, 1);
+  --palette-beaware-main-scale-main-orange-600: hsla(18, 89%, 67%, 1);
+  --palette-beaware-main-scale-main-orange-700: hsla(19, 90%, 60%, 1);
+  --palette-beaware-main-scale-main-orange-800: hsla(19, 90%, 50%, 1);
+  --palette-beaware-main-scale-main-orange-900: hsla(19, 90%, 47%, 1);
+  --palette-beaware-main-scale-main-orange-1000: hsla(19, 90%, 40%, 1);
+  --palette-beaware-main-scale-main-orange-1100: hsla(19, 89%, 33%, 1);
+  --palette-beaware-main-scale-main-orange-1200: hsla(19, 90%, 27%, 1);
+  --palette-beaware-main-scale-main-orange-1300: hsla(19, 90%, 20%, 1);
+  --palette-beaware-main-scale-main-orange-1400: hsla(19, 91%, 13%, 1);
+  --palette-beaware-main-scale-main-orange-1500: hsla(19, 88%, 7%, 1);
+  --palette-beaware-main-backdrop-bright-lan: hsla(198, 38%, 72%, 1);
+  --palette-beaware-main-backdrop-bright-lan-2: hsla(198, 38%, 72%, 1);
+  --palette-beaware-main-backdrop-backdrop: hsla(198, 100%, 14%, 1);
   --typorgaphy-line-height: 150%;
   --typorgaphy-family-primary: lato;
   --typorgaphy-family-secondary: lato;
@@ -297,121 +295,121 @@
   --typorgaphy-weight-medium: 500;
   --typorgaphy-weight-semibold: 600;
   --typorgaphy-weight-bold: 700;
-  --palette-beaware-alt-blues-noticeme: hsla(173,65%,56%,1.00);
-  --palette-beaware-alt-blues-knowme-1: hsla(173,68%,62%,1.00);
-  --palette-beaware-alt-blues-knowme-2: hsla(172,65%,73%,1.00);
-  --palette-beaware-alt-blues-knowme-3: hsla(171,63%,79%,1.00);
-  --palette-beaware-alt-blues-nevermindme-1: hsla(173,42%,51%,1.00);
-  --palette-beaware-alt-blues-nevermindme-2: hsla(174,33%,57%,1.00);
-  --palette-beaware-alt-blues-nevermindme-3: hsla(173,41%,39%,1.00);
-  --palette-beaware-alt-blues-nevermindme-4: hsla(173,30%,20%,1.00);
-  --palette-beaware-alt-blues-nevermindme-5: hsla(174,20%,15%,1.00);
-  --palette-beaware-alt-contrast-1: hsla(199,38%,92%,1.00);
-  --palette-beaware-alt-contrast-2: hsla(199,38%,84%,1.00);
-  --palette-beaware-alt-contrast-3: hsla(198,38%,72%,1.00);
-  --palette-beaware-alt-contrast-4: hsla(198,22%,60%,1.00);
-  --palette-beaware-alt-system-1: hsla(0,0%,0%,1.00);
-  --palette-beaware-alt-system-2: hsla(195,18%,67%,1.00);
-  --palette-beaware-alt-system-3: hsla(194,16%,79%,1.00);
-  --palette-beaware-alt-system-ghost: hsla(195,16%,85%,1.00);
-  --palette-beaware-alt-system-shadow: hsla(197,14%,90%,1.00);
-  --palette-beaware-alt-alert-beaware-1: hsla(26,74%,48%,1.00);
-  --palette-beaware-alt-alert-beaware-2: hsla(26,73%,18%,1.00);
-  --palette-beaware-alt-alert-something-is-wrong-1: hsla(5,100%,32%,1.00);
-  --palette-beaware-alt-alert-something-is-wrong-2: hsla(5,100%,12%,1.00);
-  --palette-beaware-alt-alert-this-is-ready: hsla(94,82%,46%,1.00);
-  --palette-beaware-alt-alert-pay-attention-1: hsla(51,100%,47%,1.00);
-  --palette-beaware-alt-alert-pay-attention-2: hsla(52,100%,17%,1.00);
-  --palette-beaware-alt-alert-system-error: hsla(194,20%,55%,1.00);
-  --palette-beaware-alt-alert-system-error-background: hsla(190,15%,8%,1.00);
-  --palette-beaware-alt-alert-signal-fault: hsla(197,14%,38%,1.00);
-  --palette-beaware-alt-alert-signal-error: hsla(194,17%,26%,1.00);
-  --palette-beaware-alt-backdrop-bright: hsla(0,0%,100%,1.00);
-  --palette-beaware-alt-backdrop-bright-lan: hsla(195,90%,96%,1.00);
-  --palette-beaware-alt-backdrop-bright-lan-2: hsla(170,90%,96%,1.00);
-  --palette-beaware-alt-backdrop-backdrop: hsla(198,100%,14%,1.00);
-  --palette-scale-alt-red-100: hsla(5,80%,96%,1.00);
-  --palette-scale-alt-red-200: hsla(5,85%,90%,1.00);
-  --palette-scale-alt-red-300: hsla(5,87%,85%,1.00);
-  --palette-scale-alt-red-400: hsla(5,90%,80%,1.00);
-  --palette-scale-alt-red-500: hsla(5,90%,75%,1.00);
-  --palette-scale-alt-red-600: hsla(5,90%,65%,1.00);
-  --palette-scale-alt-red-700: hsla(5,90%,60%,1.00);
-  --palette-scale-alt-red-800: hsla(5,90%,52%,1.00);
-  --palette-scale-alt-red-900: hsla(5,90%,45%,1.00);
-  --palette-scale-alt-red-1000: hsla(5,90%,42%,1.00);
-  --palette-scale-alt-red-1100: hsla(5,90%,38%,1.00);
-  --palette-scale-alt-red-1200: hsla(5,90%,30%,1.00);
-  --palette-scale-alt-red-1300: hsla(5,90%,24%,1.00);
-  --palette-scale-alt-red-1400: hsla(5,90%,16%,1.00);
-  --palette-scale-alt-red-1500: hsla(5,90%,8%,1.00);
-  --palette-scale-alt-yellow-100: hsla(54,90%,96%,1.00);
-  --palette-scale-alt-yellow-200: hsla(54,85%,90%,1.00);
-  --palette-scale-alt-yellow-300: hsla(54,87%,85%,1.00);
-  --palette-scale-alt-yellow-400: hsla(54,90%,80%,1.00);
-  --palette-scale-alt-yellow-500: hsla(54,90%,75%,1.00);
-  --palette-scale-alt-yellow-600: hsla(54,90%,65%,1.00);
-  --palette-scale-alt-yellow-700: hsla(54,90%,60%,1.00);
-  --palette-scale-alt-yellow-800: hsla(54,90%,52%,1.00);
-  --palette-scale-alt-yellow-900: hsla(54,100%,45%,1.00);
-  --palette-scale-alt-yellow-1000: hsla(54,100%,42%,1.00);
-  --palette-scale-alt-yellow-1100: hsla(54,100%,38%,1.00);
-  --palette-scale-alt-yellow-1200: hsla(54,100%,30%,1.00);
-  --palette-scale-alt-yellow-1300: hsla(54,100%,24%,1.00);
-  --palette-scale-alt-yellow-1400: hsla(54,100%,16%,1.00);
-  --palette-scale-alt-yellow-1500: hsla(54,100%,8%,1.00);
-  --palette-scale-alt-green-100: hsla(94,50%,96%,1.00);
-  --palette-scale-alt-orange-050: hsla(36,90%,97%,1.00);
-  --palette-scale-alt-orange-100: hsla(36,85%,96%,1.00);
-  --palette-scale-alt-orange-200: hsla(36,85%,90%,1.00);
-  --palette-scale-alt-orange-300: hsla(36,85%,85%,1.00);
-  --palette-scale-alt-orange-400: hsla(36,85%,80%,1.00);
-  --palette-scale-alt-orange-500: hsla(36,85%,75%,1.00);
-  --palette-scale-alt-orange-600: hsla(36,85%,70%,1.00);
-  --palette-scale-alt-orange-700: hsla(36,90%,62%,1.00);
-  --palette-scale-alt-orange-800: hsla(36,100%,58%,1.00);
-  --palette-scale-alt-orange-900: hsla(36,85%,50%,1.00);
-  --palette-scale-alt-orange-1000: hsla(36,85%,45%,1.00);
-  --palette-scale-alt-orange-1100: hsla(36,85%,40%,1.00);
-  --palette-scale-alt-orange-1200: hsla(36,90%,35%,1.00);
-  --palette-scale-alt-orange-1300: hsla(36,90%,30%,1.00);
-  --palette-scale-alt-orange-1400: hsla(36,100%,18%,1.00);
-  --palette-scale-alt-orange-1500: hsla(36,100%,8%,1.00);
-  --palette-scale-alt-green-200: hsla(94,65%,90%,1.00);
-  --palette-scale-alt-green-300: hsla(94,65%,85%,1.00);
-  --palette-scale-alt-green-400: hsla(94,70%,80%,1.00);
-  --palette-scale-alt-green-500: hsla(94,75%,75%,1.00);
-  --palette-scale-alt-green-600: hsla(94,80%,70%,1.00);
-  --palette-scale-alt-green-700: hsla(94,80%,60%,1.00);
-  --palette-scale-alt-green-800: hsla(94,80%,45%,1.00);
-  --palette-scale-alt-green-900: hsla(94,80%,40%,1.00);
-  --palette-scale-alt-green-1000: hsla(94,80%,36%,1.00);
-  --palette-scale-alt-green-1100: hsla(94,80%,30%,1.00);
-  --palette-scale-alt-green-1200: hsla(94,80%,26%,1.00);
-  --palette-scale-alt-green-1300: hsla(94,80%,18%,1.00);
-  --palette-scale-alt-green-1400: hsla(94,80%,10%,1.00);
-  --palette-scale-alt-green-1500: hsla(94,80%,6%,1.00);
+  --palette-beaware-alt-blues-noticeme: hsla(173, 65%, 56%, 1);
+  --palette-beaware-alt-blues-knowme-1: hsla(173, 68%, 62%, 1);
+  --palette-beaware-alt-blues-knowme-2: hsla(172, 65%, 73%, 1);
+  --palette-beaware-alt-blues-knowme-3: hsla(171, 63%, 79%, 1);
+  --palette-beaware-alt-blues-nevermindme-1: hsla(173, 42%, 51%, 1);
+  --palette-beaware-alt-blues-nevermindme-2: hsla(174, 33%, 57%, 1);
+  --palette-beaware-alt-blues-nevermindme-3: hsla(173, 41%, 39%, 1);
+  --palette-beaware-alt-blues-nevermindme-4: hsla(173, 30%, 20%, 1);
+  --palette-beaware-alt-blues-nevermindme-5: hsla(174, 20%, 15%, 1);
+  --palette-beaware-alt-contrast-1: hsla(199, 38%, 92%, 1);
+  --palette-beaware-alt-contrast-2: hsla(199, 38%, 84%, 1);
+  --palette-beaware-alt-contrast-3: hsla(198, 38%, 72%, 1);
+  --palette-beaware-alt-contrast-4: hsla(198, 22%, 60%, 1);
+  --palette-beaware-alt-system-1: hsla(0, 0%, 0%, 1);
+  --palette-beaware-alt-system-2: hsla(195, 18%, 67%, 1);
+  --palette-beaware-alt-system-3: hsla(194, 16%, 79%, 1);
+  --palette-beaware-alt-system-ghost: hsla(195, 16%, 85%, 1);
+  --palette-beaware-alt-system-shadow: hsla(197, 14%, 90%, 1);
+  --palette-beaware-alt-alert-beaware-1: hsla(26, 74%, 48%, 1);
+  --palette-beaware-alt-alert-beaware-2: hsla(26, 73%, 18%, 1);
+  --palette-beaware-alt-alert-something-is-wrong-1: hsla(5, 100%, 32%, 1);
+  --palette-beaware-alt-alert-something-is-wrong-2: hsla(5, 100%, 12%, 1);
+  --palette-beaware-alt-alert-this-is-ready: hsla(94, 82%, 46%, 1);
+  --palette-beaware-alt-alert-pay-attention-1: hsla(51, 100%, 47%, 1);
+  --palette-beaware-alt-alert-pay-attention-2: hsla(52, 100%, 17%, 1);
+  --palette-beaware-alt-alert-system-error: hsla(194, 20%, 55%, 1);
+  --palette-beaware-alt-alert-system-error-background: hsla(190, 15%, 8%, 1);
+  --palette-beaware-alt-alert-signal-fault: hsla(197, 14%, 38%, 1);
+  --palette-beaware-alt-alert-signal-error: hsla(194, 17%, 26%, 1);
+  --palette-beaware-alt-backdrop-bright: hsla(0, 0%, 100%, 1);
+  --palette-beaware-alt-backdrop-bright-lan: hsla(195, 90%, 96%, 1);
+  --palette-beaware-alt-backdrop-bright-lan-2: hsla(170, 90%, 96%, 1);
+  --palette-beaware-alt-backdrop-backdrop: hsla(198, 100%, 14%, 1);
+  --palette-scale-alt-red-100: hsla(5, 80%, 96%, 1);
+  --palette-scale-alt-red-200: hsla(5, 85%, 90%, 1);
+  --palette-scale-alt-red-300: hsla(5, 87%, 85%, 1);
+  --palette-scale-alt-red-400: hsla(5, 90%, 80%, 1);
+  --palette-scale-alt-red-500: hsla(5, 90%, 75%, 1);
+  --palette-scale-alt-red-600: hsla(5, 90%, 65%, 1);
+  --palette-scale-alt-red-700: hsla(5, 90%, 60%, 1);
+  --palette-scale-alt-red-800: hsla(5, 90%, 52%, 1);
+  --palette-scale-alt-red-900: hsla(5, 90%, 45%, 1);
+  --palette-scale-alt-red-1000: hsla(5, 90%, 42%, 1);
+  --palette-scale-alt-red-1100: hsla(5, 90%, 38%, 1);
+  --palette-scale-alt-red-1200: hsla(5, 90%, 30%, 1);
+  --palette-scale-alt-red-1300: hsla(5, 90%, 24%, 1);
+  --palette-scale-alt-red-1400: hsla(5, 90%, 16%, 1);
+  --palette-scale-alt-red-1500: hsla(5, 90%, 8%, 1);
+  --palette-scale-alt-yellow-100: hsla(54, 90%, 96%, 1);
+  --palette-scale-alt-yellow-200: hsla(54, 85%, 90%, 1);
+  --palette-scale-alt-yellow-300: hsla(54, 87%, 85%, 1);
+  --palette-scale-alt-yellow-400: hsla(54, 90%, 80%, 1);
+  --palette-scale-alt-yellow-500: hsla(54, 90%, 75%, 1);
+  --palette-scale-alt-yellow-600: hsla(54, 90%, 65%, 1);
+  --palette-scale-alt-yellow-700: hsla(54, 90%, 60%, 1);
+  --palette-scale-alt-yellow-800: hsla(54, 90%, 52%, 1);
+  --palette-scale-alt-yellow-900: hsla(54, 100%, 45%, 1);
+  --palette-scale-alt-yellow-1000: hsla(54, 100%, 42%, 1);
+  --palette-scale-alt-yellow-1100: hsla(54, 100%, 38%, 1);
+  --palette-scale-alt-yellow-1200: hsla(54, 100%, 30%, 1);
+  --palette-scale-alt-yellow-1300: hsla(54, 100%, 24%, 1);
+  --palette-scale-alt-yellow-1400: hsla(54, 100%, 16%, 1);
+  --palette-scale-alt-yellow-1500: hsla(54, 100%, 8%, 1);
+  --palette-scale-alt-green-100: hsla(94, 50%, 96%, 1);
+  --palette-scale-alt-orange-050: hsla(36, 90%, 97%, 1);
+  --palette-scale-alt-orange-100: hsla(36, 85%, 96%, 1);
+  --palette-scale-alt-orange-200: hsla(36, 85%, 90%, 1);
+  --palette-scale-alt-orange-300: hsla(36, 85%, 85%, 1);
+  --palette-scale-alt-orange-400: hsla(36, 85%, 80%, 1);
+  --palette-scale-alt-orange-500: hsla(36, 85%, 75%, 1);
+  --palette-scale-alt-orange-600: hsla(36, 85%, 70%, 1);
+  --palette-scale-alt-orange-700: hsla(36, 90%, 62%, 1);
+  --palette-scale-alt-orange-800: hsla(36, 100%, 58%, 1);
+  --palette-scale-alt-orange-900: hsla(36, 85%, 50%, 1);
+  --palette-scale-alt-orange-1000: hsla(36, 85%, 45%, 1);
+  --palette-scale-alt-orange-1100: hsla(36, 85%, 40%, 1);
+  --palette-scale-alt-orange-1200: hsla(36, 90%, 35%, 1);
+  --palette-scale-alt-orange-1300: hsla(36, 90%, 30%, 1);
+  --palette-scale-alt-orange-1400: hsla(36, 100%, 18%, 1);
+  --palette-scale-alt-orange-1500: hsla(36, 100%, 8%, 1);
+  --palette-scale-alt-green-200: hsla(94, 65%, 90%, 1);
+  --palette-scale-alt-green-300: hsla(94, 65%, 85%, 1);
+  --palette-scale-alt-green-400: hsla(94, 70%, 80%, 1);
+  --palette-scale-alt-green-500: hsla(94, 75%, 75%, 1);
+  --palette-scale-alt-green-600: hsla(94, 80%, 70%, 1);
+  --palette-scale-alt-green-700: hsla(94, 80%, 60%, 1);
+  --palette-scale-alt-green-800: hsla(94, 80%, 45%, 1);
+  --palette-scale-alt-green-900: hsla(94, 80%, 40%, 1);
+  --palette-scale-alt-green-1000: hsla(94, 80%, 36%, 1);
+  --palette-scale-alt-green-1100: hsla(94, 80%, 30%, 1);
+  --palette-scale-alt-green-1200: hsla(94, 80%, 26%, 1);
+  --palette-scale-alt-green-1300: hsla(94, 80%, 18%, 1);
+  --palette-scale-alt-green-1400: hsla(94, 80%, 10%, 1);
+  --palette-scale-alt-green-1500: hsla(94, 80%, 6%, 1);
 
   /* colors for day theme */
-  --palette-blue-210-100: hsla(210,80%,96%,1.00);
-  --palette-blue-210-200: hsla(210,80%,90%,1.00);
-  --palette-blue-210-300: hsla(210,80%,80%,1.00);
-  --palette-blue-210-400: hsla(210,80%,70%,1.00);
-  --palette-blue-210-500: hsla(210,80%,50%,1.00);
-  --palette-blue-210-600: hsla(210,80%,40%,1.00);
-  --palette-blue-210-700: hsla(210,80%,30%,1.00);
-  --palette-blue-210-800: hsla(210,65%,20%,1.00);
-  --palette-blue-210-900: hsla(210,80%,8%,1.00);
-  --palette-neutral-new-050: hsla(0,0%,100%,1.00);
-  --palette-neutral-new-100: hsla(198,10%,96%,1.00);
-  --palette-neutral-new-200: hsla(198,10%,90%,1.00);
-  --palette-neutral-new-300: hsla(198,10%,80%,1.00);
-  --palette-neutral-new-400: hsla(198,10%,70%,1.00);
-  --palette-neutral-new-500: hsla(198,10%,60%,1.00);
-  --palette-neutral-new-600: hsla(198,10%,40%,1.00);
-  --palette-neutral-new-700: hsla(198,10%,30%,1.00);
-  --palette-neutral-new-800: hsla(198,10%,20%,1.00);
-  --palette-neutral-new-900: hsla(198,10%,10%,1.00);
+  --palette-blue-210-100: hsla(210, 80%, 96%, 1);
+  --palette-blue-210-200: hsla(210, 80%, 90%, 1);
+  --palette-blue-210-300: hsla(210, 80%, 80%, 1);
+  --palette-blue-210-400: hsla(210, 80%, 70%, 1);
+  --palette-blue-210-500: hsla(210, 80%, 50%, 1);
+  --palette-blue-210-600: hsla(210, 80%, 40%, 1);
+  --palette-blue-210-700: hsla(210, 80%, 30%, 1);
+  --palette-blue-210-800: hsla(210, 65%, 20%, 1);
+  --palette-blue-210-900: hsla(210, 80%, 8%, 1);
+  --palette-neutral-new-050: hsla(0, 0%, 100%, 1);
+  --palette-neutral-new-100: hsla(198, 10%, 96%, 1);
+  --palette-neutral-new-200: hsla(198, 10%, 90%, 1);
+  --palette-neutral-new-300: hsla(198, 10%, 80%, 1);
+  --palette-neutral-new-400: hsla(198, 10%, 70%, 1);
+  --palette-neutral-new-500: hsla(198, 10%, 60%, 1);
+  --palette-neutral-new-600: hsla(198, 10%, 40%, 1);
+  --palette-neutral-new-700: hsla(198, 10%, 30%, 1);
+  --palette-neutral-new-800: hsla(198, 10%, 20%, 1);
+  --palette-neutral-new-900: hsla(198, 10%, 10%, 1);
 }
 
 :root {
@@ -515,7 +513,9 @@
   --color-component-bar-border: var(--color-border-primary);
   --color-component-bar-indicator: var(--palette-alpha-blue-light-075);
   --color-component-bar-indicator-warning: var(--color-system-warning-default);
-  --color-component-bar-indicator-critical: var(--color-system-critical-default);
+  --color-component-bar-indicator-critical: var(
+    --color-system-critical-default
+  );
   --color-component-bar-corner: 0;
   --color-component-table-bg-head: var(--palette-alpha-blue-light-010);
   --color-component-table-bg-default: transparent;
@@ -530,7 +530,9 @@
   --color-component-input-foreground: var(--palette-neutral-100);
   --color-component-input-foreground-disabled: var(--color-foreground-disabled);
   --color-component-input-foreground-locked: var(--palette-blue-198-600);
-  --color-component-input-foreground-error: var(--color-system-critical-default);
+  --color-component-input-foreground-error: var(
+    --color-system-critical-default
+  );
   --color-component-input-background: var(--palette-neutral-100);
   --color-component-input-background-hover: var(--palette-blue-198-100);
   --color-component-input-background-disabled: transparent;
@@ -540,7 +542,9 @@
   --color-component-input-value-error: var(--color-system-critical-default);
   --color-component-input-value-locked: var(--palette-blue-198-600);
   --color-component-input-unit-background: var(--palette-neutral-200);
-  --color-component-input-unit-background-locked: var(--palette-alpha-blue-light-010);
+  --color-component-input-unit-background-locked: var(
+    --palette-alpha-blue-light-010
+  );
   --color-component-input-unit-background-hover: var(--palette-blue-198-200);
   --color-component-input-border: var(--palette-alpha-blue-020);
   --color-component-input-border-hover: var(--palette-alpha-blue-020);
@@ -549,22 +553,25 @@
   --color-component-input-border-locked: var(--palette-blue-198-600);
   --color-component-input-disabled: var(--palette-blue-198-1100);
   --color-high-contrast-accent: transparent;
-  --color-high-contrast-primary-border: hsla(0,0%,100%,0.00);
-
+  --color-high-contrast-primary-border: hsla(0, 0%, 100%, 0);
 
   --color-component-context-menu-foreground: var(--color-foreground-on-invert);
   --color-component-context-menu-background: var(--color-background-invert);
   --color-component-context-menu-border: var(--color-border-weak);
-  --color-component-context-menu-foreground-hover: var(--color-foreground-invert);
-  --color-component-context-menu-background-hover: var(--palette-alpha-blue-light-020);
+  --color-component-context-menu-foreground-hover: var(
+    --color-foreground-invert
+  );
+  --color-component-context-menu-background-hover: var(
+    --palette-alpha-blue-light-020
+  );
   --color-component-context-menu-border-hover: var(--color-foreground-accent);
-  --color-component-context-menu-foreground-disabled: var(--palette-neutral-300);
+  --color-component-context-menu-foreground-disabled: var(
+    --palette-neutral-300
+  );
   --color-component-context-menu-background-disabled: transparent;
 }
 
-
 body.light-theme {
-
   /* mode: light mode */
   --color-foreground-primary: var(--palette-blue-193-1500);
   --color-foreground-secondary: var(--palette-alpha-black-060);
@@ -596,7 +603,7 @@ body.light-theme {
   --color-background-accent: var(--color-foreground-accent);
   --color-background-canvas: var(--palette-neutral-cold-100);
   --color-background-landing: var(--palette-beaware-alt-backdrop-bright-lan-2);
-  --color-background-be-aware: hsla(173,65%,56%,1.00);
+  --color-background-be-aware: hsla(173, 65%, 56%, 1);
   --color-background-interactive-default: var(--palette-blue-193-600);
   --color-background-interactive-focus: var(--palette-alpha-blue-light-001);
   --color-background-interactive-hover: var(--palette-blue-193-800);
@@ -606,7 +613,9 @@ body.light-theme {
   --color-background-interactive-tertiary-default: transparent;
   --color-background-interactive-secondary-hover: var(--palette-blue-193-500);
   --color-background-interactive-secondary-active: var(--palette-blue-193-600);
-  --color-background-interactive-secondary-disabled: var(--palette-neutral-cold-300);
+  --color-background-interactive-secondary-disabled: var(
+    --palette-neutral-cold-300
+  );
   --color-instrument-running: var(--palette-trend-pink);
   --color-instrument-activated: var(--palette-blue-193-700);
   --color-instrument-deactivated: var(--palette-blue-193-400);
@@ -625,13 +634,19 @@ body.light-theme {
   --color-system-caution-default: var(--palette-scale-alt-yellow-800);
   --color-border-accent: var(--color-foreground-accent);
   --color-system-caution-on: var(--palette-neutral-cold-1500);
-  --color-border-interactive-default: var(--color-foreground-interactive-default);
+  --color-border-interactive-default: var(
+    --color-foreground-interactive-default
+  );
   --color-system-be-aware-default: var(--palette-beaware-alt-blues-noticeme);
   --color-system-be-aware-on: var(--palette-beaware-alt-blues-nevermindme-5);
-  --color-border-interactive-secondary-default: var(--color-foreground-interactive-secondary-default);
+  --color-border-interactive-secondary-default: var(
+    --color-foreground-interactive-secondary-default
+  );
   --color-system-be-aware-weak: var(--palette-beaware-alt-blues-knowme-3);
   --color-border-interactive-hover: var(--color-foreground-interactive-hover);
-  --color-system-be-aware-on-weak: var(--palette-beaware-alt-blues-nevermindme-4);
+  --color-system-be-aware-on-weak: var(
+    --palette-beaware-alt-blues-nevermindme-4
+  );
   --color-border-interactive-disabled: var(--palette-neutral-cold-300);
   --color-system-caution-weak: var(--palette-scale-alt-yellow-300);
   --color-system-caution-on-weak: var(--palette-neutral-cold-1500);
@@ -653,16 +668,18 @@ body.light-theme {
   --color-system-success-weak: var(--palette-scale-alt-green-500);
   --color-system-success-on-weak: var(--palette-neutral-cold-1500);
   --color-high-contrast-primary: transparent;
-  --color-component-toggle-button-background-default: hsla(0,0%,100%,1.00);
-  --color-component-toggle-button-background-active: hsla(0,0%,100%,1.00);
-  --color-component-toggle-button-foreground-default: hsla(0,0%,100%,1.00);
-  --color-component-toggle-button-foreground-active: hsla(0,0%,100%,1.00);
-  --color-component-toggle-button-border-default: hsla(0,0%,100%,1.00);
-  --color-component-toggle-button-border-active: hsla(0,0%,100%,1.00);
+  --color-component-toggle-button-background-default: hsla(0, 0%, 100%, 1);
+  --color-component-toggle-button-background-active: hsla(0, 0%, 100%, 1);
+  --color-component-toggle-button-foreground-default: hsla(0, 0%, 100%, 1);
+  --color-component-toggle-button-foreground-active: hsla(0, 0%, 100%, 1);
+  --color-component-toggle-button-border-default: hsla(0, 0%, 100%, 1);
+  --color-component-toggle-button-border-active: hsla(0, 0%, 100%, 1);
   --color-component-bar-border: var(--color-border-primary);
   --color-component-bar-indicator: var(--palette-blue-193-600);
   --color-component-bar-indicator-warning: var(--color-system-warning-default);
-  --color-component-bar-indicator-critical: var(--color-system-critical-default);
+  --color-component-bar-indicator-critical: var(
+    --color-system-critical-default
+  );
   --color-component-bar-corner: 4;
   --color-component-table-bg-head: var(--palette-neutral-300);
   --color-component-table-bg-default: transparent;
@@ -677,7 +694,9 @@ body.light-theme {
   --color-component-input-foreground: var(--palette-neutral-cold-1500);
   --color-component-input-foreground-disabled: var(--color-foreground-disabled);
   --color-component-input-foreground-locked: var(--palette-neutral-cold-1500);
-  --color-component-input-foreground-error: var(--color-system-critical-default);
+  --color-component-input-foreground-error: var(
+    --color-system-critical-default
+  );
   --color-component-input-background: var(--palette-neutral-050);
   --color-component-input-background-hover: var(--palette-neutral-cold-200);
   --color-component-input-background-disabled: transparent;
@@ -688,7 +707,9 @@ body.light-theme {
   --color-component-input-value-locked: var(--palette-neutral-cold-1500);
   --color-component-input-unit-background: var(--palette-neutral-cold-050);
   --color-component-input-unit-background-locked: transparent;
-  --color-component-input-unit-background-hover: var(--palette-neutral-cold-050);
+  --color-component-input-unit-background-hover: var(
+    --palette-neutral-cold-050
+  );
   --color-component-input-border: var(--palette-neutral-cold-1500);
   --color-component-input-border-hover: var(--palette-neutral-cold-600);
   --color-component-input-border-select: var(--palette-neutral-cold-600);
@@ -696,23 +717,17 @@ body.light-theme {
   --color-component-input-border-locked: var(--palette-neutral-cold-800);
   --color-component-input-disabled: var(--palette-neutral-cold-600);
   --color-high-contrast-accent: transparent;
-  --color-high-contrast-primary-border: hsla(0,0%,100%,0.00);
+  --color-high-contrast-primary-border: hsla(0, 0%, 100%, 0);
 
-
-  --color-component-context-menu-foreground: hsla(0,0%,13%,1.00);
-  --color-component-context-menu-background: hsla(193,70%,94%,1.00);
-  --color-component-context-menu-border: hsla(0,0%,13%,1.00);
-  --color-component-context-menu-foreground-hover: hsla(0,0%,13%,1.00);
-  --color-component-context-menu-background-hover: hsla(193,70%,94%,1.00);
-  --color-component-context-menu-border-hover: hsla(0,0%,13%,1.00);
-  --color-component-context-menu-foreground-disabled: hsla(0,0%,13%,1.00);
-  --color-component-context-menu-background-disabled: hsla(193,70%,94%,1.00);
-
- 
+  --color-component-context-menu-foreground: hsla(0, 0%, 13%, 1);
+  --color-component-context-menu-background: hsla(193, 70%, 94%, 1);
+  --color-component-context-menu-border: hsla(0, 0%, 13%, 1);
+  --color-component-context-menu-foreground-hover: hsla(0, 0%, 13%, 1);
+  --color-component-context-menu-background-hover: hsla(193, 70%, 94%, 1);
+  --color-component-context-menu-border-hover: hsla(0, 0%, 13%, 1);
+  --color-component-context-menu-foreground-disabled: hsla(0, 0%, 13%, 1);
+  --color-component-context-menu-background-disabled: hsla(193, 70%, 94%, 1);
 }
-
-
-
 
 body.day-theme {
   --color-foreground-primary: var(--palette-neutral-new-900);
@@ -728,40 +743,54 @@ body.day-theme {
   --color-foreground-interactive-hover: var(--palette-blue-210-700);
   --color-foreground-interactive-disabled: var(--palette-neutral-new-200);
   --color-background-primary: var(--palette-neutral-new-100);
-  --color-foreground-interactive-secondary-default: var(--palette-neutral-new-300);
+  --color-foreground-interactive-secondary-default: var(
+    --palette-neutral-new-300
+  );
   --color-background-neutral: var(--palette-neutral-new-300);
   --color-foreground-interactive-secondary-dn: var(--palette-neutral-new-900);
   --color-background-neutral-hover: var(--palette-neutral-new-400);
-  --color-foreground-interactive-secondary-hover: var(--palette-neutral-new-400);
+  --color-foreground-interactive-secondary-hover: var(
+    --palette-neutral-new-400
+  );
   --color-background-neutral-disabled: var(--palette-alpha-black-020);
   --color-foreground-on-accent: var(--palette-neutral-new-050);
   --color-foreground-on-muted: var(--palette-neutral-new-050);
   --color-background-secondary: var(--palette-neutral-new-200);
-  --color-foreground-interactive-tertiary-default: hsla(0,100%,54%,1.00);
+  --color-foreground-interactive-tertiary-default: hsla(0, 100%, 54%, 1);
   --color-background-tertiary: var(--palette-alpha-black-040);
   --color-background-invert: var(--palette-alpha-black-100);
-  --color-foreground-interactive-tertiary-on: hsla(0,100%,54%,1.00);
+  --color-foreground-interactive-tertiary-on: hsla(0, 100%, 54%, 1);
   --color-background-accent: var(--color-foreground-interactive-default);
-  --color-foreground-interactive-tertiary-hover: hsla(0,100%,54%,1.00);
+  --color-foreground-interactive-tertiary-hover: hsla(0, 100%, 54%, 1);
   --color-background-canvas: var(--palette-neutral-new-050);
-  --color-background-landing: hsla(170,90%,96%,1.00);
-  --color-background-be-aware: hsla(173,65%,56%,1.00);
-  --color-background-interactive-default: var(--color-foreground-interactive-default);
-  --color-background-interactive-focus: var(--color-foreground-interactive-default);
+  --color-background-landing: hsla(170, 90%, 96%, 1);
+  --color-background-be-aware: hsla(173, 65%, 56%, 1);
+  --color-background-interactive-default: var(
+    --color-foreground-interactive-default
+  );
+  --color-background-interactive-focus: var(
+    --color-foreground-interactive-default
+  );
   --color-background-interactive-hover: var(--palette-blue-210-600);
   --color-background-interactive-active: var(--palette-blue-210-700);
-  --color-background-interactive-disabled: hsla(0,0%,0%,1.00);
-  --color-background-interactive-secondary-default: var(--palette-alpha-black-000);
-  --color-background-interactive-tertiary-default: var(--palette-alpha-white-100);
-  --color-background-interactive-secondary-hover: var(--palette-alpha-black-020);
-  --color-background-interactive-secondary-active: hsla(0,0%,0%,1.00);
-  --color-background-interactive-secondary-disabled: hsla(0,0%,0%,1.00);
-  --color-instrument-running: hsla(320,91%,69%,1.00);
-  --color-instrument-activated: hsla(198,82%,59%,1.00);
-  --color-instrument-deactivated: hsla(198,100%,18%,1.00);
-  --color-instrument-ready: hsla(153,43%,56%,1.00);
-  --color-instrument-undefined: hsla(0,0%,47%,1.00);
-  --color-instrument-fault: hsla(7,82%,44%,1.00);
+  --color-background-interactive-disabled: hsla(0, 0%, 0%, 1);
+  --color-background-interactive-secondary-default: var(
+    --palette-alpha-black-000
+  );
+  --color-background-interactive-tertiary-default: var(
+    --palette-alpha-white-100
+  );
+  --color-background-interactive-secondary-hover: var(
+    --palette-alpha-black-020
+  );
+  --color-background-interactive-secondary-active: hsla(0, 0%, 0%, 1);
+  --color-background-interactive-secondary-disabled: hsla(0, 0%, 0%, 1);
+  --color-instrument-running: hsla(320, 91%, 69%, 1);
+  --color-instrument-activated: hsla(198, 82%, 59%, 1);
+  --color-instrument-deactivated: hsla(198, 100%, 18%, 1);
+  --color-instrument-ready: hsla(153, 43%, 56%, 1);
+  --color-instrument-undefined: hsla(0, 0%, 47%, 1);
+  --color-instrument-fault: hsla(7, 82%, 44%, 1);
   --color-system-info-default: var(--palette-blue-210-500);
   --color-system-info-on: var(--palette-neutral-050);
   --color-system-info-weak: var(--palette-blue-210-100);
@@ -807,7 +836,7 @@ body.day-theme {
 
 /*******  Menu list tokens  *******/
 
- body.dark-theme { 
+body.dark-theme {
   --c-menulist-foreground-primary: var(--palette-alpha-white-100);
   --c-menulist-foreground-secondary: var(--palette-alpha-white-070);
   --c-menulist-foreground-active: var(--color-foreground-on-accent);
@@ -818,7 +847,7 @@ body.day-theme {
 }
 
 body.light-theme {
-    --c-menulist-foreground: var(--input-text);
+  --c-menulist-foreground: var(--input-text);
   --c-menulist-foreground-secondary: var(--input-text);
   --c-menulist-background: var(--palette-blue-193-100);
   --c-menulist-background-hover: var(--palette-blue-193-100);
@@ -838,10 +867,6 @@ body.day-theme {
   --c-menulist-border: var(--palette-neutral-new-200);
 }
 
-
-
-
-
 /*******  Switch (toggle) tokens  *******/
 
 body.dark-theme {
@@ -855,7 +880,7 @@ body.dark-theme {
   --c-switch-track-hover: var(--palette-neutral-700);
   --c-switch-track-disabled: var(--palette-alpha-white-030);
   --c-switch-track-active: var(--color-foreground-interactive-default);
-  --c-switch-track-active-hover:  var(--color-foreground-interactive-hover);
+  --c-switch-track-active-hover: var(--color-foreground-interactive-hover);
   --c-switch-track-active-disabled: var(--palette-alpha-white-030);
 }
 
@@ -889,25 +914,22 @@ body.day-theme {
   --c-switch-track-active-disabled: var(--color-foreground-disabled);
 }
 
-
 /*******  Divider tokens  *******/
 
 body.dark-theme {
   --c-divider-primary: var(--color-foreground-interactive-default);
-  --c-divider-secondary:var(--color-foreground-interactive-secondary-default);
+  --c-divider-secondary: var(--color-foreground-interactive-secondary-default);
 }
 
 body.light-theme {
   --c-divider-primary: var(--palette-neutral-cold-300);
-  --c-divider-secondary:var(--palette-neutral-cold-200);
+  --c-divider-secondary: var(--palette-neutral-cold-200);
 }
 
 body.day-theme {
   --c-divider-primary: var(--palette-neutral-new-300);
-  --c-divider-secondary:var(--palette-neutral-new-200);
+  --c-divider-secondary: var(--palette-neutral-new-200);
 }
-
-
 
 /*******  Checkbox tokens  *******/
 
@@ -919,7 +941,9 @@ body.dark-theme {
   --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
   --c-checkbox-box-checked: var(--color-foreground-interactive-default);
   --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
-  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-box-checked-disabled: var(
+    --color-foreground-interactive-disabled
+  );
   --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
   --c-checkbox-check-checked: var(--palette-alpha-white-100);
 }
@@ -932,7 +956,9 @@ body.light-theme {
   --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
   --c-checkbox-box-checked: var(--color-foreground-interactive-default);
   --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
-  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-box-checked-disabled: var(
+    --color-foreground-interactive-disabled
+  );
   --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
   --c-checkbox-check-checked: var(--palette-alpha-white-100);
 }
@@ -945,7 +971,9 @@ body.day-theme {
   --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
   --c-checkbox-box-checked: var(--color-foreground-interactive-default);
   --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
-  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
+  --c-checkbox-box-checked-disabled: var(
+    --color-foreground-interactive-disabled
+  );
   --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
   --c-checkbox-check-checked: var(--palette-alpha-white-100);
 }
@@ -954,43 +982,76 @@ body.day-theme {
 
 body.dark-theme {
   --component-button-primary-foreground: var(--color-foreground-on-accent);
-  --component-button-primary-background: var(--color-background-interactive-default);
-  --component-button-primary-background-hover: var(--color-background-interactive-hover);
-  --component-button-primary-background-active: var(--color-background-interactive-active);  
-  --component-button-primary-background-disabled: var(--color-background-neutral-disabled);
+  --component-button-primary-background: var(
+    --color-background-interactive-default
+  );
+  --component-button-primary-background-hover: var(
+    --color-background-interactive-hover
+  );
+  --component-button-primary-background-active: var(
+    --color-background-interactive-active
+  );
+  --component-button-primary-background-disabled: var(
+    --color-background-neutral-disabled
+  );
   --component-button-primary-border: var(--component-button-primary-background);
-  --component-button-primary-border-hover: var(--component-button-primary-background-hover);
+  --component-button-primary-border-hover: var(
+    --component-button-primary-background-hover
+  );
   --component-button-secondary-foreground: var(--color-foreground-on-accent);
-  --component-button-secondary-background: var(--color-background-interactive-secondary-default);
-  --component-button-secondary-background-hover: var(--color-background-interactive-secondary-hover);
+  --component-button-secondary-background: var(
+    --color-background-interactive-secondary-default
+  );
+  --component-button-secondary-background-hover: var(
+    --color-background-interactive-secondary-hover
+  );
   --component-button-secondary-border: transparent;
   --component-button-tertiary-foreground: var(--color-foreground-primary);
   --component-button-tertiary-foreground-hover: var(--color-foreground-accent);
-  --component-button-tertiary-foreground-disabled: var(--color-foreground-disabled);
+  --component-button-tertiary-foreground-disabled: var(
+    --color-foreground-disabled
+  );
   --component-button-tertiary-background: transparent;
   --component-button-tertiary-background-hover: transparent;
   --component-button-tertiary-background-focus: transparent;
   --component-button-tertiary-background-disabled: transparent;
   --component-button-tertiary-border: transparent;
   --component-button-tertiary-border-hover: transparent;
-
 }
 
 body.light-theme {
   --component-button-primary-foreground: var(--color-foreground-on-accent);
-  --component-button-primary-background: var(--color-background-interactive-default);
-  --component-button-primary-background-hover: var(--color-background-interactive-active);
-   --component-button-primary-background-active: var(--color-background-interactive-active);
-  --component-button-primary-background-disabled: var(--color-background-neutral-disabled);
-  --component-button-primary-border: var(--component-button-secondary-background);
-  --component-button-primary-border-hover: var(--component-button-secondary-background-hover);
+  --component-button-primary-background: var(
+    --color-background-interactive-default
+  );
+  --component-button-primary-background-hover: var(
+    --color-background-interactive-active
+  );
+  --component-button-primary-background-active: var(
+    --color-background-interactive-active
+  );
+  --component-button-primary-background-disabled: var(
+    --color-background-neutral-disabled
+  );
+  --component-button-primary-border: var(
+    --component-button-secondary-background
+  );
+  --component-button-primary-border-hover: var(
+    --component-button-secondary-background-hover
+  );
   --component-button-secondary-foreground: var(--color-foreground-on-accent);
-  --component-button-secondary-background: var(--color-background-interactive-secondary-default);
-  --component-button-secondary-background-hover: var(--color-background-interactive-secondary-hover);
+  --component-button-secondary-background: var(
+    --color-background-interactive-secondary-default
+  );
+  --component-button-secondary-background-hover: var(
+    --color-background-interactive-secondary-hover
+  );
   --component-button-secondary-border: transparent;
   --component-button-tertiary-foreground: var(--color-foreground-primary);
   --component-button-tertiary-foreground-hover: var(--color-foreground-primary);
-  --component-button-tertiary-foreground-disabled: var(--color-foreground-primary);
+  --component-button-tertiary-foreground-disabled: var(
+    --color-foreground-primary
+  );
   --component-button-tertiary-background: transparent;
   --component-button-tertiary-background-hover: var(--palette-alpha-black-005);
   --component-button-tertiary-background-focus: transparent;
@@ -1001,10 +1062,18 @@ body.light-theme {
 
 body.day-theme {
   --component-button-primary-foreground: var(--color-foreground-on-accent);
-  --component-button-primary-background: var(--color-background-interactive-default);
-  --component-button-primary-background-hover: var(--color-background-interactive-hover);
-  --component-button-primary-background-active: var(--color-background-interactive-active);
-  --component-button-primary-background-disabled: var(--color-background-neutral-disabled);
+  --component-button-primary-background: var(
+    --color-background-interactive-default
+  );
+  --component-button-primary-background-hover: var(
+    --color-background-interactive-hover
+  );
+  --component-button-primary-background-active: var(
+    --color-background-interactive-active
+  );
+  --component-button-primary-background-disabled: var(
+    --color-background-neutral-disabled
+  );
   --component-button-primary-border: transparent;
   --component-button-primary-border-hover: transparent;
   --component-button-secondary-foreground: var(--color-foreground-primary);
@@ -1012,8 +1081,12 @@ body.day-theme {
   --component-button-secondary-background-hover: var(--palette-neutral-new-100);
   --component-button-secondary-border: var(--palette-neutral-new-300);
   --component-button-tertiary-foreground: var(--color-foreground-primary);
-  --component-button-tertiary-foreground-hover: var(--component-button-tertiary-foreground);
-  --component-button-tertiary-foreground-disabled: var(--color-foreground-disabled);
+  --component-button-tertiary-foreground-hover: var(
+    --component-button-tertiary-foreground
+  );
+  --component-button-tertiary-foreground-disabled: var(
+    --color-foreground-disabled
+  );
   --component-button-tertiary-background: transparent;
   --component-button-tertiary-background-hover: var(--palette-alpha-black-002);
   --component-button-tertiary-background-focus: transparent;
@@ -1029,11 +1102,15 @@ body.dark-theme {
   --component-checkbox-label-hover: var(--color-foreground-primary);
   --component-checkbox-label-disabled: var(--color-foreground-disabled);
   --component-checkbox-box-unchecked: var(--color-foreground-primary);
-  --component-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --component-checkbox-box-unchecked-hover: var(
+    --color-foreground-interactive-default
+  );
   --component-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
   --component-checkbox-box-checked: var(--color-foreground-interactive-default);
   --component-checkbox-box-checked: var(--color-foreground-interactive-default);
-  --component-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-checked-hover: var(
+    --color-foreground-interactive-hover
+  );
   --component-checkbox-box-checked-disabled: var(--color-foreground-disabled);
   --component-checkbox-checkmark: var(--palette-alpha-white-100);
   --component-checkbox-checkmark-hover: var(--palette-alpha-white-100);
@@ -1045,10 +1122,14 @@ body.light-theme {
   --component-checkbox-label-hover: var(--color-foreground-primary);
   --component-checkbox-label-disabled: var(--color-foreground-disabled);
   --component-checkbox-box-unchecked: var(--color-foreground-primary);
-  --component-checkbox-box-unchecked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-unchecked-hover: var(
+    --color-foreground-interactive-hover
+  );
   --component-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
   --component-checkbox-box-checked: var(--color-foreground-interactive-default);
-  --component-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-checked-hover: var(
+    --color-foreground-interactive-hover
+  );
   --component-checkbox-box-checked-disabled: var(--color-foreground-disabled);
   --component-checkbox-checkmark: var(--palette-alpha-white-100);
   --component-checkbox-checkmark-hover: var(--palette-alpha-white-100);
@@ -1060,10 +1141,14 @@ body.day-theme {
   --component-checkbox-label-hover: var(--color-foreground-primary);
   --component-checkbox-label-disabled: var(--color-foreground-disabled);
   --component-checkbox-box-unchecked: var(--color-foreground-primary);
-  --component-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
+  --component-checkbox-box-unchecked-hover: var(
+    --color-foreground-interactive-default
+  );
   --component-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
   --component-checkbox-box-checked: var(--color-foreground-interactive-default);
-  --component-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
+  --component-checkbox-box-checked-hover: var(
+    --color-foreground-interactive-hover
+  );
   --component-checkbox-box-checked-disabled: var(--color-foreground-disabled);
   --component-checkbox-checkmark: var(--palette-alpha-white-100);
   --component-checkbox-checkmark-hover: var(--palette-alpha-white-100);
@@ -1079,18 +1164,15 @@ body.dark-theme {
 
 body.light-theme {
   --component-sidepanel-background: var(--color-background-canvas);
-    --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
-
-
+  --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
 }
 
 body.day-theme {
   --component-sidepanel-background: var(--color-background-canvas);
   --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
-  }
+}
 
-
-  /*******  Menulist panel tokens  *******/
+/*******  Menulist panel tokens  *******/
 
 body.dark-theme {
   --component-menulist-background: var(--color-background-canvas);
@@ -1122,18 +1204,15 @@ body.day-theme {
   --component-menulist-button-radius: 2px;
 }
 
-
-
-  /*******  Input tokens  *******/
+/*******  Input tokens  *******/
 
 body.dark-theme {
-
   --component-input-label: var(--color-foreground-secondary);
   --component-input-label-disabled: var(--color-foreground-disabled);
   --component-input-value: var(--palette-neutral-1400);
   --component-input-value-readonly: var(--color-foreground-primary);
   --component-input-value-disabled: var(--color-foreground-disabled);
-  --component-input-value-error: var(--component-input-value);  
+  --component-input-value-error: var(--component-input-value);
   --component-input-icon: var(--palette-neutral-1400);
   --component-input-icon-readonly: var(--color-foreground-primary);
   --component-input-icon-disabled: var(--component-input-value-disabled);
@@ -1155,7 +1234,7 @@ body.dark-theme {
   --component-input-background-unit: var(--palette-alpha-black-005);
   --component-input-background-readonly: var(--palette-alpha-white-000);
   --component-input-background-disabled: var(--palette-alpha-white-000);
-  --component-input-radius: var(--radius-input);  
+  --component-input-radius: var(--radius-input);
 }
 
 body.light-theme {
@@ -1219,25 +1298,25 @@ body.day-theme {
   --component-input-radius: var(--radius-input);
 }
 
-
-
-
-  /*******  tag tokens  *******/
+/*******  Tag tokens  *******/
 
 body.dark-theme {
   --component-tag-border: transparent;
-  --component-tag-foreground: var(--color-foreground-primary);
+  --component-tag-foreground: var(--palette-neutral-1500);
   --component-tag-foreground-accent: var(--color-foreground-on-accent);
   --component-tag-foreground-critical: var(--color-system-critical-on);
-  --component-tag-foreground-critical-weak: var(--color-system-critical-on-weak);
-  --component-tag-foreground-warning: var(--color-system-warning-on);
-  --component-tag-foreground-warning-weak: var(--color-system-caution-on-weak);
+  --component-tag-foreground-critical-weak: var(
+    --color-system-critical-on-weak
+  );
+  --component-tag-foreground-alert: var(--color-system-caution-on);
+  --component-tag-foreground-alert-weak: var(--color-system-caution-on-weak);
   --component-tag-foreground-warning: var(--color-system-caution-on);
   --component-tag-foreground-warning-weak: var(--color-system-warning-on-weak);
   --component-tag-foreground-success: var(--color-system-success-on);
   --component-tag-foreground-success-weak: var(--color-system-success-on-weak);
   --component-tag-foreground-info: var(--color-system-info-on);
   --component-tag-foreground-info-weak: var(--color-system-info-on-weak);
+
   --component-tag-background: var(--palette-neutral-new-200);
   --component-tag-background-accent: var(--color-background-accent);
   --component-tag-background-critical: var(--color-system-critical-default);
@@ -1245,7 +1324,7 @@ body.dark-theme {
   --component-tag-background-warning: var(--color-system-warning-default);
   --component-tag-background-warning-weak: var(--color-system-warning-weak);
   --component-tag-background-alert: var(--color-system-caution-default);
-  --component-tag-background-alert-weak: var(--color-system-caution-weak);  
+  --component-tag-background-alert-weak: var(--color-system-caution-weak);
   --component-tag-background-success: var(--color-system-success-default);
   --component-tag-background-success-weak: var(--color-system-success-weak);
   --component-tag-background-info: var(--color-system-info-default);
@@ -1257,7 +1336,9 @@ body.light-theme {
   --component-tag-foreground: var(--color-foreground-primary);
   --component-tag-foreground-accent: var(--color-foreground-on-accent);
   --component-tag-foreground-critical: var(--color-system-critical-on);
-  --component-tag-foreground-critical-weak: var(--color-system-critical-on-weak);
+  --component-tag-foreground-critical-weak: var(
+    --color-system-critical-on-weak
+  );
   --component-tag-foreground-warning: var(--color-system-warning-on);
   --component-tag-foreground-warning-weak: var(--color-system-caution-on-weak);
   --component-tag-foreground-warning: var(--color-system-caution-on);
@@ -1273,7 +1354,7 @@ body.light-theme {
   --component-tag-background-warning: var(--color-system-warning-default);
   --component-tag-background-warning-weak: var(--color-system-warning-weak);
   --component-tag-background-alert: var(--color-system-caution-default);
-  --component-tag-background-alert-weak: var(--color-system-caution-weak);  
+  --component-tag-background-alert-weak: var(--color-system-caution-weak);
   --component-tag-background-success: var(--color-system-success-default);
   --component-tag-background-success-weak: var(--color-system-success-weak);
   --component-tag-background-info: var(--color-system-info-default);
@@ -1285,7 +1366,9 @@ body.day-theme {
   --component-tag-foreground: var(--color-foreground-primary);
   --component-tag-foreground-accent: var(--color-foreground-on-accent);
   --component-tag-foreground-critical: var(--color-system-critical-on);
-  --component-tag-foreground-critical-weak: var(--color-system-critical-on-weak);
+  --component-tag-foreground-critical-weak: var(
+    --color-system-critical-on-weak
+  );
   --component-tag-foreground-warning: var(--color-system-warning-on);
   --component-tag-foreground-warning-weak: var(--color-system-caution-on-weak);
   --component-tag-foreground-warning: var(--color-system-caution-on);
@@ -1301,7 +1384,7 @@ body.day-theme {
   --component-tag-background-warning: var(--color-system-warning-default);
   --component-tag-background-warning-weak: var(--color-system-warning-weak);
   --component-tag-background-alert: var(--color-system-caution-default);
-  --component-tag-background-alert-weak: var(--color-system-caution-weak);  
+  --component-tag-background-alert-weak: var(--color-system-caution-weak);
   --component-tag-background-success: var(--color-system-success-default);
   --component-tag-background-success-weak: var(--color-system-success-weak);
   --component-tag-background-info: var(--color-system-info-default);
