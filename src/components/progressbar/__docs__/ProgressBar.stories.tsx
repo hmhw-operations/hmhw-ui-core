@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Example from "./Example";
-import React from "react";
 
 const meta: Meta<typeof Example> = {
   title: "Progress Bar",
-  component: Example,
+  component: Example
 };
 
 export default meta;
@@ -15,8 +14,8 @@ export const Default: Story = {
     size: "medium",
     progress: 61,
     description: undefined,
-    label: undefined,
-  },
+    label: undefined
+  }
 };
 
 export const WithLabels: Story = {
@@ -24,6 +23,6 @@ export const WithLabels: Story = {
     size: "medium",
     progress: 61,
     description: "Completed: 61%",
-    label: "Completed: 61%",
-  },
+    label: "Completed: 61%"
+  }
 };

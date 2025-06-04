@@ -19,31 +19,15 @@ export type SegmentedButtonProps = {
   disabled?: boolean;
 };
 
-const SegmentedButton: React.FC<SegmentedButtonProps> = ({
-  name,
-  items,
-  value,
-  onChange,
-  disabled,
-}) => {
-  const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) =>
-    onChange(e.currentTarget.value);
+const SegmentedButton: React.FC<SegmentedButtonProps> = ({ name, items, value, onChange, disabled }) => {
+  const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.currentTarget.value);
 
   return (
     <fieldset className={style.segmented_group} disabled={disabled}>
       {items.map((i) => (
         <label key={i.label} className={style.segmented_item}>
           label={i.label}
-          <input
-            type="radio"
-            key={i.value}
-            name={name}
-            value={i.value}
-            id={name + i.value}
-            checked={value === i.value}
-            onChange={handleSelect}
-            disabled={i.disabled}
-          />
+          <input type="radio" key={i.value} name={name} value={i.value} id={name + i.value} checked={value === i.value} onChange={handleSelect} disabled={i.disabled} />
         </label>
       ))}
     </fieldset>

@@ -10,9 +10,7 @@ const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0 }) => {
     setActiveTab(index);
   };
 
-  const tabs = React.Children.toArray(children).filter(
-    (child): child is React.ReactElement<TabItemProps> => React.isValidElement(child) && child.type === TabItem,
-  );
+  const tabs = React.Children.toArray(children).filter((child): child is React.ReactElement<TabItemProps> => React.isValidElement(child) && child.type === TabItem);
 
   return (
     <div className={styles.tabs}>

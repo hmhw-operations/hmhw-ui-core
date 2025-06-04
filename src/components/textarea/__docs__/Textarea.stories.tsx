@@ -3,7 +3,7 @@ import Example from "./Example";
 
 const meta: Meta<typeof Example> = {
   title: "Textarea",
-  component: Example,
+  component: Example
 };
 
 export default meta;
@@ -12,6 +12,6 @@ type Story = StoryObj<typeof Example>;
 export const Default: Story = {
   args: {
     error: false,
-    disabled: false,
-  },
+    disabled: false
+  }
 };

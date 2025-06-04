@@ -14,29 +14,10 @@ export type RadioButtonProps = BaseComponentProps & {
   checked?: boolean;
 };
 
-const RadioButton: React.FC<RadioButtonProps> = ({
-  label,
-  onChange,
-  id,
-  title,
-  disabled,
-  value,
-  checked,
-  ...props
-}) => {
+const RadioButton: React.FC<RadioButtonProps> = ({ label, onChange, id, title, disabled, value, checked, ...props }) => {
   return (
     <div className={`${style.input_item} ${style.radio}`}>
-      <input
-        className={`${style.radio}`}
-        type="radio"
-        id={id}
-        title={title}
-        value={value}
-        checked={checked}
-        onChange={(e) => onChange(e)}
-        disabled={disabled}
-        {...props}
-      />
+      <input className={`${style.radio}`} type="radio" id={id} title={title} value={value} checked={checked} onChange={(e) => onChange(e)} disabled={disabled} {...props} />
       {label && <label htmlFor={id}>{label}</label>}
     </div>
   );

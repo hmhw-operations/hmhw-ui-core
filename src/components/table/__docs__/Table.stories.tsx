@@ -15,7 +15,7 @@ interface StoryData {
 
 const meta: Meta<typeof Table<StoryData>> = {
   title: "Table",
-  component: Table,
+  component: Table
 };
 
 export default meta;
@@ -30,7 +30,7 @@ const data: StoryData[] = [
     submittedDate: "2023-10-01",
     status: "Completed",
     result: "Success",
-    duration: "5m",
+    duration: "5m"
   },
   {
     queueId: "2",
@@ -39,8 +39,8 @@ const data: StoryData[] = [
     submittedDate: "2023-10-02",
     status: "Failed",
     result: "Error",
-    duration: "3m",
-  },
+    duration: "3m"
+  }
   // Add more data as needed
 ];
 
@@ -50,31 +50,31 @@ const columnHelper = createColumnHelper<StoryData>();
 const columns = [
   columnHelper.accessor("queueId", {
     header: "Queue ID",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("scriptName", {
     header: "Script Name",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("submittedBy", {
     header: "Submitted By",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("submittedDate", {
     header: "Submitted Date",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("status", {
     header: "Status",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("result", {
     header: "Result",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("duration", {
     header: "Duration",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   // Add a new display column for the context menu
   columnHelper.display({
@@ -93,13 +93,13 @@ const columns = [
           console.log("Context menu clicked for row:", info.row.original);
         }}
       />
-    ),
-  }),
+    )
+  })
 ];
 
 export const Default: Story = {
   args: {
     data,
-    columns, // Pass columns to the Table component
-  },
+    columns // Pass columns to the Table component
+  }
 };

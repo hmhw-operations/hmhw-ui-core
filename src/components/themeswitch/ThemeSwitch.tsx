@@ -23,7 +23,7 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
   onChange,
   disabled = false,
   id,
-  name,
+  name
   // size = "small",
   // labelPosition = "right",
 }) => {
@@ -35,16 +35,7 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
     onChange(!isChecked);
   };
   return (
-    <button
-      className={`${style.themeswitch}`}
-      type="button"
-      name={name}
-      aria-label={name}
-      aria-checked={isChecked}
-      id={sanitizedId}
-      onClick={handleChange}
-      disabled={disabled}
-    >
+    <button className={`${style.themeswitch}`} type="button" name={name} aria-label={name} aria-checked={isChecked} id={sanitizedId} onClick={handleChange} disabled={disabled}>
       <svg className="day" viewBox="0 0 42 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           fill="currentColor"
@@ -52,10 +43,7 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
           clipRule="evenodd"
           d="M32 1H10a9 9 0 0 0 0 18h22a9 9 0 1 0 0-18zM10 0C4.477 0 0 4.477 0 10s4.477 10 10 10h22c5.523 0 10-4.477 10-10S37.523 0 32 0H10z"
         />
-        <path
-          fill="currentColor"
-          d="M13.25 5.23A5.002 5.002 0 0 0 6.75 10a5.002 5.002 0 0 0 6.5 4.77A4.996 4.996 0 0 1 9.75 10c0-2.24 1.47-4.135 3.5-4.77z"
-        />
+        <path fill="currentColor" d="M13.25 5.23A5.002 5.002 0 0 0 6.75 10a5.002 5.002 0 0 0 6.5 4.77A4.996 4.996 0 0 1 9.75 10c0-2.24 1.47-4.135 3.5-4.77z" />
         <path
           fill="currentColor"
           fillRule="evenodd"

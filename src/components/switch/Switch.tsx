@@ -18,16 +18,7 @@ export type SwitchProps = {
   labelPosition?: LabelPosition;
 };
 
-const Switch: React.FC<SwitchProps> = ({
-  label,
-  checked,
-  onChange,
-  disabled = false,
-  id,
-  name,
-  size = "small",
-  labelPosition = "right",
-}) => {
+const Switch: React.FC<SwitchProps> = ({ label, checked, onChange, disabled = false, id, name, size = "small", labelPosition = "right" }) => {
   const [isChecked, setIsChecked] = useState(checked);
   const sanitizedId = sanitizeForId(id);
 

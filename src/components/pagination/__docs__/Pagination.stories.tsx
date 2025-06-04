@@ -4,7 +4,7 @@ import { withCodeSnippet } from "../../../../.storybook/decorators/withCodeSnipp
 
 const meta: Meta<typeof Example> = {
   title: "Pagination",
-  component: Example,
+  component: Example
 };
 
 export default meta;
@@ -30,7 +30,7 @@ export const Default: Story = {
     currentPage: 1,
     skipMode: true,
     size: "medium",
-    showMaxCount: true,
+    showMaxCount: true
   },
   decorators: [
     withCodeSnippet(codeDisplay, {
@@ -38,7 +38,7 @@ export const Default: Story = {
         across multiple pages.
         <br />
         This example is controlled by the code below.`,
-      hideInDocs: false,
-    }),
-  ],
+      hideInDocs: false
+    })
+  ]
 };

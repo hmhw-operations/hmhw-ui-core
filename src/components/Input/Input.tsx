@@ -27,13 +27,7 @@ export type InputProps = BaseComponentProps & {
   size?: Size;
 };
 
-const Input: FC<
-  InputProps &
-    React.DetailedHTMLProps<
-      React.InputHTMLAttributes<HTMLInputElement>,
-      HTMLInputElement
-    >
-> = ({
+const Input: FC<InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>> = ({
   placeholder,
   unit,
   onChange,
@@ -75,9 +69,7 @@ const Input: FC<
   };
 
   return (
-    <div
-      className={`${style.input} ${labelPosition === "left" && style.horizontal} ${hasError && style.error} ${style[size]}`}
-    >
+    <div className={`${style.input} ${labelPosition === "left" && style.horizontal} ${hasError && style.error} ${style[size]}`}>
       {label && (
         <label className={`${style.label}`} htmlFor={sanitizeForId(id)}>
           {label}
@@ -85,23 +77,12 @@ const Input: FC<
       )}
       <div className={`${style.wrapper}`}>
         <div className={`${style.field}`}>
-          <input
-            type={type}
-            name={name}
-            id={sanitizeForId(id)}
-            placeholder={placeholder}
-            value={currentValue}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            disabled={disabled}
-          />
+          <input type={type} name={name} id={sanitizeForId(id)} placeholder={placeholder} value={currentValue} onChange={handleChange} onBlur={handleBlur} disabled={disabled} />
           {hasError && <Icon name="info" />}
           {unit && <div className={`${style.unit}`}>{unit}</div>}
         </div>
         {helperText && <p className={`${style.description}`}>{helperText}</p>}
-        {error?.message && (
-          <p className={`${style["errormessage"]}`}>{error.message}</p>
-        )}
+        {error?.message && <p className={`${style["errormessage"]}`}>{error.message}</p>}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import RadioGroup, { RadioGroupItem } from "../RadioGroup";
 const radioGroupItems: RadioGroupItem[] = [
   { value: "Al pastor", label: "Al Pastor" },
   { value: "Birria", label: "Birria" },
-  { value: "Carne Asada", label: "Carne Asada" },
+  { value: "Carne Asada", label: "Carne Asada" }
 ];
 
 const Example: React.FC<{ disabled: boolean }> = ({ disabled, horizontal }) => {

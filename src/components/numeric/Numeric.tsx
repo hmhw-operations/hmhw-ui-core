@@ -30,13 +30,7 @@ export type NumericProps = {
   };
 };
 
-const Numeric: FC<
-  NumericProps &
-    React.DetailedHTMLProps<
-      React.InputHTMLAttributes<HTMLInputElement>,
-      HTMLInputElement
-    >
-> = ({
+const Numeric: FC<NumericProps & React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>> = ({
   placeholder,
   unit,
   onChange,
@@ -89,9 +83,7 @@ const Numeric: FC<
   };
 
   return (
-    <div
-      className={`${style.input} ${labelPosition === "left" && style.horizontal} ${hasError && style.error}`}
-    >
+    <div className={`${style.input} ${labelPosition === "left" && style.horizontal} ${hasError && style.error}`}>
       {label && (
         <label className={`${style.label}`} htmlFor={sanitizeForId(id)}>
           {label}
@@ -118,9 +110,7 @@ const Numeric: FC<
           {unit && <div className={`${style.unit}`}>{unit}</div>}
         </div>
         {helperText && <p className={`${style.helpertext}`}>{helperText}</p>}
-        {error?.message && (
-          <p className={`${style["errormessage"]}`}>{error.message}</p>
-        )}
+        {error?.message && <p className={`${style["errormessage"]}`}>{error.message}</p>}
       </div>
     </div>
   );

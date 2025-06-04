@@ -15,7 +15,7 @@ enum PageCangeType {
   next,
   previous,
   last,
-  first,
+  first
 }
 
 export default function Pagination({ totalPages, onPageChange, currentPage, skipMode, size = "medium", showMaxCount = false }: PaginationProps) {
@@ -30,7 +30,7 @@ export default function Pagination({ totalPages, onPageChange, currentPage, skip
       [PageCangeType.first]: currentPage <= 1,
       [PageCangeType.last]: currentPage >= totalPages,
       [PageCangeType.next]: currentPage >= totalPages,
-      [PageCangeType.previous]: currentPage <= 1,
+      [PageCangeType.previous]: currentPage <= 1
     };
 
     return conditions[changeType];

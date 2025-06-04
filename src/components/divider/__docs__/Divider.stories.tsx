@@ -6,32 +6,32 @@ export const Horizontal: StoryObj<typeof HorizontalExample> = {
   args: {
     orientation: "horizontal",
     weight: "thick",
-    type: "primary",
+    type: "primary"
   },
-  render: (args) => <HorizontalExample {...args} />,
+  render: (args) => <HorizontalExample {...args} />
 };
 
 export const Vertical: StoryObj<typeof VerticalExample> = {
   args: {
     orientation: "vertical",
     weight: "thick",
-    type: "primary",
+    type: "primary"
   },
-  render: (args) => <VerticalExample {...args} />,
+  render: (args) => <VerticalExample {...args} />
 };
 
 export const Default: StoryObj<typeof Example> = {
   args: {
     orientation: "horizontal",
     weight: "thick",
-    type: "primary",
+    type: "primary"
   },
-  render: (args) => <Example {...args} />,
+  render: (args) => <Example {...args} />
 };
 
 const meta: Meta = {
   title: "Divider",
-  component: Example,
+  component: Example
 };
 
 export default meta;

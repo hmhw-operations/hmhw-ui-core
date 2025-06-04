@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Textarea, { TextareaProps } from "../Textarea";
+import Textarea from "../Textarea";
 
 const Example: FC<{ error: boolean; disabled: boolean }> = ({ error, disabled }) => {
   const [value, setValue] = React.useState("");
@@ -13,7 +13,7 @@ const Example: FC<{ error: boolean; disabled: boolean }> = ({ error, disabled })
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100%",
+        height: "100%"
       }}
     >
       <Textarea
@@ -22,8 +22,16 @@ const Example: FC<{ error: boolean; disabled: boolean }> = ({ error, disabled })
         label="I am the label"
         onChange={handleChange}
         value={value}
-        error={error ? { message: "Oh dear, something is terribly wrong", hasError: true } : undefined}
+        error={
+          error
+            ? {
+                message: "Oh dear, something is terribly wrong",
+                hasError: true
+              }
+            : undefined
+        }
         disabled={disabled}
+        title={""}
       />
     </div>
   );

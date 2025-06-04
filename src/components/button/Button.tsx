@@ -7,11 +7,7 @@ import "../../styles/variables.css";
 import { BaseComponentProps, Size } from "../../types";
 import style from "./button.module.css";
 
-export type ButtonVariant =
-  | "primary"
-  | "secondary"
-  | "tertiary"
-  | "destructive";
+export type ButtonVariant = "primary" | "secondary" | "tertiary" | "destructive";
 
 export type ButtonProps = BaseComponentProps & {
   text: string;
@@ -23,24 +19,9 @@ export type ButtonProps = BaseComponentProps & {
   disabled?: boolean;
 };
 
-const Button: React.FC<ButtonProps> = ({
-  size = "medium",
-  variant = "primary",
-  text,
-  onClick,
-  iconPosition = "leading",
-  icon,
-  disabled,
-  ...props
-}) => {
+const Button: React.FC<ButtonProps> = ({ size = "medium", variant = "primary", text, onClick, iconPosition = "leading", icon, disabled, ...props }) => {
   return (
-    <button
-      className={`${style.button} ${style[variant]} ${style[size]} ${style[iconPosition]}`}
-      type="button"
-      onClick={onClick}
-      disabled={disabled}
-      {...props}
-    >
+    <button className={`${style.button} ${style[variant]} ${style[size]} ${style[iconPosition]}`} type="button" onClick={onClick} disabled={disabled} {...props}>
       {icon && icon} {text}
     </button>
   );

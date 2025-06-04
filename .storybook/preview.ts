@@ -9,20 +9,20 @@ const preview: Preview = {
         light: "light-theme",
         dark: "dark-theme",
         contrast: "contrast-theme",
-        day: "day-theme",
+        day: "day-theme"
       },
-      defaultTheme: "dark",
-    }),
+      defaultTheme: "dark"
+    })
   ],
 
   parameters: {
     backgrounds: {
-      disable: true,
+      disable: true
     },
     options: {
       //Sort alphabetically
-      storySort: (a, b) => (a.id === b.id ? 0 : a.id.localeCompare(b.id, undefined, { numeric: true })),
-    },
+      storySort: (a, b) => (a.id === b.id ? 0 : a.id.localeCompare(b.id, undefined, { numeric: true }))
+    }
     // backgrounds: {
     //   default: "Dark ocean",
     //   values: [
@@ -44,7 +44,7 @@ const preview: Preview = {
     // },
   },
 
-  tags: ["autodocs"],
+  tags: ["autodocs"]
 };
 
 export default preview;

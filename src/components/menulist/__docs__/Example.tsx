@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MenuList from "../MenuList";
-import { Icon } from "../../icon";
 
 // Add props for Storybook controls
 const Example = ({ selectedKey: controlledSelectedKey, onSelectedKeyChange }) => {
@@ -23,7 +22,7 @@ const Example = ({ selectedKey: controlledSelectedKey, onSelectedKeyChange }) =>
           Code
         </MenuList.Item>
         <MenuList.SubList name="logs" label="Logs" icon="search">
-          <MenuList.Item  name="logs-all" onClick={() => setSelectedKey("logs-all")}>
+          <MenuList.Item name="logs-all" onClick={() => setSelectedKey("logs-all")}>
             All Logs
           </MenuList.Item>
           <MenuList.Item name="logs-errors" onClick={() => setSelectedKey("logs-errors")}>
