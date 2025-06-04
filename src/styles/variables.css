@@ -410,6 +410,8 @@
   --palette-neutral-new-700: hsla(198, 10%, 30%, 1);
   --palette-neutral-new-800: hsla(198, 10%, 20%, 1);
   --palette-neutral-new-900: hsla(198, 10%, 10%, 1);
+
+  --color-transparent: transparent;
 }
 
 :root {
@@ -1389,4 +1391,63 @@ body.day-theme {
   --component-tag-background-success-weak: var(--color-system-success-weak);
   --component-tag-background-info: var(--color-system-info-default);
   --component-tag-background-info-weak: var(--color-system-info-weak);
+}
+
+/*******  Table tokens  *******/
+
+body.dark-theme {
+  --component-table-foreground: var(--color-foreground-primary);
+  --component-table-background: var(--color-transparent);
+  --component-table-background-alt: var(--palette-alpha-white-005);
+  --component-table-background-hover: var(--palette-alpha-white-010);
+  --component-table-background-active: var(--palette-alpha-blue-light-005);
+  --component-table-border: var(--palette-alpha-white-020);
+
+  --component-table-header-foreground: var(--color-foreground-accent);
+  --component-table-header-background: var(--color-transparent);
+  --component-table-header-border: var(--color-foreground-accent);
+
+  --component-table-footer-foreground: var(--color-foreground-primary);
+  --component-table-footer-background: var(--color-transparent);
+  --component-table-footer-border: var(--color-foreground-primary);
+
+  --component-table-caption-foreground: var(--color-foreground-accent);
+}
+
+body.light-theme {
+  --component-table-foreground: var(--color-foreground-primary);
+  --component-table-background: var(--color-transparent);
+  --component-table-background-alt: var(--palette-alpha-black-002);
+  --component-table-background-hover: var(--palette-alpha-black-005);
+  --component-table-background-active: var(--palette-alpha-blue-light-005);
+  --component-table-border: var(--palette-alpha-black-020);
+
+  --component-table-header-foreground: var(--color-foreground-accent);
+  --component-table-header-background: var(--color-transparent);
+  --component-table-header-border: var(--color-foreground-accent);
+
+  --component-table-footer-foreground: var(--color-foreground-primary);
+  --component-table-footer-background: var(--color-transparent);
+  --component-table-footer-border: var(--color-foreground-primary);
+
+  --component-table-caption-foreground: var(--color-foreground-accent);
+}
+
+body.day-theme {
+  --component-table-foreground: var(--color-foreground-primary);
+  --component-table-background: var(--color-transparent);
+  --component-table-background-alt: var(--palette-alpha-black-002);
+  --component-table-background-hover: var(--palette-alpha-black-002);
+  --component-table-background-active: var(--palette-alpha-blue-light-005);
+  --component-table-border: var(--palette-alpha-black-020);
+
+  --component-table-header-foreground: var(--color-foreground-primary);
+  --component-table-header-background: var(--color-transparent);
+  --component-table-header-border: var(--color-foreground-primary);
+
+  --component-table-footer-foreground: var(--color-foreground-primary);
+  --component-table-footer-background: var(--color-transparent);
+  --component-table-footer-border: var(--color-foreground-primary);
+
+  --component-table-caption-foreground: var(--color-foreground-primary);
 }

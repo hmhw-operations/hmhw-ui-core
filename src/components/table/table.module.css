@@ -1,54 +1,72 @@
 .table {
-  --small: var(--size-400);
-  --medium: var(--size-500);
-  --large: var(--size-600);
-  --padding: var(--size-200);
-}
-
-.table {
   width: 100%;
-  color: var(--color-foreground-primary);
   border-collapse: collapse;
-
-  tr {
-    height: var(--medium);
-  }
-
-  &.large {
-    tr {
-      height: var(--large);
-    }
-  }
-
-  &.small {
-    tr {
-      height: var(--small);
-    }
-  }
+  text-align: left;
+  font-size: var(--type-300);
 
   th {
-    font-size: var(--type-200);
+    font-weight: 600;
     text-transform: uppercase;
-    color: var(--color-component-table-header-text);
-    background-color: var(--color-component-table-bg-head);
-    padding-inline: var(--padding);
-    text-align: left;
-    border-block: 1px solid var(--color-component-table-border-cell);
+    color: var(--component-table-header-foreground);
   }
 
-  td {
-    border-bottom: 1px solid var(--color-component-table-border-cell);
-    background-color: var(--color-component-table-bg-default);
-    padding-inline: var(--padding);
-    font-size: var(--type-300);
-    height: var(--size-medium);
+  thead th {
+    background-color: var(--component-table-header-background);
+    border-bottom: 1px solid var(--component-table-header-border);
+  }
+
+  td,
+  th {
+    height: var(--height-medium);
+    padding: 0 var(--size-300) 0 var(--size-050);
+    color: var(--component-table-foreground);
+    border-bottom: 1px solid var(--component-table-border);
+    background-color: var(--component-table-background);
+
+    &.num {
+      text-align: right;
+    }
+  }
+
+  tr {
+    height: var(--height-medium);
   }
 
   tr.alt:nth-child(even) td {
-    background-color: var(--color-component-table-bg-alt);
+    background-color: var(--component-table-background-alt);
   }
 
-  tr.selected td {
-    background-color: var(--color-component-table-bg-selected);
+  tr.active td {
+    background-color: var(--component-table-background-active);
+  }
+
+  tr:hover td {
+    background-color: var(--component-table-background-hover);
+  }
+}
+
+.table {
+  &.small {
+    font-size: var(--type-200);
+
+    tr,
+    th,
+    td {
+      height: var(--height-small);
+    }
+  }
+  &.large {
+    th,
+    td {
+      height: var(--height-large);
+    }
+  }
+
+  &.x-large {
+    font-size: var(--type-350);
+    th,
+    td {
+      height: var(--height-x-large);
+    }
   }
 }
