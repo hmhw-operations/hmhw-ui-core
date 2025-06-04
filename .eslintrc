@@ -42,5 +42,10 @@
         "printWidth": 180
       }
     ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect the React version
+    }
   }
 }
