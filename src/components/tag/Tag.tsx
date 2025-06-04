@@ -13,9 +13,8 @@ export type TagProps = {
   type: TagType;
 };
 
-const Tag: React.FC<TagProps> = ({ text, size, type }) => {
+const Tag: React.FC<TagProps> = ({ text, size = "medium", type }) => {
   return <div className={`${style.tag} ${style[type]} ${style[size]}`}>{text}</div>;
 };
 
 export default Tag;
-
