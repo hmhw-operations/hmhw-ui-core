@@ -18,7 +18,7 @@
   td,
   th {
     height: var(--height-medium);
-    padding-inline: var(--size-100);
+    padding: 0 var(--size-300) 0 var(--size-050);
     color: var(--component-table-foreground);
     border-bottom: 1px solid var(--component-table-border);
     background-color: var(--component-table-background);
@@ -26,6 +26,10 @@
     &.num {
       text-align: right;
     }
+  }
+
+  tr {
+    height: var(--height-medium);
   }
 
   tr.alt:nth-child(even) td {
@@ -45,6 +49,7 @@
   &.small {
     font-size: var(--type-200);
 
+    tr,
     th,
     td {
       height: var(--height-small);
