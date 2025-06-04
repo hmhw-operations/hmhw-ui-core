@@ -14,16 +14,11 @@ const MenuList: React.FC<MenuListProps> & {
   Header: typeof MenuListHeader;
   SubList: typeof MenuListSubList;
 } = ({ children, className, selectedKey }) => (
-  <ul
-    className={className ? `${styles.menuList} ${className}` : styles.menuList}
-  >
+  <ul className={className ? `${styles.menuList} ${className}` : styles.menuList}>
     {React.Children.map(children, (child) => {
-      if (
-        React.isValidElement(child) &&
-        (child.type === MenuListItem || child.type === MenuListHeader || child.type === MenuListSubList)
-      ) {
-        return React.cloneElement(child as React.ReactElement<any>, {
-          selectedKey,
+      if (React.isValidElement(child) && (child.type === MenuListItem || child.type === MenuListHeader || child.type === MenuListSubList)) {
+        return React.cloneElement(child as React.ReactElement<MenuListItemProps | MenuListHeaderProps | MenuListSubListProps>, {
+          selectedKey
         });
       }
       return child;
@@ -39,24 +34,14 @@ export type MenuListItemProps = {
   selectedKey?: string;
 };
 
-const MenuListItem: React.FC<MenuListItemProps> = ({
-  icon,
-  children,
-  onClick,
-  name,
-  selectedKey,
-}) => {
+const MenuListItem: React.FC<MenuListItemProps> = ({ icon, children, onClick, name, selectedKey }) => {
   const isSelected = name !== undefined && selectedKey === name;
   return (
     <li className={styles.menuListItem}>
       <button
         type="button"
         onClick={onClick}
-        className={
-          isSelected
-            ? `${styles.menuListButton} ${styles.menuListButtonSelected}`
-            : styles.menuListButton
-        }
+        className={isSelected ? `${styles.menuListButton} ${styles.menuListButtonSelected}` : styles.menuListButton}
         aria-current={isSelected ? "page" : undefined}
         tabIndex={0}
       >
@@ -88,25 +73,16 @@ export type MenuListSubListProps = {
   defaultOpen?: boolean;
 };
 
-const MenuListSubList: React.FC<MenuListSubListProps> = ({
-  label,
-  icon,
-  children,
-  name,
-  selectedKey,
-  defaultOpen = false,
-}) => {
+const MenuListSubList: React.FC<MenuListSubListProps> = ({ label, icon, children, name, selectedKey, defaultOpen = false }) => {
   const [open, setOpen] = React.useState(defaultOpen);
   // Expand if any child is selected or if this sublist is selected
   React.useEffect(() => {
     if (
       (selectedKey &&
         React.Children.toArray(children).some((child) => {
-          return (
-            React.isValidElement(child) &&
-            (child.props as any).name === selectedKey
-          );
-        })) || (name && selectedKey === name)
+          return React.isValidElement<{ name?: string }>(child) && child.props.name === selectedKey;
+        })) ||
+      (name && selectedKey === name)
     ) {
       setOpen(true);
     }
@@ -118,11 +94,7 @@ const MenuListSubList: React.FC<MenuListSubListProps> = ({
     <li className={styles.menuListItem}>
       <button
         type="button"
-        className={
-          isSelected
-            ? `${styles.menuListButton} ${styles.menuListButtonSelected}`
-            : styles.menuListButton
-        }
+        className={isSelected ? `${styles.menuListButton} ${styles.menuListButtonSelected}` : styles.menuListButton}
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
         style={{ justifyContent: "space-between" }}
@@ -131,21 +103,14 @@ const MenuListSubList: React.FC<MenuListSubListProps> = ({
           {icon && <Icon name={icon} size="small" />}
           <span className={styles.menuListLabel}>{label}</span>
         </span>
-        {open ? (
-          <Icon name="caret-down" size="small" />
-        ) : (
-          <Icon name="caret-right" size="small" />
-        )}
+        {open ? <Icon name="caret-down" size="small" /> : <Icon name="caret-right" size="small" />}
       </button>
       {open && (
         <ul className={styles.menuListSubList}>
           {React.Children.map(children, (child) => {
-            if (
-              React.isValidElement(child) &&
-              (child.type === MenuListItem || child.type === MenuListSubList)
-            ) {
-              return React.cloneElement(child as React.ReactElement<any>, {
-                selectedKey,
+            if (React.isValidElement(child) && (child.type === MenuListItem || child.type === MenuListSubList)) {
+              return React.cloneElement(child as React.ReactElement<MenuListItemProps | MenuListSubListProps>, {
+                selectedKey
               });
             }
             return child;

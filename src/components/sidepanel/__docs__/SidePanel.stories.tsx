@@ -4,7 +4,7 @@ import SidePanel from "../SidePanel";
 
 const meta: Meta<typeof SidePanel> = {
   title: "SidePanel",
-  component: SidePanel,
+  component: SidePanel
 };
 
 export default meta;
@@ -21,22 +21,19 @@ export const Default: Story = {
       {
         label: "Action 1",
         buttonVariant: "primary",
-        onClick: () => console.log("Action 1 clicked"),
+        onClick: () => console.log("Action 1 clicked")
       },
       {
         label: "Action 2",
         buttonVariant: "secondary",
-        onClick: () => console.log("Action 2 clicked"),
-      },
+        onClick: () => console.log("Action 2 clicked")
+      }
     ],
     children: (
       <div>
         <p>This is the content of the side panel.</p>
-        <p>
-          You can add any content here, such as forms, lists, or other
-          components.
-        </p>
+        <p>You can add any content here, such as forms, lists, or other components.</p>
       </div>
-    ),
-  },
+    )
+  }
 };

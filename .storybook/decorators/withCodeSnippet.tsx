@@ -1,9 +1,5 @@
-import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import {
-  vscDarkPlus,
-  vs,
-} from "react-syntax-highlighter/dist/esm/styles/prism";
+import { vs, vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 type CodeDisplayOptions = {
   hideInDocs?: boolean;
@@ -25,7 +21,7 @@ export const withCodeSnippet =
           backgroundColor: "var(--color-surface-canvas)",
           display: "flex",
           flexDirection: "column",
-          gap: "var(--size-200)",
+          gap: "var(--size-200)"
         }}
       >
         <Story />
@@ -34,13 +30,13 @@ export const withCodeSnippet =
             padding: "var(--size-200)",
             display: "flex",
             flexDirection: "column",
-            gap: "var(--size-100)",
+            gap: "var(--size-100)"
           }}
         >
           {message && (
             <p
               style={{
-                color: "var(--color-primary)",
+                color: "var(--color-primary)"
               }}
               dangerouslySetInnerHTML={{ __html: message }}
             ></p>

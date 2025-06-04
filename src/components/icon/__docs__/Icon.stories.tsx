@@ -7,9 +7,9 @@ const meta: Meta<typeof Example> = {
   argTypes: {
     size: {
       options: ["small", "medium", "large"],
-      control: { type: "radio" },
-    },
-  },
+      control: { type: "radio" }
+    }
+  }
 };
 
 export default meta;
@@ -18,6 +18,6 @@ type Story = StoryObj<typeof Example>;
 export const Icon: Story = {
   args: {
     name: "day",
-    size: "medium",
-  },
+    size: "medium"
+  }
 };

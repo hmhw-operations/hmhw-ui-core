@@ -10,17 +10,17 @@ const meta: Meta<typeof Example> = {
     variant: {
       table: {
         // Hide the variant control for all stories of button
-        disable: true,
-      },
+        disable: true
+      }
       // Disable the variant control for all stories of button
       // control: false,
     },
     icon: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 };
 
 export default meta;
@@ -32,15 +32,15 @@ export const Primary: Story = {
     size: "medium",
     variant: "primary",
     onClick: () => console.log("Button"),
-    disabled: false,
+    disabled: false
   },
   argTypes: {
     iconPosition: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 };
 
 export const Secondary: Story = {
@@ -49,15 +49,15 @@ export const Secondary: Story = {
     size: "medium",
     variant: "secondary",
     onClick: () => console.log("Button"),
-    disabled: false,
+    disabled: false
   },
   argTypes: {
     iconPosition: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 };
 
 export const Tertiary: Story = {
@@ -65,15 +65,15 @@ export const Tertiary: Story = {
     text: "Button",
     size: "medium",
     variant: "tertiary",
-    onClick: () => console.log("Button"),
+    onClick: () => console.log("Button")
   },
   argTypes: {
     iconPosition: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 };
 
 export const Destructive: Story = {
@@ -82,15 +82,15 @@ export const Destructive: Story = {
     size: "medium",
     variant: "destructive",
     onClick: () => console.log("Button"),
-    disabled: false,
+    disabled: false
   },
   argTypes: {
     iconPosition: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 };
 
 export const WithIcon: Story = {
@@ -101,13 +101,13 @@ export const WithIcon: Story = {
     onClick: () => console.log("Button"),
     iconPosition: "trailing",
     icon: <Icon name="add" />,
-    disabled: false,
+    disabled: false
   },
   argTypes: {
     variant: {
       table: {
-        disable: false,
-      },
-    },
-  },
+        disable: false
+      }
+    }
+  }
 };

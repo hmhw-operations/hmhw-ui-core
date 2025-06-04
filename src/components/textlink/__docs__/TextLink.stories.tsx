@@ -6,22 +6,22 @@ const meta: Meta<typeof Example> = {
   component: Example,
   argTypes: {
     href: {
-      control: { type: "text" },
+      control: { type: "text" }
     },
     text: {
-      control: { type: "text" },
+      control: { type: "text" }
     },
     isExternal: {
-      control: { type: "boolean" },
+      control: { type: "boolean" }
     },
     newTab: {
-      control: { type: "boolean" },
+      control: { type: "boolean" }
     },
     size: {
       control: { type: "select" },
-      options: ["small", "medium", "large"],
-    },
-  },
+      options: ["small", "medium", "large"]
+    }
+  }
 };
 
 export default meta;
@@ -33,6 +33,6 @@ export const Icon: Story = {
     text: "Example Link",
     isExternal: true,
     newTab: true,
-    size: "small",
-},
+    size: "small"
+  }
 };

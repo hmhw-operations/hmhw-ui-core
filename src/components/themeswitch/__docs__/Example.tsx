@@ -9,7 +9,7 @@ const Example: FC<ThemeSwitchProps> = ({
   // label,
   // labelPosition,
   size = "small",
-  disabled,
+  disabled
 }) => {
   const [isChecked, setIsChecked] = React.useState(checked);
   const handleChange = (checked: boolean) => {
@@ -27,7 +27,7 @@ const Example: FC<ThemeSwitchProps> = ({
         justifyContent: "center",
         alignItems: "center",
         height: "100%",
-        gap: "1em",
+        gap: "1em"
       }}
     >
       <ThemeSwitch

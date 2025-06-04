@@ -16,17 +16,10 @@ const Example = () => {
         alignItems: "center",
         flexDirection: "column",
         color: "white",
-        height: "100%",
+        height: "100%"
       }}
     >
-      <Checkbox
-        id="demo id"
-        name="Test"
-        label="I am the label"
-        onChange={handleChange}
-        value={"Banana"}
-        checked={checked}
-      />
+      <Checkbox id="demo id" name="Test" label="I am the label" onChange={handleChange} value={"Banana"} checked={checked} />
       <pre>{JSON.stringify({ value, checked }, null, 2)}</pre>
     </div>
   );

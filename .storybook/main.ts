@@ -10,18 +10,18 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-mdx-gfm",
-    "@storybook/addon-themes",
+    "@storybook/addon-themes"
   ],
 
   framework: {
     name: "@storybook/react-vite",
-    options: {},
+    options: {}
   },
 
   docs: {},
 
   typescript: {
-    reactDocgen: "react-docgen-typescript",
-  },
+    reactDocgen: "react-docgen-typescript"
+  }
 };
 export default config;

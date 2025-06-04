@@ -11,7 +11,7 @@ const Example: FC<AccordionProps> = ({ items, size }) => {
         alignItems: "center",
         height: "100%",
         gap: ".5rem",
-        width: "600px",
+        width: "600px"
       }}
     >
       <Accordion items={items} size={size} />

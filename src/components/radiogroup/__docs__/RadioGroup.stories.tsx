@@ -4,7 +4,7 @@ import RadioGroup from "../RadioGroup";
 
 const meta: Meta<typeof RadioGroup> = {
   title: "Radiogroup",
-  component: Example,
+  component: Example
 };
 
 export default meta;
@@ -14,14 +14,14 @@ type Story = StoryObj<typeof RadioGroup>;
 export const Default: Story = {
   args: {
     disabled: false,
-    horizontal: false,
-  },
+    horizontal: false
+  }
 };
 
 export const Primary: Story = {
   name: "Horizontal",
   args: {
     disabled: false,
-    horizontal: true,
-  },
+    horizontal: true
+  }
 };

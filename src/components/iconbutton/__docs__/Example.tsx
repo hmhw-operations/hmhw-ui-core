@@ -8,10 +8,10 @@ const Example: FC<IconButtonProps> = ({ onClick = () => {}, size = "small", vari
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100%",
+        height: "100%"
       }}
     >
-      <IconButton  size={size} onClick={onClick} variant={variant} icon={icon} label={label} disabled={disabled} id={""} title={title} />
+      <IconButton size={size} onClick={onClick} variant={variant} icon={icon} label={label} disabled={disabled} id={""} title={title} />
     </div>
   );
 };

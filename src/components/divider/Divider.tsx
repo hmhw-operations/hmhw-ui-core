@@ -10,14 +10,6 @@ export type DividerProps = {
   type?: "primary" | "secondary";
 };
 
-export default function Divider({
-  orientation = "horizontal",
-  weight = "thick",
-  type = "primary",
-}: DividerProps) {
-  return (
-    <hr
-      className={`${styles.divider} ${styles[weight]} ${styles[type]} ${styles[orientation]}`}
-    />
-  );
+export default function Divider({ orientation = "horizontal", weight = "thick", type = "primary" }: DividerProps) {
+  return <hr className={`${styles.divider} ${styles[weight]} ${styles[type]} ${styles[orientation]}`} />;
 }

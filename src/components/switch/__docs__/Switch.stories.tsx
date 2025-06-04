@@ -3,7 +3,7 @@ import Example from "./Example";
 
 const meta: Meta<typeof Example> = {
   title: "Switch",
-  component: Example,
+  component: Example
 };
 
 export default meta;
@@ -16,13 +16,13 @@ export const Default: Story = {
     id: "switch",
     name: "switch",
     label: "Switch",
-    labelPosition: "right",
+    labelPosition: "right"
   },
   argTypes: {
     checked: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 };

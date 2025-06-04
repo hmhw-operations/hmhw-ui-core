@@ -8,7 +8,7 @@ const Example = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100%",
+        height: "100%"
       }}
     >
       <Boilerplate />

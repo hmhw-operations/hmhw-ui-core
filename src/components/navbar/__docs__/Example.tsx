@@ -8,7 +8,7 @@ const Example = () => {
       links={[
         { href: "#", label: "Home" },
         { href: "#", label: "Users" },
-        { href: "#", label: "About" },
+        { href: "#", label: "About" }
       ]}
       onThemeChange={() => console.log("Theme changed")}
       logoutUrl="#"

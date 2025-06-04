@@ -8,7 +8,7 @@ const Example: FC<TagProps> = ({ text = "Started", size = "small", type = "neutr
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100%",
+        height: "100%"
       }}
     >
       <Tag text={text} size={size} type={type} />

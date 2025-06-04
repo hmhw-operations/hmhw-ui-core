@@ -5,6 +5,7 @@ import style from "./table.module.css";
 // Define Props for the generic table
 interface TableProps<TData> {
   data: TData[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   columns: ColumnDef<TData, any>[]; // Use ColumnDef with the generic type
 }
 
@@ -19,7 +20,7 @@ const Table = <TData extends object>({ data, columns }: TableProps<TData>) => {
     state: { sorting },
     onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
+    getSortedRowModel: getSortedRowModel()
   });
   return (
     <table className={`${style.table}`}>
@@ -32,7 +33,7 @@ const Table = <TData extends object>({ data, columns }: TableProps<TData>) => {
                 <span className="sort-indicator">
                   {{
                     asc: "↑",
-                    desc: "↓",
+                    desc: "↓"
                   }[header.column.getIsSorted() as string] ?? null}
                 </span>
               </th>
@@ -44,9 +45,7 @@ const Table = <TData extends object>({ data, columns }: TableProps<TData>) => {
         {table.getRowModel().rows.map((row) => (
           <tr key={row.id}>
             {row.getVisibleCells().map((cell) => (
-              <td key={cell.id}>
-                {flexRender(cell.column.columnDef.cell, cell.getContext())}
-              </td>
+              <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
             ))}
           </tr>
         ))}

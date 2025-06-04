@@ -25,7 +25,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({ name, items, value, onChange, d
 
   let fieldsetClass = style.wrapper;
   if (horizontal) {
-    fieldsetClass+= ` ${style.horizontal}`;
+    fieldsetClass += ` ${style.horizontal}`;
   }
 
   return (

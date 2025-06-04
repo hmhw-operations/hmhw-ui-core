@@ -19,17 +19,10 @@ const backgroundColors: string[] = [
   "var(--color-on-accent)",
   "var(--color-on-disabled)",
   "var(--color-on-interactive)",
-  "var(--color-on-interactive-secondary)",
+  "var(--color-on-interactive-secondary)"
 ];
 
-const Example: FC<PaginationProps> = ({
-  onPageChange,
-  totalPages,
-  currentPage,
-  skipMode,
-  size,
-  showMaxCount,
-}) => {
+const Example: FC<PaginationProps> = ({ totalPages, currentPage, skipMode, size, showMaxCount }) => {
   const [pageNr, setPageNr] = React.useState(currentPage);
 
   const handlePageChange = (page: number) => {
@@ -41,6 +34,7 @@ const Example: FC<PaginationProps> = ({
     if (currentPage <= totalPages && currentPage > 0) {
       setPageNr(currentPage);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage]);
 
   return (
@@ -52,7 +46,7 @@ const Example: FC<PaginationProps> = ({
         color: "var(--color-primary)",
         backgroundColor: "var(--color-surface-canvas)",
         gap: "2rem",
-        padding: "1rem",
+        padding: "1rem"
       }}
     >
       <h1>Pagination</h1>
@@ -60,19 +54,12 @@ const Example: FC<PaginationProps> = ({
         style={{
           backgroundColor: backgroundColors[pageNr - 1],
           padding: "5rem",
-          textAlign: "center",
+          textAlign: "center"
         }}
       >
         Page {pageNr}
       </div>
-      <Pagination
-        onPageChange={handlePageChange}
-        totalPages={totalPages}
-        currentPage={pageNr}
-        skipMode={skipMode}
-        size={size}
-        showMaxCount={showMaxCount}
-      />
+      <Pagination onPageChange={handlePageChange} totalPages={totalPages} currentPage={pageNr} skipMode={skipMode} size={size} showMaxCount={showMaxCount} />
       <Divider weight="thin" />
     </div>
   );

@@ -17,23 +17,8 @@ export type IconButtonProps = BaseComponentProps & {
   disabled?: boolean;
 };
 
-const IconButton: React.FC<IconButtonProps> = ({
-  size = "small",
-  variant = "primary",
-  label,
-  onClick,
-  icon,
-  disabled,
-  ...props
-}) => (
-  <button
-    className={`${style.iconButton} ${style[variant]} ${style[size]}`}
-    aria-label={label}
-    type="button"
-    onClick={onClick}
-    disabled={disabled}
-    {...props}
-  >
+const IconButton: React.FC<IconButtonProps> = ({ size = "small", variant = "primary", label, onClick, icon, disabled, ...props }) => (
+  <button className={`${style.iconButton} ${style[variant]} ${style[size]}`} aria-label={label} type="button" onClick={onClick} disabled={disabled} {...props}>
     <Icon name={icon} size={size ?? "medium"} />
   </button>
 );

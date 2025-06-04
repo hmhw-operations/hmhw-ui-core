@@ -5,10 +5,7 @@ import MenuList from "../MenuList";
 
 describe("MenuList", () => {
   it("renders all menu items", () => {
-    const items = [
-      { label: "Item 1" },
-      { label: "Item 2" },
-    ];
+    const items = [{ label: "Item 1" }, { label: "Item 2" }];
     render(<MenuList items={items} />);
     expect(screen.getByText("Item 1")).toBeInTheDocument();
     expect(screen.getByText("Item 2")).toBeInTheDocument();

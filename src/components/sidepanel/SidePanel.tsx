@@ -28,15 +28,7 @@ export type SidePanelProps = BaseComponentProps & {
   side?: Side;
 };
 
-const SidePanel: React.FC<SidePanelProps> = ({
-  open = false,
-  onClose,
-  children,
-  actions,
-  size = "medium",
-  titleComponent,
-  side = "right",
-}) => {
+const SidePanel: React.FC<SidePanelProps> = ({ open = false, onClose, children, actions, size = "medium", titleComponent, side = "right" }) => {
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -56,16 +48,7 @@ const SidePanel: React.FC<SidePanelProps> = ({
     >
       <header className={style.header}>
         <h3 className={style.title}>{titleComponent}</h3>
-        <IconButton
-          icon="close"
-          label="Close"
-          title="Close"
-          aria-label="Close side panel"
-          id="modalbutton_close"
-          onClick={onClose}
-          size="medium"
-          variant="tertiary"
-        />
+        <IconButton icon="close" label="Close" title="Close" aria-label="Close side panel" id="modalbutton_close" onClick={onClose} size="medium" variant="tertiary" />
       </header>
       <div className={style.content}>{children}</div>
       <footer className={style.footer}>

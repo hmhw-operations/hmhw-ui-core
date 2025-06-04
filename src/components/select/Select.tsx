@@ -43,21 +43,21 @@ const Select = ({ id, key, title, options, label, value, placeholder, helperText
     <div className={`${style.select} ${style[size]}`}>
       {label && <label className={`${style.label} `}>{label}</label>}
       <div className={`${style.wrapper}`}>
-              <div className={`${style.field}`}>
-        <select title={title || label} id={id} key={key || ""} className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
-          {
-            <option value={selectOption} hidden={true}>
-              {selectOption}
-            </option>
-          }
-          {options &&
-            options.map((option) => (
-              <option key={`option_${option.value}`} value={option.value}>
-                {option.text}
+        <div className={`${style.field}`}>
+          <select title={title || label} id={id} key={key || ""} className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
+            {
+              <option value={selectOption} hidden={true}>
+                {selectOption}
               </option>
-            ))}
-        </select>
-        <Icon name="caret-double" />
+            }
+            {options &&
+              options.map((option) => (
+                <option key={`option_${option.value}`} value={option.value}>
+                  {option.text}
+                </option>
+              ))}
+          </select>
+          <Icon name="caret-double" />
         </div>
       </div>
       {helperText && <p className={`${style.description}`}>{helperText}</p>}

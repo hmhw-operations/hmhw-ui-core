@@ -3,7 +3,7 @@ import Example from "./Example";
 
 const meta: Meta<typeof Example> = {
   title: "ThemeSwitch",
-  component: Example,
+  component: Example
 };
 
 export default meta;
@@ -14,15 +14,15 @@ export const Default: Story = {
     onChange: () => console.log("ThemeSwitch"),
     size: "small",
     id: "themeswitch",
-    name: "themeswitch",
+    name: "themeswitch"
     // label: "ThemeSwitch",
     // labelPosition: "right",
   },
   argTypes: {
     checked: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 };

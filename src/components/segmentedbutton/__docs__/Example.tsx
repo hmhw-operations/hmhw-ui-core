@@ -4,7 +4,7 @@ import SegmentedButton, { SegmentedItem } from "../SegmentedButton";
 const segmentedItems: SegmentedItem[] = [
   { value: "tacos", label: "Tacos" },
   { value: "sides", label: "Sides" },
-  { value: "drinks", label: "Drinks" },
+  { value: "drinks", label: "Drinks" }
 ];
 
 const Example: React.FC<{ disabled: boolean }> = ({ disabled }) => {

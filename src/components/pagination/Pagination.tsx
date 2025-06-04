@@ -15,26 +15,12 @@ enum PageCangeType {
   next,
   previous,
   last,
-  first,
+  first
 }
 
-export default function Pagination({
-  totalPages,
-  onPageChange,
-  currentPage,
-  skipMode,
-  size = "medium",
-  showMaxCount = false,
-}: PaginationProps) {
+export default function Pagination({ totalPages, onPageChange, currentPage, skipMode, size = "medium", showMaxCount = false }: PaginationProps) {
   const handlePageChange = (changeType: PageCangeType) => {
-    const newPage =
-      changeType === PageCangeType.first
-        ? 1
-        : changeType === PageCangeType.last
-          ? totalPages
-          : changeType === PageCangeType.next
-            ? currentPage + 1
-            : currentPage - 1;
+    const newPage = changeType === PageCangeType.first ? 1 : changeType === PageCangeType.last ? totalPages : changeType === PageCangeType.next ? currentPage + 1 : currentPage - 1;
 
     onPageChange(newPage);
   };
@@ -44,7 +30,7 @@ export default function Pagination({
       [PageCangeType.first]: currentPage <= 1,
       [PageCangeType.last]: currentPage >= totalPages,
       [PageCangeType.next]: currentPage >= totalPages,
-      [PageCangeType.previous]: currentPage <= 1,
+      [PageCangeType.previous]: currentPage <= 1
     };
 
     return conditions[changeType];

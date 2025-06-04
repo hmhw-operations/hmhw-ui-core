@@ -9,7 +9,7 @@ const Example: FC<TextLinkProps> = (props) => {
         justifyContent: "center",
         alignItems: "center",
         height: "100%",
-        color: "var(--color-foreground-primary)",
+        color: "var(--color-foreground-primary)"
       }}
     >
       <TextLink {...props} />

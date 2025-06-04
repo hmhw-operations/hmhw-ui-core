@@ -1,31 +1,46 @@
 {
   // Specify the environments where the code will run
   "env": {
-    "jest": true, // Enable Jest for testing
-    "browser": true, // Enable browser environment
+    "jest": true, // Enable Jest globals for testing
+    "browser": true // Enable browser globals (window, document, etc.)
   },
 
   // Stop ESLint from searching for configuration in parent folders
   "root": true,
 
-  // Specify the parser for TypeScript (using @typescript-eslint/parser)
-  "parser": "@typescript-eslint/parser", // Leverages TS ESTree to lint TypeScript
+  // Use TypeScript parser to enable linting of TS/TSX files
+  "parser": "@typescript-eslint/parser",
 
-  // Add additional rules and configuration options
-  "plugins": ["@typescript-eslint"],
-
-  // Extend various ESLint configurations and plugins
-  "extends": [
-    "eslint:recommended", // ESLint recommended rules
-    "plugin:react/recommended", // React recommended rules
-    "plugin:@typescript-eslint/recommended", // TypeScript recommended rules
-    "plugin:@typescript-eslint/eslint-recommended", // ESLint overrides for TypeScript
-    "plugin:react-hooks/recommended", // Recommended rules for React hooks
-    "plugin:storybook/recommended", // Recommended rules for Storybook
+  // List of ESLint plugins to use
+  "plugins": [
+    "@typescript-eslint" // Plugin with TypeScript-specific rules
   ],
+
+  // Order matters! Later configs override earlier ones
+  "extends": [
+    "eslint:recommended", // Base ESLint rules
+    "plugin:react/recommended", // React specific linting rules
+    "plugin:@typescript-eslint/recommended", // TypeScript specific rules
+    "plugin:@typescript-eslint/eslint-recommended", // Removes ESLint rules that conflict with TypeScript
+    "plugin:react-hooks/recommended", // Rules for React Hooks
+    "plugin:storybook/recommended", // Rules for Storybook
+    "plugin:prettier/recommended" // Should be last - integrates and overrides with Prettier
+  ],
+
+  // Custom rule configurations
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
-    "react/prop-types": ["off"],
-  },
+    "react/prop-types": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "trailingComma": "none",
+        "singleQuote": false,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "printWidth": 180
+      }
+    ]
+  }
 }

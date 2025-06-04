@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Example from "./Example";
 
-
-
 const meta: Meta<typeof Example> = {
   title: "IconButton",
   component: Example,
@@ -10,12 +8,12 @@ const meta: Meta<typeof Example> = {
     variant: {
       table: {
         // Hide the variant control for all stories of button
-        disable: true,
-      },
+        disable: true
+      }
       // Disable the variant control for all stories of button
       // control: false,
-    },
-  },
+    }
+  }
 };
 
 export default meta;
@@ -28,9 +26,9 @@ export const Primary: Story = {
     variant: "primary",
     onClick: () => console.log("Button"),
     disabled: false,
-    icon: "close",
+    icon: "close"
   },
-  argTypes: {},
+  argTypes: {}
 };
 
 export const Secondary: Story = {
@@ -40,9 +38,9 @@ export const Secondary: Story = {
     variant: "secondary",
     onClick: () => console.log("Button"),
     disabled: false,
-    icon: "close",
+    icon: "close"
   },
-  argTypes: {},
+  argTypes: {}
 };
 
 export const Tertiary: Story = {
@@ -52,9 +50,9 @@ export const Tertiary: Story = {
     variant: "tertiary",
     onClick: () => console.log("Button"),
     disabled: false,
-    icon: "close",
+    icon: "close"
   },
-  argTypes: {},
+  argTypes: {}
 };
 
 export const Destructive: Story = {
@@ -64,7 +62,7 @@ export const Destructive: Story = {
     variant: "destructive",
     onClick: () => console.log("Button"),
     disabled: false,
-    icon: "close",
+    icon: "close"
   },
-  argTypes: {},
+  argTypes: {}
 };

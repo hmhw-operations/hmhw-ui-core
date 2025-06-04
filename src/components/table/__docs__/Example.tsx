@@ -1,7 +1,6 @@
 import React from "react";
 import Table, { createColumnHelper } from "../Table"; // Updated import
 import IconButton from "../../iconbutton/IconButton"; // Import IconButton
-import MenuList from "../../menulist/MenuList"; // Import MenuList
 // Icon component is used by IconButton internally
 
 // Define the shape of the data
@@ -23,7 +22,7 @@ const data: ExampleData[] = [
     submittedDate: "2023-10-01",
     status: "Completed",
     result: "Success",
-    duration: "5m",
+    duration: "5m"
   },
   {
     queueId: "2",
@@ -32,8 +31,8 @@ const data: ExampleData[] = [
     submittedDate: "2023-10-02",
     status: "Failed",
     result: "Error",
-    duration: "3m",
-  },
+    duration: "3m"
+  }
   // Add more data as needed
 ];
 
@@ -42,31 +41,31 @@ const columnHelper = createColumnHelper<ExampleData>();
 const columns = [
   columnHelper.accessor("queueId", {
     header: "Queue ID",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("scriptName", {
     header: "Script Name",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("submittedBy", {
     header: "Submitted By",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("submittedDate", {
     header: "Submitted Date",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("status", {
     header: "Status",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("result", {
     header: "Result",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor("duration", {
     header: "Duration",
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()
   }),
   // Add a new display column for the context menu
   columnHelper.display({
@@ -91,8 +90,8 @@ const columns = [
       // {isMenuOpen && info.row.id === activeRowId && (
       //   <MenuList items={[{ id: '1', label: 'Edit' }, { id: '2', label: 'Delete' }]} />
       // )}
-    ),
-  }),
+    )
+  })
 ];
 
 const Example: React.FC = () => {

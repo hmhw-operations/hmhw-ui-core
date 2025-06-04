@@ -9,10 +9,10 @@ export default {
     selectedKey: {
       control: { type: "text" },
       description: "The key of the currently selected item.",
-      defaultValue: "home",
-    },
+      defaultValue: "home"
+    }
     // You can add more controls for demonstration if needed
-  },
+  }
 };
 
 export const Default = (args) => (
@@ -21,7 +21,7 @@ export const Default = (args) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: "100%",
+      height: "100%"
     }}
   >
     {/* Pass selectedKey as a prop to Example if Example supports it, otherwise just show Example */}
@@ -30,5 +30,5 @@ export const Default = (args) => (
 );
 
 Default.args = {
-  selectedKey: "home",
+  selectedKey: "home"
 };

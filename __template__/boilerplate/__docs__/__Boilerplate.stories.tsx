@@ -3,7 +3,7 @@ import Example from "./Example";
 
 const meta: Meta<typeof Example> = {
   title: "Boilerplate",
-  component: Example,
+  component: Example
 };
 
 export default meta;

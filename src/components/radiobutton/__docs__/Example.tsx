@@ -15,18 +15,10 @@ const Example: FC<{ disabled: boolean }> = ({ disabled }) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "start",
-        height: "100%",
+        height: "100%"
       }}
     >
-      <RadioButton
-        id="al-pastor"
-        name="taco"
-        onChange={handleClick}
-        label="Al Pastor"
-        checked={value === "Al Pastor"}
-        disabled={disabled}
-        value="Al Pastor"
-      />
+      <RadioButton id="al-pastor" name="taco" onChange={handleClick} label="Al Pastor" checked={value === "Al Pastor"} disabled={disabled} value="Al Pastor" />
     </div>
   );
 };
