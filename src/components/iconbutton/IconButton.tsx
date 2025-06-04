@@ -4,13 +4,13 @@ import "../../styles/globals.css";
 import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/variables.css";
-import { BaseComponentProps } from "../../types";
+import { BaseComponentProps, Size } from "../../types";
 import { SvgName } from "../icon/types";
 import Icon from "../icon/Icon";
 
 export type IconButtonProps = BaseComponentProps & {
   label: string;
-  size?: "small" | "medium" | "large";
+  size?: Size;
   variant?: "primary" | "secondary" | "tertiary" | "destructive";
   onClick?: MouseEventHandler<HTMLButtonElement>;
   icon: SvgName;
