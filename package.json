@@ -18,7 +18,7 @@
     "test": "vitest run",
     "test-watch": "vitest",
     "test:ui": "vitest --ui",
-    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx,js,jsx}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
     "build": "tsc && vite build",
     "storybook": "storybook dev -p 6006",
@@ -75,7 +75,7 @@
     "react-dom": ">=18.2.0 <20.0.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{ts,tsx,js,jsx}": [
       "npm run format",
       "npm run lint"
     ]

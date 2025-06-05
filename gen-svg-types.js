@@ -9,19 +9,15 @@ const adjustPathForWindows = (path) => {
 };
 
 const getPath = (path) => {
-  console.log (path)
+  console.log(path);
   if (platform() === "win32") {
     return adjustPathForWindows(new URL(path, import.meta.url).pathname);
   }
   return path;
 };
 
-const svgDirPath = join(
-  getPath("./src/static/icons")
-);
-const outputPath = join(
-  getPath("./src/components/icon/types.ts")
-);
+const svgDirPath = join(getPath("./src/static/icons"));
+const outputPath = join(getPath("./src/components/icon/types.ts"));
 
 readdir(svgDirPath, (err, files) => {
   if (err) {
