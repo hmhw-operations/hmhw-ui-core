@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build project
-        run: npm build
+        run: npm run build
 
       - name: Publish to npm
         run: npm publish --access public
