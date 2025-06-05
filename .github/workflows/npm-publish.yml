@@ -28,13 +28,27 @@ jobs:
           git add .
           git commit -m "Commit changes before version bump" || echo "No changes to commit"
 
-      - name: Bump version and create new tag
+      - name: Check and validate version
+        id: version_check
+        run: |
+          chmod +x ./scripts/check-version.sh
+          ./scripts/check-version.sh
+
+      - name: Bump version and create tag
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull origin main
-          npm version patch -m "Bump version to %s"
-          git push origin main --tags
+          
+          if [ "${{ steps.version_check.outputs.should_bump }}" = "true" ]; then
+            echo "Bumping version to ${{ steps.version_check.outputs.target_version }}"
+            npm version "${{ steps.version_check.outputs.target_version }}" --force -m "Bump version to %s"
+          else
+            echo "Creating tag for existing version ${{ steps.version_check.outputs.target_version }}"
+            git tag -a -f "v${{ steps.version_check.outputs.target_version }}" -m "Tag version ${{ steps.version_check.outputs.target_version }}"
+          fi
+          
+          git push origin main --tags --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -42,6 +56,8 @@ jobs:
         run: npm run build
 
       - name: Publish to npm
-        run: npm publish --access public
+        run: |
+          echo "Publishing version ${{ steps.version_check.outputs.target_version }} to npm..."
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
