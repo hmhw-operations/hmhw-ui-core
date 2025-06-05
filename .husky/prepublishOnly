@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-echo "Running build before publish to ensure latest changes are included..."
-npm run build
