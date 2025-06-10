@@ -1093,7 +1093,7 @@ body.day-theme {
 /*******  Input tokens  *******/
 
 body.dark-theme {
-  --component-input-label: var(--color-foreground-secondary);
+  --component-input-label: var(--color-foreground-primary);
   --component-input-label-disabled: var(--color-foreground-disabled);
   --component-input-value: var(--palette-neutral-1400);
   --component-input-value-readonly: var(--color-foreground-primary);
@@ -1124,7 +1124,7 @@ body.dark-theme {
 }
 
 body.light-theme {
-  --component-input-label: var(--color-foreground-secondary);
+  --component-input-label: var(--color-foreground-primary);
   --component-input-label-disabled: var(--color-foreground-disabled);
   --component-input-value: var(--color-foreground-primary);
   --component-input-value-readonly: var(--color-foreground-primary);
@@ -1154,7 +1154,7 @@ body.light-theme {
   --component-input-radius: var(--radius-input);
 }
 body.day-theme {
-  --component-input-label: var(--color-foreground-secondary);
+  --component-input-label: var(--color-foreground-primary);
   --component-input-label-disabled: var(--color-foreground-disabled);
   --component-input-value: var(--color-foreground-primary);
   --component-input-value-readonly: var(--color-foreground-primary);
