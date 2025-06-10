@@ -1045,18 +1045,18 @@ body.day-theme {
 
 body.dark-theme {
   --component-sidepanel-background: var(--color-background-primary);
-  --component-sidepanel-shadow: var(--color-transparent);
+  --component-sidepanel-shadow: transparent;
+  --component-sidepanel-border: transparent;
 }
 body.light-theme {
-  --component-sidepanel-background: var(--color-background-primary);
+  --component-sidepanel-background: var(--palette-neutral-cold-050);
   --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
-
   --component-sidepanel-border: var(--palette-neutral-cold-300);
 }
 body.day-theme {
-  --component-sidepanel-background: var(--color-background-canvas);
+  --component-sidepanel-background: var(--palette-neutral-new-050);
   --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
-  --component-sidepanel-border: var(--palette-neutral-new-300);
+  --component-sidepanel-border: var(--palette-neutral-new-200);
 }
 
 /*******  Menulist panel tokens  *******/
