@@ -1,12 +1,13 @@
 .tabs {
+  --border-width: 1px;
+
   display: flex;
   flex-direction: column;
 
   .tabs_list {
     display: flex;
     gap: var(--size-050);
-    border-bottom: var(--size-075) solid
-      var(--color-background-interactive-default);
+    border-bottom: var(--border-width) solid var(--component-tabs-border);
   }
 
   .tabs_button {
@@ -14,50 +15,45 @@
     display: inline-flex;
     align-items: center;
     height: var(--height-medium);
-    padding-inline: 1em;
-    border: none;
-    color: var(--color-foreground-interactive-secondary-on);
-    background-color: var(--color-background-interactive-secondary-default);
+    margin-bottom: calc(var(--border-width) * -1);
+    padding-inline: 0.5em;
+    border-bottom: 4px solid var(--component-tabs-background);
+    color: var(--component-tabs-foreground);
+    background-color: var(--component-tabs-background);
+    cursor: pointer;
+    font-size: var(--type-300);
+
+    &[aria-selected="true"] {
+      color: var(--component-tabs-foreground-active);
+      border-color: var(--component-tabs-border-active);
+
+      &:hover {
+        color: var(--component-tabs-foreground-active);
+      }
+    }
 
     &:hover {
       cursor: pointer;
-      background-color: var(--color-background-interactive-hover);
+      color: var(--component-tabs-foreground-hover);
     }
-
-    &:active {
-      cursor: pointer;
-      background-color: var(--color-background-interactive-active);
-    }
-
-    &:disabled {
-      color: var(--color-disabled);
-      background-color: var(--color-background-interactive-disabled);
-      cursor: not-allowed;
-    }
-
-    &[aria-selected="true"] {
-      color: var(--color-foreground-interactive-on);
-      background-color: var(--color-background-interactive-default);
-
-      &:hover {
-        cursor: default;
-      }
-    }
-  }
-
-  .tab_panel {
-    min-height: 50vh;
-    padding: var(--size-400) 0;
-    color: var(--color-primary);
-  }
-
-  &.large {
-    font-size: var(--type-button-label-large);
-    height: var(--height-large);
   }
 
   &.small {
-    font-size: var(--type-button-label-small);
+    font-size: var(--type-200);
     height: var(--height-small);
   }
+  &.large {
+    font-size: var(--type-400);
+    height: var(--height-large);
+  }
+  &.x-large {
+    font-size: var(--type-500);
+    height: var(--height-large);
+  }
+}
+
+.tab_panel {
+  min-height: 50vh;
+  padding: var(--size-400) 0;
+  color: var(--color-primary);
 }
