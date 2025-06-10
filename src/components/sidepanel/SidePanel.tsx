@@ -1,8 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import "../../styles/globals.css";
-import "../../styles/palette.css";
-import "../../styles/tokens.css";
-import "../../styles/variables.css";
 import style from "./sidepanel.module.css";
 import { Button } from "../button";
 import { ButtonVariant } from "../button/Button";
