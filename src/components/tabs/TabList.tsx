@@ -14,7 +14,7 @@ const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0, size = 
   const tabs = React.Children.toArray(children).filter((child): child is React.ReactElement<TabItemProps> => React.isValidElement(child) && child.type === TabItem);
 
   return (
-    <div className={`styles.tabs ${styles[size]}`} role="tablist" aria-orientation="horizontal">
+    <div className={`${styles.tabs} ${styles[size]}`}>
       <nav className={styles.tabnav}>
         <ul className={styles.tabs_list} role="tablist" aria-orientation="horizontal">
           {tabs.map((tab, index) => (
