@@ -14,21 +14,14 @@
     appearance: none;
     display: inline-flex;
     align-items: center;
-    gap: var(--size-100);
     height: var(--height-medium);
     margin-bottom: calc(var(--border-width) * -1);
-    padding-inline: 0.75em;
+    padding-inline: 0.5em;
     border-bottom: 4px solid var(--component-tabs-background);
     color: var(--component-tabs-foreground);
     background-color: var(--component-tabs-background);
     cursor: pointer;
     font-size: var(--type-300);
-
-    svg {
-      width: var(--size-200);
-      height: var(--size-200);
-      flex-shrink: 0;
-    }
 
     &[aria-selected="true"] {
       color: var(--component-tabs-foreground-active);
@@ -37,28 +30,11 @@
       &:hover {
         color: var(--component-tabs-foreground-active);
       }
-
-      svg {
-        color: var(--component-tabs-foreground-active);
-      }
     }
 
     &:hover {
       cursor: pointer;
       color: var(--component-tabs-foreground-hover);
-
-      svg {
-        color: var(--component-tabs-foreground-hover);
-      }
-    }
-
-    &:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-
-      svg {
-        opacity: 0.5;
-      }
     }
   }
 
