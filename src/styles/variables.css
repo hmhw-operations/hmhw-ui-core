@@ -1044,18 +1044,19 @@ body.day-theme {
 /*******  Side panel tokens  *******/
 
 body.dark-theme {
-  --component-sidepanel-background: var(--color-background-canvas);
-  --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
+  --component-sidepanel-background: var(--color-background-primary);
+  --component-sidepanel-shadow: var(--color-transparent);
 }
-
 body.light-theme {
-  --component-sidepanel-background: var(--color-background-canvas);
-  --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
-}
+  --component-sidepanel-background: var(--color-background-primary);
+  --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
 
+  --component-sidepanel-border: var(--palette-neutral-cold-300);
+}
 body.day-theme {
   --component-sidepanel-background: var(--color-background-canvas);
   --component-sidepanel-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
+  --component-sidepanel-border: var(--palette-neutral-new-300);
 }
 
 /*******  Menulist panel tokens  *******/
