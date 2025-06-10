@@ -2,6 +2,7 @@ import styles from "./tabs.module.css";
 import React, { useState } from "react";
 import { TabItemProps, TabListProps } from "./types";
 import TabItem from "./TabItem";
+import Icon from "../icon/Icon";
 import { sanitizeForId } from "../../utils";
 
 const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0 }) => {
@@ -29,7 +30,8 @@ const TabList: React.FC<TabListProps> = ({ children, activeTabIndex = 0 }) => {
                 onClick={() => handleTabClick(index)}
                 className={`${styles.tabs_button} `}
               >
-                {tab.props.label}
+                {tab.props.icon && <Icon {...tab.props.icon} />}
+                <span className={tab.props.icon ? styles.tab_label_with_icon : undefined}>{tab.props.label}</span>
               </button>
             </li>
           ))}
