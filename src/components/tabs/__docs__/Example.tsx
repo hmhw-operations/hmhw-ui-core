@@ -2,37 +2,42 @@ import React from "react";
 import TabList from "../TabList";
 import TabItem from "../TabItem";
 import { TabListItem } from "../types";
+import { Size } from "../../../types";
+import { SvgName } from "../../icon/types";
 
-const tabItems: TabListItem[] = [
-  {
-    label: "Overview",
-    id: "tab-1",
-    content: () => <p>Overview Content</p>,
-    icon: { name: "home", size: "small" }
-  },
-  {
-    label: "Settings",
-    id: "tab-2",
-    content: () => <p>Settings Content</p>,
-    icon: { name: "settings", size: "small" }
-  },
-  {
-    label: "Help",
-    id: "tab-3",
-    content: () => <p>Help Content</p>,
-    icon: { name: "help", size: "small" },
-    disabled: true
-  }
-];
+export type ExampleProps = {
+  size?: Size;
+  tabs?: Array<{
+    label: string;
+    icon?: SvgName;
+    disabled?: boolean;
+  }>;
+};
 
-const Example: React.FC = () => (
-  <TabList activeTabIndex={0}>
-    {tabItems.map((tab) => (
-      <TabItem key={tab.id} label={tab.label} disabled={tab.disabled} icon={tab.icon}>
-        {tab.content()}
-      </TabItem>
-    ))}
-  </TabList>
-);
+const Example: React.FC<ExampleProps> = ({ size = "medium", tabs }) => {
+  const tabItems: TabListItem[] = (
+    tabs || [
+      { label: "Overview", icon: "home" },
+      { label: "Settings", icon: "settings" },
+      { label: "Help", icon: "help", disabled: true }
+    ]
+  ).map((tab, index) => ({
+    label: tab.label,
+    id: `tab-${index + 1}`,
+    content: () => <p>{tab.label} Content</p>,
+    icon: tab.icon ? { name: tab.icon, size } : undefined,
+    disabled: tab.disabled
+  }));
+
+  return (
+    <TabList activeTabIndex={0}>
+      {tabItems.map((tab) => (
+        <TabItem key={tab.id} label={tab.label} disabled={tab.disabled} icon={tab.icon}>
+          {tab.content()}
+        </TabItem>
+      ))}
+    </TabList>
+  );
+};
 
 export default Example;
