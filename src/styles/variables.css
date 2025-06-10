@@ -1333,7 +1333,7 @@ body.day-theme {
 /*******  Tabs tokens  *******/
 
 body.dark-theme {
-  --component-tabs-foreground: var(--color-foreground-secondary);
+  --component-tabs-foreground: var(--color-foreground-primary);
   --component-tabs-foreground-hover: var(--color-foreground-interactive-hover);
   --component-tabs-foreground-disabled: var(--color-foreground-disabled);
   --component-tabs-foreground-active: var(--color-foreground-accent);
@@ -1348,7 +1348,7 @@ body.dark-theme {
 }
 
 body.light-theme {
-  --component-tabs-foreground: var(--color-foreground-secondary);
+  --component-tabs-foreground: var(--color-foreground-primary);
   --component-tabs-foreground-hover: var(--color-foreground-interactive-hover);
   --component-tabs-foreground-disabled: var(--color-foreground-disabled);
   --component-tabs-foreground-active: var(--color-foreground-accent);
@@ -1363,7 +1363,7 @@ body.light-theme {
 }
 
 body.day-theme {
-  --component-tabs-foreground: var(--color-foreground-secondary);
+  --component-tabs-foreground: var(--color-foreground-primary);
   --component-tabs-foreground-hover: var(--color-foreground-interactive-hover);
   --component-tabs-foreground-disabled: var(--color-foreground-disabled);
   --component-tabs-foreground-active: var(--color-foreground-accent);
