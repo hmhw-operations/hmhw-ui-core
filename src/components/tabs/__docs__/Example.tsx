@@ -30,13 +30,16 @@ const Example: React.FC<ExampleProps> = ({ size = "medium", tabs }) => {
   }));
 
   return (
-    <TabList activeTabIndex={0}>
-      {tabItems.map((tab) => (
-        <TabItem key={tab.id} label={tab.label} disabled={tab.disabled} icon={tab.icon}>
-          {tab.content()}
-        </TabItem>
-      ))}
-    </TabList>
+    <>
+      <pre>Size: {size}</pre>
+      <TabList size={size} activeTabIndex={0}>
+        {tabItems.map((tab) => (
+          <TabItem key={tab.id} label={tab.label} disabled={tab.disabled} icon={tab.icon}>
+            {tab.content()}
+          </TabItem>
+        ))}
+      </TabList>
+    </>
   );
 };
 

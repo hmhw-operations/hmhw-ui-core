@@ -37,19 +37,22 @@
       color: var(--component-tabs-foreground-hover);
     }
   }
+}
 
-  &.small {
-    font-size: var(--type-200);
-    height: var(--height-small);
-  }
-  &.large {
-    font-size: var(--type-400);
-    height: var(--height-large);
-  }
-  &.x-large {
-    font-size: var(--type-500);
-    height: var(--height-large);
-  }
+.small {
+  color: tomato;
+}
+
+.medium {
+  color: darkseagreen;
+}
+
+.large {
+  color: cornflowerblue;
+}
+
+.x-large {
+  color: darkorchid;
 }
 
 .tab_panel {

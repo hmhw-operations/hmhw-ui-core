@@ -13,15 +13,15 @@ const meta: Meta<typeof Example> = {
     ]
   },
   argTypes: {
-    size: {
-      control: "select",
-      options: ["small", "medium", "large", "x-large"],
-      description: "Size of the tabs and icons"
-    },
-    tabs: {
-      control: "object",
-      description: "Array of tab configurations"
-    }
+    // size: {
+    //   control: "select",
+    //   options: ["small", "medium", "large", "x-large"],
+    //   description: "Size of the tabs and icons"
+    // },
+    // tabs: {
+    //   control: "object",
+    //   description: "Array of tab configurations"
+    // }
   }
 };
 
