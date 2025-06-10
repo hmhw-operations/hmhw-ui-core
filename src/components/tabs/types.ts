@@ -1,3 +1,4 @@
+import { Size } from "../../types";
 import { IconProps } from "../icon/Icon";
 
 export type TabItemProps = {
@@ -9,6 +10,7 @@ export type TabItemProps = {
 
 export type TabListProps = {
   activeTabIndex: number;
+  size?: Size;
   children?: React.ReactElement<TabItemProps> | React.ReactElement<TabItemProps>[];
 };
 
