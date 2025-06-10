@@ -22,6 +22,7 @@
     background-color: var(--component-tabs-background);
     cursor: pointer;
     font-size: var(--type-300);
+    gap: var(--size-100);
 
     &[aria-selected="true"] {
       color: var(--component-tabs-foreground-active);
@@ -29,6 +30,7 @@
 
       &:hover {
         color: var(--component-tabs-foreground-active);
+        cursor: default;
       }
     }
 
@@ -36,23 +38,52 @@
       cursor: pointer;
       color: var(--component-tabs-foreground-hover);
     }
+    &:disabled {
+      cursor: not-allowed;
+      color: var(--component-tabs-foreground-disabled);
+    }
   }
 }
 
 .small {
-  color: tomato;
+  .tabs_button {
+    height: var(--height-small);
+    font-size: var(--type-200);
+    svg {
+      width: var(--size-200);
+    }
+  }
 }
 
 .medium {
-  color: darkseagreen;
+  .tabs_button {
+    height: var(--height-medium);
+    font-size: var(--type-300);
+
+    svg {
+      width: var(--size-250);
+    }
+  }
 }
 
 .large {
-  color: cornflowerblue;
+  .tabs_button {
+    height: var(--height-large);
+    font-size: var(--type-400);
+    svg {
+      width: var(--size-300);
+    }
+  }
 }
 
 .x-large {
-  color: darkorchid;
+  .tabs_button {
+    height: var(--height-x-large);
+    font-size: var(--type-500);
+    svg {
+      width: var(--size-350);
+    }
+  }
 }
 
 .tab_panel {
