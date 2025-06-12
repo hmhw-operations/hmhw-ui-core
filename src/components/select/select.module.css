@@ -19,6 +19,15 @@
     gap: var(--size-100);
   }
 
+  .xxx optgroup {
+    font-weight: 500;
+  }
+
+  .xxx optgroup option {
+    font-weight: normal;
+    padding-left: var(--size-100);
+  }
+
   .field {
     display: flex;
     height: var(--height-medium);
@@ -61,11 +70,10 @@
   }
 }
 
-
 .select {
   &.small {
     font-size: var(--type-200);
-    
+
     .wrapper .field {
       height: var(--height-small);
       font-size: var(--type-200);
@@ -74,7 +82,7 @@
 
   &.large {
     font-size: var(--type-300);
-    
+
     .field {
       height: var(--height-large);
       font-size: var(--type-400);
@@ -83,7 +91,7 @@
 
   &.x-large {
     font-size: var(--type-400);
-    
+
     .field {
       height: var(--height-x-large);
       font-size: var(--type-500);
