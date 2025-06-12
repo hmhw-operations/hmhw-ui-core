@@ -18,14 +18,31 @@
     flex-direction: column;
     gap: var(--size-100);
   }
-
+  .xxx {
+    width: 100%; /* Ensure select is full width */
+  }
   .xxx optgroup {
-    font-weight: 500;
+    font-weight: normal;
+    color: var(--p-neutral-500);
+    text-transform: uppercase;
+    font-size: var(--type-200);
+    padding-top: var(--size-050);
+    padding-bottom: var(--size-050);
+    border-bottom: 1px solid var(--p-neutral-300);
+    background-color: var(--p-neutral-100);
+  }
+
+  .xxx optgroup:not(:first-of-type) {
+    border-top: 1px solid var(--p-neutral-300);
+    margin-top: var(--size-050);
   }
 
   .xxx optgroup option {
     font-weight: normal;
     padding-left: var(--size-100);
+    text-transform: none;
+    font-size: var(--type-300);
+    color: var(--component-input-value);
   }
 
   .field {
@@ -37,13 +54,20 @@
     border-radius: var(--radius-input);
     font-size: var(--type-300);
     padding-inline: 0.5em;
-
     select {
       appearance: none;
       background-color: transparent;
       color: inherit;
       border: none;
       flex-grow: 1;
+      width: 100%;
+      /* padding: var(--size-050) 0; */
+    }
+
+    /* Enhanced dropdown styling */
+    select option {
+      /* padding: var(--size-050) var(--size-100); */
+      margin: 0; /* Remove any default margin */
     }
 
     &:focus-within {
