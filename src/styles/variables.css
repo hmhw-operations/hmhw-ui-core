@@ -427,7 +427,7 @@
   --color-foreground-interactive-on: var(--palette-neutral-050);
   --color-foreground-interactive-hover: var(--palette-blue-198-800);
   --color-foreground-interactive-disabled: var(--palette-blue-198-1000);
-  --color-background-primary: hsla(198, 100%, 13%, 1);
+  --color-background-primary: var(--palette-blue-198-1300);
   --color-foreground-interactive-secondary-default: var(--palette-blue-198-800);
   --color-background-neutral: var(--palette-neutral-500);
   --color-foreground-interactive-secondary-on: var(--palette-alpha-white-090);
