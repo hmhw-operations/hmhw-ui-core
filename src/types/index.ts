@@ -11,5 +11,6 @@ export type BaseComponentProps = {
   key?: string;
   required?: boolean;
   disabled?: boolean;
+  readonly?: boolean;
   tabIndex?: number;
 };
