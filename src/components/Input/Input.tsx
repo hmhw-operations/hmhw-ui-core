@@ -40,6 +40,7 @@ const Input: FC<InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<H
   name,
   helperText,
   disabled,
+  readonly,
   size = "medium",
   ...props
 }) => {
@@ -75,9 +76,21 @@ const Input: FC<InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<H
           {label}
         </label>
       )}
+      Readonly? <pre style={{ color: "white" }}>{JSON.stringify(readonly ? "Yes" : "No")}</pre>
+      Disabled? <pre style={{ color: "white" }}>{JSON.stringify(disabled ? "Yes" : "No")}</pre>
       <div className={`${style.wrapper}`}>
         <div className={`${style.field}`}>
-          <input type={type} name={name} id={sanitizeForId(id)} placeholder={placeholder} value={currentValue} onChange={handleChange} onBlur={handleBlur} disabled={disabled} />
+          <input
+            type={type}
+            name={name}
+            id={sanitizeForId(id)}
+            placeholder={placeholder}
+            value={currentValue}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            disabled={disabled}
+            readOnly={readonly}
+          />
           {hasError && <Icon name="info" />}
           {unit && <div className={`${style.unit}`}>{unit}</div>}
         </div>
