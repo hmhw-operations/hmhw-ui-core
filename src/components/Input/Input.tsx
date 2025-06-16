@@ -76,8 +76,6 @@ const Input: FC<InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<H
           {label}
         </label>
       )}
-      Readonly? <pre style={{ color: "white" }}>{JSON.stringify(readonly ? "Yes" : "No")}</pre>
-      Disabled? <pre style={{ color: "white" }}>{JSON.stringify(disabled ? "Yes" : "No")}</pre>
       <div className={`${style.wrapper}`}>
         <div className={`${style.field}`}>
           <input
