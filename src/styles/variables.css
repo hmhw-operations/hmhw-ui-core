@@ -881,47 +881,6 @@ body.day-theme {
   --c-divider-secondary: var(--palette-neutral-new-200);
 }
 
-/*******  Checkbox tokens  *******/
-
-body.dark-theme {
-  --c-checkbox-label: var(--color-foreground-primary);
-  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
-  --c-checkbox-box-unchecked: var(--color-foreground-primary);
-  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
-  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
-  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
-  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
-  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
-  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
-  --c-checkbox-check-checked: var(--palette-alpha-white-100);
-}
-
-body.light-theme {
-  --c-checkbox-label: var(--color-foreground-primary);
-  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
-  --c-checkbox-box-unchecked: var(--color-foreground-primary);
-  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
-  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
-  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
-  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
-  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
-  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
-  --c-checkbox-check-checked: var(--palette-alpha-white-100);
-}
-
-body.day-theme {
-  --c-checkbox-label: var(--color-foreground-primary);
-  --c-checkbox-label-hover: var(--color-foreground-interactive-default);
-  --c-checkbox-box-unchecked: var(--color-foreground-primary);
-  --c-checkbox-box-unchecked-hover: var(--color-foreground-interactive-default);
-  --c-checkbox-box-unchecked-disabled: var(--color-foreground-disabled);
-  --c-checkbox-box-checked: var(--color-foreground-interactive-default);
-  --c-checkbox-box-checked-hover: var(--color-foreground-interactive-hover);
-  --c-checkbox-box-checked-disabled: var(--color-foreground-interactive-disabled);
-  --c-checkbox-check-unchecked: var(--palette-alpha-white-100);
-  --c-checkbox-check-checked: var(--palette-alpha-white-100);
-}
-
 /*******  Button  tokens  *******/
 
 body.dark-theme {

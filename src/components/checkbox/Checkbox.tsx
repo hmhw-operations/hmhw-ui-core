@@ -4,7 +4,7 @@ import "../../styles/palette.css";
 import "../../styles/tokens.css";
 import "../../styles/variables.css";
 import { sanitizeForId } from "../../utils";
-import { BaseComponentProps } from "../../types";
+import { BaseComponentProps, Size } from "../../types";
 
 export type CheckboxProps = BaseComponentProps & {
   value: string | number | readonly string[] | undefined;
@@ -15,13 +15,14 @@ export type CheckboxProps = BaseComponentProps & {
   disabled?: boolean;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   description?: string;
+  size: Size;
 };
 
-const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, onChange, checked, description }) => {
+const Checkbox: React.FC<CheckboxProps> = ({ value, label, id, name, disabled, onChange, checked, description, size }) => {
   return (
-    <div className={`${style.input_item} ${style.checkbox}`}>
+    <div className={`${style.checkbox} ${style[size]}`}>
       <input type="checkbox" id={sanitizeForId(id)} disabled={disabled} name={name} checked={checked} value={value} onChange={onChange} />
-      {label && <label htmlFor={sanitizeForId(id)}>{label}</label>}
+      {<label htmlFor={sanitizeForId(id)}>{label}</label>}
       {description && <p className={style.description}>{description}</p>}
     </div>
   );
