@@ -22,10 +22,10 @@
   --size-900: calc(var(--size-base) * 9); /*  72px */
   --size-1000: calc(var(--size-base) * 10); /*  80px */
 
+  --height-small: var(--size-300);
   --height-medium: var(--size-400);
   --height-large: var(--size-500);
   --height-x-large: var(--size-600);
-  --height-small: var(--size-300);
 
   /*  TYPOGRAPHY  --------------------------------------------- */
 
@@ -35,10 +35,10 @@
 
   --type-100: calc(var(--type-base) * 0.5);
   --type-150: calc(var(--type-base) * 0.625);
-  --type-200: calc(var(--type-base) * 0.75);   /*12*/
-  --type-300: calc(var(--type-base) * 0.875);  /*14*/
+  --type-200: calc(var(--type-base) * 0.75); /*12*/
+  --type-300: calc(var(--type-base) * 0.875); /*14*/
   --type-400: var(--type-base);
-  --type-450: calc(var(--type-base) * 1.125); 
+  --type-450: calc(var(--type-base) * 1.125);
   --type-500: calc(var(--type-400) * 1.25);
   --type-600: calc(var(--type-500) * 1.25);
   --type-700: calc(var(--type-600) * 1.25);
@@ -59,17 +59,12 @@
   --type-label-medium: 400 var(--type-300) / 1 var(--type-family-primary);
   --type-label-large: 400 var(--type-400) / 1 var(--type-family-primary);
 
-
-
-
   --type-description-small: 400 var(--type-200) / 1.5 var(--type-family-primary);
-  --type-description-medium: 400 var(--type-300) / 1.5
-    var(--type-family-primary);
+  --type-description-medium: 400 var(--type-300) / 1.5 var(--type-family-primary);
   --type-description-large: 400 var(--type-350) / 1.5 var(--type-family-primary);
 
   --type-action-label-small: 400 var(--type-200) / 1 var(--type-family-primary);
-  --type-action-label-medium: medium small-caps var(--type-300) / 1
-    var(--type-family-primary);
+  --type-action-label-medium: medium small-caps var(--type-300) / 1 var(--type-family-primary);
   --type-action-label-large: 400 var(--type-300) / 1 var(--type-family-primary);
 
   /*  CORNER RADIUS  --------------------------------------------- */
@@ -82,7 +77,6 @@
   --radius-input: var(--radius-default);
   --radius-input: var(--size-050);
 }
-
 
 :root {
   --color-primary: var(--p-neutral-100);
@@ -254,8 +248,6 @@ body.light-theme {
   --color-border-interactive-secondary-disabled: var(--p-blue-193-1300);
   --color-focus-ring: var(--p-blue-ocean-600);
 }
-
-
 
 body.light-theme {
   --c-table-cell-text: var(--p-neutral-cold-1400);
