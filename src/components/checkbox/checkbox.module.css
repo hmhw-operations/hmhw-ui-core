@@ -66,7 +66,7 @@
   input:checked + label {
     &:before {
       border: none;
-      background-color: var(--component-checkbox-box-checked);
+      background-color: var(--color-background-interactive);
     }
 
     &:after {
