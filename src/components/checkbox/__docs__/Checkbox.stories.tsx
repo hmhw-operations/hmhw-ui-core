@@ -9,4 +9,9 @@ const meta: Meta<typeof Example> = {
 export default meta;
 type Story = StoryObj<typeof Example>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    label: "I am the label!",
+    size: "medium"
+  }
+};
