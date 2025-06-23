@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import RadioButton from "../RadioButton";
+import RadioButton, { RadioButtonProps } from "../RadioButton";
 
-const Example: FC<{ disabled: boolean }> = ({ disabled }) => {
+const Example: FC<RadioButtonProps> = (props) => {
   const [value, setValue] = React.useState<string | null>(null);
   const handleClick = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.currentTarget.value);
@@ -18,7 +18,7 @@ const Example: FC<{ disabled: boolean }> = ({ disabled }) => {
         height: "100%"
       }}
     >
-      <RadioButton id="al-pastor" name="taco" onChange={handleClick} label="Al Pastor" checked={value === "Al Pastor"} disabled={disabled} value="Al Pastor" />
+      <RadioButton {...props} id="al-pastor" name="taco" onChange={handleClick} label="Al Pastor" checked={value === "Al Pastor"} value="Al Pastor" />
     </div>
   );
 };
