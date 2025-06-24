@@ -55,6 +55,6 @@
   &.x-large {
     height: var(--size-500);
     font-size: var(--type-450);
-    border-radius: 4px;
+    border-radius: 8px;
   }
 }
