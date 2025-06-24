@@ -1,9 +1,5 @@
 import { FC, useEffect } from "react";
 import style from "./input.module.css";
-import "../../styles/globals.css";
-import "../../styles/palette.css";
-import "../../styles/tokens.css";
-import "../../styles/variables.css";
 import { sanitizeForId } from "../../utils";
 import { BaseComponentProps, LabelPosition, Size } from "../../types";
 import { Icon } from "../icon";
@@ -52,6 +48,7 @@ const Input: FC<InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<H
   }, [value]);
 
   const hasError = error?.hasError;
+  const hasReadOnly = !!readonly;
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCurrentValue(event.target.value);
@@ -91,6 +88,7 @@ const Input: FC<InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<H
           />
           {hasError && <Icon name="info" />}
           {unit && <div className={`${style.unit}`}>{unit}</div>}
+          {hasReadOnly && <Icon name="edit-off" />}
         </div>
         {helperText && <p className={`${style.description}`}>{helperText}</p>}
         {error?.message && <p className={`${style["errormessage"]}`}>{error.message}</p>}

@@ -54,10 +54,6 @@
       border-color: var(--component-input-border-hover);
     }
 
-    &:has(input:active) {
-      border-color: var(--component-input-border-active);
-    }
-
     &:focus-within {
       outline: 2px solid var(--color-focus-ring);
       outline-offset: 0px;
@@ -65,17 +61,50 @@
       border-color: var(--component-input-border-hover);
     }
 
-    .unit {
-      display: flex;
-      min-width: 3rem;
-      align-items: center;
-      justify-content: center;
-      color: var(--component-input-unit);
-      border-radius: 0 4px 4px 0;
-      border-left: 1px solid var(--component-input-border);
+    &:has(input:active) {
+      border-color: var(--component-input-border-active);
     }
   }
 }
+
+/* -----  Read-only styling  ------------------- */
+
+.field:has(input:read-only) {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--component-input-border);
+
+  &:focus-within {
+    outline: none;
+    box-shadow: none;
+  }
+
+  svg {
+    width: 1.33em;
+  }
+
+  input {
+    padding-inline: 0.25em;
+  }
+  .unit {
+    border: none;
+  }
+}
+
+/* -----  Unit styling  ------------------- */
+
+.unit {
+  display: flex;
+  padding-inline: 1em;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--component-input-unit);
+  border-radius: 0 4px 4px 0;
+  border-left: 1px solid var(--component-input-border);
+}
+
+/* -----  Disabled styling  ------------------- */
 
 .input:has(input:disabled) {
   .field {
@@ -95,6 +124,8 @@
   }
 }
 
+/* -----  Error styling  ------------------- */
+
 .error {
   .field {
     border-color: var(--component-input-border-error);
@@ -105,7 +136,7 @@
     }
 
     .unit {
-      border-radius: 0 var(--component-input-radius) var(--component-input-radius)  0;
+      border-radius: 0 var(--component-input-radius) var(--component-input-radius) 0;
       border-color: var(--component-input-border-error);
     }
   }
@@ -121,10 +152,12 @@
   }
 }
 
+/* -----  Sizing styling  ------------------- */
+
 .input {
   &.small {
     font-size: var(--type-200);
-    
+
     .wrapper .field {
       height: var(--height-small);
       font-size: var(--type-200);
@@ -133,16 +166,16 @@
 
   &.large {
     font-size: var(--type-300);
-    
+
     .field {
       height: var(--height-large);
       font-size: var(--type-400);
     }
   }
 
-  &.x-large{
+  &.x-large {
     font-size: var(--type-400);
-    
+
     .field {
       height: var(--height-x-large);
       font-size: var(--type-500);
