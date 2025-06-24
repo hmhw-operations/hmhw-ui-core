@@ -497,6 +497,12 @@
   --color-system-success-active: var(--palette-green-1200);
   --color-system-success-weak: var(--palette-green-300);
   --color-system-success-on-weak: var(--palette-green-1300);
+
+  --color-system-neutral-strong: var(--palette-neutral-800);
+  --color-system-neutral-on-strong: var(--palette-neutral-100);
+  --color-system-neutral-weak: var(--palette-neutral-900);
+  --color-system-neutral-on-weak: var(--palette-neutral-300);
+
   --color-high-contrast-primary: transparent;
   --color-high-contrast-accent: transparent;
 

@@ -1,6 +1,7 @@
 // components/index.ts
 export * from "./accordion";
 export * from "./button";
+export * from "./badge";
 export * from "./checkbox";
 export * from "./divider";
 export * from "./icon";
