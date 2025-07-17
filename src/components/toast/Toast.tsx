@@ -21,7 +21,7 @@ function Toast(props: ToastProps) {
       </div>
       <IconButton
         icon="close"
-        id="toast-icon-button"
+        id={`toast-icon-button-${id}`}
         label={"Close toast"}
         title={"Close toast"}
         variant="tertiary"
