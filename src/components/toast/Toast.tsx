@@ -2,6 +2,7 @@ import { toast as sonnerToast, Toaster as SonnerToaster } from "sonner";
 import styles from "./Toast.module.css";
 import { IconButton } from "../iconbutton";
 import { Icon } from "../icon";
+import { SvgName } from "../icon/types";
 
 export function toast(toast: Omit<ToastProps, "id">) {
   return sonnerToast.custom((id) => <Toast id={id} title={toast.title} onClose={toast.onClose} type={toast.type} weak={toast.weak} />, {
@@ -10,13 +11,21 @@ export function toast(toast: Omit<ToastProps, "id">) {
   });
 }
 
+const iconMap: Record<ToastType, string> = {
+  info: "info",
+  critical: "alarm",
+  success: "check",
+  caution: "caution",
+  warning: "warning"
+};
+
 function Toast(props: ToastProps) {
   const { title, id, onClose, type, weak } = props;
 
   return (
     <div className={`${styles.container} ${styles[type || "info"]} ${weak ? styles.weak : ""}`}>
       <div className={`${styles.main}`}>
-        <Icon name="info" size="medium" />
+        <Icon name={iconMap[type || "info"] as SvgName} size="medium" />
         <p className={`${styles.title}`}>{title}</p>
       </div>
       <IconButton
