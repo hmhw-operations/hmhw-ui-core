@@ -11,7 +11,7 @@ export function toast(toast: Omit<ToastProps, "id">) {
   });
 }
 
-const iconMap: Record<ToastType, string> = {
+const iconMap: Record<ToastType, SvgName> = {
   info: "info",
   critical: "alarm",
   success: "check",
