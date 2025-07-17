@@ -82,6 +82,7 @@
   },
   "dependencies": {
     "@tanstack/react-table": "^8.20.5",
-    "react-syntax-highlighter": "^15.6.1"
+    "react-syntax-highlighter": "^15.6.1",
+    "sonner": "^2.0.6"
   }
 }
