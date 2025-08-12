@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { ColumnDef, createColumnHelper, flexRender, getCoreRowModel, getSortedRowModel, SortingState, useReactTable } from "@tanstack/react-table";
 import style from "./table.module.css";
+import { Size } from "../../types";
 
 // Define Props for the generic table
 interface TableProps<TData> {
   data: TData[];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   columns: ColumnDef<TData, any>[]; // Use ColumnDef with the generic type
+  size?: Size;
 }
 
 // Re-export createColumnHelper
 export { createColumnHelper };
 
-const Table = <TData extends object>({ data, columns }: TableProps<TData>) => {
+const Table = <TData extends object>({ data, columns, size = "medium" }: TableProps<TData>) => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const table = useReactTable({
     data, // Use data from props
@@ -23,7 +25,7 @@ const Table = <TData extends object>({ data, columns }: TableProps<TData>) => {
     getSortedRowModel: getSortedRowModel()
   });
   return (
-    <table className={`${style.table}`}>
+    <table className={`${style.table} ${style[size]}`}>
       <thead>
         {table.getHeaderGroups().map((headerGroup) => (
           <tr key={headerGroup.id}>
