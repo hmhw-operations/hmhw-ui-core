@@ -15,7 +15,6 @@ const Example: FC<CheckboxProps> = ({ label, size }) => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        color: "white",
         height: "100%"
       }}
     >
