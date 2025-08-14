@@ -23,16 +23,16 @@ function Toast(props: ToastProps) {
   const { title, id, onClose, type, weak } = props;
 
   return (
-    <div className={`${styles.container} ${styles[type || "info"]} ${weak ? styles.weak : ""}`}>
-      <div className={`${styles.main}`}>
+    <div className={`${styles.toast} ${styles[type || "info"]} ${weak ? styles.weak : ""}`} role="status">
+      <div className={`${styles.container}`}>
         <Icon name={iconMap[type || "info"] as SvgName} size="medium" />
         <p className={`${styles.title}`}>{title}</p>
       </div>
       <IconButton
         icon="close"
         id={`toast-icon-button-${id}`}
-        label={"Close toast"}
-        title={"Close toast"}
+        label={"Close"}
+        title={"Close"}
         variant="tertiary"
         size="large"
         onClick={() => {
