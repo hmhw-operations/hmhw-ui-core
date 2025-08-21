@@ -36,13 +36,7 @@
 
   &.small {
     font-size: var(--type-button-label-small);
-  }
-  &.large {
-    font-size: var(--type-button-label-large);
-  }
-
-  &.trailing {
-    flex-direction: row-reverse;
+    height: var(--height-small);
   }
 
   &.large {
@@ -50,10 +44,14 @@
     height: var(--height-large);
   }
 
-  &.small {
-    font-size: var(--type-button-label-small);
-    height: var(--height-small);
+  &.x-large {
+    height: var(--height-x-large);
   }
+
+  &.trailing {
+    flex-direction: row-reverse;
+  }
+
 
   &.secondary {
     color: var(--component-button-secondary-foreground);    
