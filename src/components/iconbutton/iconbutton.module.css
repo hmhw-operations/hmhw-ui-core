@@ -6,7 +6,7 @@
   aspect-ratio: 1 / 1;
   padding: 0;
   border-radius: var(--radius-default);
-  border: none;
+  border: 1px solid transparent;
   color: var(--component-button-primary-foreground);
   background-color: var(--component-button-primary-background);
 
@@ -39,10 +39,14 @@
   &.large {
     height: var(--height-large);
   }
+  &.x-large {
+    height: var(--height-x-large);
+  }
 
   &.secondary {
     color: var(--component-button-secondary-foreground);
     background-color: var(--component-button-secondary-background);
+       border-color: var(--component-button-secondary-border);
 
     &:hover {
       background-color: var(--component-button-secondary-background-hover);
@@ -61,6 +65,7 @@
     &:hover {
       color: var(--component-button-tertiary-foreground-hover);
       background-color: var(--component-button-tertiary-background-hover);
+      border-color: var(--component-button-secondary-background-hover);
     }
 
     &:active {
