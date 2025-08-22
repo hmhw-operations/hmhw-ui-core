@@ -51,8 +51,7 @@
       &:hover {
         background-color: var(--c-switch-track-active-hover);
       }
-h
-      .thumb {
+      h .thumb {
         background-color: var(--c-switch-thumb);
       }
     }
@@ -113,6 +112,6 @@ h
     }
   }
 }
-.switch.none + label {
+.none + label {
   display: none;
 }
