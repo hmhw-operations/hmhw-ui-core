@@ -26,12 +26,6 @@
     cursor: not-allowed;
   }
 
-  svg {
-    color: inherit;
-    height: 60%;
-    width: 60%;
-  }
-
   &.small {
     height: var(--height-small);
   }
@@ -46,7 +40,7 @@
   &.secondary {
     color: var(--component-button-secondary-foreground);
     background-color: var(--component-button-secondary-background);
-       border-color: var(--component-button-secondary-border);
+    border-color: var(--component-button-secondary-border);
 
     &:hover {
       background-color: var(--component-button-secondary-background-hover);
