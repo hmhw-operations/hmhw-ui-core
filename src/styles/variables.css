@@ -945,7 +945,7 @@ body.day-theme {
   --component-button-tertiary-foreground-hover: var(--component-button-tertiary-foreground);
   --component-button-tertiary-foreground-disabled: var(--color-foreground-disabled);
   --component-button-tertiary-background: transparent;
-  --component-button-tertiary-background-hover: var(--palette-alpha-black-002);
+  --component-button-tertiary-background-hover: var(--palette-alpha-black-005);
   --component-button-tertiary-background-focus: transparent;
   --component-button-tertiary-background-disabled: transparent;
   --component-button-tertiary-border: transparent;
