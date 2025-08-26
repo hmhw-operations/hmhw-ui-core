@@ -12,3 +12,8 @@
   width: var(--size-400);
   height: auto;
 }
+
+.x-large {
+  width: var(--size-500);
+  height: auto;
+}

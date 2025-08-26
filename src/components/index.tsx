@@ -25,3 +25,4 @@ export * from "./themeswitch";
 export * from "./sidepanel";
 export * from "./tag";
 export * from "./toast";
+export * from "./notification";
