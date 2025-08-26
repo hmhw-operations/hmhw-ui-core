@@ -1,0 +1,26 @@
+.root {
+  position: relative;
+}
+
+.trigger {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: transparent;
+}
+
+.content {
+  position: fixed;
+  z-index: 1001;
+  border-radius: var(--radius-medium);
+  border: 1px solid var(--component-context-menu-border);
+  background: var(--component-context-menu-background);
+  max-width: 20rem;
+}

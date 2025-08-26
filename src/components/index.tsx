@@ -2,6 +2,7 @@
 export * from "./accordion";
 export * from "./button";
 export * from "./checkbox";
+export * from "./contextmenu";
 export * from "./divider";
 export * from "./icon";
 export * from "./iconbutton";

@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: var(--size-100);
-  padding: var(--size-200);
+  padding: var(--size-100);
   background-color: var(--component-menulist-background);
 
   .menuListItem {
