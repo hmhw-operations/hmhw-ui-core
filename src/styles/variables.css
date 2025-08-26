@@ -429,7 +429,7 @@
   --color-foreground-interactive-disabled: var(--palette-blue-198-1000);
   --color-background-primary: var(--palette-blue-198-1300);
   --color-foreground-interactive-secondary-default: var(--palette-blue-198-800);
-  --color-background-neutral: var(--palette-neutral-500);
+  --color-background-neutral: var(--palette-blue-198-1300);
   --color-foreground-interactive-secondary-on: var(--palette-alpha-white-090);
   --color-background-neutral-hover: var(--palette-neutral-700);
   --color-foreground-interactive-secondary-hover: var(--palette-blue-198-1000);
@@ -708,7 +708,7 @@ body.day-theme {
   --color-foreground-interactive-disabled: var(--palette-neutral-new-200);
   --color-background-primary: var(--palette-neutral-new-100);
   --color-foreground-interactive-secondary-default: var(--palette-neutral-new-300);
-  --color-background-neutral: var(--palette-neutral-new-300);
+  --color-background-neutral: var(--palette-neutral-new-200);
   --color-foreground-interactive-secondary-dn: var(--palette-neutral-new-900);
   --color-background-neutral-hover: var(--palette-neutral-new-400);
   --color-foreground-interactive-secondary-hover: var(--palette-neutral-new-400);

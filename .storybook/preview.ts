@@ -6,9 +6,8 @@ const preview: Preview = {
     withThemeByClassName({
       parentSelector: "body",
       themes: {
-        light: "light-theme",
         dark: "dark-theme",
-        contrast: "contrast-theme",
+        light: "light-theme",
         day: "day-theme"
       },
       defaultTheme: "dark"
