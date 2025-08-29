@@ -40,7 +40,7 @@ const SidePanel: React.FC<SidePanelProps> = ({ open = false, onClose, children, 
       tabIndex={-1}
       role="dialog"
       aria-modal="true"
-      style={{ display: open ? "flex" : "none" }}
+      style={{ display: open ? "grid" : "none" }}
     >
       <header className={style.header}>
         <h3 className={style.title}>{titleComponent}</h3>
