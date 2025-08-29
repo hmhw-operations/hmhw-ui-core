@@ -19,8 +19,12 @@
 .content {
   position: fixed;
   z-index: 1001;
-  border-radius: var(--radius-medium);
-  border: 1px solid var(--component-context-menu-border);
-  background: var(--component-context-menu-background);
+  border: 1px solid var(--color-component-context-menu-border);
+  background: var(--color-component-context-menu-background);
   max-width: 20rem;
+  border-radius: var(--radius-default);
+
+  ul {
+    background-color: transparent;
+  }
 }
