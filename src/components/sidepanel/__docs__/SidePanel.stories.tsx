@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import SidePanel from "../SidePanel";
+import { Button } from "../../button";
 
 const meta: Meta<typeof SidePanel> = {
   title: "SidePanel",
@@ -13,71 +14,107 @@ type Story = StoryObj<typeof SidePanel>;
 export const Default: Story = {
   args: {
     open: true,
-    onClose: () => console.log("onClose"),
     side: "right",
     size: "large",
-    titleComponent: "Panel title",
-    actions: [
-      {
-        label: "Action 1",
-        buttonVariant: "primary",
-        onClick: () => console.log("Action 1 clicked")
-      },
-      {
-        label: "Action 2",
-        buttonVariant: "secondary",
-        onClick: () => console.log("Action 2 clicked")
-      }
-    ],
+    id: "sidepanel-composable",
+    title: "Composable Side Panel",
     children: (
-      <div>
-        <p>This is the content of the side panel.</p>
-        <p>You can add any content here, such as forms, lists, or other components.</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, sem at tristique dictum, mauris sem blandit nunc, ac ornare est mi non purus. Nam condimentum
-          est consequat, varius lectus sit amet, condimentum risus. Donec eget euismod justo. Fusce in condimentum felis, non gravida ex. Sed vel tellus id justo ornare euismod.
-          Vivamus pellentesque at dui et rhoncus. Etiam sollicitudin est at tellus interdum, sit amet vulputate nisi mattis. Quisque dignissim risus est, id tincidunt nibh dictum
-          eget. In sed euismod arcu, sit amet luctus nulla. Nam fringilla, sapien feugiat facilisis tempor, turpis magna faucibus ipsum, quis iaculis dolor massa id diam. Nullam
-          faucibus risus vitae velit scelerisque, in ultrices nunc malesuada. Sed rhoncus mi in mauris tempus convallis. Phasellus tempor neque et egestas hendrerit. Etiam cursus
-          id mi semper posuere. Integer facilisis aliquam mollis. Vestibulum pretium metus ac metus condimentum, pretium pretium turpis volutpat. Quisque vitae quam congue, cursus
-          lacus in, faucibus augue. Donec vel ante id ante volutpat ultrices. Suspendisse scelerisque tortor ac lorem interdum vehicula. Vivamus facilisis tempus purus et egestas.
-          In facilisis nibh non elit suscipit vulputate. Aenean molestie nisl at massa ultrices cursus. Vivamus sed ultrices massa, sed mattis lacus. Morbi euismod sodales
-          faucibus. Etiam purus risus, convallis at elementum vehicula, sodales nec nunc. Ut eu euismod sapien. Ut vehicula facilisis sapien vitae dictum. Mauris euismod velit
-          iaculis, egestas nunc vel, eleifend arcu. Sed sed molestie odio. Duis accumsan lacinia vestibulum. Sed faucibus ac eros eget malesuada. Nam eget consectetur elit, ut
-          varius purus. Aenean aliquam varius consequat. Sed porttitor dolor non odio semper gravida. Suspendisse eget eros rhoncus, pulvinar orci eget, posuere neque. Nunc non
-          ultrices quam, eget euismod quam. Sed vel viverra purus, at convallis eros. Aenean et felis magna. Aenean a felis in lectus dapibus interdum nec id orci. Cras in viverra
-          nunc, eget placerat dui. Suspendisse odio dolor, volutpat nec erat et, tincidunt consectetur sapien. Nunc imperdiet risus id ante egestas, at rhoncus leo maximus. Sed
-          interdum orci et elementum vestibulum. Donec tempus vel justo dapibus mollis. Morbi quis euismod magna. Mauris vitae purus ornare, sagittis risus ac, elementum odio.
-          Suspendisse in eros ut sem lobortis maximus. Etiam ornare mattis mauris, ac commodo eros porttitor quis. Nulla tempus placerat convallis. Nulla eget est ac ipsum rutrum
-          elementum. Donec vulputate interdum dignissim. In venenatis pulvinar tellus quis vestibulum. In et faucibus elit. Vestibulum velit diam, volutpat a scelerisque in,
-          egestas eu ex. Nullam non augue lobortis, mattis lacus in, vehicula nisl. Nam nec dui est. Donec ligula ipsum, venenatis ut tortor sit amet, accumsan sagittis nisi. Donec
-          efficitur urna libero, ut rutrum mauris semper in. Nunc a dignissim neque. Proin dignissim arcu purus, sit amet efficitur felis posuere eu. Nullam lacinia, est in
-          tincidunt maximus, neque dui lacinia sem, in feugiat lectus tortor sed dui. Vivamus ac risus leo. Vivamus ut porttitor libero. Nunc euismod venenatis aliquet. Nulla
-          accumsan turpis varius urna finibus eleifend. Quisque et urna elit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, sem at tristique dictum, mauris sem blandit nunc, ac ornare est mi non purus. Nam condimentum
-          est consequat, varius lectus sit amet, condimentum risus. Donec eget euismod justo. Fusce in condimentum felis, non gravida ex. Sed vel tellus id justo ornare euismod.
-          Vivamus pellentesque at dui et rhoncus. Etiam sollicitudin est at tellus interdum, sit amet vulputate nisi mattis. Quisque dignissim risus est, id tincidunt nibh dictum
-          eget. In sed euismod arcu, sit amet luctus nulla. Nam fringilla, sapien feugiat facilisis tempor, turpis magna faucibus ipsum, quis iaculis dolor massa id diam. Nullam
-          faucibus risus vitae velit scelerisque, in ultrices nunc malesuada. Sed rhoncus mi in mauris tempus convallis. Phasellus tempor neque et egestas hendrerit. Etiam cursus
-          id mi semper posuere. Integer facilisis aliquam mollis. Vestibulum pretium metus ac metus condimentum, pretium pretium turpis volutpat. Quisque vitae quam congue, cursus
-          lacus in, faucibus augue. Donec vel ante id ante volutpat ultrices. Suspendisse scelerisque tortor ac lorem interdum vehicula. Vivamus facilisis tempus purus et egestas.
-          In facilisis nibh non elit suscipit vulputate. Aenean molestie nisl at massa ultrices cursus. Vivamus sed ultrices massa, sed mattis lacus. Morbi euismod sodales
-          faucibus. Etiam purus risus, convallis at elementum vehicula, sodales nec nunc. Ut eu euismod sapien. Ut vehicula facilisis sapien vitae dictum. Mauris euismod velit
-          iaculis, egestas nunc vel, eleifend arcu. Sed sed molestie odio. Duis accumsan lacinia vestibulum. Sed faucibus ac eros eget malesuada. Nam eget consectetur elit, ut
-          varius purus. Aenean aliquam varius consequat. Sed porttitor dolor non odio semper gravida. Suspendisse eget eros rhoncus, pulvinar orci eget, posuere neque. Nunc non
-          ultrices quam, eget euismod quam. Sed vel viverra purus, at convallis eros. Aenean et felis magna. Aenean a felis in lectus dapibus interdum nec id orci. Cras in viverra
-          nunc, eget placerat dui. Suspendisse odio dolor, volutpat nec erat et, tincidunt consectetur sapien. Nunc imperdiet risus id ante egestas, at rhoncus leo maximus. Sed
-          interdum orci et elementum vestibulum. Donec tempus vel justo dapibus mollis. Morbi quis euismod magna. Mauris vitae purus ornare, sagittis risus ac, elementum odio.
-          Suspendisse in eros ut sem lobortis maximus. Etiam ornare mattis mauris, ac commodo eros porttitor quis. Nulla tempus placerat convallis. Nulla eget est ac ipsum rutrum
-          elementum. Donec vulputate interdum dignissim. In venenatis pulvinar tellus quis vestibulum. In et faucibus elit. Vestibulum velit diam, volutpat a scelerisque in,
-          egestas eu ex. Nullam non augue lobortis, mattis lacus in, vehicula nisl. Nam nec dui est. Donec ligula ipsum, venenatis ut tortor sit amet, accumsan sagittis nisi. Donec
-          efficitur urna libero, ut rutrum mauris semper in. Nunc a dignissim neque. Proin dignissim arcu purus, sit amet efficitur felis posuere eu. Nullam lacinia, est in
-          tincidunt maximus, neque dui lacinia sem, in feugiat lectus tortor sed dui. Vivamus ac risus leo. Vivamus ut porttitor libero. Nunc euismod venenatis aliquet. Nulla
-          accumsan turpis varius urna finibus eleifend. Quisque et urna elit.
-        </p>
-      </div>
+      <>
+        <SidePanel.Header onClose={() => console.log("onClose")}>Panel Title</SidePanel.Header>
+        <SidePanel.Content>
+          <p>This is the content of the side panel using the composable API.</p>
+          <p>You can add any content here, such as forms, lists, or other components.</p>
+          <p>The composable approach gives you full control over the layout.</p>
+        </SidePanel.Content>
+        <SidePanel.Footer>
+          <Button variant="secondary" onClick={() => console.log("Cancel clicked")} id="cancel-btn" title="Cancel" text="Cancel" />
+          <Button variant="primary" onClick={() => console.log("Save clicked")} id="save-btn" title="Save" text="Save" />
+        </SidePanel.Footer>
+      </>
+    )
+  }
+};
+
+export const WithCustomHeader: Story = {
+  args: {
+    open: true,
+    side: "right",
+    size: "medium",
+    id: "sidepanel-custom-header",
+    title: "Custom Header Side Panel",
+    children: (
+      <>
+        <SidePanel.Header onClose={() => console.log("onClose")}>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <span>🔧</span>
+            <h2 style={{ margin: 0 }}>Settings</h2>
+          </div>
+        </SidePanel.Header>
+        <SidePanel.Content>
+          <p>This panel has a custom header without a close button.</p>
+          <p>You have full control over the header content.</p>
+        </SidePanel.Content>
+        <SidePanel.Footer>
+          <Button variant="primary" onClick={() => console.log("Close clicked")} id="close-btn" title="Close" text="Close" />
+        </SidePanel.Footer>
+      </>
+    )
+  }
+};
+
+export const ContentOnly: Story = {
+  args: {
+    open: true,
+    side: "left",
+    size: "small",
+    id: "sidepanel-content-only",
+    title: "Content Only Side Panel",
+    children: (
+      <SidePanel.Content>
+        <h3>Just Content</h3>
+        <p>This side panel only has content - no header or footer.</p>
+        <p>You can compose the panel exactly how you need it.</p>
+      </SidePanel.Content>
+    )
+  }
+};
+
+export const FlexibleLayout: Story = {
+  args: {
+    open: true,
+    side: "right",
+    size: "large",
+    id: "sidepanel-flexible",
+    title: "Flexible Layout Side Panel",
+    children: (
+      <>
+        <SidePanel.Header onClose={() => console.log("onClose")}>Multi-section Panel</SidePanel.Header>
+        <SidePanel.Content>
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px", height: "100%" }}>
+            <section>
+              <h4>Section 1</h4>
+              <p>First section of content.</p>
+            </section>
+            <section style={{ flex: 1 }}>
+              <h4>Section 2</h4>
+              <p>This section grows to fill available space.</p>
+            </section>
+            <section>
+              <h4>Section 3</h4>
+              <p>Final section of content.</p>
+            </section>
+          </div>
+        </SidePanel.Content>
+        <SidePanel.Footer>
+          <div style={{ display: "flex", gap: "8px", justifyContent: "space-between", width: "100%" }}>
+            <Button variant="tertiary" onClick={() => console.log("Reset clicked")} id="reset-btn" title="Reset" text="Reset" />
+            <div style={{ display: "flex", gap: "8px" }}>
+              <Button variant="secondary" onClick={() => console.log("Cancel clicked")} id="cancel-btn-2" title="Cancel" text="Cancel" />
+              <Button variant="primary" onClick={() => console.log("Apply clicked")} id="apply-btn" title="Apply" text="Apply" />
+            </div>
+          </div>
+        </SidePanel.Footer>
+      </>
     )
   }
 };

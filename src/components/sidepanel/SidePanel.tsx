@@ -1,30 +1,65 @@
 import React, { useEffect, useRef } from "react";
 import style from "./sidepanel.module.css";
-import { Button } from "../button";
-import { ButtonVariant } from "../button/Button";
 import { BaseComponentProps, Size } from "../../types";
 import { IconButton } from "../iconbutton";
 
 export type Side = "left" | "right";
 
-export type ActionType = {
-  label: string;
-  buttonVariant: ButtonVariant;
-  onClick: () => void;
-  disabled?: boolean;
-};
-
 export type SidePanelProps = BaseComponentProps & {
-  children?: React.ReactNode;
-  titleComponent: string;
+  children: React.ReactNode;
   size?: Size;
   open?: boolean;
-  actions?: ActionType[];
-  onClose?: () => void;
   side?: Side;
 };
 
-const SidePanel: React.FC<SidePanelProps> = ({ open = false, onClose, children, actions, size = "medium", titleComponent, side = "right" }) => {
+export type SidePanelHeaderProps = {
+  children?: React.ReactNode;
+  onClose?: () => void;
+  className?: string;
+} & React.HTMLAttributes<HTMLElement>;
+
+export type SidePanelContentProps = {
+  children: React.ReactNode;
+  className?: string;
+} & React.HTMLAttributes<HTMLDivElement>;
+
+export type SidePanelFooterProps = {
+  children: React.ReactNode;
+  className?: string;
+} & React.HTMLAttributes<HTMLElement>;
+
+const SidePanelHeader: React.FC<SidePanelHeaderProps> = ({ children, onClose, className = "", ...htmlAttributes }) => {
+  const headerClasses = `${style.header} ${className}`.trim();
+
+  return (
+    <header className={headerClasses} {...htmlAttributes}>
+      {children && <div className={style.title}>{children}</div>}
+      {onClose && <IconButton icon="close" label="Close" title="Close" aria-label="Close side panel" id="modalbutton_close" onClick={onClose} size="medium" variant="tertiary" />}
+    </header>
+  );
+};
+
+const SidePanelContent: React.FC<SidePanelContentProps> = ({ children, className = "", ...htmlAttributes }) => {
+  const contentClasses = `${style.content} ${className}`.trim();
+
+  return (
+    <div className={contentClasses} {...htmlAttributes}>
+      {children}
+    </div>
+  );
+};
+
+const SidePanelFooter: React.FC<SidePanelFooterProps> = ({ children, className = "", ...htmlAttributes }) => {
+  const footerClasses = `${style.footer} ${className}`.trim();
+
+  return (
+    <footer className={footerClasses} {...htmlAttributes}>
+      {children}
+    </footer>
+  );
+};
+
+const SidePanelBase: React.FC<SidePanelProps> = ({ open = false, children, size = "medium", side = "right", ...baseProps }) => {
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -33,35 +68,24 @@ const SidePanel: React.FC<SidePanelProps> = ({ open = false, onClose, children, 
     }
   }, [open]);
 
+  const panelClasses = `${style.sidepanel} ${style[size]} ${style[side]} ${open ? style.open : ""}`.trim();
+
   return (
-    <div
-      ref={panelRef}
-      className={`${style.sidepanel} ${style[size]} ${style[side]} ${open ? style.open : ""}`}
-      tabIndex={-1}
-      role="dialog"
-      aria-modal="true"
-      style={{ display: open ? "grid" : "none" }}
-    >
-      <header className={style.header}>
-        <h3 className={style.title}>{titleComponent}</h3>
-        <IconButton icon="close" label="Close" title="Close" aria-label="Close side panel" id="modalbutton_close" onClick={onClose} size="medium" variant="tertiary" />
-      </header>
-      <div className={style.content}>{children}</div>
-      <footer className={style.footer}>
-        {actions?.map((action) => (
-          <Button
-            id={`sidepanelbutton_${action.label}`}
-            title={action.label}
-            variant={action.buttonVariant}
-            key={action.label}
-            onClick={action.onClick}
-            text={action.label}
-            disabled={action.disabled}
-          />
-        ))}
-      </footer>
+    <div ref={panelRef} className={panelClasses} tabIndex={-1} role="dialog" aria-modal="true" style={{ display: open ? "grid" : "none" }} {...baseProps}>
+      {children}
     </div>
   );
 };
+
+type SidePanelCompoundComponent = typeof SidePanelBase & {
+  Header: typeof SidePanelHeader;
+  Content: typeof SidePanelContent;
+  Footer: typeof SidePanelFooter;
+};
+
+const SidePanel = SidePanelBase as SidePanelCompoundComponent;
+SidePanel.Header = SidePanelHeader;
+SidePanel.Content = SidePanelContent;
+SidePanel.Footer = SidePanelFooter;
 
 export default SidePanel;
