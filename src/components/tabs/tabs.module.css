@@ -89,4 +89,5 @@
 .tab_panel {
   min-height: 50vh;
   padding: var(--size-400) 0;
+  overflow-y: auto;
 }

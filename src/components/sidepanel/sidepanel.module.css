@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content 1fr max-content;
-  gap: var(--size-400);
   width: 400px;
   max-width: 100vw;
   box-shadow: var(--component-sidepanel-shadow);
@@ -61,11 +60,7 @@
   .title {
     font-size: var(--type-600);
   }
-
-  .content {
-    overflow: auto;
-  }
-
+  
   .footer {
     display: flex;
     gap: var(--size-200);
