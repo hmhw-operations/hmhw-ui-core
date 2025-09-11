@@ -13,7 +13,7 @@ export type TextLinkProps = {
 export default function TextLink({ text, href, newTab, isExternal = true, size = "small" }: TextLinkProps) {
   return (
     <div className={`${styles.textLink} ${styles[size]}`}>
-      <a href={href} target={`${newTab && "_"}`}>
+      <a href={href} target={newTab ? "_blank" : "_self"} rel="noreferrer">
         {text}
       </a>
       {isExternal && <Icon name="external-link" size={size} />}
