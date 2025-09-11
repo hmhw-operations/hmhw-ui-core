@@ -19,12 +19,15 @@ export type ButtonProps = BaseComponentProps & {
   disabled?: boolean;
 };
 
-const Button: React.FC<ButtonProps> = ({ size = "medium", variant = "primary", text, onClick, iconPosition = "leading", icon, disabled, ...props }) => {
-  return (
-    <button className={`${style.button} ${style[variant]} ${style[size]} ${style[iconPosition]}`} type="button" onClick={onClick} disabled={disabled} {...props}>
-      {icon && icon} {text}
-    </button>
-  );
-};
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ size = "medium", variant = "primary", text, onClick, iconPosition = "leading", icon, disabled, ...props }, ref) => {
+    return (
+      <button className={`${style.button} ${style[variant]} ${style[size]} ${style[iconPosition]}`} type="button" onClick={onClick} disabled={disabled} {...props} ref={ref}>
+        {icon && icon} {text}
+      </button>
+    );
+  }
+);
 
+Button.displayName = "Button";
 export default Button;
