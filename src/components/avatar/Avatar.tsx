@@ -44,7 +44,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(({ size = "medium",
       {src ? (
         <img src={src} alt={altText} title={name} className={style.image} />
       ) : (
-        <span className={style.initials} title={name}>
+        <span className={style.initials} {...(name ? { title: name } : {})}>
           {displayInitials}
         </span>
       )}
