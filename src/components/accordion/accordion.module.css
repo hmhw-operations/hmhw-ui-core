@@ -8,64 +8,81 @@
   width: 100%;
   color: var(--color-foreground-primary);
   line-height: 1.5;
+  border-top: 1px solid var(--color-border-weak);
 
-  + * {
-    border-top: none;
+  max-height: 4rem;
+  overflow: hidden;
+  transition: max-height 400ms ease-out;
+
+  &:open .header svg {
+    rotate: 90deg;
+    transition: rotate 150ms;
   }
 
+  &[open] {
+    max-height: 1000px;
+  }
+
+  &:hover {
+    border-color: var(--color-system-info-default);
+    transition: border-color 300ms;
+  }
+}
+
+.accordion::details-content {
+  opacity: 0;
+  transition:
+    opacity 200ms ease-in-out,
+    content-visibility 150ms ease-in-out allow-discrete;
+  content-visibility: hidden;
+}
+
+.accordion[open]::details-content {
+  opacity: 1;
+  content-visibility: visible;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  height: var(--height-large);
+  padding-left: var(--space-50);
+  line-height: 1;
+
+  gap: var(--space-50);
+
+  &:hover {
+    background-color: var(--color-system-info-weak);
+    cursor: pointer;
+    transition: background-color 300ms;
+  }
+}
+
+.content {
+  padding: var(--size-200);
+}
+
+&.large {
   summary {
-    display: flex;
-    align-items: center;
-    position: relative;
-    background-color: var(--color-background-interactive-secondary-default);
-    height: var(--height-medium);
-    padding-left: var(--space-50);
-    font-size: var(--type-300);
-    line-height: 1;
-    color: var(--color-foreground-interactive-on);
-    list-style: none;
-    gap: var(--space-50);
-    border-radius: var(--Radius-Medium, 4px);
-
-    &:hover {
-      background-color: var(--color-background-interactive-hover);
-    }
-
-    &::-webkit-details-marker {
-      display: none;
-    }
-
-    &:hover {
-      cursor: pointer;
-      background-color: var(--color-background-interactive-hover);
-    }
-
-    svg {
-      width: var(--size-300);
-      height: auto;
-      transition: transform 0.2s ease-out;
-      fill: var(--color-foreground-interactive-on);
-    }
+    height: var(--height-large);
+    font-size: var(--type-400);
   }
+}
+&.small {
+  summary {
+    height: var(--height-small);
+    font-size: var(--type-200);
+  }
+}
 
-  .content {
-    padding: var(--size-200) 0 var(--size-100);
-  }
+/* Hides marker on Chrome and Safari */
 
-  &[open] > summary > svg {
-    transform: rotate(90deg);
-  }
+summary {
+  outline: none;
+  list-style: none;
+}
 
-  &.large {
-    summary {
-      height: var(--height-large);
-      font-size: var(--type-400);
-    }
-  }
-  &.small {
-    summary {
-      height: var(--height-small);
-      font-size: var(--type-200);
-    }
-  }
+summary::-webkit-details-marker {
+  display: none;
 }

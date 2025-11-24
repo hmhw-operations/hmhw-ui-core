@@ -465,7 +465,7 @@
 
   --color-system-info-default: var(--palette-blue-198-800);
   --color-system-info-on: var(--palette-neutral-050);
-  --color-system-info-weak: var(--palette-blue-198-300);
+  --color-system-info-weak: var(--palette-blue-198-1200);
   --color-system-info-on-weak: var(--palette-blue-198-1200);
   --color-system-caution-default: var(--palette-yellow-800);
   --color-system-caution-on: var(--palette-yellow-1500);
