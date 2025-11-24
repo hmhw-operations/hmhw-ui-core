@@ -39,5 +39,10 @@ export default defineConfig({
     modules: {
       scopeBehaviour: "local" // Use CSS modules for local scoping
     }
+  },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./setupTests.ts"
   }
 });
