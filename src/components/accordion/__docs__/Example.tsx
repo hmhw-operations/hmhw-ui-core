@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Accordion, { AccordionProps } from "../Accordion";
 
-const Example: FC<AccordionProps> = ({ items, size }) => {
+const Example: FC<AccordionProps> = ({ items, size, groupId }) => {
   return (
     <div
       style={{
@@ -14,7 +14,7 @@ const Example: FC<AccordionProps> = ({ items, size }) => {
         width: "600px"
       }}
     >
-      <Accordion items={items} size={size} />
+      <Accordion items={items} size={size} groupId={groupId} />
     </div>
   );
 };
