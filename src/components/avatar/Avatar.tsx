@@ -40,15 +40,15 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(({ size = "medium",
   const altText = name ? `Avatar for ${name}` : "Avatar";
 
   return (
-    <div className={`${style.avatar} ${style[variant]} ${style[size]}`} {...props} ref={ref}>
+    <figure className={`${style.avatar} ${style[variant]} ${style[size]}`} {...props} ref={ref}>
       {src ? (
         <img src={src} alt={altText} title={name} className={style.image} />
       ) : (
-        <span className={style.initials} {...(name ? { title: name } : {})}>
+        <figcaption className={style.initials} {...(name ? { title: name } : {})}>
           {displayInitials}
-        </span>
+        </figcaption>
       )}
-    </div>
+    </figure>
   );
 });
 
