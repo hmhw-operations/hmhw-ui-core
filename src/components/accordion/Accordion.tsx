@@ -54,11 +54,7 @@ export type AccordionProps = {
  */
 const Accordion: React.FC<AccordionProps> = ({ items, size, groupId }) => {
   return items.map((item, index) => (
-    <details
-      {...(groupId ? { name: groupId } : {})}
-      key={item.label + index}
-      className={`${style.accordion} ${style[size ?? "medium"]}`}
-    >
+    <details {...(groupId ? { name: groupId } : {})} key={item.label + index} className={`${style.accordion} ${style[size ?? "medium"]}`}>
       <summary className={`${style.header} `}>
         <Icon name={"caret-right"} size={size ?? "small"} />
         {item.label}
