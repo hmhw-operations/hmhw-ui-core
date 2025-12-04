@@ -2,15 +2,15 @@
   --divider-thick: 4px;
   --divider-thin: 1px;
 
-  border: 1px solid transparent;
   margin: 0;
+  border: none;
 
   &.primary {
-    background-color: var(--c-divider-primary);
+    background-color: var(--color-border-strong);
   }
 
   &.secondary {
-    background-color: var(--c-divider-secondary);
+    background-color: var(--color-border-weak);
   }
 
   &.horizontal {
