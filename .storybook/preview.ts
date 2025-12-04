@@ -7,10 +7,9 @@ const preview: Preview = {
       parentSelector: "body",
       themes: {
         dark: "dark-theme",
-        light: "light-theme",
         day: "day-theme"
       },
-      defaultTheme: "dark"
+      defaultTheme: "day-theme"
     })
   ],
 
