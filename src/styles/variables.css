@@ -231,8 +231,7 @@ body.day-theme {
   --color-background-interactive-secondary-disabled: hsla(0, 0%, 0%, 1);
 
   /* system colors: neutral  ------------------------------------------------------------ */
-
-  --color-system-neutral-strong: var(--palette-neutral-new-600);
+  --color-system-neutral-strong: var(--palette-neutral-new-700);
   --color-system-neutral-on-strong: var(--palette-neutral-new-100);
   --color-system-neutral-weak: var(--palette-neutral-new-200);
   --color-system-neutral-on-weak: var(--palette-neutral-new-700);
@@ -270,10 +269,10 @@ body.day-theme {
   --color-system-warning-weak-border: var(--palette-orange-500);
 
   /* system colors: success (green)  ------------------------------------------------------------ */
-  --color-system-success-strong: var(--palette-green-800);
+  --color-system-success-strong: var(--palette-green-1000);
   --color-system-success-on-strong: var(--palette-green-100);
-  --color-system-success-strong-hover: var(--palette-green-1000);
-  --color-system-success-strong-active: var(--palette-green-1000);
+  --color-system-success-strong-hover: var(--palette-green-1200);
+  --color-system-success-strong-active: var(--palette-green-1400);
   --color-system-success-weak: var(--palette-green-300);
   --color-system-success-on-weak: var(--palette-green-1300);
   --color-system-success-weak-border: var(--palette-green-800);

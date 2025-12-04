@@ -13,7 +13,8 @@
     color: currentColor !important;
 
     &:hover {
-      background-color: hsl(0 0% 0% / 0.1) !important;
+      background-color: hsl(0 0% 0% / 0.08) !important;
+      border-color: transparent !important;
     }
   }
 
@@ -32,8 +33,8 @@
   }
 
   &.info {
-    background-color: var(--color-system-info-default);
-    color: var(--color-system-info-on);
+    background-color: var(--color-system-info-strong);
+    color: var(--color-system-info-on-strong);
 
     &.weak {
       background-color: var(--color-system-info-weak);
@@ -42,8 +43,8 @@
   }
 
   &.critical {
-    background-color: var(--color-system-critical-default);
-    color: var(--color-system-critical-on);
+    background-color: var(--color-system-critical-strong);
+    color: var(--color-system-critical-on-strong);
 
     &.weak {
       background-color: var(--color-system-critical-weak);
@@ -52,8 +53,8 @@
   }
 
   &.success {
-    background-color: var(--color-system-success-default);
-    color: var(--color-system-success-on);
+    background-color: var(--color-system-success-strong);
+    color: var(--color-system-success-on-strong);
 
     &.weak {
       background-color: var(--color-system-success-weak);
@@ -62,8 +63,8 @@
   }
 
   &.caution {
-    background-color: var(--color-system-caution-default);
-    color: var(--color-system-caution-on);
+    background-color: var(--color-system-caution-strong);
+    color: var(--color-system-caution-on-strong);
 
     &.weak {
       background-color: var(--color-system-caution-weak);
@@ -72,8 +73,8 @@
   }
 
   &.warning {
-    background-color: var(--color-system-warning-default);
-    color: var(--color-system-warning-on);
+    background-color: var(--color-system-warning-strong);
+    color: var(--color-system-warning-on-strong);
 
     &.weak {
       background-color: var(--color-system-warning-weak);
