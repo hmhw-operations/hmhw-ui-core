@@ -75,6 +75,54 @@
   --color-system-success-weak: var(--palette-green-300);
   --color-system-success-on-weak: var(--palette-green-1300);
 
+  /* system colors: neutral  ------------------------------------------------------------ */
+
+  --color-system-neutral-strong: var(--palette-alpha-white-060);
+  --color-system-neutral-on-strong: var(--color-foreground-invert);
+  --color-system-neutral-weak: var(--palette-alpha-white-020);
+  --color-system-neutral-on-weak: var(--color-foreground-primary);
+  --color-system-neutral-border-weak: transparent;
+
+  /* system colors: critical (red) ------------------------------------------------------------ */
+  --color-system-critical-strong: var(--palette-red-1100);
+  --color-system-critical-on-strong: var(--palette-red-100);
+  --color-system-critical-strong-hover: var(--palette-red-1200);
+  --color-system-critical-strong-active: var(--palette-red-1200);
+  --color-system-critical-strong-disabled: var(--palette-red-100);
+  --color-system-critical-weak: var(--palette-red-300);
+  --color-system-critical-on-weak: var(--palette-red-1500);
+  --color-system-critical-weak-border: transparent;
+
+  /* system colors: info (blue)  ------------------------------------------------------------ */
+  --color-system-info-strong: var(--color-background-accent);
+  --color-system-info-on-strong: var(--color-foreground-on-accent);
+  --color-system-info-weak: var(--palette-blue-198-1200);
+  --color-system-info-on-weak: var(--color-foreground-primary);
+  --color-system-info-weak-border: transparent;
+
+  /* system colors: caution (yellow)  ------------------------------------------------------------ */
+  --color-system-caution-strong: var(--palette-yellow-700);
+  --color-system-caution-on-strong: var(--palette-yellow-1500);
+  --color-system-caution-weak: var(--palette-yellow-300);
+  --color-system-caution-on-weak: var(--palette-yellow-1500);
+  --color-system-caution-weak-border: transparent;
+
+  /* system colors: warning  (orange) ------------------------------------------------------------ */
+  --color-system-warning-strong: var(--palette-orange-800);
+  --color-system-warning-on-strong: var(--palette-orange-1500);
+  --color-system-warning-weak: var(--palette-orange-400);
+  --color-system-warning-on-weak: var(--palette-orange-1500);
+  --color-system-warning-weak-border: transparent;
+
+  /* system colors: success (green)  ------------------------------------------------------------ */
+  --color-system-success-strong: var(--palette-green-1200);
+  --color-system-success-on-strong: var(--palette-green-100);
+  --color-system-success-strong-hover: var(--palette-green-1300);
+  --color-system-success-strong-active: var(--palette-green-1300);
+  --color-system-success-weak: var(--palette-green-500);
+  --color-system-success-on-weak: var(--palette-green-1400);
+  --color-system-success-weak-border: transparent;
+
   /* border colors  ------------------------------------------------------------ */
 
   --color-border-weak: var(--palette-neutral-400);
@@ -184,47 +232,51 @@ body.day-theme {
 
   /* system colors: neutral  ------------------------------------------------------------ */
 
-  --color-system-neutral-strong: var(--palette-neutral-new-700);
+  --color-system-neutral-strong: var(--palette-neutral-new-600);
   --color-system-neutral-on-strong: var(--palette-neutral-new-100);
-  --color-system-neutral-weak: var(--palette-neutral-new-300);
-  --color-system-neutral-on-weak: var(--palette-neutral-new-900);
-  --color-system-neutral-weak-border: var(--palette-neutral-new-400);
+  --color-system-neutral-weak: var(--palette-neutral-new-200);
+  --color-system-neutral-on-weak: var(--palette-neutral-new-700);
+  --color-system-neutral-border-weak: var(--palette-neutral-new-400);
 
   /* system colors: critical (red) ------------------------------------------------------------ */
-  --color-system-critical-default: var(--palette-red-800);
-  --color-system-critical-on: var(--palette-alpha-white-100);
-  --color-system-critical-hover: var(--palette-red-900);
-  --color-system-critical-active: var(--palette-red-800);
-  --color-system-critical-disabled: var(--palette-red-100);
+  --color-system-critical-strong: var(--palette-red-800);
+  --color-system-critical-on-strong: var(--palette-alpha-white-100);
+  --color-system-critical-strong-hover: var(--palette-red-1000);
+  --color-system-critical-strong-active: var(--palette-red-1000);
+  --color-system-critical-strong-disabled: var(--palette-red-100);
   --color-system-critical-weak: var(--palette-red-100);
   --color-system-critical-on-weak: var(--palette-red-1500);
+  --color-system-critical-weak-border: var(--palette-red-400);
 
   /* system colors: info (blue)  ------------------------------------------------------------ */
-  --color-system-info-default: var(--palette-blue-210-500);
-  --color-system-info-on: var(--palette-neutral-050);
+  --color-system-info-strong: var(--palette-blue-210-500);
+  --color-system-info-on-strong: var(--palette-neutral-050);
   --color-system-info-weak: var(--palette-blue-210-100);
-  --color-system-info-on-weak: var(--palette-blue-210-800);
+  --color-system-info-on-weak: var(--palette-blue-210-900);
+  --color-system-info-weak-border: var(--palette-blue-210-400);
 
   /* system colors: caution (yellow)  ------------------------------------------------------------ */
-  --color-system-caution-default: var(--palette-scale-alt-yellow-800);
-  --color-system-caution-on: var(--palette-neutral-cold-1500);
-  --color-system-caution-weak: var(--palette-scale-alt-yellow-300);
-  --color-system-caution-on-weak: var(--palette-neutral-cold-1500);
+  --color-system-caution-strong: var(--palette-yellow-700);
+  --color-system-caution-on: var(--palette-yellow-1500);
+  --color-system-caution-weak: var(--palette-yellow-200);
+  --color-system-caution-on-weak: var(--palette-yellow-1500);
+  --color-system-caution-weak-border: var(--palette-yellow-800);
 
-  /* system colors: critical  (orange) ------------------------------------------------------------ */
-  --color-system-warning-default: var(--palette-scale-alt-orange-800);
-  --color-system-warning-on: var(--palette-alpha-black-100);
-  --color-system-warning-weak: var(--palette-scale-alt-orange-300);
-  --color-system-warning-on-weak: var(--palette-alpha-black-100);
+  /* system colors: warning  (orange) ------------------------------------------------------------ */
+  --color-system-warning-strong: var(--palette-orange-800);
+  --color-system-warning-on-strong: var(--palette-orange-1500);
+  --color-system-warning-weak: var(--palette-orange-200);
+  --color-system-warning-on-weak: var(--palette-orange-1500);
+  --color-system-warning-weak-border: var(--palette-orange-500);
 
   /* system colors: success (green)  ------------------------------------------------------------ */
-  --color-system-success-default: var(--palette-green-800);
-  --color-system-success-on: var(--palette-green-1500);
-  --color-system-success-hover: var(--palette-green-1000);
-  --color-system-success-active: var(--palette-green-1200);
-  --color-system-success-weak: var(--palette-green-200);
-  --color-system-success-on-weak: var(--palette-alpha-black-100);
-  --color-system-be-aware-on-weak: var(--colors-alpha-black-100%);
+  --color-system-success-strong: var(--palette-green-800);
+  --color-system-success-on-strong: var(--palette-green-100);
+  --color-system-success-strong-hover: var(--palette-green-1000);
+  --color-system-success-strong-active: var(--palette-green-1000);
+  --color-system-success-weak: var(--palette-green-300);
+  --color-system-success-on-weak: var(--palette-green-1300);
+  --color-system-success-weak-border: var(--palette-green-800);
 
   /* border colors  ------------------------------------------------------------ */
 
