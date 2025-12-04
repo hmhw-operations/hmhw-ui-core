@@ -100,24 +100,22 @@
     }
   }
   &.destructive {
-    color: var(--color-system-critical-on);
-    border-color: var(--color-system-critical-default);
-    background-color: var(--color-system-critical-default);
+    color: var(--color-system-critical-on-strong);
+    border-color: transparent;
+    background-color: var(--color-system-critical-strong);
 
     &:hover {
-      border-color: var(--color-system-critical-hover);
-      background-color: var(--color-system-critical-hover);
+      background-color: var(--color-system-critical-strong-hover);
     }
 
     &:active {
-      border-color: var(--color-system-critical-active);
-      background-color: var(--color-system-critical-active);
+      border-color: transparent;
+      background-color: var(--color-system-critical-strong-active);
     }
 
     &:disabled {
       color: black;
-      border-color: var(--color-system-critical-disabled);
-      background-color: var(--color-system-critical-disabled);
+      background-color: var(--color-system-critical-strong-disabled);
     }
   }
 }

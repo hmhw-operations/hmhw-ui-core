@@ -87,7 +87,7 @@
   --color-system-critical-strong: var(--palette-red-1100);
   --color-system-critical-on-strong: var(--palette-red-100);
   --color-system-critical-strong-hover: var(--palette-red-1200);
-  --color-system-critical-strong-active: var(--palette-red-1200);
+  --color-system-critical-strong-active: var(--palette-red-1400);
   --color-system-critical-strong-disabled: var(--palette-red-100);
   --color-system-critical-weak: var(--palette-red-300);
   --color-system-critical-on-weak: var(--palette-red-1500);
@@ -242,7 +242,7 @@ body.day-theme {
   --color-system-critical-strong: var(--palette-red-800);
   --color-system-critical-on-strong: var(--palette-alpha-white-100);
   --color-system-critical-strong-hover: var(--palette-red-1000);
-  --color-system-critical-strong-active: var(--palette-red-1000);
+  --color-system-critical-strong-active: var(--palette-red-1300);
   --color-system-critical-strong-disabled: var(--palette-red-100);
   --color-system-critical-weak: var(--palette-red-100);
   --color-system-critical-on-weak: var(--palette-red-1500);
