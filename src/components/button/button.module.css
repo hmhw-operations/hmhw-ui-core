@@ -6,7 +6,7 @@
   padding-inline: 0.75em;
   border-radius: var(--radius-default);
   text-transform: uppercase;
-  font-size: var(--type-button-label);
+  font-size: var(--type-300);
   height: var(--height-medium);
   color: var(--component-button-primary-foreground);
   background-color: var(--component-button-primary-background);
@@ -35,12 +35,12 @@
   }
 
   &.small {
-    font-size: var(--type-button-label-small);
+    font-size: var(--type-200);
     height: var(--height-small);
   }
 
   &.large {
-    font-size: var(--type-button-label-large);
+    font-size: var(--type-400);
     height: var(--height-large);
   }
 
@@ -52,9 +52,8 @@
     flex-direction: row-reverse;
   }
 
-
   &.secondary {
-    color: var(--component-button-secondary-foreground);    
+    color: var(--component-button-secondary-foreground);
     border-color: var(--component-button-secondary-border);
     background-color: var(--component-button-secondary-background);
 
@@ -101,24 +100,22 @@
     }
   }
   &.destructive {
-    color: var(--color-system-critical-on);
-    border-color: var(--color-system-critical-default);
-    background-color: var(--color-system-critical-default);
+    color: var(--color-system-critical-on-strong);
+    border-color: transparent;
+    background-color: var(--color-system-critical-strong);
 
     &:hover {
-      border-color: var(--color-system-critical-hover);
-      background-color: var(--color-system-critical-hover);
+      background-color: var(--color-system-critical-strong-hover);
     }
 
     &:active {
-      border-color: var(--color-system-critical-active);
-      background-color: var(--color-system-critical-active);
+      border-color: transparent;
+      background-color: var(--color-system-critical-strong-active);
     }
 
     &:disabled {
       color: black;
-          border-color: var(--color-system-critical-disabled);
-      background-color: var(--color-system-critical-disabled);
+      background-color: var(--color-system-critical-strong-disabled);
     }
   }
 }
