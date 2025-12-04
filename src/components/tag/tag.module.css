@@ -1,14 +1,24 @@
 .tag {
-  display: inline-flex;
-  align-items: center;
+  box-sizing: border-box;
+
+  display: inline-grid;
+  place-items: center;
+
   height: var(--size-400);
   padding-inline: 0.75em;
   font-size: var(--type-300);
   line-height: 1;
-  color: var(--component-tag-foreground);
-  background-color: var(--component-tag-background);
-  border: 1px solid var(--component-tag-border);
-  border-radius: 4px;
+  background-color: var(--color-system-neutral-strong);
+  color: var(--color-system-neutral-on-strong);
+  text-box: trim-both cap alphabetic;
+  border-radius: var(--radius-small);
+  border: 0.5px solid transparent;
+
+  &.weak {
+    color: var(--color-system-neutral-on-weak);
+    background-color: var(--color-system-neutral-weak);
+    border-color: var(--color-system-neutral-border-weak);
+  }
 
   &.accent {
     color: var(--component-tag-foreground-accent);
@@ -16,18 +26,33 @@
   }
 
   &.info {
-    color: var(--component-tag-foreground-info);
-    background-color: var(--component-tag-background-info);
+    color: var(--color-system-info-on-strong);
+    background-color: var(--color-system-info-strong);
+    &.weak {
+      color: var(--color-system-info-on-weak);
+      background-color: var(--color-system-info-weak);
+      border: 0.5px solid var(--color-system-info-border-weak);
+    }
   }
 
   &.danger {
-    color: var(--component-tag-foreground-critical);
-    background-color: var(--component-tag-background-critical);
+    color: var(--color-system-critical-on-strong);
+    background-color: var(--color-system-critical-strong);
+    &.weak {
+      color: var(--color-system-critical-on-weak);
+      background-color: var(--color-system-critical-weak);
+      border: 0.5px solid var(--color-system-critical-border-weak);
+    }
   }
 
   &.warning {
-    color: var(--component-tag-foreground-warning);
-    background-color: var(--component-tag-background-warning);
+    color: var(--color-system-warning-on-strong);
+    background-color: var(--color-system-warning-strong);
+    &.weak {
+      color: var(--color-system-warning-on-weak);
+      background-color: var(--color-system-warning-weak);
+      border: 0.5px solid var(--color-system-warning-border-weak);
+    }
   }
 
   &.alert {
@@ -36,25 +61,36 @@
   }
 
   &.success {
-    color: var(--component-tag-foreground-success);
-    background-color: var(--component-tag-background-success);
+    color: var(--color-system-success-on-strong);
+    background-color: var(--color-system-success-strong);
+    &.weak {
+      color: var(--color-system-success-on-weak);
+      background-color: var(--color-system-success-weak);
+      border-color: var(--color-system-success-border-weak);
+    }
+  }
+
+  &.rounded {
+    border-radius: 999px;
+  }
+
+  &.x-small {
+    height: var(--height-x-small);
+    font-size: var(--type-200);
   }
 
   &.small {
-    height: var(--size-300);
+    height: var(--height-small);
     font-size: var(--type-200);
-    border-radius: 4px;
   }
 
   &.large {
     height: var(--size-450);
     font-size: var(--type-400);
-    border-radius: 4px;
   }
 
   &.x-large {
     height: var(--size-500);
     font-size: var(--type-450);
-    border-radius: 4px;
   }
 }
