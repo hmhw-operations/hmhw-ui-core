@@ -7,7 +7,7 @@ const meta: Meta<typeof Tag> = {
   argTypes: {
     text: { control: "text" },
     size: { control: "select", options: ["x-small", "small", "medium", "large", "x-large"] },
-    type: { control: "select", options: ["neutral", "accent", "info", "warning", "success", "danger"] },
+    type: { control: "select", options: ["neutral", "accent", "info", "caution", "warning", "success", "danger"] },
     rounded: { control: "boolean" },
     weak: { control: "boolean" }
   }

@@ -31,7 +31,7 @@
     &.weak {
       color: var(--color-system-info-on-weak);
       background-color: var(--color-system-info-weak);
-      border: 0.5px solid var(--color-system-info-border-weak);
+      border-color: var(--color-system-info-weak-border);
     }
   }
 
@@ -41,7 +41,17 @@
     &.weak {
       color: var(--color-system-critical-on-weak);
       background-color: var(--color-system-critical-weak);
-      border: 0.5px solid var(--color-system-critical-border-weak);
+      border-color: var(--color-system-critical-weak-border);
+    }
+  }
+
+  &.caution {
+    color: var(--color-system-caution-on-strong);
+    background-color: var(--color-system-caution-strong);
+    &.weak {
+      color: var(--color-system-caution-on-weak);
+      background-color: var(--color-system-caution-weak);
+      border-color: var(--color-system-caution-weak-border);
     }
   }
 
@@ -51,7 +61,7 @@
     &.weak {
       color: var(--color-system-warning-on-weak);
       background-color: var(--color-system-warning-weak);
-      border: 0.5px solid var(--color-system-warning-border-weak);
+      border-color: var(--color-system-warning-weak-border);
     }
   }
 
@@ -66,7 +76,7 @@
     &.weak {
       color: var(--color-system-success-on-weak);
       background-color: var(--color-system-success-weak);
-      border-color: var(--color-system-success-border-weak);
+      border-color: var(--color-system-success-weak-border);
     }
   }
 

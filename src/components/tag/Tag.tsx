@@ -1,7 +1,7 @@
 import { Size } from "../../types";
 import style from "./tag.module.css";
 
-export type TagType = "neutral" | "accent" | "info" | "warning" | "success" | "danger";
+export type TagType = "neutral" | "accent" | "info" | "caution" | "warning" | "success" | "danger";
 
 export type TagProps = {
   text: string;
