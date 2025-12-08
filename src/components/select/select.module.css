@@ -1,3 +1,6 @@
+.select select optgroup {
+  color: red;
+}
 .select {
   display: flex;
   flex-direction: column;
@@ -23,13 +26,10 @@
   }
   .xxx optgroup {
     font-weight: normal;
-    color: var(--p-neutral-500);
+    color: var(--color-foreground-secondary);
     text-transform: uppercase;
     font-size: var(--type-200);
-    padding-top: var(--size-050);
-    padding-bottom: var(--size-050);
-    border-bottom: 1px solid var(--p-neutral-300);
-    background-color: var(--p-neutral-100);
+    background-color: var(--color-background-canvas);
   }
 
   .xxx optgroup option {
@@ -37,7 +37,7 @@
     padding-left: var(--size-100);
     text-transform: none;
     font-size: var(--type-300);
-    color: var(--component-input-value);
+    color: var(--color-foreground-primary);
   }
 
   .field {
