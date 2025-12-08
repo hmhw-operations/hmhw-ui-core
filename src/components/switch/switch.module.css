@@ -1,11 +1,12 @@
 .switch {
   display: flex;
   gap: var(--size-200);
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 
   &:has(button.left) {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   &:has(button.top) {
