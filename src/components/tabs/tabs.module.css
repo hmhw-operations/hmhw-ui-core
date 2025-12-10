@@ -26,6 +26,10 @@
     &[aria-selected="true"] {
       color: var(--color-foreground-accent);
       border-color: var(--border-color-accent);
+      &:hover {
+        cursor: default;
+        border-color: var(--border-color-accent);
+      }
     }
 
     &:hover {
@@ -34,7 +38,7 @@
     }
     &:disabled {
       cursor: not-allowed;
-      color: var(--component-tabs-foreground-disabled);
+      color: var(--color-foreground-disabled);
       border-color: transparent;
     }
   }
