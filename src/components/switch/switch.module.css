@@ -26,7 +26,7 @@
     display: inline-flex;
     justify-content: left;
     align-items: center;
-    background-color: var(--c-switch-track);
+    background-color: var(--color-system-neutral);
     border-radius: var(--radius-full);
 
     height: var(--size-300);
@@ -35,37 +35,33 @@
 
     &:hover {
       cursor: pointer;
-      background-color: var(--c-switch-track-hover);
     }
 
     .thumb {
       width: var(--size-250);
       height: var(--size-250);
       border-radius: var(--radius-full);
-      background-color: var(--c-switch-thumb);
+      background-color: var(--color-foreground-on-accent);
     }
 
     &[aria-checked="true"] {
       justify-content: right;
-      background-color: var(--c-switch-track-active);
+      background-color: var(--color-background-accent);
 
-      &:hover {
-        background-color: var(--c-switch-track-active-hover);
-      }
-      h .thumb {
-        background-color: var(--c-switch-thumb);
+      .thumb {
+        background-color: var(--color-foreground-on-accent);
       }
     }
 
     &:disabled {
-      background-color: var(--c-switch-track-disabled);
+      background-color: var(--color-foreground-disabled);
 
       &[aria-checked="true"] {
         background-color: var(--c-switch-track-active-disabled);
       }
 
       + label {
-        color: var(--c-switch-label-disabled);
+        color: var(--color-foreground-disabled);
       }
 
       &:hover {
@@ -73,7 +69,7 @@
       }
 
       .thumb {
-        background-color: var(--c-switch-thumb-disabled);
+        background-color: var(--color-foreground-on-accent);
       }
     }
   }

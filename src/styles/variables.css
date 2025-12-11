@@ -1,4 +1,4 @@
-:root {
+body.dark-theme {
   /* foregrund (text/icon) colors ------------------------------------------------------------ */
 
   --color-foreground-primary: var(--palette-neutral-100);
@@ -45,38 +45,9 @@
 
   /* system colors  ------------------------------------------------------------ */
 
-  --color-system-info-default: var(--palette-blue-198-800);
-  --color-system-info-on: var(--palette-neutral-050);
-  --color-system-info-weak: var(--palette-blue-198-1200);
-  --color-system-info-on-weak: var(--palette-blue-198-1200);
-  --color-system-caution-default: var(--palette-yellow-800);
-  --color-system-caution-on: var(--palette-yellow-1500);
-  --color-system-be-aware-default: var(--palette-beaware-alt-blues-noticeme);
-  --color-system-be-aware-on: var(--palette-beaware-alt-blues-nevermindme-5);
-  --color-system-be-aware-weak: var(--palette-beaware-alt-blues-knowme-3);
-  --color-system-be-aware-on-weak: var(--palette-beaware-alt-blues-nevermindme-4);
-  --color-system-caution-weak: var(--palette-yellow-300);
-  --color-system-caution-on-weak: var(--palette-yellow-1500);
-  --color-system-warning-default: var(--palette-orange-800);
-  --color-system-warning-on: var(--palette-neutral-1500);
-  --color-system-warning-weak: var(--palette-orange-300);
-  --color-system-warning-on-weak: var(--palette-neutral-1500);
-  --color-system-critical-default: var(--palette-red-900);
-  --color-system-critical-on: var(--palette-neutral-050);
-  --color-system-critical-hover: var(--palette-red-1100);
-  --color-system-critical-active: var(--palette-red-1300);
-  --color-system-critical-disabled: var(--palette-alpha-red-005);
-  --color-system-critical-weak: var(--palette-red-300);
-  --color-system-critical-on-weak: var(--palette-red-1400);
-  --color-system-success-default: var(--palette-green-800);
-  --color-system-success-on: var(--palette-green-1500);
-  --color-system-success-hover: var(--palette-green-1000);
-  --color-system-success-active: var(--palette-green-1200);
-  --color-system-success-weak: var(--palette-green-300);
-  --color-system-success-on-weak: var(--palette-green-1300);
-
   /* system colors: neutral  ------------------------------------------------------------ */
-
+  --color-system-neutral: var(--palette-neutral-800);
+  --color-system-neutral-on: var(--palette-neutral-new-100);
   --color-system-neutral-strong: var(--palette-alpha-white-060);
   --color-system-neutral-on-strong: var(--color-foreground-invert);
   --color-system-neutral-weak: var(--palette-alpha-white-020);
@@ -231,6 +202,8 @@ body.day-theme {
   --color-background-interactive-secondary-disabled: hsla(0, 0%, 0%, 1);
 
   /* system colors: neutral  ------------------------------------------------------------ */
+  --color-system-neutral: var(--palette-neutral-new-400);
+  --color-system-neutral-on: var(--palette-neutral-new-100);
   --color-system-neutral-strong: var(--palette-neutral-new-700);
   --color-system-neutral-on-strong: var(--palette-neutral-new-100);
   --color-system-neutral-weak: var(--palette-neutral-new-200);
@@ -293,40 +266,6 @@ body.day-theme {
   --color-focus-ring: var(--color-foreground-accent);
   --color-border-accent: var(--color-foreground-accent);
   --color-border-focus: var(--color-foreground-accent);
-}
-
-/*******  Menu list tokens  *******/
-
-/*******  Switch (toggle) tokens  *******/
-
-body.dark-theme {
-  --c-switch-label: var(--color-foreground-primary);
-  --c-switch-label-disabled: var(--color-foreground-disabled);
-  --c-switch-description: var(--color-foreground-secondary);
-  --c-switch-thumb: var(--palette-alpha-white-100);
-  --c-switch-thumb-active: var(--palette-alpha-white-100);
-  --c-switch-thumb-disabled: var(--palette-alpha-white-100);
-  --c-switch-track: var(--palette-neutral-500);
-  --c-switch-track-hover: var(--palette-neutral-700);
-  --c-switch-track-disabled: var(--palette-alpha-white-030);
-  --c-switch-track-active: var(--color-foreground-interactive-default);
-  --c-switch-track-active-hover: var(--color-foreground-interactive-hover);
-  --c-switch-track-active-disabled: var(--palette-alpha-white-030);
-}
-
-body.day-theme {
-  --c-switch-label: var(--color-foreground-primary);
-  --c-switch-label-disabled: var(--color-foreground-disabled);
-  --c-switch-description: var(--color-foreground-secondary);
-  --c-switch-thumb: var(--palette-neutral-new-050);
-  --c-switch-thumb-active: var(--palette-neutral-new-050);
-  --c-switch-thumb-disabled: var(--palette-neutral-new-050);
-  --c-switch-track: var(--palette-neutral-new-300);
-  --c-switch-track-hover: var(--palette-neutral-new-400);
-  --c-switch-track-disabled: var(--color-foreground-disabled);
-  --c-switch-track-active: var(--color-foreground-interactive-default);
-  --c-switch-track-active-hover: var(--color-foreground-interactive-hover);
-  --c-switch-track-active-disabled: var(--color-foreground-disabled);
 }
 
 /*******  Button  tokens  *******/
