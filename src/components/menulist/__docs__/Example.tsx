@@ -9,7 +9,7 @@ const Example = ({ selectedKey: controlledSelectedKey, onSelectedKeyChange }) =>
   const setSelectedKey = onSelectedKeyChange ?? setUncontrolledSelectedKey;
 
   return (
-    <div>
+    <>
       <MenuList selectedKey={selectedKey}>
         <MenuList.Header label="Main" />
         <MenuList.Item name="home" icon="home" onClick={() => setSelectedKey("home")}>
@@ -37,7 +37,7 @@ const Example = ({ selectedKey: controlledSelectedKey, onSelectedKeyChange }) =>
           Logout
         </MenuList.Item>
       </MenuList>
-    </div>
+    </>
   );
 };
 

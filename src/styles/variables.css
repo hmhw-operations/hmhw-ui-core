@@ -43,6 +43,9 @@ body.dark-theme {
   --color-background-interactive-secondary-active: var(--palette-blue-198-1400);
   --color-background-interactive-secondary-disabled: var(--palette-blue-198-1400);
 
+  --color-background-interactive-new-hover: var(--palette-blue-198-1300);
+  --color-background-interactive-new-selected: var(--palette-blue-198-900);
+
   /* system colors  ------------------------------------------------------------ */
 
   /* system colors: neutral  ------------------------------------------------------------ */
@@ -201,6 +204,9 @@ body.day-theme {
   --color-background-interactive-secondary-active: hsla(0, 0%, 0%, 1);
   --color-background-interactive-secondary-disabled: hsla(0, 0%, 0%, 1);
 
+  --color-background-interactive-new-hover: var(--palette-neutral-new-100);
+  --color-background-interactive-new-selected: var(--palette-blue-210-300);
+
   /* system colors: neutral  ------------------------------------------------------------ */
   --color-system-neutral: var(--palette-neutral-new-400);
   --color-system-neutral-on: var(--palette-neutral-new-100);
@@ -333,8 +339,6 @@ body.day-theme {
 /*******  Menulist panel tokens  *******/
 
 body.dark-theme {
-  --component-menulist-background: var(--color-background-canvas);
-  --component-menulist-border: var(--palette-alpha-white-010);
   --component-menulist-button-foreground: var(--color-foreground-primary);
   --component-menulist-button-background: transparent;
   --component-menulist-button-background-hover: var(--palette-alpha-white-010);
@@ -343,8 +347,6 @@ body.dark-theme {
 }
 
 body.day-theme {
-  --component-menulist-background: var(--color-background-canvas);
-  --component-menulist-border: var(--palette-neutral-new-300);
   --component-menulist-button-foreground: var(--color-foreground-primary);
   --component-menulist-button-background: transparent;
   --component-menulist-button-background-hover: var(--palette-neutral-new-100);

@@ -67,7 +67,7 @@ a {
 /* Utilities */
 
 :focus-visible {
-  outline: 2px solid var(--color-focus-ring);
+  outline: 2px solid var(--color-border-focus);
   outline-offset: 4px;
   box-shadow: 0 0 0 4px var(--color-background-canvas);
 }

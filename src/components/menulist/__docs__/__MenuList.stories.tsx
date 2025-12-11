@@ -21,7 +21,8 @@ export const Default = (args) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: "100%"
+      height: "100%",
+      width: "400px"
     }}
   >
     {/* Pass selectedKey as a prop to Example if Example supports it, otherwise just show Example */}

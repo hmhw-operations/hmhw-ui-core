@@ -1,11 +1,10 @@
 .menuList {
   display: flex;
-  min-width: fit-content;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--size-100);
   padding: var(--size-100);
-  background-color: var(--component-menulist-background);
 
   .menuListItem {
     width: 100%;
@@ -15,9 +14,8 @@
       margin-top: var(--size-200);
     }
   }
-  
+
   .menuListGroupHeader {
-    color: var(--component-sidemenu-foreground);
     font-size: var(--type-400);
   }
 
@@ -29,7 +27,7 @@
     padding: 0;
     padding-left: var(--size-350);
     position: relative;
- 
+
     &:before {
       content: "";
       position: absolute;
@@ -37,10 +35,9 @@
       top: 0;
       bottom: 0;
       width: 2px;
-      background-color: var(--component-menulist-border);
       border-radius: 1px;
       z-index: 0;
-    } 
+    }
 
     & > * {
       position: relative;
@@ -50,6 +47,8 @@
 
   .menuListButton {
     display: flex;
+    color: var(--color-foreground-primary);
+    background-color: transparent;
     height: var(--size-400);
     padding: 0px var(--size-100);
     align-items: center;
@@ -58,17 +57,14 @@
     cursor: pointer;
     width: 100%;
     justify-content: flex-start;
-    color: var(--component-menulist-button-foreground);
-    background-color: var(--component-menulist-button-background);
-    border-radius: var(--component-menulist-button-radius);
+    border-radius: var(--radius-small);
 
-    &:focus,
     &:hover {
-      background-color: var(--component-menulist-button-background-hover);
+      background-color: var(--color-background-interactive-new-hover);
     }
 
     &.menuListButtonSelected {
-      background-color: var(--component-menulist-button-background-active);
+      background-color: var(--color-background-interactive-new-selected);
     }
 
     .menuListLabel {
@@ -77,5 +73,3 @@
     }
   }
 }
-
-
