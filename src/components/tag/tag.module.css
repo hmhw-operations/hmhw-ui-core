@@ -23,6 +23,11 @@
   &.accent {
     color: var(--component-tag-foreground-accent);
     background-color: var(--component-tag-background-accent);
+    &.weak {
+      color: var(--color-system-info-on-weak);
+      background-color: var(--color-system-info-weak);
+      border-color: var(--color-system-info-weak-border);
+    }
   }
 
   &.info {
@@ -35,7 +40,7 @@
     }
   }
 
-  &.danger {
+  &.critical {
     color: var(--color-system-critical-on-strong);
     background-color: var(--color-system-critical-strong);
     &.weak {
@@ -63,11 +68,6 @@
       background-color: var(--color-system-warning-weak);
       border-color: var(--color-system-warning-weak-border);
     }
-  }
-
-  &.alert {
-    color: var(--component-tag-foreground-alert);
-    background-color: var(--component-tag-background-alert);
   }
 
   &.success {

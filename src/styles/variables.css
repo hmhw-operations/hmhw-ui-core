@@ -545,15 +545,12 @@ body.dark-theme {
   --component-table-background-hover: var(--palette-alpha-white-010);
   --component-table-background-active: var(--palette-alpha-blue-light-005);
   --component-table-border: var(--palette-alpha-white-020);
-
   --component-table-header-foreground: var(--color-foreground-accent);
   --component-table-header-background: var(--color-transparent);
   --component-table-header-border: var(--color-foreground-accent);
-
   --component-table-footer-foreground: var(--color-foreground-primary);
   --component-table-footer-background: var(--color-transparent);
   --component-table-footer-border: var(--color-foreground-primary);
-
   --component-table-caption-foreground: var(--color-foreground-accent);
 }
 
@@ -564,48 +561,13 @@ body.day-theme {
   --component-table-background-hover: var(--palette-alpha-black-002);
   --component-table-background-active: var(--palette-alpha-blue-light-005);
   --component-table-border: var(--palette-alpha-black-020);
-
   --component-table-header-foreground: var(--color-foreground-primary);
   --component-table-header-background: var(--color-transparent);
   --component-table-header-border: var(--color-foreground-primary);
-
   --component-table-footer-foreground: var(--color-foreground-primary);
   --component-table-footer-background: var(--color-transparent);
   --component-table-footer-border: var(--color-foreground-primary);
-
   --component-table-caption-foreground: var(--color-foreground-primary);
-}
-
-/*******  Tabs tokens  *******/
-
-body.dark-theme {
-  --component-tabs-foreground: var(--color-foreground-primary);
-  --component-tabs-foreground-hover: var(--color-foreground-interactive-hover);
-  --component-tabs-foreground-disabled: var(--color-foreground-disabled);
-  --component-tabs-foreground-active: var(--color-foreground-accent);
-  --component-tabs-background: var(--color-transparent);
-  --component-tabs-background-hover: var(--color-transparent);
-  --component-tabs-background-disabled: var(--color-transparent);
-  --component-tabs-background-active: var(--color-transparent);
-  --component-tabs-border: currentColor;
-  --component-tabs-border-hover: var(--color-transparent);
-  --component-tabs-border-active: currentColor;
-  --component-tabs-border-disabled: var(--component-tabs-border);
-}
-
-body.day-theme {
-  --component-tabs-foreground: var(--color-foreground-primary);
-  --component-tabs-foreground-hover: var(--color-foreground-interactive-hover);
-  --component-tabs-foreground-disabled: var(--color-foreground-disabled);
-  --component-tabs-foreground-active: var(--color-foreground-accent);
-  --component-tabs-background: var(--color-transparent);
-  --component-tabs-background-hover: var(--color-transparent);
-  --component-tabs-background-disabled: var(--color-transparent);
-  --component-tabs-background-active: var(--color-transparent);
-  --component-tabs-border: currentColor;
-  --component-tabs-border-hover: var(--color-transparent);
-  --component-tabs-border-active: currentColor;
-  --component-tabs-border-disabled: var(--component-tabs-border);
 }
 
 /* Context menu */
