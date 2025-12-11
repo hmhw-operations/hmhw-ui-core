@@ -1,93 +1,86 @@
 .tabs {
-  --border-width: 1px;
+  --border-width: 2px;
 
   display: flex;
   flex-direction: column;
 
   .tabs_list {
     display: flex;
-    gap: var(--size-050);
-    border-bottom: var(--border-width) solid var(--component-tabs-border);
+    gap: var(--size-100);
+    box-shadow: inset 0px -1px var(--color-border-weak);
   }
 
   .tabs_button {
     appearance: none;
-    display: inline-flex;
+
+    display: flex;
     align-items: center;
     height: var(--height-medium);
-    margin-bottom: calc(var(--border-width) * -1);
-    padding-inline: 0.5em;
-    border-bottom: 4px solid var(--component-tabs-background);
-    color: var(--component-tabs-foreground);
-    background-color: var(--component-tabs-background);
+
+    color: var(--color-foreground-primary);
     cursor: pointer;
-    font-size: var(--type-300);
+    font-size: var(--type-400);
     gap: var(--size-100);
+    border-bottom: 3px solid transparent;
 
     &[aria-selected="true"] {
-      color: var(--component-tabs-foreground-active);
-      border-color: var(--component-tabs-border-active);
-
+      color: var(--color-foreground-accent);
+      border-color: var(--border-color-accent);
       &:hover {
-        color: var(--component-tabs-foreground-active);
         cursor: default;
+        border-color: var(--border-color-accent);
       }
     }
 
     &:hover {
       cursor: pointer;
-      color: var(--component-tabs-foreground-hover);
+      border-color: var(--color-border-strong);
     }
     &:disabled {
       cursor: not-allowed;
-      color: var(--component-tabs-foreground-disabled);
+      color: var(--color-foreground-disabled);
+      border-color: transparent;
     }
   }
-}
 
-.small {
-  .tabs_button {
-    height: var(--height-small);
-    font-size: var(--type-200);
-    svg {
-      width: var(--size-200);
+  .x-small {
+    .tabs_button {
+      height: var(--height-small);
+      font-size: var(--type-300);
+      svg {
+        width: var(--size-200);
+      }
     }
   }
-}
 
-.medium {
-  .tabs_button {
-    height: var(--height-medium);
-    font-size: var(--type-300);
-
-    svg {
-      width: var(--size-250);
+  .small {
+    .tabs_button {
+      height: var(--height-small);
+      font-size: var(--type-300);
+      svg {
+        width: var(--size-200);
+      }
     }
   }
-}
 
-.large {
-  .tabs_button {
-    height: var(--height-large);
-    font-size: var(--type-400);
-    svg {
-      width: var(--size-300);
+  .large {
+    .tabs_button {
+      height: var(--height-large);
+      font-size: var(--type-500);
+      svg {
+        width: var(--size-300);
+      }
     }
   }
-}
 
-.x-large {
-  .tabs_button {
-    height: var(--height-x-large);
-    font-size: var(--type-500);
-    svg {
-      width: var(--size-350);
+  .x-large {
+    .tabs_button {
+      height: var(--height-x-large);
+      font-size: var(--type-600);
+
+      svg {
+        width: var(--size-350);
+      }
     }
   }
-}
-
-.tab_panel {
-  min-height: 50vh;
-  padding: var(--size-400) 0;
-  overflow-y: auto;
 }
