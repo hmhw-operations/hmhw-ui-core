@@ -7,4 +7,5 @@
 .horizontal {
   display: flex;
   flex-direction: row;
+  gap: var(--size-400);
 }

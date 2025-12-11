@@ -44,6 +44,7 @@ body.dark-theme {
   --color-background-interactive-secondary-disabled: var(--palette-blue-198-1400);
 
   --color-background-interactive-new-hover: var(--palette-blue-198-1300);
+  --color-background-interactive-new-active: var(--palette-blue-198-1100);
   --color-background-interactive-new-selected: var(--palette-blue-198-900);
 
   /* system colors  ------------------------------------------------------------ */
@@ -205,6 +206,7 @@ body.day-theme {
   --color-background-interactive-secondary-disabled: hsla(0, 0%, 0%, 1);
 
   --color-background-interactive-new-hover: var(--palette-neutral-new-100);
+  --color-background-interactive-new-active: var(--palette-neutral-new-300);
   --color-background-interactive-new-selected: var(--palette-blue-210-300);
 
   /* system colors: neutral  ------------------------------------------------------------ */

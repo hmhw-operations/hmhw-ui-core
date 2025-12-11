@@ -28,7 +28,7 @@
   }
 
   &:has(input:focus-visible) {
-    outline: 2px solid var(--color-focus-ring);
+    outline: 2px solid var(--color-border-focus);
     outline-offset: 2px;
   }
 
@@ -52,7 +52,7 @@
 
   input:checked + label:before {
     border-color: var(--color-foreground-accent);
-    border-color: var(--colorforeground-interactive-default);
+    border-color: var(--color-foreground-interactive-default);
   }
 
   input:checked + label:after {

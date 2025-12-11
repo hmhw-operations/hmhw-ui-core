@@ -62,6 +62,9 @@
     &:hover {
       background-color: var(--color-background-interactive-new-hover);
     }
+    &:active {
+      background-color: var(--color-background-interactive-new-active);
+    }
 
     &.menuListButtonSelected {
       background-color: var(--color-background-interactive-new-selected);
