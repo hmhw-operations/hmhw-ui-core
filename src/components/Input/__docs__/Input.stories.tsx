@@ -9,6 +9,11 @@ const meta: Meta<typeof Input> = {
       control: { type: "select" },
       options: ["small", "medium", "large", "x-large"],
       description: "Size of the input field"
+    },
+    type: {
+      control: { type: "select" },
+      options: ["text", "number", "password", "email", "tel", "file"],
+      description: "Size of the input field"
     }
   },
   args: { id: "input-id", label: "Label" }

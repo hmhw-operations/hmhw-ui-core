@@ -1,7 +1,7 @@
 import { FC, useEffect } from "react";
 import style from "./input.module.css";
 import { sanitizeForId } from "../../utils";
-import { BaseComponentProps, LabelPosition, Size } from "../../types";
+import { BaseComponentProps, LabelPosition, Size, InputType } from "../../types";
 import { Icon } from "../icon";
 import React from "react";
 
@@ -16,6 +16,7 @@ export type InputProps = BaseComponentProps & {
   value: string;
   helperText?: string;
   unit?: string;
+  type?: InputType;
   error?: {
     message?: string;
     hasError?: boolean;
@@ -38,9 +39,10 @@ const Input: FC<InputProps & React.DetailedHTMLProps<React.InputHTMLAttributes<H
   disabled,
   readonly,
   size = "medium",
+  type = "text",
   ...props
 }) => {
-  const { value, type } = props;
+  const { value } = props;
   const [currentValue, setCurrentValue] = React.useState(value);
 
   useEffect(() => {
