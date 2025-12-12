@@ -190,10 +190,14 @@ input::file-selector-button {
   color: var(--component-button-secondary-foreground);
   border: none;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
+  padding: var(--size-100) var(--size-150);
   border: 1px solid var(--component-button-secondary-border);
-  width: 6rem;
+  width: 5rem;
+  font-size: var(--type-300);
+  line-height: 1;
+  letter-spacing: 0.2px;
   height: var(--height-medium);
+  text-box: trim-both cap alphabetic;
 
   &:hover {
     background-color: green;
