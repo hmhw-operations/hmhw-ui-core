@@ -1,8 +1,4 @@
 import { useState, useEffect } from "react";
-import "../../styles/globals.css";
-import "../../styles/palette.css";
-import "../../styles/tokens.css";
-import "../../styles/variables.css";
 import { BaseComponentProps, Size } from "../../types";
 import style from "./select.module.css";
 import { Icon } from "../icon";
@@ -50,7 +46,7 @@ const Select = ({ id, key, title, options, optionGroups, label, value, placehold
       {label && <label className={`${style.label} `}>{label}</label>}
       <div className={`${style.wrapper}`}>
         <div className={`${style.field}`}>
-          <select title={title || label} id={id} key={key || ""} className={`${style.xxx}`} value={selectedValue} onChange={handleChange} disabled={disabled}>
+          <select title={title || label} id={id} key={key || ""} value={selectedValue} onChange={handleChange} disabled={disabled}>
             <option value={selectOption} hidden={true}>
               {selectOption}
             </option>

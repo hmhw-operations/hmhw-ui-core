@@ -1,4 +1,6 @@
 body.dark-theme {
+  color-scheme: dark;
+
   /* foregrund (text/icon) colors ------------------------------------------------------------ */
 
   --color-foreground-primary: var(--palette-neutral-100);
@@ -159,6 +161,8 @@ body.dark-theme {
 }
 
 body.day-theme {
+  color-scheme: light;
+
   /* foreground (text/icon) colors  ------------------------------------------------------------ */
   --color-foreground-primary: var(--palette-neutral-new-900);
   --color-foreground-secondary: var(--palette-neutral-new-600);
