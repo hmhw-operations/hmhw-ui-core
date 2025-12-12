@@ -182,3 +182,47 @@
     }
   }
 }
+
+/* File upload ----------- */
+
+input::file-selector-button {
+  background-color: var(--component-button-secondary-background);
+  color: var(--component-button-secondary-foreground);
+  border: none;
+  border-radius: 4px;
+  padding: var(--size-100) var(--size-150);
+  border: 1px solid var(--component-button-secondary-border);
+  width: 5rem;
+  font-size: var(--type-300);
+  line-height: 1;
+  letter-spacing: 0.2px;
+  height: var(--height-medium);
+  text-box: trim-both cap alphabetic;
+
+  &:hover {
+    background-color: green;
+  }
+}
+
+.input:read-only {
+  padding-inline: 0;
+}
+.input .wrapper .field input[type="file"] {
+  color: var(--color-foreground-primary);
+}
+
+.input:has(input[type="file"]) {
+  padding: 0;
+}
+.field:has(input[type="file"]) {
+  padding-inline: 0 !important;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.input:hover input[type="file"]::file-selector-button {
+  background-color: var(--component-button-secondary-background-hover);
+  cursor: pointer;
+}
