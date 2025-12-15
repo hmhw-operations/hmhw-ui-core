@@ -505,4 +505,5 @@ body.dark-theme {
 body.day-theme {
   --color-component-context-menu-border: var(--color-border-weak);
   --color-component-context-menu-background: var(--color-background-canvas);
+  --color-component-context-menu-background2: var(--color-background-canvas);
 }
