@@ -6,7 +6,7 @@
 
   &.horizontal {
     flex-direction: row;
-    gap: var(--spce-400);
+    gap: var(--size-400);
 
     label {
       min-width: 200px;
@@ -23,7 +23,7 @@
     text-align: right;
     width: 100%;
     border: none;
-    padding-inline: var(--space-075);
+    padding-inline: var(--size-200);
 
     &:focus {
       outline: none;
@@ -34,19 +34,22 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    gap: var(--space-100);
+    gap: var(--size-050);
   }
 
   .field {
     display: flex;
+    flex-direction: row;
+    gap: var(--size-050);
     height: var(--height-medium);
     color: var(--color-component-input-value);
-    background-color: var(--color-component-input-bg);
+    background-color: var(--color-component-input-background);
     border: 1px solid var(--color-component-input-border);
     border-radius: var(--radius-input);
 
     input {
       color: inherit;
+      flex-grow: 2;
     }
 
     &:hover {
@@ -59,20 +62,24 @@
 
     &:focus-within {
       outline: 2px solid var(--color-focus-ring);
-      outline-offset: 0px;
+      outline-offset: 2px;
       box-shadow: 0 0 0 4px var(--color-background-canvas);
       border-color: var(--color-component-input-border-hover);
     }
 
     .unit {
+      flex: 0 0 auto;
+      min-width: var(--size-400);
+      padding-inline: var(--size-200);
+
       display: flex;
-      min-width: 3rem;
       align-items: center;
       justify-content: center;
-      color: var(--c-input-unit);
-      background-color: var(--color-component-input-unit-bg);
+
+      color: var(--color-component-input-foreground-unit);
+      background-color: var(--color-component-input-background-unit);
       border-radius: 0 4px 4px 0;
-      border-left: 1px solid var(--color-component-input-unit-border);
+      border-left: 1px solid var(--color-component-input-border);
     }
   }
 }
@@ -90,36 +97,35 @@
     border-color: var(--color-component-input-border-disabled);
   }
 }
-
+/*
 .error {
+  color: var(--color-system-critical-strong);
+
   .field {
     display: flex;
     height: var(--height-medium);
-    color: var(--color-component-input-unit-text);
 
     border-color: var(--color-component-input-border-error);
     background-color: var(--color-background-critical-weak);
     background-color: var(--color-component-input-bg-error);
 
     input {
-      color: var(--color-component-input-value-error);
     }
 
     .unit {
-      color: var(--color-component-input-error);
-      background-color: var(--color-component-input-bg-error);
+      color: var(--color-system-critical-on-weak);
+      background-color: var(--color-system-critical-weak);
       border-radius: 0 4px 4px 0;
-      border-color: var(--color-component-input-unit-border-error);
+      border-color: var(--color-system-critical-on-weak);
     }
   }
   .errormessage {
-    color: var(--color-component-input-error);
   }
 
   svg {
-    color: var(--color-system-critical-default);
     width: var(--size-300);
     height: auto;
     margin-right: var(--size-100);
   }
 }
+*/

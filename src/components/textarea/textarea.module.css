@@ -56,10 +56,10 @@
 
 .error {
   .textareas {
-    border: 1px solid var(--color-component-input-border-error);
+    border: 1px solid var(--color-system-critical-strong);
   }
   .description {
-    color: var(--color-sysytem-critical-default);
+    color: var(--color-sysytem-critical-strong);
   }
 }
 
