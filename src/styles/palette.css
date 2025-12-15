@@ -18,15 +18,15 @@
   --palette-neutral-1500: hsla(0, 0%, 7%, 1);
 
   --palette-neutral-new-050: hsla(0, 0%, 100%, 1);
-  --palette-neutral-new-100: hsla(198, 10%, 96%, 1);
-  --palette-neutral-new-200: hsla(198, 10%, 90%, 1);
-  --palette-neutral-new-300: hsla(198, 10%, 80%, 1);
-  --palette-neutral-new-400: hsla(198, 10%, 70%, 1);
-  --palette-neutral-new-500: hsla(198, 10%, 60%, 1);
-  --palette-neutral-new-600: hsla(198, 10%, 40%, 1);
-  --palette-neutral-new-700: hsla(198, 10%, 30%, 1);
-  --palette-neutral-new-800: hsla(198, 10%, 20%, 1);
-  --palette-neutral-new-900: hsla(198, 10%, 10%, 1);
+  --palette-neutral-new-100: hsla(210, 10%, 96%, 1);
+  --palette-neutral-new-200: hsla(210, 10%, 90%, 1);
+  --palette-neutral-new-300: hsla(210, 10%, 80%, 1);
+  --palette-neutral-new-400: hsla(210, 10%, 70%, 1);
+  --palette-neutral-new-500: hsla(210, 10%, 60%, 1);
+  --palette-neutral-new-600: hsla(210, 10%, 40%, 1);
+  --palette-neutral-new-700: hsla(210, 10%, 30%, 1);
+  --palette-neutral-new-800: hsla(210, 10%, 20%, 1);
+  --palette-neutral-new-900: hsla(210, 10%, 10%, 1);
 
   --palette-blue-198-050: hsla(198, 100%, 96%, 1);
   --palette-blue-198-100: hsla(198, 100%, 93%, 1);
@@ -54,16 +54,6 @@
   --palette-blue-210-700: hsla(210, 80%, 30%, 1);
   --palette-blue-210-800: hsla(210, 65%, 20%, 1);
   --palette-blue-210-900: hsla(210, 80%, 8%, 1);
-  --palette-neutral-new-050: hsla(0, 0%, 100%, 1);
-  --palette-neutral-new-100: hsla(198, 10%, 96%, 1);
-  --palette-neutral-new-200: hsla(198, 10%, 90%, 1);
-  --palette-neutral-new-300: hsla(198, 10%, 80%, 1);
-  --palette-neutral-new-400: hsla(198, 10%, 70%, 1);
-  --palette-neutral-new-500: hsla(198, 10%, 60%, 1);
-  --palette-neutral-new-600: hsla(198, 10%, 40%, 1);
-  --palette-neutral-new-700: hsla(198, 10%, 30%, 1);
-  --palette-neutral-new-800: hsla(198, 10%, 20%, 1);
-  --palette-neutral-new-900: hsla(198, 10%, 10%, 1);
 
   --palette-yellow-100: hsla(52, 100%, 95%, 1);
   --palette-yellow-200: hsla(50, 100%, 92%, 1);
