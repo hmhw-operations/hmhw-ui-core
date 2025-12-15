@@ -39,7 +39,8 @@
     padding-left: var(--size-100);
     text-transform: none;
     font-size: var(--type-300);
-    color: var(--color-foreground-primary);
+    color: var(--component-input-foreground);
+    background-color: var(--component-input-background);
   }
 }
 
@@ -77,6 +78,15 @@
 }
 
 .select {
+  &.x-small {
+    font-size: var(--type-150);
+
+    .wrapper .field {
+      height: var(--height-x-small);
+      font-size: var(--type-150);
+    }
+  }
+
   &.small {
     font-size: var(--type-200);
 
