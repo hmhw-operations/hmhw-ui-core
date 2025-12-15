@@ -6,5 +6,6 @@ import "./styles/globals.css";
 import "./styles/palette.css";
 import "./styles/tokens.css";
 import "./styles/variables.css";
+import "./styles/components.css";
 
 // export { default as global } from "./styles/globals.css";
