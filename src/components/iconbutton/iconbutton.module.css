@@ -74,7 +74,7 @@
   }
 
   &.destructive {
-    background-color: var(--color-system-critical-default);
+    background-color: var(--color-system-critical-strong);
 
     &:hover {
       background-color: var(--color-system-critical-hover);

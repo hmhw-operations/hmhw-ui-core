@@ -45,8 +45,8 @@ body.dark-theme {
   --color-component-input-description-disabled: var(--color-foreground-disabled);
   --color-component-input-border: var(--palette-neutral-300);
   --color-component-input-border-hover: var(--palette-neutral-1200);
-  --color-component-input-border-active: var(--color-foreground-interactive-default);
-  --color-component-input-border-error: var(--color-system-critical-default);
+  --color-component-input-border-active: var(--color-foreground-interactive-strong);
+  --color-component-input-border-error: var(--color-system-critical-strong);
   --color-component-input-border-readonly: var(--palette-alpha-white-000);
   --color-component-input-border-disabled: var(--palette-alpha-white-030);
   --color-component-input-background: var(--palette-neutral-050);
@@ -121,12 +121,12 @@ body.day-theme {
   --color-component-input-unit-readonly: var(--color-foreground-primary);
   --color-component-input-unit-disabled: var(--color-component-input-value-disabled);
   --color-component-input-description: var(--color-foreground-secondary);
-  --color-component-input-description-error: var(--color-system-critical-default);
+  --color-component-input-description-error: var(--color-system-critical-strong);
   --color-component-input-description-disabled: var(--color-foreground-disabled);
   --color-component-input-border: var(--palette-neutral-new-300);
   --color-component-input-border-hover: var(--palette-neutral-new-600);
   --color-component-input-border-active: var(--color-foreground-interactive-default);
-  --color-component-input-border-error: var(--color-system-critical-default);
+  --color-component-input-border-error: var(--color-system-critical-strong);
   --color-component-input-border-readonly: var(--palette-alpha-white-000);
   --color-component-input-border-disabled: var(--palette-neutral-new-200);
   --color-component-input-background: var(--palette-neutral-new-050);

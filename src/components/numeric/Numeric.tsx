@@ -1,9 +1,6 @@
 import { FC, useEffect } from "react";
 import style from "./numeric.module.css";
-import "../../styles/globals.css";
-import "../../styles/palette.css";
-import "../../styles/tokens.css";
-import "../../styles/variables.css";
+
 import { sanitizeForId } from "../../utils";
 import { LabelPosition } from "../../types";
 import { Icon } from "../icon";
