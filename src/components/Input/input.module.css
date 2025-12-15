@@ -14,11 +14,11 @@
   }
 
   .label {
-    color: var(--component-input-label);
+    color: var(--color-component-input-label);
   }
 
   .description {
-    color: var(--component-input-description);
+    color: var(--color-component-input-description);
     font-style: italic;
   }
 
@@ -31,15 +31,15 @@
   .field {
     display: flex;
     height: var(--height-medium);
-    color: var(--component-input-value);
-    background-color: var(--component-input-background);
-    border: 1px solid var(--component-input-border);
+    color: var(--color-component-input-value);
+    background-color: var(--color-component-input-background);
+    border: 1px solid var(--color-component-input-border);
     border-radius: var(--radius-input);
     font-size: var(--type-300);
 
     input {
       background-color: transparent;
-      color: var(--component-input-value);
+      color: var(--color-component-input-value);
       width: 100%;
       border: none;
       padding-inline: 0.5em;
@@ -51,18 +51,18 @@
     }
 
     &:hover {
-      border-color: var(--component-input-border-hover);
+      border-color: var(--color-component-input-border-hover);
     }
 
     &:focus-within {
       outline: 2px solid var(--color-focus-ring);
       outline-offset: 0px;
       box-shadow: 0 0 0 4px var(--color-background-canvas);
-      border-color: var(--component-input-border-hover);
+      border-color: var(--color-component-input-border-hover);
     }
 
     &:has(input:active) {
-      border-color: var(--component-input-border-active);
+      border-color: var(--color-component-input-border-active);
     }
   }
 }
@@ -72,7 +72,7 @@
 .field:has(input:read-only) {
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid var(--component-input-border);
+  border-bottom: 1px solid var(--color-component-input-border);
 
   &:focus-within {
     outline: none;
@@ -99,28 +99,28 @@
   white-space: nowrap;
   align-items: center;
   justify-content: center;
-  color: var(--component-input-unit);
+  color: var(--color-component-input-unit);
   border-radius: 0 4px 4px 0;
-  border-left: 1px solid var(--component-input-border);
+  border-left: 1px solid var(--color-component-input-border);
 }
 
 /* -----  Disabled styling  ------------------- */
 
 .input:has(input:disabled) {
   .field {
-    color: var(--component-input-value-disabled);
+    color: var(--color-component-input-value-disabled);
     background-color: transparent;
-    border: 1px solid var(--component-input-border-disabled);
+    border: 1px solid var(--color-component-input-border-disabled);
   }
 
   .unit {
-    color: var(--component-input-unit-disabled);
+    color: var(--color-component-input-unit-disabled);
     background-color: transparent;
-    border-color: var(--component-input-border-disabled);
+    border-color: var(--color-component-input-border-disabled);
   }
 
   .description {
-    color: var(--component-input-description-disabled);
+    color: var(--color-component-input-description-disabled);
   }
 }
 
@@ -128,24 +128,24 @@
 
 .error {
   .field {
-    border-color: var(--component-input-border-error);
-    background-color: var(--component-input-background-error);
+    border-color: var(--color-component-input-border-error);
+    background-color: var(--color-component-input-background-error);
 
     input {
-      color: var(--component-input-value-error);
+      color: var(--color-component-input-value-error);
     }
 
     .unit {
-      border-radius: 0 var(--component-input-radius) var(--component-input-radius) 0;
-      border-color: var(--component-input-border-error);
+      border-radius: 0 var(--color-component-input-radius) var(--color-component-input-radius) 0;
+      border-color: var(--color-component-input-border-error);
     }
   }
   .errormessage {
-    color: var(--component-input-description-error);
+    color: var(--color-component-input-description-error);
   }
 
   svg {
-    color: var(--component-input-description-error);
+    color: var(--color-component-input-description-error);
     width: var(--size-300);
     height: auto;
     margin-right: var(--size-100);
@@ -186,12 +186,12 @@
 /* File upload ----------- */
 
 input::file-selector-button {
-  background-color: var(--component-button-secondary-background);
-  color: var(--component-button-secondary-foreground);
+  background-color: var(--color-component-button-secondary-background);
+  color: var(--color-component-button-secondary-foreground);
   border: none;
   border-radius: 4px;
   padding: var(--size-100) var(--size-150);
-  border: 1px solid var(--component-button-secondary-border);
+  border: 1px solid var(--color-component-button-secondary-border);
   width: 5rem;
   font-size: var(--type-300);
   line-height: 1;
@@ -223,6 +223,6 @@ input::file-selector-button {
 }
 
 .input:hover input[type="file"]::file-selector-button {
-  background-color: var(--component-button-secondary-background-hover);
+  background-color: var(--color-component-button-secondary-background-hover);
   cursor: pointer;
 }

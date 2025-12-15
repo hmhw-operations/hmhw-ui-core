@@ -7,21 +7,21 @@
   th {
     font-weight: 600;
     text-transform: uppercase;
-    color: var(--component-table-header-foreground);
+    color: var(--color-component-table-header-foreground);
   }
 
   thead th {
-    background-color: var(--component-table-header-background);
-    border-bottom: 1px solid var(--component-table-header-border);
+    background-color: var(--color-component-table-header-background);
+    border-bottom: 1px solid var(--color-component-table-header-border);
   }
 
   td,
   th {
     height: var(--height-medium);
     padding: 0 var(--size-300) 0 var(--size-050);
-    color: var(--component-table-foreground);
-    border-bottom: 1px solid var(--component-table-border);
-    background-color: var(--component-table-background);
+    color: var(--color-component-table-foreground);
+    border-bottom: 1px solid var(--color-component-table-border);
+    background-color: var(--color-component-table-background);
 
     &.num {
       text-align: right;
@@ -33,15 +33,15 @@
   }
 
   tr.alt:nth-child(even) td {
-    background-color: var(--component-table-background-alt);
+    background-color: var(--color-component-table-background-alt);
   }
 
   tr.active td {
-    background-color: var(--component-table-background-active);
+    background-color: var(--color-component-table-background-active);
   }
 
   tr:hover td {
-    background-color: var(--component-table-background-hover);
+    background-color: var(--color-component-table-background-hover);
   }
 }
 

@@ -7,22 +7,22 @@
   padding: 0;
   border-radius: var(--radius-default);
   border: 1px solid transparent;
-  color: var(--component-button-primary-foreground);
-  background-color: var(--component-button-primary-background);
+  color: var(--color-component-button-primary-foreground);
+  background-color: var(--color-component-button-primary-background);
 
   &:hover {
-    background-color: var(--component-button-primary-background-hover);
+    background-color: var(--color-component-button-primary-background-hover);
     cursor: pointer;
   }
 
   &:active {
-    background-color: var(--component-button-primary-background-active);
+    background-color: var(--color-component-button-primary-background-active);
     cursor: pointer;
   }
 
   &:disabled {
-    background-color: var(--component-button-primary-background-disabled);
-    color: var(--component-button-primary-foreground-disabled);
+    background-color: var(--color-component-button-primary-background-disabled);
+    color: var(--color-component-button-primary-foreground-disabled);
     cursor: not-allowed;
   }
 
@@ -38,38 +38,38 @@
   }
 
   &.secondary {
-    color: var(--component-button-secondary-foreground);
-    background-color: var(--component-button-secondary-background);
-    border-color: var(--component-button-secondary-border);
+    color: var(--color-component-button-secondary-foreground);
+    background-color: var(--color-component-button-secondary-background);
+    border-color: var(--color-component-button-secondary-border);
 
     &:hover {
-      background-color: var(--component-button-secondary-background-hover);
+      background-color: var(--color-component-button-secondary-background-hover);
       cursor: pointer;
     }
     &:active {
-      background-color: var(--component-button-secondary-background-active);
+      background-color: var(--color-component-button-secondary-background-active);
       cursor: pointer;
     }
   }
 
   &.tertiary {
-    color: var(--component-button-tertiary-foreground);
-    background-color: var(--component-button-tertiary-background);
+    color: var(--color-component-button-tertiary-foreground);
+    background-color: var(--color-component-button-tertiary-background);
 
     &:hover {
-      color: var(--component-button-tertiary-foreground-hover);
-      background-color: var(--component-button-tertiary-background-hover);
-      border-color: var(--component-button-secondary-background-hover);
+      color: var(--color-component-button-tertiary-foreground-hover);
+      background-color: var(--color-component-button-tertiary-background-hover);
+      border-color: var(--color-component-button-secondary-background-hover);
     }
 
     &:active {
-      color: var(--component-button-tertiary-foreground-active);
-      background-color: var(--component-button-tertiary-background-active);
+      color: var(--color-component-button-tertiary-foreground-active);
+      background-color: var(--color-component-button-tertiary-background-active);
     }
 
     &:disabled {
-      background-color: var(--component-button-tertiary-background-disabled);
-      color: var(--component-button-tertiary-foreground-disabled);
+      background-color: var(--color-component-button-tertiary-background-disabled);
+      color: var(--color-component-button-tertiary-foreground-disabled);
     }
   }
 
