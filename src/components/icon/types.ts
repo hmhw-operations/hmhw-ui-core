@@ -33,6 +33,8 @@ export type SvgName =
   | "camera-nf"
   | "cancel-circle-outline"
   | "cancel-circle"
+  | "caret-double-left"
+  | "caret-double-right"
   | "caret-double"
   | "caret-down-filled"
   | "caret-down"

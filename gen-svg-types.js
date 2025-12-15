@@ -2,6 +2,7 @@ import { readdir, writeFile } from "fs";
 import { join, extname, basename } from "path";
 import { platform } from "os";
 
+// Note to OMLM: npm run generate-svg-types
 // Function to adjust the path for Windows
 const adjustPathForWindows = (path) => {
   // eslint-disable-next-line no-undef

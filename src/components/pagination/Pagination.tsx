@@ -41,7 +41,7 @@ export default function Pagination({ totalPages, onPageChange, currentPage, skip
       {skipMode && (
         <IconButton
           size={size}
-          icon={"chevron-double-left"}
+          icon={"caret-double-left"}
           onClick={() => handlePageChange(PageCangeType.first)}
           disabled={shouldDisableButton(PageCangeType.first)}
           id="pagination-previous"
@@ -52,7 +52,7 @@ export default function Pagination({ totalPages, onPageChange, currentPage, skip
       )}
       <IconButton
         size={size}
-        icon={"chevron-left"}
+        icon={"caret-left"}
         onClick={() => handlePageChange(PageCangeType.previous)}
         disabled={shouldDisableButton(PageCangeType.previous)}
         id="pagination-previous"
@@ -66,7 +66,7 @@ export default function Pagination({ totalPages, onPageChange, currentPage, skip
       <IconButton
         size={size}
         id="pagination-next"
-        icon={"chevron-right"}
+        icon={"caret-right"}
         onClick={() => handlePageChange(PageCangeType.next)}
         disabled={shouldDisableButton(PageCangeType.next)}
         variant="tertiary"
@@ -76,7 +76,7 @@ export default function Pagination({ totalPages, onPageChange, currentPage, skip
       {skipMode && (
         <IconButton
           size={size}
-          icon={"chevron-double-right"}
+          icon={"caret-double-right"}
           onClick={() => handlePageChange(PageCangeType.last)}
           disabled={shouldDisableButton(PageCangeType.last)}
           id="pagination-skip-first"
