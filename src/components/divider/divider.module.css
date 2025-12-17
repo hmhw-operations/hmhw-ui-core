@@ -1,5 +1,5 @@
 .divider {
-  --divider-thick: 4px;
+  --divider-thick: 3px;
   --divider-thin: 1px;
 
   margin: 0;
@@ -11,6 +11,10 @@
 
   &.secondary {
     background-color: var(--color-border-weak);
+  }
+
+  &.accent {
+    background-color: var(--color-border-accent);
   }
 
   &.horizontal {
